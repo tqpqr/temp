@@ -1,0 +1,173 @@
+[
+  {
+    "page_1based": 1,
+    "rect": [
+      595.2000122070312,
+      841.7999877929688
+    ],
+    "text_sort": "         Prisoner Population on Monday 31st January 2022\n\n\n                   Number in    Date to  No. On Temp  No. On Trial/  Total Prisoners    Bed    % of Bed\nINSTITUTION         Custody    Date TR    Release*     Remand      in System**    Capacity    Capacity\n\nMountjoy (m)         686                96        43        846       755     91%\nMountjoy (f)          117                29        29        155       146     80%\n\n\nCloverhill            391                1        326        398       431     91%\nWheatfield           525                28        97        560       610     86%\n\n\nMidlands            834                11        121        856       875     95%\nPortlaoise           202                4         11        207       291     69%\n            A Block       27                       0             0              27            40\n           C Block       157                       4             0             162           181\n            E Block       18                       0             11             18            70\n\nCork                262                36        62        312       296     89%\nLimerick (m)         202                26        62        236       210     96%\nLimerick (f)           29                11         5         41        28     104%\nCastlerea            287                6         69        301       340     84%\nArbour Hill           126                1         0         141       138     91%\nLoughan House       97        1        5         0         108       140     70%\nShelton Abbey        77        4        8         0         96        115     70%\n\nTotals                3,835       5       262       825        4,257      4,375     88%\n\nDate to Date TR refers to prisoners in the Open Centres temporarily released to engage in Structured TR\netc\n\n                          Temporary Release Types                                   Total\nNumber on Temporary Release serving less than 3 months solely for Fines                0\nNumber on Community Return under Probation Supervision                             77\nNumber on Community Support Scheme                                             40\nNumber on structured Temporary Release from Open Centres                            5\nNumber on Temporary Release <6 months excluding Fines                              38\nOther Temporary Release including under Probation Supervision                        102\nTotal                                                                           262\n* Number on Temporary Release figures include ;\n1.  Prisoners on Reviewable Temporary Release\n2.  Prisoners on Full Temporary Release\n3.  Prisoners on Reviewable Temporary Release Community Return under the supervision of Probation Service.\n\n**Total Prisoners in system figures include :\n1.  Number in custody\n2.  On any form of temporary release\n3.  Being detained in hospital or the Central Mental Hospital\n4.   Lifers in the Community.",
+    "blocks": [
+      {
+        "x": 15.6,
+        "y": 57.11,
+        "w": 68.9,
+        "h": 12.31,
+        "text": "INSTITUTION"
+      },
+      {
+        "x": 125.9,
+        "y": 46.81,
+        "w": 47.11,
+        "h": 10.03,
+        "text": "Number in"
+      },
+      {
+        "x": 130.46,
+        "y": 58.59,
+        "w": 36.06,
+        "h": 10.03,
+        "text": "Custody"
+      },
+      {
+        "x": 188.42,
+        "y": 46.81,
+        "w": 34.88,
+        "h": 21.82,
+        "text": "Date to \nDate TR"
+      },
+      {
+        "x": 231.77,
+        "y": 46.81,
+        "w": 58.59,
+        "h": 10.03,
+        "text": "No. On Temp"
+      },
+      {
+        "x": 241.01,
+        "y": 58.59,
+        "w": 37.66,
+        "h": 10.03,
+        "text": "Release*"
+      },
+      {
+        "x": 297.05,
+        "y": 46.81,
+        "w": 56.1,
+        "h": 10.03,
+        "text": "No. On Trial/"
+      },
+      {
+        "x": 306.05,
+        "y": 58.59,
+        "w": 35.58,
+        "h": 10.03,
+        "text": "Remand"
+      },
+      {
+        "x": 358.27,
+        "y": 46.81,
+        "w": 68.19,
+        "h": 10.03,
+        "text": "Total Prisoners"
+      },
+      {
+        "x": 366.55,
+        "y": 58.59,
+        "w": 49.19,
+        "h": 10.03,
+        "text": "in System**"
+      },
+      {
+        "x": 434.59,
+        "y": 46.81,
+        "w": 37.59,
+        "h": 21.82,
+        "text": "Bed \nCapacity"
+      },
+      {
+        "x": 492.46,
+        "y": 46.81,
+        "w": 40.73,
+        "h": 10.03,
+        "text": "% of Bed"
+      },
+      {
+        "x": 493.06,
+        "y": 58.59,
+        "w": 37.59,
+        "h": 10.03,
+        "text": "Capacity"
+      },
+      {
+        "x": 15.6,
+        "y": 80.15,
+        "w": 507.43,
+        "h": 26.83,
+        "text": "Mountjoy (m)\n686\n96\n43\n846\n755\n91%\nMountjoy (f)\n117\n29\n29\n155\n146\n80%"
+      },
+      {
+        "x": 15.6,
+        "y": 132.35,
+        "w": 507.43,
+        "h": 26.83,
+        "text": "Cloverhill\n391\n1\n326\n398\n431\n91%\nWheatfield\n525\n28\n97\n560\n610\n86%"
+      },
+      {
+        "x": 15.6,
+        "y": 183.11,
+        "w": 507.43,
+        "h": 59.35,
+        "text": "Midlands\n834\n11\n121\n856\n875\n95%\nPortlaoise\n202\n4\n11\n207\n291\n69%\nA Block\n27\n0\n0\n27\n40\nC Block\n157\n4\n0\n162\n181\nE Block\n18\n0\n11\n18\n70"
+      },
+      {
+        "x": 15.6,
+        "y": 252.5,
+        "w": 510.43,
+        "h": 99.43,
+        "text": "Cork\n262\n36\n62\n312\n296\n89%\nLimerick (m)\n202\n26\n62\n236\n210\n96%\nLimerick (f)\n29\n11\n5\n41\n28\n104%\nCastlerea\n287\n6\n69\n301\n340\n84%\nArbour Hill\n126\n1\n0\n141\n138\n91%\nLoughan House\n97\n1\n5\n0\n108\n140\n70%\nShelton Abbey\n77\n4\n8\n0\n96\n115\n70%"
+      },
+      {
+        "x": 15.6,
+        "y": 361.84,
+        "w": 507.43,
+        "h": 12.31,
+        "text": "Totals\n3,835\n5\n262\n825\n4,257\n4,375\n88%"
+      },
+      {
+        "x": 15.36,
+        "y": 425.08,
+        "w": 509.69,
+        "h": 164.07,
+        "text": "Total\nNumber on Temporary Release serving less than 3 months solely for Fines\n0\nNumber on Community Return under Probation Supervision\n77\nNumber on Community Support Scheme\n40\nNumber on structured Temporary Release from Open Centres\n5\nNumber on Temporary Release <6 months excluding Fines\n38\nOther Temporary Release including under Probation Supervision\n102\nTotal\n262\n* Number on Temporary Release figures include ; \n1.    Prisoners on Reviewable Temporary Release \n2.    Prisoners on Full Temporary Release\n3.    Prisoners on Reviewable Temporary Release Community Return under the supervision of Probation Service."
+      },
+      {
+        "x": 15.36,
+        "y": 601.87,
+        "w": 245.88,
+        "h": 58.68,
+        "text": "**Total Prisoners in system figures include : \n1.    Number in custody  \n2.    On any form of temporary release \n3.    Being detained in hospital or the Central Mental Hospital \n4.    Lifers in the Community."
+      },
+      {
+        "x": 179.3,
+        "y": 425.08,
+        "w": 135.97,
+        "h": 12.31,
+        "text": "Temporary Release Types"
+      },
+      {
+        "x": 87.96,
+        "y": 13.28,
+        "w": 381.28,
+        "h": 17.8,
+        "text": "Prisoner Population on Monday 31st January 2022"
+      },
+      {
+        "x": 15.6,
+        "y": 385.36,
+        "w": 516.19,
+        "h": 25.99,
+        "text": "Date to Date TR refers to prisoners in the Open Centres temporarily released to engage in Structured TR \netc"
+      }
+    ]
+  }
+]
