@@ -1,0 +1,21 @@
+{
+  "source": "space-archive/extra/stp8/Netherlands_DJI_capaciteit_bezetting_sep-dec_2022.pdf",
+  "source_git_blob_sha1": "db2f73de005d37842c06290a0d27b8a83aa8e6cc",
+  "source_bytes": 724073,
+  "sha256": "adfa88fcdd993d710944796296e4c07c5dc0532de77ef71b770b3cc7920442d9",
+  "page_count": 14,
+  "origin": "direct immutable bytes from GitHub main",
+  "pdf_metadata": {
+    "format": "PDF 1.4",
+    "title": "",
+    "author": "Spaans, Eric",
+    "subject": "",
+    "keywords": "",
+    "creator": "Microsoft® Excel® 2016",
+    "producer": "Microsoft® Excel® 2016",
+    "creationDate": "D:20230106085042+01'00'",
+    "modDate": "D:20230106085146+01'00'",
+    "trapped": ""
+  },
+  "extractor": "PyMuPDF verified original source bytes"
+}
