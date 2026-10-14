@@ -1,0 +1,16 @@
+Level: Local,Unit: Total (thousands of current US dollars),Nominal
+Series (Census function code 04 - Correction),2012,2017,2022
+(E04) Total Correction - Direct Expenditure,26745760,30112031,32595243
+(F04) Total Correction - Current Operations,25433204,29175269,31679946
+(G04) Total Correction - Capital Outlay,1312556,936762,915297
+
+Notes:
+Geography: United States (national total, all local governments combined - counties, municipalities, towns, special districts, and school districts; state-level finances excluded).
+Years shown are Census of Governments years (full canvass / Class A data, not sample-year estimates): 2012, 2017, 2022.
+Values are in thousands of current (nominal) US dollars, not adjusted for inflation.
+Item codes: E04 = Direct Expenditure - Correction (jails/corrections, total); F04 = Current Operations - Correction; G04 = Capital Outlay - Correction. (Labeled by the source tool as E021/E022/E023 respectively.)
+
+Source: US Census Bureau, Annual Survey of State and Local Government Finances / Census of Governments, 1977-2022.
+Compiled via: Urban Institute - State and Local Finance Data: Exploring the Census of Governments (https://state-local-finance-data.taxpolicycenter.org).
+Accessed: 30-Aug-2026.
+Suggested citation: US Census Bureau Annual Survey of State and Local Government Finances, 1977-2022 (compiled by the Urban Institute via State and Local Finance Data: Exploring the Census of Governments; accessed 30-Aug-2026), https://state-local-finance-data.taxpolicycenter.org.
