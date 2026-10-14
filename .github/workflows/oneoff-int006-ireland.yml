@@ -1,0 +1,62 @@
+name: One-off INT-006 Ireland source audit
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int006-ireland.yml
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check original Irish Prison Service document and render
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv .doc-reader
+          .doc-reader/bin/pip install --quiet pymupdf
+          .doc-reader/bin/python - <<'PY'
+          import os, base64, json, urllib.request, hashlib, re
+          import fitz
+          repo=os.environ['GH_REPOSITORY']
+          source='space-archive/extra/stp8/Ireland_IPS_Prisoner_Population_31-Jan-2022.pdf'
+          url='https://raw.githubusercontent.com/'+repo+'/main/'+source
+          with urllib.request.urlopen(url,timeout=55) as r:data=r.read()
+          sha=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\x00'+data).hexdigest()
+          assert sha=='3f685dc0557616e8dc27ad04646fb9c900b1fb3b',sha
+          assert data.startswith(b'%PDF-')
+          pdf=fitz.open(stream=data,filetype='pdf')
+          print('Original source size=',len(data),'pages=',len(pdf),'SHA256=',hashlib.sha256(data).hexdigest(),'metadata=',pdf.metadata)
+          prefix='prison-research-archive/00_catalog/progress/'
+          extract=[]
+          images={}
+          for i,page in enumerate(pdf):
+            blocks=[]
+            for x0,y0,x1,y1,text,_,typ in page.get_text('blocks',sort=False):
+              if typ==0 and text.strip(): blocks.append({'x':round(x0,2),'y':round(y0,2),'w':round(x1-x0,2),'h':round(y1-y0,2),'text':text.strip()})
+            extract.append({'page_1based':i+1,'rect':[page.rect.width,page.rect.height],
+              'text_sort':page.get_text(sort=True),'blocks':blocks})
+            if i<8:images[prefix+'INT-006_Ireland_IPS_2022_page_'+str(i+1).zfill(2)+'_visual_QA_v1.png']=page.get_pixmap(matrix=fitz.Matrix(1.7,1.7),alpha=False).tobytes('png')
+          meta={'original_path':source,'git_blob_sha1':sha,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),
+            'pages':len(pdf),'publisher_identity':'issuer and date must be confirmed from original PDF body',
+            'original_metadata':pdf.metadata}
+          outputs={
+            prefix+'INT-006_Ireland_IPS_2022_original_binary_metadata_v1.json':json.dumps(meta,ensure_ascii=False,indent=2).encode(),
+            prefix+'INT-006_Ireland_IPS_2022_source_page_blocks_v1.json':json.dumps(extract,ensure_ascii=False,indent=2).encode(),
+            prefix+'INT-006_Ireland_IPS_2022_original_text_v1.md':'\n\n'.join('## PDF page '+str(x['page_1based'])+'\n'+x['text_sort'] for x in extract).encode()
+          }
+          outputs.update(images)
+          for path,body in outputs.items():
+            url='https://api.github.com/repos/'+repo+'/contents/'+path
+            payload=json.dumps({'message':'source forensic: INT-006 Ireland original PDF '+path.split('/')[-1],
+              'content':base64.b64encode(body).decode(),'branch':'main'}).encode()
+            req=urllib.request.Request(url,data=payload,method='PUT',headers={
+              'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json',
+              'Content-Type':'application/json','X-GitHub-Api-Version':'2022-11-28'})
+            with urllib.request.urlopen(req,timeout=40) as r:
+              print('saved',path,len(body),r.status)
+          PY
