@@ -1,0 +1,4 @@
+"preceding_year","following_year","previous_names","following_names","exact_same_name_count","previous_only_count","following_only_count","previous_only_original_names","following_only_original_names","note"
+"2021/2022","2022/2023","119","119","119","0","0","","","Exact UTF-8 prison name match only; no proof that similarly named establishments persisted unchanged or reorganization inferred"
+"2022/2023","2023/2024","119","120","119","0","1","","Fosse Way","Exact UTF-8 prison name match only; no proof that similarly named establishments persisted unchanged or reorganization inferred"
+"2023/2024","2024/2025","120","119","119","1","0","Warren Hill","","Exact UTF-8 prison name match only; no proof that similarly named establishments persisted unchanged or reorganization inferred"
