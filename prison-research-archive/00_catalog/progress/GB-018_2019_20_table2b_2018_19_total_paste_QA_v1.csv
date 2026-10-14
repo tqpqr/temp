@@ -1,0 +1,6 @@
+measure,GB018_T2b_FY2018_19_national_claim,GB018_T2a_FY2018_19_national_value,GB018_T2b_OperateManage_FY2018_19_value,equal_to_OperateManage,table_difference
+direct_cost_per_CNA_place_GBP,18726,27453,18726,YES,-8727
+direct_cost_per_prisoner_GBP,16113,26133,16113,YES,-10020
+overall_cost_per_CNA_place_GBP,25380,43213,25380,YES,-17833
+overall_cost_per_prisoner_GBP,21839,41136,21839,YES,-19297
+average_prisoners_prior_FY2018_19,82750,82751,5569,NO,-1
