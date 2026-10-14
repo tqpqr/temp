@@ -1,0 +1,21 @@
+# Prison research archive — active index v31 (2026-10-14)
+
+**GB-019 DONE: UK cost methodology crosswalk complete. NEXT RU-002.** [Checkpoint v30](00_catalog/SESSION_CHECKPOINT_20261014_v30.md) contains exact evidence hashes, statuses and resumption rules.
+
+## Major synthesis outputs
+- [GB-019 methodology report](00_catalog/progress/GB-019_cost_methodology_synthesis_v1.md): how to interpret Direct/Overall, capacity and population, government/contracted comparisons, accounting vintage, inflation conversions, and what remains unsafe to use.
+- [Original source-cell crosswalk v1](00_catalog/progress/GB-019_cost_methodology_crosswalk_v1.csv): **311 entries** sourced from **10 original England-and-Wales fiscal-year cost supplements (2015/16–2024/25)**. Each retains original source path, year/edition, original Git SHA-1, exact sheet/cell, printed caption, numeric value, accounting role and methodological/join rule. This is **not** an added facility panel or duplicate indicator registry.
+- [10-year accounting consistency audit](00_catalog/progress/GB-019_10yr_financial_identity_QA_v1.csv): **30/30 source-based accounting checks** within publisher whole-unit rounding tolerance of **3 GBP**. Critical original layout difference: FY2015/16 national **T2 row 60**, Non Pay children D43:D51, Income D52, six overall allocations H54:H59; subsequent years national **row 59**, children D43:D50, Income D51, allocations H53:H58. Source tab names also differ between original XLSX and later ODS.
+- [Version/restatement chronology](00_catalog/progress/GB-019_revision_chronology_v1.csv): **24 items**, including 20 methodological cases and 4 price-only (GDP-deflator) conversions. Tracks three distinct prior-year resource-cost changes: 2014/15 site Direct -GBP101093457 due to HQ reallocations; 2015/16 Overall +GBP120390295 due to DfE→MoJ education transfer; 2018/19 site Direct +GBP129111488 due to education costs booked at establishments, Overall unchanged. Never treat reclassification or price-base updates as extra fiscal years.
+- [Source-edition inventory](00_catalog/progress/GB-019_source_vintage_manifest_v1.csv): **19 editions**, including 10 supplements, 5 narrative PDFs and original/revised establishment-workbook cases.
+- [UK-specific issue/dependency gates](00_catalog/progress/GB-019_UK_methodology_issue_gates_v1.csv): **25 previously known UK finance methodological cases** linked to source anchors and remaining checks. Notably FY2018/19 wrong-year Table 2b sector comparator (MB-032) and FY2019/20 four wrong national-unit prior values in Table 2b (MB-033); the verified FY2015/16 revised facility-level XLSX is still unavailable (MB-008, GB-002 blocked, GB-003 waiting).
+
+## Current standing
+- [Queue v25](00_catalog/MICROTASK_QUEUE_WAVE1_v25.csv): **31 tasks**, **24 DONE/reconciled**, seven outstanding (**RU-002 NEXT**, RU-003/004 and INT-002 pending, GB-002 and RU-001 blocked, GB-003 dependent). Queue v24's erroneous GB-014 NEXT entry fixed to DONE.
+- [Indicator-period registry v16](00_catalog/INDICATOR_PERIOD_COVERAGE_REGISTRY_v16.csv): **1,136** entries, unchanged by GB-019; no new indicator measurements duplicated.
+- [Methodological breaks v16](00_catalog/METHODOLOGICAL_BREAKS_AND_ANOMALIES_v16.csv): **33** issues, unchanged by GB-019; no duplicate break IDs created.
+
+## Reuse boundary
+These are **original, nominal, publisher-specific and vintage-specific data** for **England and Wales, not the entire UK**. Original source cost/place uses Baseline CNA (not verified in-use or operational place-days); cost/prisoner uses the mean of 12 month-end populations (not daily prisoner-days). Non Pay children must never be summed in addition to their parent. Direct plus six HQ/regional allocations yields Overall in source accounting. Changing contracts, operator periods, source category captions, differently restated historical values and deflated comparator figures require a documented model and source-specific exclusion flags before national or facility causal panel construction.
+
+[Prior active index v30](INDEX_v30.md). **NEXT RU-002** original `sud/2024 год/K3-2024.xls`, inspect exact source and preserve original. This first-wave archive catalogue is still not an inspection of every file in the full repository; no original binaries were modified.
