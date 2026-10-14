@@ -1,0 +1,46 @@
+name: One-off INT-006 Irish IPS official byte match
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int006-ips-compare.yml
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Compare archived IPS PDF and issuer PDF by SHA256
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os,urllib.request,hashlib,json,base64
+          repo=os.environ['GH_REPOSITORY']
+          source='https://raw.githubusercontent.com/'+repo+'/main/space-archive/extra/stp8/Ireland_IPS_Prisoner_Population_31-Jan-2022.pdf'
+          official='https://www.irishprisons.ie/wp-content/uploads/documents_pdf/31-January-2022.pdf'
+          def get(url):
+            req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 compatible; academic source integrity check'})
+            with urllib.request.urlopen(req,timeout=45) as res:return res.read()
+          orig=get(source); expected='d28146b9533419dd66bdb5ac0205dd48c8ee151abee876bcf471aacbe3720b9d'
+          assert hashlib.sha256(orig).hexdigest()==expected
+          try:
+            pub=get(official)
+            result={'publisher_url':official,'official_status':'FETCHED','source_bytes':len(orig),'issuer_bytes':len(pub),
+              'original_sha256':expected,'publisher_sha256':hashlib.sha256(pub).hexdigest(),
+              'byte_identical':orig==pub}
+          except Exception as err:
+            result={'publisher_url':official,'official_status':'DOWNLOAD_FAILED','source_bytes':len(orig),'original_sha256':expected,
+              'error':str(err),'byte_identical':'NOT_TESTED'}
+          print(result)
+          path='prison-research-archive/00_catalog/progress/INT-006_Ireland_IPS_2022_publisher_binary_comparison_v1.json'
+          msg=json.dumps({'message':'source: INT-006 official Irish IPS original PDF binary comparison',
+              'content':base64.b64encode(json.dumps(result,ensure_ascii=False,indent=2).encode()).decode(),'branch':'main'}).encode()
+          url='https://api.github.com/repos/'+repo+'/contents/'+path
+          req=urllib.request.Request(url,data=msg,method='PUT',headers={
+            'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+          with urllib.request.urlopen(req,timeout=45) as r:print('saved',r.status)
+          PY
