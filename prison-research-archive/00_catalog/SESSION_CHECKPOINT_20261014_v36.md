@@ -1,0 +1,31 @@
+# Session checkpoint v36 (14 October 2026) — Second international-source wave; INT-006 DONE, INT-007 NEXT
+
+## Recovery anchor and bounded scope
+
+The first wave remains **34 tasks: 28 DONE/reconciled, five source-BLOCKED, one WAITING_ON_GB-002**, queue `00_catalog/MICROTASK_QUEUE_WAVE1_v30.csv`, unchanged; this was NEVER an exhaustive audit of all 1124 original repository blobs.
+
+The complete GitHub `main` recursive tree is **not truncated**: 3050 total nodes, **1124 original blobs outside `prison-research-archive/`**, reported total byte length **1354872614** (1.354 billion bytes, decimal). Existing material includes first-wave mirrors and numerous separately indexed source families. Do not imply all 1124 files lack metadata or need re-inspection. We scoped **second wave to 19 original blobs in `space-archive/extra/stp8/`**, four first-wave DONE source artifacts (Italy INT-001, Finland INT-002, Netherlands INT-004/INT-005), **15 remaining source originals**. The original `Finland_Paatos...` PDF path still holds preserved 404 HTML; the true seven-page PDF was stored elsewhere, as documented under INT-002. All source Git hashes and byte counts of these 19 blobs are in `00_catalog/MICROTASK_QUEUE_WAVE2_STP8_SOURCE_MANIFEST_v2.csv`.
+
+Active wave2 `00_catalog/MICROTASK_QUEUE_WAVE2_v2.csv`: **15 tasks, INT-006 DONE, INT-007 NEXT, 13 PENDING**. These are NEW source inspections, not an estimate of all remaining repository tasks.
+
+## Last fully completed microtask INT-006 — authentic source one-day Irish prison capacity
+
+- Original repository path `space-archive/extra/stp8/Ireland_IPS_Prisoner_Population_31-Jan-2022.pdf`, Git blob SHA-1 **3f685dc0557616e8dc27ad04646fb9c900b1fb3b**, **21354 bytes**, original PDF **one page**, metadata created 31 Jan 2022 16:56 UTC. SHA-256 **d28146b9533419dd66bdb5ac0205dd48c8ee151abee876bcf471aacbe3720b9d**.
+- Irish Prison Service official original at https://www.irishprisons.ie/wp-content/uploads/documents_pdf/31-January-2022.pdf , publicly linked in the issuer 2022 daily population index. Exact content text matches; an independent byte download obtained **21354 identical bytes with identical SHA256**, **BUT HTTPS issuer certificate chain validation failed**, so retry explicitly used an unverified TLS transport. **Do not misrepresent as authenticated TLS**. Comparison file `progress/INT-006_Ireland_IPS_2022_publisher_binary_comparison_v2.json`, initial failed valid-cert attempt in v1. Inference from source filename remains subordinate to printed **Monday 31 Jan 2022** page heading.
+- Original page and numbers visually inspected. `progress/INT-006_Ireland_IPS_2022_original_text_v1.md` original text; `progress/INT-006_Ireland_IPS_2022_source_page_blocks_v1.json` original block coordinates; `progress/INT-006_Ireland_IPS_2022_page_01_visual_QA_v1.png` faithful rendered page; `progress/INT-006_Ireland_IPS_2022_original_binary_metadata_v1.json` hash and metadata.
+- `progress/INT-006_Ireland_IPS_2022_source_audit_v1.md` detailed audit and interpretation.
+- `progress/INT-006_Ireland_IPS_2022_original_prisoner_capacity_rows_v1.csv`: **17 source table lines** = **13 main institution/gender group lines + 3 nested Portlaoise A/C/E Block subrows + 1 national publisher Totals**. Actual original blanks and published % retained; child subrows marked NOT ADDITIVE.
+- `progress/INT-006_Ireland_IPS_2022_arithmetic_and_nested_block_QA_v1.csv`: **27 checks**, **25 PASS and two source percentage REVIEW**. Six national fields sum EXACTLY from 13 primary rows; six Portlaoise subcomponents reconcile to single parent; six released-subtype values 0+77+40+5+38+102 reconcile to 262; date-to-date TR 1+4=5 is included inside 262, not an independent extra stock.
+- Verified national published original p1: **custody 3835 persons**, **bed capacity 4375**, **88%** published (custody / bed), **trial/remand 825** custody legal subtype, **temporary release 262**, **total persons in system 4257** incl custody/temp release/hospital/CMH/community-lifers; **date-to-date temporary release 5**. Do NOT treat 4257 as physically occupied places or 825 trial/remand as additive to prisoners in custody. Distinguish 31 Jan single-date IPS bed capacities from 2022 four-month DJI capacities.
+- New **MB-039**: IPS original reports 70% for **Loughan House** though custody 97/140 beds rounds to **69%** by ordinary integer rounding; reports 70% for **Shelton Abbey** where 77/115 rounds to **67%**. Other 11 main institution percentages and national 88% agree. Cause (deliberate operational reporting or error) unknown; published source values preserved.
+- New **MB-040**: source custody vs in-system count and nested Portlaoise block rows; careful about temporary-release subcategories. Original 2022 `Bed Capacity` does not by itself establish staffed operational denominator; no cross-country forced equivalence.
+
+## Registries and preservation
+- `00_catalog/INDICATOR_PERIOD_COVERAGE_REGISTRY_v19.csv`: **1160 records**, +8 original 31 Jan 2022 IPS indicator fields, each with exact publisher national value and source cell/page; source site rows in own CSV, not fabricated yearly panel.
+- `00_catalog/METHODOLOGICAL_BREAKS_AND_ANOMALIES_v21.csv`: **40 cases**, +MB-039 and +MB-040.
+- `00_catalog/MICROTASK_QUEUE_WAVE2_v2.csv`: **INT-006 DONE, INT-007 NEXT**, other 13 international source originals pending.
+- `00_catalog/MICROTASK_QUEUE_WAVE2_STP8_SOURCE_MANIFEST_v2.csv`: 19 exact original Git SHA/byte metadata records, four prior wave1 source inspections, one wave2 Ireland completed, 14 untouched in this second-wave subset.
+- No original binary in repository mutated. Original 2022 IPS PDF is 21354 bytes, issuer-identical data with TLS transport caveat; helper Actions workflows are temporary and should be removed after artifact verification.
+
+## NEXT
+**INT-007 `space-archive/extra/stp8/LaikomuAsmenuStatistika.csv`**, original Git blob SHA-1 **acd029c2f0975ec123007889e0e8cfd274d401f1**, **63903 bytes**. Verify actual encoding, language, issuer, geography, all real available time periods and indicator units, define prisoners versus capacity if present, preserve physical CSV row provenance. File name is NOT proof of Lithuanian country and semantic interpretation. No official correspondence to agencies; only source files and public web.
