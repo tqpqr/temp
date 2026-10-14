@@ -22,8 +22,16 @@ jobs:
           URL='https://www.sttinfo.fi/data/attachments/00037/3fe38edf-552e-428d-a53c-31b19201c702.pdf'
           curl --fail --location --retry 2 --connect-timeout 20 --max-time 90 --user-agent 'archive-academic-research/1.0' "$URL" --output decision.pdf
           test "$(head -c 5 decision.pdf)" = '%PDF-'
-          pdfinfo decision.pdf | tee pdf-metadata.txt
-          test "$(pdfinfo decision.pdf | sed -n 's/^Pages:[[:space:]]*//p' | tr -d '[:space:]')" = '7'
+          python3 -m venv .verify-pdf
+          .verify-pdf/bin/pip install --disable-pip-version-check --quiet pypdf
+          .verify-pdf/bin/python - <<'PY'
+          from pypdf import PdfReader
+          p = PdfReader('decision.pdf', strict=True)
+          print('Valid PDF; pages =', len(p.pages))
+          assert len(p.pages) == 7, 'Expected original 7-page RISE decision'
+          text = '\\n'.join((page.extract_text() or '') for page in p.pages)
+          assert '12/280/2021' in text, 'Expected RISE docket missing'
+          PY
           sha256sum decision.pdf
           python3 - <<'PY'
           import os, base64, urllib.request, json
