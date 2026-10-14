@@ -1,0 +1,5 @@
+Archive original Git SHA db2f73de005d37842c06290a0d27b8a83aa8e6cc
+Archive size 724073 SHA256 adfa88fcdd993d710944796296e4c07c5dc0532de77ef71b770b3cc7920442d9
+Publisher URL https://www.dji.nl/site/binaries/site-content/collections/documents/2023/01/10/capaciteit-en-bezetting-september-t-m-december-2022/Capaciteit%2Ben%2Bbezetting%2Bseptember%2Bt-m%2Bdecember%2B2022.pdf
+Publisher size 724073 SHA256 adfa88fcdd993d710944796296e4c07c5dc0532de77ef71b770b3cc7920442d9
+BYTE_IDENTICAL True
