@@ -1,0 +1,13 @@
+sector,metric,FY2017_original,FY2018_report_prior_label,original_minus_label
+Public,CNA,64096,65035,-939
+Public,population,68448,69040,-592
+Public,direct_GBP,1580362483,1485326105,95036378
+Public,overall_GBP,2644577101,2467926949,176650152
+PFI,CNA,8988,8981,7
+PFI,population,10405,10258,147
+PFI,direct_GBP,373963973,368402683,5561290
+PFI,overall_GBP,411560177,410277723,1282454
+OperateManage,CNA,4781,4784,-3
+OperateManage,population,5857,5452,405
+OperateManage,direct_GBP,91505371,89818199,1687172
+OperateManage,overall_GBP,124129586,119483284,4646302
