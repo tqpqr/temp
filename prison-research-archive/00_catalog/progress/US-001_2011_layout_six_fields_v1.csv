@@ -1,0 +1,9 @@
+"original_source_path","original_git_blob_sha1","original_worksheet","original_xlsx_row","field_label_A","printed_position_B","start_C","length_D","type_E","calculated_end","position_text_is_consistent"
+"us/raw data/2011/public-use-file-layout.xlsx","723b170c572df098a9c760294ec521e311132410","public-use-file-layout","11","Government ID [https://www2.census.gov/programs-surveys/state/technical-documentation/code-list/government-ids.xls]
+[EXCEL, 17KB]","1-14","1","14","Numeric, zero filled","14","YES"
+"us/raw data/2011/public-use-file-layout.xlsx","723b170c572df098a9c760294ec521e311132410","public-use-file-layout","12","Item Code [https://www2.census.gov/programs-surveys/state/technical-documentation/code-list/itemcodes.xlsx]
+[EXCEL, 84KB]","15-17","15","3","Alpha numeric","17","YES"
+"us/raw data/2011/public-use-file-layout.xlsx","723b170c572df098a9c760294ec521e311132410","public-use-file-layout","13","Amount (thousands)","18-32","18","12","Numeric","29","NO"
+"us/raw data/2011/public-use-file-layout.xlsx","723b170c572df098a9c760294ec521e311132410","public-use-file-layout","14","Survey Year","30-31","30","2","Numeric","31","YES"
+"us/raw data/2011/public-use-file-layout.xlsx","723b170c572df098a9c760294ec521e311132410","public-use-file-layout","15","Year of Data","32-33","32","2","Numeric","33","YES"
+"us/raw data/2011/public-use-file-layout.xlsx","723b170c572df098a9c760294ec521e311132410","public-use-file-layout","16","Origin","34-35","34","2","Alpha Numeric","35","YES"
