@@ -25,7 +25,7 @@ jobs:
           with urllib.request.urlopen(raw,timeout=50) as r:data=r.read()
           assert hashlib.sha1(b'blob '+str(len(data)).encode()+b'\x00'+data).hexdigest()=='db2f73de005d37842c06290a0d27b8a83aa8e6cc'
           doc=fitz.open(stream=data,filetype='pdf')
-          for ix in (0,5,8,11,13):
+          for ix in (1,2,3,4,6,7,9,10,12):
             out=doc[ix].get_pixmap(matrix=fitz.Matrix(1.2,1.2),alpha=False).tobytes('png')
             path='prison-research-archive/00_catalog/progress/INT-004_DJI_2022_original_page_'+str(ix+1).zfill(2)+'_visual_QA_v1.png'
             url='https://api.github.com/repos/'+os.environ['GH_REPOSITORY']+'/contents/'+path
