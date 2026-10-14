@@ -1,0 +1,8 @@
+{
+  "publisher_url": "https://www.irishprisons.ie/wp-content/uploads/documents_pdf/31-January-2022.pdf",
+  "official_status": "DOWNLOAD_FAILED",
+  "source_bytes": 21354,
+  "original_sha256": "d28146b9533419dd66bdb5ac0205dd48c8ee151abee876bcf471aacbe3720b9d",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>",
+  "byte_identical": "NOT_TESTED"
+}
