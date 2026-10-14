@@ -1,0 +1,11 @@
+{
+  "publisher_url": "https://www.irishprisons.ie/wp-content/uploads/documents_pdf/31-January-2022.pdf",
+  "official_status": "FETCHED",
+  "source_bytes": 21354,
+  "issuer_bytes": 21354,
+  "original_sha256": "d28146b9533419dd66bdb5ac0205dd48c8ee151abee876bcf471aacbe3720b9d",
+  "publisher_sha256": "d28146b9533419dd66bdb5ac0205dd48c8ee151abee876bcf471aacbe3720b9d",
+  "byte_identical": true,
+  "tls_certificate_validation": "ISSUER_CERTIFICATE_UNVERIFIED_RETRY;DO_NOT_CLAIM_AUTHENTICATED_TLS",
+  "issuer_file_identified_by_PDF_TEXT": "IPS dated 31 January 2022"
+}
