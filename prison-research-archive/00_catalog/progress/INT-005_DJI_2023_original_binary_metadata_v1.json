@@ -1,0 +1,26 @@
+{
+  "source_original_path": "space-archive/extra/stp8/Netherlands_DJI_capaciteit_bezetting_jan-apr_2023.pdf",
+  "source_git_sha1": "054f279bd0512d8b3d5e4cf994bcc619d5dbc246",
+  "source_size_bytes": 738848,
+  "source_sha256": "f9c6cc22543343f6505dffc934b8c2ea967d9b1fb8742c05d36b7a2727a8e0a3",
+  "official_upstream_url": "https://www.dji.nl/site/binaries/site-content/collections/documents/2023/06/09/capaciteit-en-bezetting-januari-t-m-april-2023/Capaciteit%2Ben%2Bbezetting%2Bjanuari%2Btm%2Bapril%2B2023.pdf",
+  "official_sha256": "f9c6cc22543343f6505dffc934b8c2ea967d9b1fb8742c05d36b7a2727a8e0a3",
+  "official_bytes": 738848,
+  "byte_identical_official": true,
+  "pages": 14,
+  "metadata": {
+    "format": "PDF 1.4",
+    "title": "",
+    "author": "Spaans, Eric",
+    "subject": "",
+    "keywords": "",
+    "creator": "Microsoft® Excel® 2016",
+    "producer": "Microsoft® Excel® 2016",
+    "creationDate": "D:20230608081705+02'00'",
+    "modDate": "D:20230608081705+02'00'",
+    "trapped": "",
+    "encryption": null
+  },
+  "publication_date_from_dji_landing": "2023-06-09",
+  "source_period": "2023-01 to 2023-04"
+}
