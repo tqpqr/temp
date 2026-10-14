@@ -1,0 +1,66 @@
+name: One-off forensic extraction DJI 2022 PDF
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-audit-dji-2022.yml
+permissions:
+  contents: write
+jobs:
+  source-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Verify exact source and extract page geometry
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv .pdf-audit
+          .pdf-audit/bin/pip install --quiet pymupdf
+          .pdf-audit/bin/python - <<'PY'
+          import os, json, base64, urllib.request, hashlib
+          import fitz
+          source='space-archive/extra/stp8/Netherlands_DJI_capaciteit_bezetting_sep-dec_2022.pdf'
+          prefix='prison-research-archive/00_catalog/progress/'
+          raw='https://raw.githubusercontent.com/'+os.environ['GH_REPOSITORY']+'/main/'+source
+          with urllib.request.urlopen(raw,timeout=50) as r: data=r.read()
+          gitsha=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\x00'+data).hexdigest()
+          print('source bytes',len(data),'git blob sha',gitsha,'sha256',hashlib.sha256(data).hexdigest())
+          assert gitsha=='db2f73de005d37842c06290a0d27b8a83aa8e6cc'
+          doc=fitz.open(stream=data,filetype='pdf')
+          print('pages',len(doc))
+          assert len(doc)==14
+          source_text=[]
+          block_pages=[]
+          for i,page in enumerate(doc):
+            blocks=[]
+            for x0,y0,x1,y1,t,bno,typ in page.get_text('blocks',sort=False):
+              if typ!=0 or not t.strip():continue
+              blocks.append(dict(x=round(x0,1),y=round(y0,1),w=round(x1-x0,1),h=round(y1-y0,1),text=t.strip()))
+            block_pages.append(dict(page_number=i+1,width=page.rect.width,height=page.rect.height,blocks=blocks))
+            source_text.append('## PDF page '+str(i+1)+'\n'+page.get_text(sort=True))
+          sha256=hashlib.sha256(data).hexdigest()
+          metadata={
+            'source':source,'source_git_blob_sha1':gitsha,'source_bytes':len(data),'sha256':sha256,
+            'page_count':len(doc),'origin':'direct immutable bytes from GitHub main',
+            'pdf_metadata':{str(k):v for k,v in doc.metadata.items() if v is not None},
+            'extractor':'PyMuPDF verified original source bytes'
+          }
+          outputs={
+            prefix+'INT-004_DJI_2022_14p_original_text_v1.md':'\n\n'.join(source_text),
+            prefix+'INT-004_DJI_2022_original_layout_blocks_v1.json':json.dumps(block_pages,ensure_ascii=False,indent=1),
+            prefix+'INT-004_DJI_2022_original_binary_metadata_v1.json':json.dumps(metadata,ensure_ascii=False,indent=2)
+          }
+          for path,body in outputs.items():
+            url='https://api.github.com/repos/'+os.environ['GH_REPOSITORY']+'/contents/'+path
+            payload=json.dumps({'message':'audit: read-only DJI original PDF page extraction '+path.split('/')[-1],
+              'branch':'main','content':base64.b64encode(body.encode()).decode()}).encode()
+            req=urllib.request.Request(url,data=payload,method='PUT',headers={
+              'Authorization':'Bearer '+os.environ['GH_TOKEN'],
+              'Accept':'application/vnd.github+json','Content-Type':'application/json',
+              'X-GitHub-Api-Version':'2022-11-28'})
+            with urllib.request.urlopen(req,timeout=50) as r:
+              print('saved',path,r.status,'chars',len(body))
+          PY
