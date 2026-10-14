@@ -1,0 +1,42 @@
+# SESSION CHECKPOINT v16 — GB-010 original FY2021/22 prison costs supplementary (2026-10-14)
+
+**Last completely finished atomic task: GB-010 DONE. NEXT: GB-011 FY2022/23 supplement.** Verified Git main HEAD **before this checkpoint** `b713825cebc5391a920646f370b64f1097bdf5f6`. Add-only artifact creation: all original ODS, previous catalog versions and previously independently audited prison-year source rows remain unchanged. No background work continues.
+
+## Original source identity and complete forensic read
+- `GB/costs-per-prison-place-and-prisoner-2021-2022-supplementary-information.ods`; original repository Git SHA-1 `a0346d48d785c01e7fb1a8dcf55f1379d1d5a2da`; **42,056 bytes**, original ODS `content.xml` decompressed **830,191 bytes** and source cells directly read. No third-party original publisher download SHA-256/byte equality claimed.
+- `Cover_!A10` **FY2021/22** (1 Apr 2021–31 Mar 2022), `Cover_!A19` **Published 9 March 2023**. HMPPS/MoJ publication, **England and Wales**, NOT full UK, not calendar year.
+- Three genuine source sheets: `Cover_` **8** nonempty physical rows, `T1_Contracted_Prisons` **40**, `T2_Supplementary_Data` **48**, **96** nonempty physical source rows total, all original A:K source cells and row references stored in original-source CSV. No `table:formula` attributes or external formula sources followed. Empty source cells stay empty, printed zeros preserved.
+- Existing **119 FY2021/22** original by-prison accounting source rows already previously extracted in `gb_cost_FY2021_22_to_FY2023_24_358_establishment_source_rows_v2_physical_rows.csv` (part of `gb_cost_FY2021_25_477_unharmonized_establishment_year_rows_v2_physical_rows.csv`). No 119-row duplicate file created.
+
+## National original FY2021/22 reported amounts (source `T2_Supplementary_Data`)
+- `B59` Certified Normal Accommodation **80,362 places**, not operational/usable capacity.
+- `C59` FY-average prisoner population **79,113 persons**, not point-date prison stock.
+- `D59` Direct Resource Expenditure **£2,490,214,500**.
+- `H59` Overall Resource Expenditure **£3,752,632,094**.
+- `E59/F59` direct per place/per annual-average prisoner **£30,987 / £31,476**.
+- `I59/J59` overall per place/per annual-average prisoner **£46,696 / £47,434**.
+- `D49` **Service Concession Arrangements £502,322,541** is one of **eight** nested subcomponents of parent Non Pay `D42` **£1,044,165,690**; children `D43:D50` exactly sum to the published parent in displayed pounds. Parent and children must NOT be added together as separate national spending. `D41` Payroll **£1,503,126,526**; `D51` signed Income **−£57,077,716**. `H53:H58` are overall-only expenditure allocations, not included in Direct.
+- FY2020/21 overall £3,822,319,464, annual average population 78,959 and CNA 79,364 vs FY2021/22 £3,752,632,094, 79,113 and 80,362. Economic/methodology attribution of year-to-year changes unverified; no unsupported inflation/pandemic explanation.
+
+## New source-anchored comparability issue MB-022 — Five Wells initial late-FY contract
+
+- Source `T1_Contracted_Prisons!A45:G45` original Five Wells row: `B45` **Feb 2022 contract start**, `C45` **960 CNA places**, `D45` **205 annual-average prisoners**, `E45` **£7,926,414 overall resource expenditure**, `F45` **£8,257 per CNA place**, `G45` **£38,760 per average prisoner**. `T1!A5:A6` **105 public + 14 contracted** FY-end institution categories = **119**, compared FY2020/21 104 + 13 = 117.
+- **Independent second original source:** `GB/costs-per-prison-place-and-prisoner-by-individual-prison-2021-2022.ods`, Git SHA-1 `f7d847c3477e3fcc3e4e563b723cfa00cda3e310`, `T3_Cost_by_Establishment!A34:J34` likewise Five Wells and B34=960, C34=205, H34=7926414, I34=8257, J34=38760. That site was ALREADY in the previously audited source panel; not a newly extracted prison ID or second facility.
+- Issue **MB-022**: issuer's contract start **Feb 2022** is late inside the April 2021–March 2022 FY, while expense/average population describe the financial year and published cost/place divides annual expense by **960 declared CNA**. £8,257 must NOT be casually compared with full-year established facilities or construed as greater cost efficiency. Do NOT assume contract start = actual opening date, that cost accrues only from that date, full-year site capacity exposure, or operating-month population without contemporaneous evidence. User-visible cost per prisoner £38,760 is also not a mature operating period indicator.
+- This is a **documented temporal/perimeter comparability flag**, NOT proof of publisher arithmetic error nor causal description. Study possible reclassification and new Five Wells operating history with separately sourced institution opening/contract/average occupancy series later.
+
+## Original source arithmetic and other methodological warnings
+- [35 original-cell arithmetic checks](progress/GB-010_2021_22_supplement_arithmetic_QA_v1.csv), **maximum absolute difference one unit** in its tagged accounting unit (GBP, CNA places or FY-average prisoners), within publisher `T1!A55:A56` and `T2!A67` printed rounded-part vs unrounded-total caveat. Exact source totals retained.
+- Ten named PFI and **four** named O&M contracts in FY2021/22; includes Five Wells. FY2019/20 Birmingham private-operator hidden subtotal case **MB-021** was historic and is not inferred here. `T1!A10:A11` and `T2!A64` warn public/private scope not directly comparable (MB-010); `T2!A63` uses majority function of mixed prisons. FY2016/17 different buildings/ICT expense label MB-020 remains open.
+- Non-payroll-services FY2020/21 £56,153,094 → FY2021/22 £30,512,062, while prisoner-related costs £287,153,177 → £286,303,117. Category meanings/causes of change not independently proven, no new break invented for these differences.
+
+## Additive artifacts created and independently re-fetched
+1. [GB-010 full 96 physical source rows A:K](progress/GB-010_2021_22_supplement_full_source_cells_v1.csv) — Git blob `29808b3b3a5ec6f66666f545def53f7e304395c8`, commit `342ec66db5686dc6a463c43476bcd4d088087f00`.
+2. [GB-010 35 source arithmetic QA equations](progress/GB-010_2021_22_supplement_arithmetic_QA_v1.csv) — blob `5ce1ca12fe9242132108317f9c0fe9308e3c8f17`, commit `d7f4f4599e56e91200a5e03c9fee6727b1542f78`.
+3. [GB-010 original source forensic audit](progress/GB-010_2021_22_supplement_source_audit_v1.md) — blob `b1252b919243288659d83e92cced35d07734b85e`, commit `5164af9e902d50cd2c5cb90627301ba1e27429c2`.
+4. [Indicator × period registry v13](INDICATOR_PERIOD_COVERAGE_REGISTRY_v13.csv): **1,061 evidence-classified entries**, +25 source direct observations **R01037–R01061** (not 25 new prison IDs or time series). Blob `26650e94842d4c0d406e0d29d8cc48025fcd818c`, commit `f5ad8ddebc7a145110dca01dc276e3d01cbc6b00`.
+5. [Breaks/QA issue ledger v8](METHODOLOGICAL_BREAKS_AND_ANOMALIES_v8.csv): **22 issues**, new **MB-022** original Five Wells late contract start/per-place unit comparison. Blob `1c4dc07c07f8c15646e33d013395d454e71e15fd`, commit `adf2de4282594eee7525131c685cc23bf287baf9`.
+6. [Atomic task queue v14](MICROTASK_QUEUE_WAVE1_v14.csv): **14 DONE, 1 DONE_PRIOR_AUDIT_RECONCILED, 2 BLOCKED, 1 WAITING, 12 PENDING, 1 NEXT = 31**, **GB-011 NEXT**. Blob `7e33950128edc8d10fe6cff2c8947d62053bf9ef`, commit `b713825cebc5391a920646f370b64f1097bdf5f6`.
+
+## NEXT — GB-011 FY2022/23 supplementary ODS
+Original `GB/costs-per-place-per-prisoner-2022-2023-supplementary-information.ods` (exact path from queue v14). Before reading, check [queue v14](MICROTASK_QUEUE_WAVE1_v14.csv), [indicator v13](INDICATOR_PERIOD_COVERAGE_REGISTRY_v13.csv), [breaks v8](METHODOLOGICAL_BREAKS_AND_ANOMALIES_v8.csv) and this source QA. Existing FY2022/23 **119 original prison financial rows** already collected; avoid duplicates. Crucially, earlier by-prison source `T3_Cost_by_Establishment` explicitly reports **four establishments reclassified into broader male category C/resettlement** for FY2022/23. Check its notes and the supplementary publisher's function grouping before cost comparisons. Also inspect Five Wells in first subsequent full FY separately, verifying exact opening/exposure info before attempting full-year comparisons. Preserve original sources and old versioned catalogs, add only verified new source-specific data; update both registries, queue v15, checkpoint v17 and INDEX v22. Original Git SHA-1 not publisher original downloadable SHA-256. No asynchronous tasks currently run.
