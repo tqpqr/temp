@@ -1,0 +1,32 @@
+{
+  "archive_source_sha256": "a9161cbd09dbdfca790d416e2a00cb51f26ec575c329ea10bf1b3552416cfff0",
+  "archive_size": 1250699,
+  "original_source": "space-archive/extra/stp8/2021-gada-statistka-09.docx",
+  "government_revision_note": "Official 2021 report marked precizēts, prisoner daily maintenance cost corrected; published portal link is newer vintage",
+  "comparisons": [
+    {
+      "label": "official_current_revised_2021",
+      "url": "https://www.ievp.gov.lv/lv/media/5322/download?attachment=",
+      "status": 200,
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "bytes": 1250699,
+      "sha256": "a9161cbd09dbdfca790d416e2a00cb51f26ec575c329ea10bf1b3552416cfff0",
+      "identical_to_archive": true,
+      "starts_zip": true,
+      "starts_pdf": false,
+      "verified_tls": "PYTHON_DEFAULT"
+    },
+    {
+      "label": "official_2021_other_report",
+      "url": "https://www.ievp.gov.lv/lv/media/5297/download",
+      "status": 200,
+      "mime": "application/pdf",
+      "bytes": 1470620,
+      "sha256": "38bd8226f483a632a0391d70f026e3bc84e6b383990092105e83d40cdee7da36",
+      "identical_to_archive": false,
+      "starts_zip": false,
+      "starts_pdf": true,
+      "verified_tls": "PYTHON_DEFAULT"
+    }
+  ]
+}
