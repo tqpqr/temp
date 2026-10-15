@@ -1,0 +1,196 @@
+{
+  "task": "INT-018",
+  "original_sha256": "44b69b045f9f9ff6497e80ba474eb5fae012be48bf0cb9654dede085e41c120b",
+  "publisher_byte_identical": true,
+  "original_PDF_pages": 128,
+  "new_indicator_count": 1540,
+  "old_indicator_count": 1519,
+  "added": 21,
+  "new_method_count": 91,
+  "old_method_count": 87,
+  "added_MB": [
+    "MB-088",
+    "MB-089",
+    "MB-090",
+    "MB-091"
+  ],
+  "total_original_site_rows": 14,
+  "site_avg_source_sum": "1402.1",
+  "published_ERRONEOUS_total": "1436.0",
+  "bad_grand_total_difference": "33.9",
+  "budget_full_sources": "54718459.56",
+  "budget_only": "54117805.36",
+  "selected_table_coverage_only": true,
+  "machine_text_glyph_remapping_warning": true,
+  "tests_passed": 28,
+  "tests": [
+    {
+      "test": "sum_14_normative_places",
+      "computed": "1345",
+      "expected": "1345",
+      "pass": true
+    },
+    {
+      "test": "sum_14_annual_mean_persons",
+      "computed": "1402.1",
+      "expected": "1402.1",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_1",
+      "computed": "108.9",
+      "expected": "108.9",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_2",
+      "computed": "95.7",
+      "expected": "95.7",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_3",
+      "computed": "98.1",
+      "expected": "98.1",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_4",
+      "computed": "75.6",
+      "expected": "75.6",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_5",
+      "computed": "116.7",
+      "expected": "116.7",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_6",
+      "computed": "111.6",
+      "expected": "111.6",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_7",
+      "computed": "91.3",
+      "expected": "91.3",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_8",
+      "computed": "124.1",
+      "expected": "124.1",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_9",
+      "computed": "124.9",
+      "expected": "124.9",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_10",
+      "computed": "90.7",
+      "expected": "90.7",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_11",
+      "computed": "106.2",
+      "expected": "106.2",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_12",
+      "computed": "110.0",
+      "expected": "110",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_13",
+      "computed": "103.6",
+      "expected": "103.6",
+      "pass": true
+    },
+    {
+      "test": "reported_site_utilization_14",
+      "computed": "26.6",
+      "expected": "26.6",
+      "pass": true
+    },
+    {
+      "test": "published_grand_utilization_from_BAD_1436_total",
+      "computed": "106.8",
+      "expected": "106.8",
+      "pass": true
+    },
+    {
+      "test": "literal_table_discrepancy",
+      "computed": "33.9",
+      "expected": "33.9",
+      "pass": true
+    },
+    {
+      "test": "all_sources_5_economic_codes",
+      "computed": "54718459.56",
+      "expected": "54718459.56",
+      "pass": true
+    },
+    {
+      "test": "all_sources_6_funding_sources",
+      "computed": "54718459.56",
+      "expected": "54718459.56",
+      "pass": true
+    },
+    {
+      "test": "budget_program_9_lines",
+      "computed": "54117805.36",
+      "expected": "54117805.36",
+      "pass": true
+    },
+    {
+      "test": "other_funding_sources_total",
+      "computed": "600654.20",
+      "expected": "600654.20",
+      "pass": true
+    },
+    {
+      "test": "budget_plus_other_to_all",
+      "computed": "54718459.56",
+      "expected": "54718459.56",
+      "pass": true
+    },
+    {
+      "test": "budget_based_cost_per_person_day",
+      "computed": "106",
+      "expected": "106",
+      "pass": true
+    },
+    {
+      "test": "other_funds_cost_per_day_diff",
+      "computed": "107",
+      "expected": "107",
+      "pass": true
+    },
+    {
+      "test": "national_mean_growth_2021_2022_percent",
+      "computed": "9.2",
+      "expected": "9.2",
+      "pass": true
+    },
+    {
+      "test": "all_staff_2022_management_plus_specialist",
+      "computed": "926",
+      "expected": "926",
+      "pass": true
+    },
+    {
+      "test": "authorized_uniformed_role_breakdown",
+      "computed": "572",
+      "expected": "572",
+      "pass": true
+    }
+  ]
+}
