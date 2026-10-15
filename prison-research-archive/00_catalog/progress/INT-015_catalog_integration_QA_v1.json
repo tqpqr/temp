@@ -1,0 +1,36 @@
+{
+  "INT": "INT-015",
+  "archived_original_sha256": "915417479d1c41740d8b1d6fb91a8ad2b459e86e24332a207c542b7731e517ff",
+  "official_binary_identical": true,
+  "PDF_pages": 21,
+  "previous_registry_rows": 1390,
+  "appended_obs": 35,
+  "appended_appendix_site_table_object": 1,
+  "appended_Q3_series_objects": 3,
+  "new_registry_rows": 1429,
+  "previous_mb_rows": 67,
+  "added_methodological_breaks": [
+    "MB-068",
+    "MB-069",
+    "MB-070",
+    "MB-071",
+    "MB-072",
+    "MB-073"
+  ],
+  "new_mb_rows": 73,
+  "appendix_site_rows": 18,
+  "numeric_cells": 132,
+  "blanks": 12,
+  "verified_appendix_column_sums": {
+    "design": 7905,
+    "extended": 8475,
+    "target": 8007,
+    "2023_11_13_custody": 7948,
+    "2022_23_sum_site_means": 7437
+  },
+  "unresolved_source_gaps": [
+    "Grampian 2018/19 460 avg vs 450 peak",
+    "FY2022/23 sum of site avg7437 vs system avg7426"
+  ],
+  "quarterly_chart_values_checked": 12
+}
