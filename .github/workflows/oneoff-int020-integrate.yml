@@ -1,0 +1,232 @@
+name: Oneoff INT020 Austrian NPM final integration
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int020-integrate.yml
+permissions:
+  contents: write
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Reconcile 2021 Austrian inspection tables and append indicator and method registries
+        shell: bash
+        env:
+          GH_REPOSITORY: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,csv,io,json,base64,urllib.request,re,hashlib,decimal
+          repo=os.environ["GH_REPOSITORY"];tok=os.environ["GH_TOKEN"]
+          h={"Authorization":"Bearer "+tok,"User-Agent":"INT020-AustriaCatalogQA"}
+          root="prison-research-archive/00_catalog/"
+          pp=root+"progress/"
+          original="space-archive/extra/stp8/Austria_Volksanwaltschaft_Praeventive_Menschenrechtskontrolle_2021.pdf"
+          sha="52a09fa4da9b67cc9bcada0523e3082f92c48e9e"
+          sha256="b2d0676ac1ea66500d74b47704136be512ac6bdb33d5a72e1d60dcbd0dd364e9"
+          official="https://volksanwaltschaft.gv.at/fileadmin/user_upload/Downloads/Berichte/PB/pb-45-praeventiv_2021_bf-1.pdf"
+          def get(url):
+            with urllib.request.urlopen(urllib.request.Request(url,headers=h),timeout=140) as r:return json.load(r)
+          def filetxt(path):return base64.b64decode(get("https://api.github.com/repos/"+repo+"/contents/"+path)["content"]).decode("utf-8-sig")
+          def blobtxt(sha):return base64.b64decode(get("https://api.github.com/repos/"+repo+"/git/blobs/"+sha)["content"]).decode("utf-8-sig")
+          def parse(t):return list(csv.DictReader(io.StringIO(t)))
+          reg=parse(blobtxt("62b9e4405ff9056be20460eb904f66fd562558f6"))
+          mb=parse(blobtxt("13b772ed941f56a92c02435b9ddcb358fe10cb35"))
+          assert len(reg)==1574 and reg[-1]["record_id"]=="R01574",len(reg)
+          assert len(mb)==97 and mb[-1]["break_id"]=="MB-097",len(mb)
+          integrity=json.loads(filetxt(pp+"INT-020_original_PDF_integrity_v1.json"))
+          assert integrity["original_bytes"]==2131167 and integrity["git_blob_sha1"]==sha and integrity["original_sha256"]==sha256
+          assert integrity["page_count"]==205 and integrity["publisher_comparison"]["byte_identical"] is True
+          assert integrity["publisher_comparison"]["identical_extracted_text_pages"]==205
+          regions=parse(filetxt(pp+"INT-020_Austria_2021_9_regions_9_inspection_types_two_contradictory_totals_v1.csv"))
+          cats=parse(filetxt(pp+"INT-020_Austria_2021_nine_visit_types_total_unannounced_v1.csv"))
+          facts=parse(filetxt(pp+"INT-020_Austria_2021_NPM_inspections_staff_budget_scoped_scalars_v1.csv"))
+          assert [len(regions),len(cats),len(facts)]==[9,9,30],(len(regions),len(cats),len(facts))
+          category_codes=[r["category"] for r in cats]
+          expected=[121,12,114,112,76,58,27,21,29]
+          assert [int(x["checks_total_2021"]) for x in cats]==expected
+          qa=[]
+          def check(label,a,b,tol=0.000001):
+            ok=abs(float(a)-float(b))<=tol
+            qa.append({"test":label,"computed":a,"expected":b,"pass":ok})
+            if not ok:raise AssertionError((label,a,b))
+          for idx,code in enumerate(category_codes):
+            check("type_total_"+code,sum(int(r[code]) for r in regions),expected[idx])
+            check("unannounced_lte_all_"+code,int(cats[idx]["of_these_unannounced_2021"])<=expected[idx],True)
+          pairs=[("Wien","Niederoesterreich"),("Oberoesterreich","Salzburg"),("Steiermark","Tirol")]
+          derived={}
+          for row in regions:
+            label=row["region_Austrian_federal_state"]
+            count=sum(int(row[k]) for k in category_codes)
+            derived[label]=count
+            check("province_derived_rowsum_"+label,count,int(row["sum_of_category_rows_physical_pdf_page15"]))
+            check("province_difference_original_literal_"+label,count-int(row["separately_printed_regional_total_pdf_page16"]),int(row["arithmetic_difference_row_sum_minus_separate_total"]))
+          for a,b in pairs:
+            A=next(x for x in regions if x["region_Austrian_federal_state"]==a)
+            B=next(x for x in regions if x["region_Austrian_federal_state"]==b)
+            check("published_swapped_pair_"+a+"_"+b,derived[a],int(B["separately_printed_regional_total_pdf_page16"]))
+            check("published_swapped_pair_reverse_"+b+"_"+a,derived[b],int(A["separately_printed_regional_total_pdf_page16"]))
+          check("regions_source_grandtotal",sum(derived.values()),570)
+          check("separate_published_regional_total_sum",sum(int(x["separately_printed_regional_total_pdf_page16"]) for x in regions),570)
+          check("types_national_grandtotal",sum(expected),570)
+          check("total_unannounced_types",sum(int(x["of_these_unannounced_2021"]) for x in cats),469)
+          conflicts=[x for x in regions if int(x["arithmetic_difference_row_sum_minus_separate_total"])!=0]
+          check("exactly_six_publisher_region_conflicts",len(conflicts),6)
+          checks={x["source_metric"]:float(x["source_value"]) for x in facts}
+          check("NPM_all_visit_activities",checks["inspection_visits_to_institutions"]+checks["observed_police_operations"],checks["inspection_and_police_action_events"])
+          check("facility_with_and_without_criticisms",checks["site_visits_with_criticisms"]+checks["site_visits_without_criticisms"],541)
+          check("police_actions_with_and_without_criticisms",checks["police_actions_with_criticisms_derived"]+checks["police_actions_without_criticisms"],29)
+          check("all_criticisms_yes_no",checks["visits_actions_with_criticisms_derived"]+checks["visits_actions_without_criticisms"],570)
+          check("criticisms_approx_rounded_pct",round(checks["visits_actions_with_criticisms_derived"]/570*100),63)
+          check("less_traditional_four_categories",sum(expected[i] for i in [2,3,4,5]),360)
+          check("source_prison_visits",checks["prison_justice_institution_inspection_events"],27)
+          check("source_prison_unannounced",checks["unannounced_prison_justice_inspection_events"],21)
+          check("NPM_control_only_budget_components",checks["commission_members_compensation_travel_budget_approx"]+checks["human_rights_advisory_board_budget_approx"]+checks["remaining_other_NPM_activities_budget_approx"],1450000)
+          check("national_prison_uniformed_posts_indicator_date",checks["unfilled_executive_posts"],125)
+          fields=list(reg[0])
+          base={"source_domain":"AT_VOLKSANWALTSCHAFT_NPM_2021_PREVENTIVE_CONTROL",
+          "source_reference":"00_catalog/progress/INT-020_Austria_Volksanwaltschaft_2021_source_audit_v1.md;00_catalog/progress/INT-020_original_PDF_integrity_v1.json",
+          "original_source_path":original,"original_git_blob_sha1":sha,
+          "coverage_evidence":"VERIFIED_GIT_BLOB_SHA1_SHA256_205_PDF_PAGES_OFFICIAL_ISSUER_EXACT_TLS_BYTE_IDENTICAL",
+          "publication_vintage":"COVER_YEAR_2021_FOREWORD_MARCH2022_PDF_CREATED_2022_05_17",
+          "official_upstream_url":official,
+          "external_binary_identity":"EXACT_TLS_VERIFIED_OFFICIAL_BINARY_SHA256_"+sha256,
+          "field_coverage_status":"NPM_MONITORING_SUBSET_SCOPE_NOT_NATIONAL_PRISON_POPULATION",
+          "semantic_code_definition_status":"EXPLICIT_INSPECTION_VISIT_VS_SITE_VS_PERSON_VS_POST_AND_SOURCE_CONFLICT"}
+          def add(vals):
+            row=dict.fromkeys(fields,"")
+            row.update(base);row.update(vals)
+            row["record_id"]="R%05d"%(1575+len(reg)-1574)
+            assert all(k in fields for k in vals),(set(vals)-set(fields))
+            reg.append(row)
+          def slug(s):return re.sub("[^A-Za-z0-9]+","_",s).strip("_")
+          for x in facts:
+            metr=x["source_metric"]
+            links=["MB-099"] if "inspection" in metr or "visits" in metr or "actions" in metr or "roundtable" in metr else ["MB-100"] if "budget" in metr else ["MB-102"] if "posts" in metr or "position" in metr or "recruits" in metr else ["MB-103"]
+            if x["unit"]=="institutional_event":links=["MB-101"]
+            if "criticisms" in metr or "criticisms_" in metr:links=["MB-103"]
+            is_future="forecast" in metr or "planned_additional" in metr
+            add({"record_type":"PRIMARY_SOURCE_FORECAST_NOT_OBSERVED" if is_future else "VERIFIED_SOURCE_NPM_SCALAR_NOT_CUSTODY_COUNT",
+              "indicator_code":"AT_NPM_2021_"+slug(metr)+"_"+slug(x["observation_time_or_vintage"]),
+              "indicator_name_original":metr,"indicator_unit":x["unit"],
+              "territorial_level":x["reported_universe"],
+              "temporal_grain":"EXPLICIT_SOURCE_OBSERVATION_"+x["observation_time_or_vintage"],
+              "first_period_recorded":x["observation_time_or_vintage"],"last_period_recorded":x["observation_time_or_vintage"],
+              "listed_periods_exact":x["observation_time_or_vintage"],"distinct_nominal_years":"1",
+              "reporting_window_type":"FORECAST_NOT_MEASURED" if is_future else "2021_NPM_MONITORING_OR_AS_DATED_SOURCE_POINT",
+              "numeric_evidence":x["source_value"],"source_reference":base["source_reference"]+";00_catalog/progress/INT-020_Austria_2021_NPM_inspections_staff_budget_scoped_scalars_v1.csv",
+              "source_cell_anchor":"PDF physical p"+x["PDF_physical_page_1based"]+" original table or inspector prose",
+              "important_limitations":x["scope_and_nonadditivity_note"],
+              "observed_value_raw":x["source_value"],
+              "measurement_status":"SOURCE_FORECAST_NOT_ACTUAL" if is_future else "SOURCE_REPORTED_STATISTIC_OR_DERIVED_LABELED",
+              "linked_break_ids":";".join(links),"number_of_source_records":"1"})
+          for x in cats:
+            code=x["category"]
+            add({"record_type":"NPM_ORIGINAL_2021_VISIT_TYPE_COUNT_AND_UNANNOUNCED_COMPONENTS",
+              "indicator_code":"AT_NPM_2021_inspection_type_"+slug(code),
+              "indicator_name_original":code,
+              "indicator_unit":"2021_events_and_subset_unannounced_events",
+              "territorial_level":"Austria NPM all federal provinces source category "+code,
+              "temporal_grain":"2021_CALENDAR_YEAR_NPM_INSPECTION_EVENT_NOT_INSTITUTION",
+              "first_period_recorded":"2021","last_period_recorded":"2021","listed_periods_exact":"2021",
+              "distinct_nominal_years":"1","reporting_window_type":"INSPECTION_TYPE_FREQUENCY_ONLY",
+              "numeric_evidence":"inspections="+x["checks_total_2021"]+";unannounced="+x["of_these_unannounced_2021"],
+              "source_reference":base["source_reference"]+";00_catalog/progress/INT-020_Austria_2021_nine_visit_types_total_unannounced_v1.csv",
+              "source_cell_anchor":"PDF physical p15 type totals and unannounced footer",
+              "important_limitations":"Already in 9x9 matrix; same visit events NOT independent new country visits; facility and police observation categories distinct",
+              "measurement_status":"SOURCE_CATEGORY_2_COUNTS_WITH_COUNTRY_TOTAL_DEDUPLICATION",
+              "linked_break_ids":"MB-099;MB-103","number_of_source_records":"2"})
+          for x in regions:
+            name=x["region_Austrian_federal_state"]
+            add({"record_type":"ORIGINAL_TWO_CONFLICTING_REGIONAL_NPM_TOTALS_FROM_SAME_PDF",
+              "indicator_code":"AT_NPM_2021_region_from_two_source_tables_"+slug(name),
+              "indicator_name_original":name+" annual NPM preventive control totals two adjacent source tables",
+              "indicator_unit":"inspection_event_counts_TWO_CONFLICTING_PUBLISHER_VERSIONS",
+              "territorial_level":"Austrian federal region "+name,"temporal_grain":"2021_CALENDAR_YEAR",
+              "first_period_recorded":"2021","last_period_recorded":"2021","listed_periods_exact":"2021",
+              "distinct_nominal_years":"1","reporting_window_type":"SAME_YEAR_CONTRADICTORY_REGION_TOTALS_NO_CHOSEN_CANONICAL",
+              "numeric_evidence":"SUM_SOURCE_PAGE15_TYPES="+x["sum_of_category_rows_physical_pdf_page15"]+";PUBLISHED_SOURCE_PAGE16_TOTAL="+x["separately_printed_regional_total_pdf_page16"]+";DIFFERENCE="+x["arithmetic_difference_row_sum_minus_separate_total"],
+              "source_reference":base["source_reference"]+";00_catalog/progress/INT-020_Austria_2021_9_regions_9_inspection_types_two_contradictory_totals_v1.csv",
+              "source_cell_anchor":"PDF physical p15 9x9 matrix vs physical p16 nine source regional totals",
+              "important_limitations":"Both source literals preserved; six regions swapped pairwise; NOT source of true national prison prison-specific visits by distinct site",
+              "measurement_status":"CONFLICT_OPEN_WHEN_DIFFERENCE_NONZERO" if int(x["arithmetic_difference_row_sum_minus_separate_total"]) else "REGIONAL_TABLES_AGREE",
+              "linked_break_ids":"MB-098","number_of_source_records":"2"})
+          add({"record_type":"COMPLETE_9_REGIONS_X_9_TYPES_SOURCE_MONITORING_EVENT_MATRIX",
+            "indicator_code":"AT_NPM_2021_9x9_regional_facility_visit_table_provenance",
+            "indicator_name_original":"Anzahl der Kontrollen im Jahr 2021 in den einzelnen Bundesländern nach Art der Einrichtung",
+            "indicator_unit":"NPM_control_events_not_distinct_prisons",
+            "territorial_level":"Austria provinces nine monitoring facility/action categories",
+            "temporal_grain":"2021_CALENDAR_9x9_ORIGINAL_EVENT_CLASSIFICATION",
+            "first_period_recorded":"2021","last_period_recorded":"2021","listed_periods_exact":"2021",
+            "distinct_nominal_years":"1","reporting_window_type":"COMPLETE_SOURCE_MATRIX_WITH_ADJACENT_GRAND_TOTAL_CONFLICT",
+            "numeric_evidence":"9_REGIONS_X_9_TYPES_81_CELLS;SOURCE_TYPE_TOTALS_570;SOURCE_REGION_DIFFERENCES_6_PROVINCES_SWAP_PAIRS_3",
+            "source_reference":base["source_reference"]+";00_catalog/progress/INT-020_Austria_2021_9_regions_9_inspection_types_two_contradictory_totals_v1.csv",
+            "source_cell_anchor":"PDF physical p15 table all regions and activities, p16 separate source region totals",
+            "important_limitations":"All 81 original category cells faithfully kept; six regions mismatched with adjacent source table though both aggregate570. Exact canonical region totals unproven",
+            "measurement_status":"SOURCE_MATRIX_VERIFIED_NATIONAL_TOTAL_WITH_UNRESOLVED_REGIONAL_ISSUER_ERROR",
+            "linked_break_ids":"MB-098;MB-099;MB-103",
+            "source_facility_rows":"9","number_of_numeric_facility_cells":"81","number_of_source_records":"9"})
+          add({"record_type":"COMPLETED_205_PAGE_ORIGINAL_SOURCE_DOSSIER_NOT_A_NATIONAL_PRISON_ANNUAL_REPORT",
+            "indicator_code":"AT_NPM_2021_205page_exact_official_original_forensic",
+            "indicator_name_original":"Volksanwaltschaft Bericht 2021 Band Praeventive Menschenrechtskontrolle",
+            "indicator_unit":"nonadditive_document_source_descriptor",
+            "territorial_level":"Austria NPM oversight of prisons and multiple nonprison institutions",
+            "temporal_grain":"2021_ACTIVITY_REPORTED_MARCH2022_PDF_PRODUCED_MAY2022",
+            "first_period_recorded":"2021","last_period_recorded":"2021","listed_periods_exact":"2021",
+            "distinct_nominal_years":"1","reporting_window_type":"OFFICIAL_INSPECTION_REPORT_NOT_PRISON_CENSUS",
+            "numeric_evidence":"205_SOURCE_PDF_PAGES_14_TEXT_CHUNKS;9x9_REGIONAL_VISIT_MATRIX_VERIFIED;FULL_PRISON_THEMATIC_CHAPTER_P121_152",
+            "source_cell_anchor":"PDF physical cover1, activity pp14-17, prison chapter pp121-152",
+            "important_limitations":"No national prison year average prisoner stock, capacity or operating cost from NPM commission oversight budget; 2021 oversight commission changes and regional table source error.",
+            "measurement_status":"VERIFIED_ORIGINAL_EXACT_ISSUER_BINARY_AND_SELECTED_SOURCE_NUMERIC_AUDIT",
+            "linked_break_ids":"MB-098;MB-099;MB-100;MB-101;MB-102;MB-103",
+            "number_of_source_records":"205"})
+          assert len(reg)==1624 and reg[-1]["record_id"]=="R01624",(len(reg),reg[-1]["record_id"])
+          assert len({x["record_id"] for x in reg})==len(reg)
+          mbfields=list(mb[0])
+          issues=[
+          ("MB-098","Austria NPM 2021 regional inspection totals p15 vs p16","SOURCE_INTERNAL_SIX_PROVINCE_TOTALS_SWAP_PAIRWISE","2021 same original p15 nine type row sums","2021 same original p16 region grand totals","PDF physical p15 original nine regions×nine types cells; Vienna131 NÖ161 OÖ47 Salzburg32 Stmk62 Tirol67","PDF physical p16 separate region totals Vienna161 NÖ131 OÖ32 Salzburg47 Stmk67 Tirol62","SIX publisher regional values disagree with sum of nine original type cells but grand all Austria570 agrees: Vienna vs LowerAustria 131↔161, UpperAustria vs Salzburg 47↔32, Styria vs Tyrol 62↔67. Both original source pages visually reviewed; three disjoint pairwise permutations, cause/which correct UNKNOWN.","SOURCE_INTERNAL_VERIFIED_ARITHMETIC_NONRECONCILIATION_CAUSE_UNPROVEN","CONFIRMED_PUBLISHER_SIX_REGION_INCONSISTENCY","Never silently select either set of regional totals or correct original; national570 remains arithmetically consistent.","Independent external NPM annual database/revised erratum could determine intended region crosswalk; no official correspondence."),
+          ("MB-099","Austria NPM 2021 prison inspections visits vs unique prisons and prison population","MONITORING_VISIT_EVENTS_NOT_UNIQUE_PRISON_UNITS_OR_PRISONER_STOCK","2021 27 prison control events, 21 unannounced","2021 total 570 including diverse facilities/police actions","PDF physical p15 justice/prison JA inspections27 and unannounced21","PDF p14 text says frequent repeat monitoring of same buildings and police operations29","Inspection events count repeats, not independent prisons, not country prison inmates, prison beds, prison workforce. JA prison monitoring visits only 27 of all570 NPM events; PAZ police detention12 not ordinary prison administration.","SOURCE_CATEGORY_AND_REPEATED_VISITS_EXPLICIT","CONFIRMED_VISIT_UNIT_VS_INSTITUTION_AND_PERSON_SCOPE","Do not estimate number of operating prisons, national overcrowding or imprisonment stock from 27 inspection events.","Only link NPM visit counts to prison panels as oversight process with visit log dates."),
+          ("MB-100","Austria NPM 2021 preventive oversight budget","VOLKSANWALTSCHAFT_NPM_EUR1450000_BUDGET_NOT_JUSTICE_PRISON_SPENDING","2021 oversight commission activities","2021 prison operating budget outside this original","PDF physical p17 1.45m oversight, approximate1.305m compensation/travel 85k MRB 60k miscellaneous","PDF physical p121 ff specific prison thematic findings without penitentiary operating budget","EUR1.45m budget finances control commissioners and MRB and cross-sector oversight including homes, hospitals, prisons and police; not prison operating, prisoner daily cost, corrections staff payroll, and amounts are approximate budgeted component allocations not audited spending.","SOURCE_ACCOUNTING_SCOPE_AND_ESTIMATE_VINTAGE_VERIFIED","CONFIRMED_OVERSIGHT_VS_PRISON_OPERATING_FINANCIAL_PERIMETER","Do not classify Austrian NPM budget as Austrian corrections department expenditure or derive EUR/prisoner from it.","Find independent Austrian Justiz budget accounts for cost elasticity and guard FTE."),
+          ("MB-101","Austria NPM statutory inspection body 2021 transition","MIDYEAR_2021_REGIONAL_TO_FEDERAL_PRISON_COMMISSION_CHANGES_INSPECTION_PROCESS","Before 2021-06-30 regional commission prison monitoring","2021-07-01 federal prison/measures commission begins","PDF physical p18 and p121 old six regional commissions through 30Jun2021","PDF p18 and p121 new dedicated federal commission starts1Jul2021","Inspection remit and governance shifts mid-2021; year-by-year change in prison monitoring visits could reflect process change, not actual changes in prison conditions. 2021 27 visit annual count spans change.","LEGAL_ADMIN_SOURCE_CHANGE_CONFIRMED_EFFECT_ON_COUNT_NOT_QUANTIFIED","CONFIRMED_MONITORING_PROCESS_SCOPE_CHANGE","Do not infer falling/rising human rights violations from change in NPM visit frequency or category rates across 2020–22 alone.","Collect consistent commission activity prior/post transfer and exact prison encounter roster."),
+          ("MB-102","Austria national prison uniformed-executive personnel posts 2021","PLANNED_POSTS_FILLED_RATES_UNFILLED_DATED_HEADCOUNT_VS_PROPOSED_HIRING","2021-03-01 JA Wien Simmering 158 posts 98.78% filled and national95.28%","2021-05-01 125 vacant nationwide; by June allocated30 exec+100 trainee+50 admin","PDF physical p148 158 assigned posts, 98.78% Wien Simmering, 95.28% national March1","PDF p149 May1 125 unfilled, by June 30 additional executive posts and 100 trainee plus50 admin; 80 hires/50 year-end vacancies only forecasts","2021 source holds snapshots at different dates, posts authorized/allocated, category trainee/admin and FTE not equivalent; 80 recruitment and 50 end vacancies projected not observations, 30 exec posts not 30 workers actually employed.","ROLE_AND_OBSERVATION_GRAIN_CATEGORIZED_FORECASTS_DISENTANGLED","CONFIRMED_STAFF_DENOMINATOR_UNALIGNED_AND_PROJECTIONS","Do not substitute vacant posts as current staff count or annual employed prison guard FTE, nor sum plan proposals/fulfilled posts and forecast hires.","Retrieve dated actual staffing payroll/FTE by prison and published FY guard staffing perimeter."),
+          ("MB-103","Austria 2021 all NPM domains and criticism rates","ALL_SECTOR_CRITICISMS_AND_FACILITY_VISITS_NOT_PRISON_SPECIFIC_INCIDENTS","2021 all monitored public/private place categories and police operations","2021 prison thematic chapter p121–152","PDF physical p16 351 facility inspections with objection 190 without and police observations20 without of29","PDF physical p16–17 health15.9%,staff14.9% of complaint topics across all sectors, 27 JA among570 activities","NPM site visits cover ~4000 possible institution locations incl disability/youth/psychiatry/elderly, 351 objection-containing facility visits are not adjudicated prison abuses, categories/themes can overlap; source p16 topical shares across all facilities not prison deficiency probabilities.","ACTIVITY_UNIVERSE_AND_MULTI_TOPIC_DENOMINATORS_SOURCE_VERIFIED","CONFIRMED_NONPRISON_CATEGORY_SAMPLE_AND_CRITICISM_DENOMINATOR","Do not infer 63% of prisons have rights violations, 15.9% of Austrian prison healthcare institutions failed, or 14.9% prison guards insufficient from these cross-sector shares.","Keep sector monitoring categories disjoint and separate prison-only audit qualitative cases.")
+          ]
+          evidence="progress/INT-020_Austria_Volksanwaltschaft_2021_source_audit_v1.md;progress/INT-020_Austria_2021_9_regions_9_inspection_types_two_contradictory_totals_v1.csv;progress/INT-020_original_PDF_integrity_v1.json"
+          for ident,geo,kind,old,new,cella,cellb,detail,cause,status,avoid,nxt in issues:
+            item=dict.fromkeys(mbfields,"")
+            item.update({"break_id":ident,"geography_and_scope":geo,"issue_type":kind,"earlier_period":old,"later_period":new,
+            "original_source_a":original,"git_sha_a":sha,"original_cell_a":cella,
+            "original_source_b":original,"git_sha_b":sha,"original_cell_b":cellb,
+            "exact_observation":detail,"existing_evidence_artifact":evidence,
+            "causal_explanation_status":cause,"triage_status":status,
+            "must_not_do":avoid,"resumption_or_next_check":nxt})
+            mb.append(item)
+          assert len(mb)==103 and mb[-1]["break_id"]=="MB-103"
+          qa_summary={"task":"INT-020","original_git_SHA1":sha,"original_sha256":sha256,
+            "issuer_TLS_exact_binary":True,"physical_pages":205,"publisher_text_match_pages":205,
+            "original_regions":9,"original_monitoring_types":9,"original_cross_table_cells":81,
+            "published_total_570_source_both_tables":True,"six_region_original_conflicts":len(conflicts),
+            "three_permutation_pairs":pairs,"inspections_prisons":27,"unannounced_prisons":21,
+            "all_monitoring_events":570,"all_unannounced_events":469,
+            "staged_domain_dated_source_scalars":len(facts),
+            "previous_registry":1574,"new_registry":len(reg),"new_registry_objects":len(reg)-1574,
+            "previous_methodology_breaks":97,"new_methodology_breaks":len(mb),
+            "added_MB":[x[0] for x in issues],
+            "valid_qa_tests":len(qa),"valid_qa_passes":sum(int(x["pass"]) for x in qa),
+            "issuer_source_errors_not_silently_passed":["regional totals from source p15 differ for six provinces from source p16 while both nationwide570"],
+            "tests":qa}
+          def serialize(rows):
+            out=io.StringIO(newline="")
+            w=csv.DictWriter(out,fieldnames=list(rows[0]),quoting=csv.QUOTE_ALL,lineterminator="\n",extrasaction="raise")
+            w.writeheader();w.writerows(rows);return out.getvalue().encode()
+          outs={
+            root+"INDICATOR_PERIOD_COVERAGE_REGISTRY_v33.csv":serialize(reg),
+            root+"METHODOLOGICAL_BREAKS_AND_ANOMALIES_v35.csv":serialize(mb),
+            pp+"INT-020_catalog_integration_and_quant_QA_v1.json":json.dumps(qa_summary,ensure_ascii=False,indent=2).encode()}
+          for path,payload in outs.items():
+            body=json.dumps({"message":"INT020 Austria verified source catalog integration "+path.rsplit("/",1)[-1],"branch":"main","content":base64.b64encode(payload).decode()}).encode()
+            req=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/"+path,headers={**h,"Content-Type":"application/json"},method="PUT",data=body)
+            with urllib.request.urlopen(req,timeout=140) as r:print("SAVED",path,len(payload),r.status,flush=True)
+          print("SUCCESS",json.dumps({"registry":len(reg),"MB":len(mb),"QA":len(qa)}),flush=True)
+          PY
