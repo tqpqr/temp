@@ -1,0 +1,55 @@
+name: Oneoff INT015 Scotland source forensic
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int015-scotland.yml
+permissions:
+  contents: write
+jobs:
+  forensic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - name: Check original blob and official publication, extract page text
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import os,io,sys,subprocess,urllib.request,hashlib,json,base64,datetime,time
+          repo=os.environ["GH_REPOSITORY"];tok=os.environ["GH_TOKEN"]
+          sha="7e993349b17c6ec0f177862134091092ea86f18e";size=1107330
+          official="https://www.audit-scotland.gov.uk/uploads/docs/report/2023/s22_231212_scottish_prison_service.pdf"
+          h={"Authorization":"Bearer "+tok,"User-Agent":"Int015-ProvenanceAudit"}
+          with urllib.request.urlopen(urllib.request.Request("https://api.github.com/repos/"+repo+"/git/blobs/"+sha,headers=h),timeout=160) as r:
+              data=json.load(r)
+          b=base64.b64decode(data["content"])
+          assert len(b)==size,("bytes wrong",len(b))
+          assert hashlib.sha1(b"blob "+str(len(b)).encode()+b"\\0"+b).hexdigest()==sha,"git blob hash mismatch"
+          report={"source":"archived original in git","repo":repo,"original_path":"space-archive/extra/stp8/Scotland_AuditScotland_SPS_2022-23_s22.pdf","git_blob_sha1":sha,"bytes_original":len(b),"original_sha256":hashlib.sha256(b).hexdigest(),"official_url":official,"official_verification":{},"utc_run":datetime.datetime.now(datetime.timezone.utc).isoformat()}
+          try:
+              req=urllib.request.Request(official,headers={"User-Agent":"Mozilla/5.0"})
+              with urllib.request.urlopen(req,timeout=100) as r:
+                  other=r.read()
+                  report["official_verification"]={"http_status":r.status,"final_url":r.url,"tls_validated":True,"bytes":len(other),"sha256":hashlib.sha256(other).hexdigest(),"byte_identical":b==other,"sha_identical":hashlib.sha256(b).digest()==hashlib.sha256(other).digest()}
+          except Exception as e:
+              report["official_verification"]={"error":type(e).__name__+": "+str(e)[:300],"byte_identical":None}
+          subprocess.check_call([sys.executable,"-m","pip","install","--quiet","--target","/tmp/pypdfint015","pypdf"])
+          sys.path.insert(0,"/tmp/pypdfint015")
+          from pypdf import PdfReader
+          pdf=PdfReader(io.BytesIO(b))
+          pages=[p.extract_text(extraction_mode="layout") or "" for p in pdf.pages]
+          report["pages"]=len(pages)
+          report["metadata"]={str(k):str(v) for k,v in (pdf.metadata or {}).items()}
+          report["per_page_lengths"]=[len(p) for p in pages]
+          report["has_images_per_page"]=[len(p.images) for p in pdf.pages]
+          content="\n\n".join("## PDF physical page %d\n\n%s"%(i+1,p) for i,p in enumerate(pages))
+          files={"INT-015_original_PDF_integrity_v1.json":json.dumps(report,ensure_ascii=False,indent=2).encode(),"INT-015_original_pdf_page_text_001_%03d_v1.md"%len(pages):content.encode()}
+          for name,raw in files.items():
+              path="prison-research-archive/00_catalog/progress/"+name
+              payload=json.dumps({"message":"source INT015 original Scotland audit "+name,"content":base64.b64encode(raw).decode(),"branch":"main"}).encode()
+              request=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/"+path,headers={**h,"Content-Type":"application/json"},data=payload,method="PUT")
+              with urllib.request.urlopen(request,timeout=110) as response: print("SAVED",path,len(raw),response.status,flush=True)
+          print("SUCCESS",json.dumps({"orig_sha256":report["original_sha256"],"official":report["official_verification"],"pages":len(pages)},ensure_ascii=False),flush=True)
+          PY
