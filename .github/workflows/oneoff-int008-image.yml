@@ -22,14 +22,12 @@ jobs:
           raw=urllib.request.urlopen("https://raw.githubusercontent.com/"+repo+"/main/space-archive/extra/stp8/2020-gada-statistika.docx",timeout=60).read()
           assert hashlib.sha1(b"blob "+str(len(raw)).encode()+bytes([0])+raw).hexdigest()=="5ff8e66877befd63836d89bf68b10721c3514326"
           z=zipfile.ZipFile(io.BytesIO(raw));data=z.read("word/media/image1.png")
-          try:from PIL import Image
-          except ImportError:
-           subprocess.check_call([sys.executable,"-m","pip","install","-q","Pillow"]);from PIL import Image
-          im=Image.open(io.BytesIO(data));width,height=im.size
-          im=im.convert("RGB");im.thumbnail((1250,1250));b=io.BytesIO();im.save(b,format="JPEG",quality=75,optimize=True)
+          import struct
+          assert data[:8]==bytes([137,80,78,71,13,10,26,10])
+          width,height=struct.unpack(">II",data[16:24])
           payloads={
-           "INT-008_original_embedded_image1_visual_preview_base64_TMP.txt":base64.b64encode(b.getvalue()),
-           "INT-008_original_embedded_image1_metadata_v1.json":json.dumps({"original_path":"word/media/image1.png","bytes":len(data),"sha256":hashlib.sha256(data).hexdigest(),"dimensions_px":[width,height],"format":"PNG","preview_derivative_format":"JPEG","preview_dimensions_px":list(im.size),"note":"Preview only; original DOCX unchanged; full embedded image still available in original SHA verified DOCX."},indent=2).encode()
+           "INT-008_original_embedded_image1_visual_preview_base64_TMP.txt":base64.b64encode(data),
+           "INT-008_original_embedded_image1_metadata_v1.json":json.dumps({"original_path":"word/media/image1.png","bytes":len(data),"sha256":hashlib.sha256(data).hexdigest(),"dimensions_px":[width,height],"format":"PNG","preview_derivative_format":"ORIGINAL_PNG_BYTE_IDENTICAL","preview_dimensions_px":[width,height],"note":"Preview only; original DOCX unchanged; full embedded image still available in original SHA verified DOCX."},indent=2).encode()
           }
           for filename,body in payloads.items():
            path="prison-research-archive/00_catalog/progress/"+filename
