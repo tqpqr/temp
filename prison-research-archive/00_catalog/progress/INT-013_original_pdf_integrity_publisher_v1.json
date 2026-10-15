@@ -1,0 +1,24 @@
+{
+  "original_path": "space-archive/extra/stp8/Moldova_Proiect_modificare_OMJ_41-2023.pdf",
+  "source_bytes": 175953,
+  "git_blob_sha1": "728a21b5796cf174d1138e38ca622151f15a6e5f",
+  "sha256": "8e19016055d196c0ae0eae4fb56804d3b0398b7a0095607d51579dc8e9accd1a",
+  "number_of_pages": 2,
+  "page_text_characters": [
+    1739,
+    970
+  ],
+  "pdf_core_properties": {
+    "/Producer": "iLovePDF",
+    "/ModDate": "D:20251216133420Z"
+  },
+  "official_issuer_comparison": {
+    "url": "https://www.justice.gov.md/sites/default/files/document/attachments/omj_modif_omj_41_2023.pdf",
+    "response_status": 200,
+    "official_bytes": 175953,
+    "official_sha256": "8e19016055d196c0ae0eae4fb56804d3b0398b7a0095607d51579dc8e9accd1a",
+    "byte_identical": true,
+    "tls": "Python validated TLS"
+  },
+  "engine": "pypdf isolated layout text; not OCR"
+}
