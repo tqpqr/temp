@@ -1,0 +1,65 @@
+{
+  "commit": "1b69d3b5b9bf547746bf575d2b79676654ef3dd8",
+  "checks": [
+    {
+      "path": "prison-research-archive/INDEX_v53.md",
+      "sha256": "8687361c67ee2290e74363b3e0329ab831b414f1857491a35d74ad2efdb81c05",
+      "bytes": 544,
+      "pass": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/sud_form_file_register_v6.csv",
+      "sha256": "30457b7935a47d7fd94fbcfc77b0c2fa49ef82ad4c41985a159b27fecb76ed71",
+      "bytes": 293041,
+      "pass": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/METHODOLOGICAL_BREAKS_AND_ANOMALIES_v36.csv",
+      "sha256": "1f086398ddd315d1288694aa8e92aa7a450a68e9e120f01a8ad0a4ba55df1932",
+      "bytes": 149498,
+      "pass": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/INDICATOR_PERIOD_COVERAGE_REGISTRY_v34.csv",
+      "sha256": "62944a72c778bda5d9501dfd836546329b7113b8439cd2c0f7d319aab4d174e3",
+      "bytes": 1887736,
+      "pass": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/SESSION_CHECKPOINT_20261015_v52.md",
+      "sha256": "6ddd55dd42cfe2b85b09bd48caec7bf5a1a3fd7bc304addddbc2ad023df9e0b7",
+      "bytes": 1484,
+      "pass": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/MICROTASK_QUEUE_WAVE1_v31.csv",
+      "sha256": "e8909a4082368a4b0afbe0db05845ce9c6003828c3c636da54e9d7cb3e695f65",
+      "bytes": 40341,
+      "pass": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/progress/RU-001_RU-002_K3-2024.xls.sheet_inventory.csv",
+      "sha256": "7b1434e7a31dc1197bf55bdf7828d533082db15e01f887c533b8bba90b702bd7",
+      "bytes": 863,
+      "pass": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/progress/RU-001_RU-002_identity_and_checks.json",
+      "sha256": "9362ce734e158e0bb4ce527871e6f06cedab361db36292ed9a30a11c6f567ef4",
+      "bytes": 4144,
+      "pass": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/progress/RU-001_RU-002_F2-2024.xls.sheet_inventory.csv",
+      "sha256": "093d90974ad9e94113e0a05afba163ae7139a6bca449fd2626e006c68e0f7f30",
+      "bytes": 286,
+      "pass": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/progress/RU-001_RU-002_uploaded_originals_audit_v1.md",
+      "sha256": "8e9b15e7bf32f8a6237231d48d33425a6f116151f2d012c267b43dcf2a128cfb",
+      "bytes": 8326,
+      "pass": true
+    }
+  ]
+}
