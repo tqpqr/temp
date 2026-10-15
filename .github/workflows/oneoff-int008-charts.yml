@@ -1,0 +1,116 @@
+name: One-off INT-008 original DOCX chart cache and publisher check
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int008-charts.yml
+permissions:
+  contents: write
+jobs:
+  forensic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Extract all original chart cache points and check publisher bytes
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import os,urllib.request,hashlib,zipfile,io,json,xml.etree.ElementTree as ET,csv,base64,re
+          repo=os.environ["GH_REPOSITORY"];source="space-archive/extra/stp8/2020-gada-statistika.docx"
+          data=urllib.request.urlopen("https://raw.githubusercontent.com/"+repo+"/main/"+source,timeout=60).read()
+          gitsha=hashlib.sha1(b"blob "+str(len(data)).encode()+bytes([0])+data).hexdigest()
+          assert (len(data),gitsha)==(1088041,"5ff8e66877befd63836d89bf68b10721c3514326"),(len(data),gitsha)
+          z=zipfile.ZipFile(io.BytesIO(data));assert z.testzip() is None
+          W="{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+          C="{http://schemas.openxmlformats.org/drawingml/2006/chart}"
+          A="{http://schemas.openxmlformats.org/drawingml/2006/main}"
+          def stext(el):
+           if el is None:return ""
+           return "".join((x.text or "") for x in el.iter() if x.tag in (W+"t",A+"t",C+"v")).strip()
+          def pts(container):
+           if container is None:return [],"NO_ELEMENT"
+           out={}
+           candidates=[(x.tag.split("}")[-1],x) for x in container.iter() if x.tag.endswith("Cache") or x.tag.endswith("Lit")]
+           if not candidates:return [],"NO_CACHE"
+           for typ,cache in candidates:
+            if typ=="multiLvlStrCache":
+             for level,lvl in enumerate(cache.findall(C+"lvl")):
+              for pt in lvl.findall(C+"pt"):
+               n=int(pt.get("idx","0"));v=pt.find(C+"v");out.setdefault(n,[]).append(v.text if v is not None else "")
+            else:
+             for pt in cache.findall(C+"pt"):
+              n=int(pt.get("idx","0"));v=pt.find(C+"v");out[n]=[v.text if v is not None else ""]
+           return [(i," | ".join(v)) for i,v in sorted(out.items())],",".join(t for t,_ in candidates)
+          def formula(el):
+           if el is None:return ""
+           return ";".join((x.text or "") for x in el.iter() if x.tag==C+"f")
+          chartnames=sorted((k for k in z.namelist() if re.fullmatch(r"word/charts/chart\d+\.xml",k)),key=lambda k:int(re.search(r"chart(\d+)",k).group(1)))
+          rows=[["chart_xml_part","series_index","title_original","series_label_original","point_index_0based","category_original_cache","value_original_cache","category_cache_type","value_cache_type","category_formula_ref","value_formula_ref"]]
+          inventory=[]
+          for key in chartnames:
+           root=ET.fromstring(z.read(key))
+           title=root.find(".//"+C+"chart/"+C+"title")
+           titleText=" ".join((n.text or "") for n in title.iter() if n.tag in (A+"t",C+"v")) if title is not None else ""
+           series=root.findall(".//"+C+"ser")
+           inv={"part":key,"title":titleText,"series_count":len(series),"series":[]}
+           for i,ser in enumerate(series,1):
+            tx=ser.find(C+"tx");cat=ser.find(C+"cat");val=ser.find(C+"val")
+            if val is None:val=ser.find(C+"yVal")
+            if cat is None:cat=ser.find(C+"xVal")
+            cats,cattyp=pts(cat);vals,valtyp=pts(val)
+            cmap=dict(cats);vmap=dict(vals)
+            indices=sorted(set(cmap)|set(vmap))
+            txval=stext(tx) or ("series_"+str(i))
+            inv["series"].append({"index":i,"label":txval,"categories":len(cats),"values":len(vals),"category_cache":cattyp,"value_cache":valtyp,"sample":[{"i":j,"x":cmap.get(j,""),"y":vmap.get(j,"")} for j in indices[:12]]})
+            for j in indices:rows.append([key,i,titleText,txval,j,cmap.get(j,""),vmap.get(j,""),cattyp,valtyp,formula(cat),formula(val)])
+           inventory.append(inv)
+          check={"original_path":source,"original_bytes":len(data),"original_blob_sha1":gitsha,"sha256":hashlib.sha256(data).hexdigest(),"charts_total":len(chartnames),"chart_cached_point_rows":len(rows)-1,"charts":inventory}
+          original_url="https://www.ievp.gov.lv/lv/media/4909/download?attachment="
+          publisher={"official_index_page":"https://www.ievp.gov.lv/lv/oficialas-statistikas-parskati","source_url":original_url,"archived_sha256":check["sha256"],"attempted":True}
+          try:
+           req=urllib.request.Request(original_url,headers={"User-Agent":"Mozilla/5.0 (research archive checksum check)"})
+           with urllib.request.urlopen(req,timeout=30) as r:
+            official_data=r.read()
+            publisher.update({"http_status":r.status,"content_type":r.headers.get("Content-Type"),"byte_count":len(official_data),"sha256":hashlib.sha256(official_data).hexdigest(),"byte_identical":official_data==data,"same_zip_magic":official_data[:2]==b"PK","tls_certificate_check":"PYTHON_DEFAULT_VERIFICATION"})
+          except Exception as e:
+           publisher.update({"status":"FETCH_FAILED","error":type(e).__name__+": "+str(e)[:350],"byte_identical":"NOT_TESTED"})
+          doc=ET.fromstring(z.read("word/document.xml"))
+          body=doc.find(W+"body")
+          def wordtext(el):
+           s=[]
+           for x in el.iter():
+            if x.tag==W+"t":s.append(x.text or "")
+            elif x.tag==W+"tab":s.append("\t")
+            elif x.tag in (W+"br",W+"cr"):s.append(" | ")
+           return "".join(s).strip()
+          paras=[["body_index","text_original"]];cells=[["table","body_index","row","cell","grid_span","vertical_merge","text_original"]];nt=0
+          for bi,el in enumerate(body,1):
+           if el.tag==W+"p":
+            t=wordtext(el)
+            if t:paras.append([bi,t])
+           if el.tag==W+"tbl":
+            nt+=1
+            for ri,tr in enumerate(el.findall(W+"tr"),1):
+             for ci,tc in enumerate(tr.findall(W+"tc"),1):
+              gs=tc.find(W+"tcPr/"+W+"gridSpan");vm=tc.find(W+"tcPr/"+W+"vMerge")
+              cells.append([nt,bi,ri,ci,gs.get(W+"val") if gs is not None else "",vm.get(W+"val","continue") if vm is not None else "",wordtext(tc)])
+          def cb(rows):
+           s=io.StringIO(newline="")
+           c=csv.writer(s,lineterminator="\n");c.writerows(rows)
+           return s.getvalue().encode()
+          prefix="prison-research-archive/00_catalog/progress/"
+          outputs={
+           prefix+"INT-008_20_charts_cached_source_series_v1.csv":cb(rows),
+           prefix+"INT-008_20_charts_cache_inventory_v1.json":json.dumps(check,ensure_ascii=False,indent=2).encode(),
+           prefix+"INT-008_official_2020_publisher_binary_comparison_v1.json":json.dumps(publisher,ensure_ascii=False,indent=2).encode(),
+           prefix+"INT-008_original_all_table_cells_v2.csv":cb(cells),
+           prefix+"INT-008_original_body_paragraphs_v2.csv":cb(paras)
+          }
+          for path,body in outputs.items():
+           req=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/"+path,data=json.dumps({"message":"forensic: INT-008 charts and verified newlined source extract "+path.split("/")[-1],"content":base64.b64encode(body).decode(),"branch":"main"}).encode(),method="PUT",headers={"Authorization":"Bearer "+os.environ["GH_TOKEN"],"Accept":"application/vnd.github+json","Content-Type":"application/json"})
+           with urllib.request.urlopen(req,timeout=65) as r:print("SAVED",path,len(body),r.status)
+          print("SUCCESS: charts",len(chartnames),"cached points",len(rows)-1,"table cells",len(cells)-1,"binary status",publisher.get("byte_identical"))
+          
+          PY
