@@ -1,0 +1,110 @@
+name: One-off INT-009 Latvia 2021 original source extraction
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int009-extract.yml
+permissions:
+  contents: write
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Verify blob and extract original OOXML and publisher revision
+        shell: bash
+        env:
+          GH_REPOSITORY: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,urllib.request,hashlib,zipfile,io,json,csv,base64,re,xml.etree.ElementTree as ET
+          repo=os.environ["GH_REPOSITORY"]
+          source="space-archive/extra/stp8/2021-gada-statistka-09.docx"
+          data=urllib.request.urlopen("https://raw.githubusercontent.com/"+repo+"/main/"+source,timeout=80).read()
+          gitsha=hashlib.sha1(b"blob "+str(len(data)).encode()+bytes([0])+data).hexdigest()
+          assert(len(data),gitsha)==(1250699,"829fae30d27ce3c5a7e7f1a04a7fe13def538d11"),(len(data),gitsha)
+          z=zipfile.ZipFile(io.BytesIO(data)); assert z.testzip() is None
+          names=z.namelist();W="{http://schemas.openxmlformats.org/wordprocessingml/2006/main}";C="{http://schemas.openxmlformats.org/drawingml/2006/chart}";A="{http://schemas.openxmlformats.org/drawingml/2006/main}"
+          doc=ET.fromstring(z.read("word/document.xml"));body=doc.find(W+"body")
+          def text(el):
+           a=[]
+           for x in el.iter():
+            if x.tag==W+"t":a.append(x.text or "")
+            elif x.tag==W+"tab":a.append("\t")
+            elif x.tag in (W+"br",W+"cr"):a.append(" | ")
+           return "".join(a).strip()
+          pars=[["body_index","text_original"]]
+          tables=[["table","body_index","row","cell","grid_span","vertical_merge","text_original"]]
+          n_table=0;tablemeta=[]
+          for bi,item in enumerate(list(body),1):
+           if item.tag==W+"p" and text(item):pars.append([bi,text(item)])
+           if item.tag==W+"tbl":
+            n_table+=1;rows=item.findall(W+"tr")
+            count=0
+            for ri,tr in enumerate(rows,1):
+             for ci,tc in enumerate(tr.findall(W+"tc"),1):
+              gs=tc.find(W+"tcPr/"+W+"gridSpan");vm=tc.find(W+"tcPr/"+W+"vMerge")
+              tables.append([n_table,bi,ri,ci,gs.get(W+"val") if gs is not None else "",vm.get(W+"val","continue") if vm is not None else "",text(tc)])
+              count+=1
+            tablemeta.append({"table":n_table,"body_index":bi,"rows":len(rows),"cells":count,"first_rows":[[text(c)[:130] for c in r.findall(W+"tc")[:10]] for r in rows[:5]]})
+          chartNames=sorted((k for k in names if re.fullmatch(r"word/charts/chart\d+\.xml",k)),key=lambda x:int(re.search(r"chart(\d+)",x).group(1)))
+          chartrows=[["chart_part","chart_title","series_index","series_name","point_index","category_original","value_original","category_data_kind","value_data_kind","category_formula","value_formula"]]
+          def cached(el):
+           out={};types=[]
+           if el is None:return out,"NONE"
+           for node in el.iter():
+            kind=node.tag.rsplit("}",1)[-1]
+            if kind in ("strCache","numCache","strLit","numLit","multiLvlStrCache"):
+             types.append(kind)
+             for pt in node.iter():
+              if pt.tag==C+"pt":
+               n=int(pt.get("idx","0"));v=pt.find(C+"v")
+               if v is not None:out.setdefault(n,[]).append(v.text or "")
+           return {n:" | ".join(s) for n,s in out.items()}, ";".join(types) or "NONE"
+          def formulas(el):
+           if el is None:return ""
+           return ";".join(x.text or "" for x in el.iter() if x.tag==C+"f")
+          chartMeta=[]
+          for key in chartNames:
+           root=ET.fromstring(z.read(key));title=root.find(".//"+C+"chart/"+C+"title")
+           titleText="".join(x.text or "" for x in title.iter() if x.tag in (A+"t",C+"v")) if title is not None else ""
+           series=root.findall(".//"+C+"ser");ss=[]
+           for si,s in enumerate(series,1):
+            tx=s.find(C+"tx");cat=s.find(C+"cat");val=s.find(C+"val")
+            if cat is None:cat=s.find(C+"xVal")
+            if val is None:val=s.find(C+"yVal")
+            seriesName="".join(x.text or "" for x in tx.iter() if x.tag in (C+"v",A+"t")) if tx is not None else ""
+            if not seriesName:seriesName="series_"+str(si)
+            xs,xType=cached(cat);ys,yType=cached(val);ii=sorted(set(xs)|set(ys))
+            ss.append({"series":si,"name":seriesName,"points":len(ii),"category_count":len(xs),"value_count":len(ys),"sample":[[j,xs.get(j,""),ys.get(j,"")] for j in ii[:5]]})
+            for j in ii:chartrows.append([key,titleText,si,seriesName,j,xs.get(j,""),ys.get(j,""),xType,yType,formulas(cat),formulas(val)])
+           chartMeta.append({"part":key,"title_original":titleText,"series_count":len(series),"series":ss})
+          meta={}
+          if "docProps/core.xml" in names:
+           x=ET.fromstring(z.read("docProps/core.xml"));meta={k.tag.rsplit("}",1)[-1]:k.text for k in x if k.text}
+          info={"source_path":source,"original_size":len(data),"git_blob_sha1":gitsha,"sha256":hashlib.sha256(data).hexdigest(),"zip_members":len(names),"document_xml_size":len(z.read("word/document.xml")),"core_properties":meta,"paragraphs":len(pars)-1,"tables":tablemeta,"all_table_cells":len(tables)-1,"charts":chartMeta,"cached_chart_rows":len(chartrows)-1,"media":[{"file":k,"size":z.getinfo(k).file_size} for k in names if k.startswith("word/media/")],"embedded":[k for k in names if k.startswith("word/embeddings/")]}
+          publisher={"archive_source_sha256":info["sha256"],"archive_size":len(data),"original_source":source,"government_revision_note":"Official 2021 report marked precizēts, prisoner daily maintenance cost corrected; published portal link is newer vintage","comparisons":[]}
+          for label,u in [("official_current_revised_2021","https://www.ievp.gov.lv/lv/media/5322/download?attachment="),("official_2021_other_report","https://www.ievp.gov.lv/lv/media/5297/download")]:
+           try:
+            req=urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"})
+            with urllib.request.urlopen(req,timeout=50) as r:
+             d=r.read()
+             publisher["comparisons"].append({"label":label,"url":u,"status":r.status,"mime":r.headers.get("Content-Type"),"bytes":len(d),"sha256":hashlib.sha256(d).hexdigest(),"identical_to_archive":d==data,"starts_zip":d.startswith(b"PK"),"starts_pdf":d.startswith(b"%PDF"),"verified_tls":"PYTHON_DEFAULT"})
+           except Exception as e:publisher["comparisons"].append({"label":label,"url":u,"error":type(e).__name__+": "+str(e)[:300]})
+          def cb(rows):
+           b=io.StringIO(newline="");w=csv.writer(b,lineterminator="\n");w.writerows(rows);return b.getvalue().encode("utf-8")
+          prefix="prison-research-archive/00_catalog/progress/"
+          outputs={
+           prefix+"INT-009_original_DOCX_inventory_v1.json":json.dumps(info,ensure_ascii=False,indent=2).encode(),
+           prefix+"INT-009_original_paragraphs_v1.csv":cb(pars),
+           prefix+"INT-009_original_table_cells_v1.csv":cb(tables),
+           prefix+"INT-009_original_chart_caches_v1.csv":cb(chartrows),
+           prefix+"INT-009_publisher_version_comparison_v1.json":json.dumps(publisher,ensure_ascii=False,indent=2).encode()
+          }
+          for path,body in outputs.items():
+           assert len(body)<800000,(path,len(body))
+           payload=json.dumps({"message":"forensic INT-009 read-only original 2021 DOCX extraction "+path.rsplit("/",1)[-1],"content":base64.b64encode(body).decode(),"branch":"main"}).encode()
+           req=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/"+path,data=payload,method="PUT",headers={"Authorization":"Bearer "+os.environ["GH_TOKEN"],"Content-Type":"application/json","Accept":"application/vnd.github+json"})
+           with urllib.request.urlopen(req,timeout=65) as r:print("SAVED",path,len(body),r.status)
+          print("COMPLETE",len(pars)-1,len(tables)-1,len(chartrows)-1,len(chartNames))
+          PY
