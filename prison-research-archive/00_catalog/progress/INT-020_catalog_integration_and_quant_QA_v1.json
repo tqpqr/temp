@@ -1,0 +1,394 @@
+{
+  "task": "INT-020",
+  "original_git_SHA1": "52a09fa4da9b67cc9bcada0523e3082f92c48e9e",
+  "original_sha256": "b2d0676ac1ea66500d74b47704136be512ac6bdb33d5a72e1d60dcbd0dd364e9",
+  "issuer_TLS_exact_binary": true,
+  "physical_pages": 205,
+  "publisher_text_match_pages": 205,
+  "original_regions": 9,
+  "original_monitoring_types": 9,
+  "original_cross_table_cells": 81,
+  "published_total_570_source_both_tables": true,
+  "six_region_original_conflicts": 6,
+  "three_permutation_pairs": [
+    [
+      "Wien",
+      "Niederoesterreich"
+    ],
+    [
+      "Oberoesterreich",
+      "Salzburg"
+    ],
+    [
+      "Steiermark",
+      "Tirol"
+    ]
+  ],
+  "inspections_prisons": 27,
+  "unannounced_prisons": 21,
+  "all_monitoring_events": 570,
+  "all_unannounced_events": 469,
+  "staged_domain_dated_source_scalars": 30,
+  "previous_registry": 1574,
+  "new_registry": 1624,
+  "new_registry_objects": 50,
+  "previous_methodology_breaks": 97,
+  "new_methodology_breaks": 103,
+  "added_MB": [
+    "MB-098",
+    "MB-099",
+    "MB-100",
+    "MB-101",
+    "MB-102",
+    "MB-103"
+  ],
+  "valid_qa_tests": 57,
+  "valid_qa_passes": 57,
+  "issuer_source_errors_not_silently_passed": [
+    "regional totals from source p15 differ for six provinces from source p16 while both nationwide570"
+  ],
+  "tests": [
+    {
+      "test": "type_total_police_inspections_PI",
+      "computed": 121,
+      "expected": 121,
+      "pass": true
+    },
+    {
+      "test": "unannounced_lte_all_police_inspections_PI",
+      "computed": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "test": "type_total_police_detention_centres_PAZ",
+      "computed": 12,
+      "expected": 12,
+      "pass": true
+    },
+    {
+      "test": "unannounced_lte_all_police_detention_centres_PAZ",
+      "computed": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "test": "type_total_elderly_care_APH",
+      "computed": 114,
+      "expected": 114,
+      "pass": true
+    },
+    {
+      "test": "unannounced_lte_all_elderly_care_APH",
+      "computed": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "test": "type_total_children_youth_KJH",
+      "computed": 112,
+      "expected": 112,
+      "pass": true
+    },
+    {
+      "test": "unannounced_lte_all_children_youth_KJH",
+      "computed": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "test": "type_total_disability_BPE",
+      "computed": 76,
+      "expected": 76,
+      "pass": true
+    },
+    {
+      "test": "unannounced_lte_all_disability_BPE",
+      "computed": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "test": "type_total_psychiatry_hospital_PAK_KRA",
+      "computed": 58,
+      "expected": 58,
+      "pass": true
+    },
+    {
+      "test": "unannounced_lte_all_psychiatry_hospital_PAK_KRA",
+      "computed": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "test": "type_total_justice_prisons_JA",
+      "computed": 27,
+      "expected": 27,
+      "pass": true
+    },
+    {
+      "test": "unannounced_lte_all_justice_prisons_JA",
+      "computed": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "test": "type_total_other_sites",
+      "computed": 21,
+      "expected": 21,
+      "pass": true
+    },
+    {
+      "test": "unannounced_lte_all_other_sites",
+      "computed": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "test": "type_total_police_actions",
+      "computed": 29,
+      "expected": 29,
+      "pass": true
+    },
+    {
+      "test": "unannounced_lte_all_police_actions",
+      "computed": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "test": "province_derived_rowsum_Wien",
+      "computed": 131,
+      "expected": 131,
+      "pass": true
+    },
+    {
+      "test": "province_difference_original_literal_Wien",
+      "computed": -30,
+      "expected": -30,
+      "pass": true
+    },
+    {
+      "test": "province_derived_rowsum_Burgenland",
+      "computed": 27,
+      "expected": 27,
+      "pass": true
+    },
+    {
+      "test": "province_difference_original_literal_Burgenland",
+      "computed": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "test": "province_derived_rowsum_Niederoesterreich",
+      "computed": 161,
+      "expected": 161,
+      "pass": true
+    },
+    {
+      "test": "province_difference_original_literal_Niederoesterreich",
+      "computed": 30,
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "test": "province_derived_rowsum_Oberoesterreich",
+      "computed": 47,
+      "expected": 47,
+      "pass": true
+    },
+    {
+      "test": "province_difference_original_literal_Oberoesterreich",
+      "computed": 15,
+      "expected": 15,
+      "pass": true
+    },
+    {
+      "test": "province_derived_rowsum_Salzburg",
+      "computed": 32,
+      "expected": 32,
+      "pass": true
+    },
+    {
+      "test": "province_difference_original_literal_Salzburg",
+      "computed": -15,
+      "expected": -15,
+      "pass": true
+    },
+    {
+      "test": "province_derived_rowsum_Kaernten",
+      "computed": 25,
+      "expected": 25,
+      "pass": true
+    },
+    {
+      "test": "province_difference_original_literal_Kaernten",
+      "computed": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "test": "province_derived_rowsum_Steiermark",
+      "computed": 62,
+      "expected": 62,
+      "pass": true
+    },
+    {
+      "test": "province_difference_original_literal_Steiermark",
+      "computed": -5,
+      "expected": -5,
+      "pass": true
+    },
+    {
+      "test": "province_derived_rowsum_Vorarlberg",
+      "computed": 18,
+      "expected": 18,
+      "pass": true
+    },
+    {
+      "test": "province_difference_original_literal_Vorarlberg",
+      "computed": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "test": "province_derived_rowsum_Tirol",
+      "computed": 67,
+      "expected": 67,
+      "pass": true
+    },
+    {
+      "test": "province_difference_original_literal_Tirol",
+      "computed": 5,
+      "expected": 5,
+      "pass": true
+    },
+    {
+      "test": "published_swapped_pair_Wien_Niederoesterreich",
+      "computed": 131,
+      "expected": 131,
+      "pass": true
+    },
+    {
+      "test": "published_swapped_pair_reverse_Niederoesterreich_Wien",
+      "computed": 161,
+      "expected": 161,
+      "pass": true
+    },
+    {
+      "test": "published_swapped_pair_Oberoesterreich_Salzburg",
+      "computed": 47,
+      "expected": 47,
+      "pass": true
+    },
+    {
+      "test": "published_swapped_pair_reverse_Salzburg_Oberoesterreich",
+      "computed": 32,
+      "expected": 32,
+      "pass": true
+    },
+    {
+      "test": "published_swapped_pair_Steiermark_Tirol",
+      "computed": 62,
+      "expected": 62,
+      "pass": true
+    },
+    {
+      "test": "published_swapped_pair_reverse_Tirol_Steiermark",
+      "computed": 67,
+      "expected": 67,
+      "pass": true
+    },
+    {
+      "test": "regions_source_grandtotal",
+      "computed": 570,
+      "expected": 570,
+      "pass": true
+    },
+    {
+      "test": "separate_published_regional_total_sum",
+      "computed": 570,
+      "expected": 570,
+      "pass": true
+    },
+    {
+      "test": "types_national_grandtotal",
+      "computed": 570,
+      "expected": 570,
+      "pass": true
+    },
+    {
+      "test": "total_unannounced_types",
+      "computed": 469,
+      "expected": 469,
+      "pass": true
+    },
+    {
+      "test": "exactly_six_publisher_region_conflicts",
+      "computed": 6,
+      "expected": 6,
+      "pass": true
+    },
+    {
+      "test": "NPM_all_visit_activities",
+      "computed": 570.0,
+      "expected": 570.0,
+      "pass": true
+    },
+    {
+      "test": "facility_with_and_without_criticisms",
+      "computed": 541.0,
+      "expected": 541,
+      "pass": true
+    },
+    {
+      "test": "police_actions_with_and_without_criticisms",
+      "computed": 29.0,
+      "expected": 29,
+      "pass": true
+    },
+    {
+      "test": "all_criticisms_yes_no",
+      "computed": 570.0,
+      "expected": 570,
+      "pass": true
+    },
+    {
+      "test": "criticisms_approx_rounded_pct",
+      "computed": 63,
+      "expected": 63,
+      "pass": true
+    },
+    {
+      "test": "less_traditional_four_categories",
+      "computed": 360,
+      "expected": 360,
+      "pass": true
+    },
+    {
+      "test": "source_prison_visits",
+      "computed": 27.0,
+      "expected": 27,
+      "pass": true
+    },
+    {
+      "test": "source_prison_unannounced",
+      "computed": 21.0,
+      "expected": 21,
+      "pass": true
+    },
+    {
+      "test": "NPM_control_only_budget_components",
+      "computed": 1450000.0,
+      "expected": 1450000,
+      "pass": true
+    },
+    {
+      "test": "national_prison_uniformed_posts_indicator_date",
+      "computed": 125.0,
+      "expected": 125,
+      "pass": true
+    }
+  ]
+}
