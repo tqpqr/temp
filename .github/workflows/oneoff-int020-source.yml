@@ -1,0 +1,65 @@
+name: Oneoff INT020 Austria archive official original forensic
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int020-source.yml
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Verify Austrian Ombudsman 2021 archive and publisher, preserve physical page text
+        shell: bash
+        env:
+          GH_REPOSITORY: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,sys,json,urllib.request,base64,hashlib,io,subprocess,datetime
+          repo=os.environ["GH_REPOSITORY"];token=os.environ["GH_TOKEN"]
+          source="space-archive/extra/stp8/Austria_Volksanwaltschaft_Praeventive_Menschenrechtskontrolle_2021.pdf"
+          sha="52a09fa4da9b67cc9bcada0523e3082f92c48e9e";size=2131167
+          official="https://volksanwaltschaft.gv.at/fileadmin/user_upload/Downloads/Berichte/PB/pb-45-praeventiv_2021_bf-1.pdf"
+          h={"Authorization":"Bearer "+token,"User-Agent":"INT020-AustriaForensic"}
+          with urllib.request.urlopen(urllib.request.Request("https://api.github.com/repos/"+repo+"/git/blobs/"+sha,headers=h),timeout=170) as resp: blob=json.load(resp)
+          raw=base64.b64decode(blob["content"])
+          assert len(raw)==size,("source byte count",len(raw),size)
+          assert hashlib.sha1(b"blob "+str(len(raw)).encode()+bytes([0])+raw).hexdigest()==sha,"git SHA1 mismatch"
+          rep={"original_path":source,"git_blob_sha1":sha,"original_bytes":len(raw),"original_sha256":hashlib.sha256(raw).hexdigest(),"issuer_url":official,"checked_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"publisher_comparison":{}}
+          try:
+            req=urllib.request.Request(official,headers={"User-Agent":"Mozilla/5.0"})
+            with urllib.request.urlopen(req,timeout=155) as resp:
+              pub=resp.read()
+              rep["publisher_comparison"]={"status":resp.status,"tls_verified":True,"final_url":resp.url,"bytes":len(pub),"sha256":hashlib.sha256(pub).hexdigest(),"byte_identical":pub==raw}
+          except Exception as exc:rep["publisher_comparison"]={"byte_identical":None,"error":type(exc).__name__+": "+str(exc)[:350]}
+          subprocess.check_call([sys.executable,"-m","pip","install","-q","--target","/tmp/int020pypdf","pypdf"])
+          sys.path.insert(0,"/tmp/int020pypdf")
+          from pypdf import PdfReader
+          reader=PdfReader(io.BytesIO(raw))
+          pages=[p.extract_text(extraction_mode="layout") or "" for p in reader.pages]
+          rep["page_count"]=len(pages)
+          rep["pdf_metadata"]={str(k):str(v) for k,v in (reader.metadata or {}).items()}
+          rep["page_text_lengths"]=[len(p) for p in pages]
+          rep["thin_text_pages"]=[i+1 for i,p in enumerate(pages) if len(p)<120]
+          if "pub" in locals():
+            try:
+              pub_pages=[p.extract_text(extraction_mode="layout") or "" for p in PdfReader(io.BytesIO(pub)).pages]
+              rep["publisher_comparison"]["issuer_pages"]=len(pub_pages)
+              rep["publisher_comparison"]["identical_extracted_text_pages"]=sum(a==b for a,b in zip(pages,pub_pages))
+              rep["publisher_comparison"]["all_extracted_text_identical"]=pub_pages==pages
+            except Exception as ex:
+              rep["publisher_comparison"]["text_comparison_error"]=str(ex)[:250]
+          out={"INT-020_original_PDF_integrity_v1.json":json.dumps(rep,indent=2,ensure_ascii=False).encode()}
+          for a in range(0,len(pages),15):
+            b=min(a+15,len(pages))
+            name="INT-020_original_pdf_page_text_%03d_%03d_v1.md"%(a+1,b)
+            out[name]="\n\n".join("## PDF physical page %d\n\n%s"%(i+1,pages[i]) for i in range(a,b)).encode()
+          for name,data in out.items():
+            path="prison-research-archive/00_catalog/progress/"+name
+            body=json.dumps({"message":"INT020 Austrian NPM source forensic: "+name,"branch":"main","content":base64.b64encode(data).decode("ascii")}).encode()
+            req=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/"+path,method="PUT",data=body,headers={**h,"Content-Type":"application/json"})
+            with urllib.request.urlopen(req,timeout=115) as resp:print("UPLOADED",name,len(data),resp.status,flush=True)
+          print("SUCCESS",json.dumps({"bytes":len(raw),"sha256":rep["original_sha256"],"pages":len(pages),"issuer":rep["publisher_comparison"]}),flush=True)
+          PY
