@@ -1,0 +1,48 @@
+{
+  "original_path": "space-archive/extra/stp8/Scotland_AuditScotland_SPS_2022-23_s22.pdf",
+  "original_bytes": 1107330,
+  "git_blob_sha1": "7e993349b17c6ec0f177862134091092ea86f18e",
+  "original_sha256": "915417479d1c41740d8b1d6fb91a8ad2b459e86e24332a207c542b7731e517ff",
+  "publisher_url": "https://www.audit-scotland.gov.uk/uploads/docs/report/2023/s22_231212_scottish_prison_service.pdf",
+  "run_utc": "2026-10-15T10:18:40.016117+00:00",
+  "publisher_comparison": {
+    "http_status": 200,
+    "resolved_url": "https://audit.scot/uploads/docs/report/2023/s22_231212_scottish_prison_service.pdf",
+    "tls_verified": true,
+    "bytes": 1107330,
+    "sha256": "915417479d1c41740d8b1d6fb91a8ad2b459e86e24332a207c542b7731e517ff",
+    "byte_identical": true
+  },
+  "original_pdf_page_count": 21,
+  "metadata": {
+    "/Author": "Audit Scotland",
+    "/CreationDate": "D:20231207093844Z",
+    "/Creator": "Microsoft® Word for Microsoft 365",
+    "/ModDate": "D:20231208141956Z",
+    "/Producer": "Microsoft® Word for Microsoft 365",
+    "/Title": "The 2022/23 audit of the Scottish Prison Service"
+  },
+  "page_text_lengths": [
+    318,
+    274,
+    2495,
+    3151,
+    2696,
+    3024,
+    2340,
+    581,
+    701,
+    954,
+    2716,
+    3328,
+    2929,
+    3180,
+    280,
+    269,
+    3174,
+    3064,
+    768,
+    187,
+    445
+  ]
+}
