@@ -1,0 +1,854 @@
+## PDF page 1
+              RIKOSSEURAAMUSLAITOS
+
+
+
+
+
+
+
+
+Rikosseuraamuslaitoksen monisteita 2/2022
+
+
+Rikosseuraamusasiakkaat 30.4.2022
+
+
+
+
+14.6.2021
+## PDF page 2
+Rikosseuraamuslaitoksen monisteita –sarja
+
+ISSN 2342-4826
+
+Rikosseuraamuslaitoksen monisteita 2/2022
+Rikosseuraamusasiakkaat 30.4.2022
+## PDF page 3
+                                                                                                                                                           1
+
+
+Sisällys
+
+
+Käytetyt lyhenteet ........................................................................................................................... 4
+       Rikosseuraamusalue ............................................................................................................... 4
+       Vankila..................................................................................................................................... 4
+       Päärikos .................................................................................................................................. 5
+       Seuraamuslaji .......................................................................................................................... 5
+
+Määritelmät ..................................................................................................................................... 5
+       Tilojen käyttöaste ..................................................................................................................... 5
+
+1.     Rikosseuraamusasiakkaat 30.4.2022 ...................................................................................... 6
+
+2.     Vangit rikosseuraamusalueittain 30.4.2022 .............................................................................. 9
+
+3.     Vangit vankiloittain 30.4.2022 ................................................................................................ 17
+
+4.     Vankien sijoittelu ja laitosten käyttöaste 30.4.2022 ................................................................ 31
+
+5.     Yhdyskuntaseuraamusasiakkaat 30.4.2022 ........................................................................... 34
+
+
+
+Taulukko 1-1. Rikosseuraamusasiakkaat seuraamuksittain ............................................................ 6
+Taulukko 1-2. Rikosseuraamusasiakkaat seuraamuksittain, % alue................................................ 6
+Taulukko 1-3. Rikosseuraamusasiakkaat seuraamuksittain, % seuraamus ..................................... 6
+Taulukko 1-4. Rikosseuraamusasiakkaiden asuinmaakunta ........................................................... 7
+Taulukko 1-5. Rikosseuraamusasiakkaiden asuinmaakunta, % ...................................................... 7
+Taulukko 1-6. Rikosseuraamusasiakkaat maakuntien suurimmissa kunnissa ................................. 8
+Taulukko 1-7. Rikosseuraamusasiakkaat maakuntien suurimmissa kunnissa, % ............................ 8
+Taulukko 2-1. Vankeusvankien asuinmaakunta .............................................................................. 9
+Taulukko 2-2. Vankeusvankien asuinmaakunta, % ......................................................................... 9
+Taulukko 2-3. Vankeusvankien päärikos ....................................................................................... 10
+Taulukko 2-4. Vankeusvankien päärikos, % .................................................................................. 10
+Taulukko 2-5. Vankeusvankien kertaisuus .................................................................................... 10
+Taulukko 2-6. Vankeusvankien kertaisuus, % ............................................................................... 10
+Taulukko 2-7. Vankeusvankien ennakoidut laitoksessaoloajat ...................................................... 11
+Taulukko 2-8. Vankeusvankien ennakoidut laitoksessaoloajat, % ................................................. 11
+Taulukko 2-9. Vankeusvankien ikäjakauma .................................................................................. 11
+Taulukko 2-10. Vankeusvankien ikäjakauma, % ........................................................................... 11
+Taulukko 2-11. Tutkintavankien asuinmaakunta ........................................................................... 12
+Taulukko 2-12. Tutkintavankien asuinmaakunta, % ...................................................................... 12
+Taulukko 2-13. Tutkintavankien pääsyyte ..................................................................................... 13
+Taulukko 2-14. Tutkintavankien pääsyyte, % ................................................................................ 13
+Taulukko 2-15. Tutkintavankien ikäjakauma .................................................................................. 13
+Taulukko 2-16. Tutkintavankien ikäjakauma, % ............................................................................ 13
+Taulukko 2-17. Kaikki vangit, vankilaji ........................................................................................... 14
+Taulukko 2-18. Kaikki vangit, vankilaji, % ...................................................................................... 14
+Taulukko 2-19. Kaikki vangit osastoittain ...................................................................................... 14
+Taulukko 2-20. Kaikki vangit osastoittain, % ................................................................................. 14
+Taulukko 2-21. Naisvankien vankilaji ............................................................................................ 15
+Taulukko 2-22. Naisvankien vankilaji, % ....................................................................................... 15
+## PDF page 4
+                                                                                                                                               2
+
+Taulukko 2-23. Naisvankeusvankien ennakoidut laitoksessaoloajat .............................................. 15
+Taulukko 2-24. Naisvankeusvankien ennakoidut laitoksessaoloajat, % ......................................... 15
+Taulukko 2-25. Naisvankeusvankien päärikos .............................................................................. 16
+Taulukko 2-26. Naisvankeusvankien päärikos, % ......................................................................... 16
+Taulukko 2-27. Naisvankeusvankien ikäjakauma .......................................................................... 16
+Taulukko 2-28. Naisvankeusvankien ikäjakauma, % ..................................................................... 16
+Taulukko 3-1. Vankeusvankien asuinmaakunta ............................................................................ 17
+Taulukko 3-2. Vankeusvankien asuinmaakunta, % ....................................................................... 18
+Taulukko 3-3. Vankeusvankien päärikos ....................................................................................... 19
+Taulukko 3-4. Vankeusvankien päärikos, % .................................................................................. 20
+Taulukko 3-5. Vankeusvankien kertaisuus .................................................................................... 21
+Taulukko 3-6. Vankeusvankien kertaisuus, % ............................................................................... 22
+Taulukko 3-7. Vankeusvankien ennakoidut laitoksessaoloajat ...................................................... 23
+Taulukko 3-8. Vankeusvankien ennakoidut laitoksessaoloajat, % ................................................. 24
+Taulukko 3-9. Vankeusvankien ikäjakauma .................................................................................. 25
+Taulukko 3-10. Vankeusvankien ikäjakauma, % ........................................................................... 26
+Taulukko 3-11. Tutkintavankien asuinmaakunta ........................................................................... 27
+Taulukko 3-13. Tutkintavankien asuinmaakunta, % ...................................................................... 28
+Taulukko 3-14. Tutkintavankien pääsyyte ..................................................................................... 29
+Taulukko 3-15. Tutkintavankien pääsyyte, % ................................................................................ 29
+Taulukko 3-16. Tutkintavankien ikäjakauma .................................................................................. 30
+Taulukko 3-17. Tutkintavankien ikäjakauma, % ............................................................................ 30
+Taulukko 4-1. Etelä-Suomen rikosseuraamusalue: vankien asuinalue .......................................... 31
+Taulukko 4-2. Etelä-Suomen rikosseuraamusalue: vankien sijoittelu ja tilojen käyttöaste ............. 31
+Taulukko 4-3. Itä-Pohjois-Suomen rikosseuraamusalue: vankien asuinalue ................................. 32
+Taulukko 4-4. Itä-Pohjois-Suomen rikosseuraamuslaue: vankien sijoittelu ja tilojen käyttöaste ..... 32
+Taulukko 4-5. Etelä-Suomen rikosseuraamusalue: vankien asuinalue .......................................... 33
+Taulukko 4-6. Länsi-Suomen rikosseuraamusalue: vankien sijoittelu ja tilojen käyttöaste ............. 33
+Taulukko 5-1. Yhdyskuntaseuraamusasiakkaiden asuinmaakunta ................................................ 34
+Taulukko 5-2. (jatkuu) Yhdyskuntaseuraamusasiakkaiden asuinmaakunta ................................... 35
+Taulukko 5-3. Yhdyskuntaseuraamusasiakkaiden asuinmaakunta, % ........................................... 36
+Taulukko 5-4. (jatkuu) Yhdyskuntaseuraamusasiakkaiden asuinmaakunta, % .............................. 37
+Taulukko 5-5. Yhdyskuntaseuraamusasiakkaat toimipaikoittain .................................................... 38
+Taulukko 5-6. Yhdyskuntaseuraamusasiakkaiden sukupuolijakauma ........................................... 39
+Taulukko 5-7. Yhdyskuntapalvelua suorittavien ikäjakauma .......................................................... 40
+Taulukko 5-8. Yhdyskuntapalvelua suorittavien ikäjakauma, % ..................................................... 40
+Taulukko 5-9. Yhdyskuntapalvelua suorittavien päärikos .............................................................. 41
+Taulukko 5-10. Yhdyskuntapalvelua suorittavien päärikos, % ....................................................... 41
+Taulukko 5-11. Yhdyskuntapalvelua suorittavien asumistilanne .................................................... 42
+Taulukko 5-12. Yhdyskuntapalvelua suorittavien asumistilanne, % ............................................... 42
+Taulukko 5-13. Yhdyskuntapalvelua suorittavien pääasiallinen toiminta ........................................ 43
+Taulukko 5-14. Yhdyskuntapalvelua suorittavien pääasiallinen toiminta, %................................... 43
+Taulukko 5-15. Yhdyskuntapalvelua suorittavien koulutus ............................................................ 44
+Taulukko 5-16. Yhdyskuntapalvelua suorittavien koulutus, % ....................................................... 44
+Taulukko 5-17. Valvontarangaistusta suorittavien ikäjakauma ...................................................... 45
+Taulukko 5-18. Valvontarangaistusta suorittavien ikäjakauma, % ................................................. 45
+Taulukko 5-19. Valvontarangaistusta suorittavien päärikos ........................................................... 46
+Taulukko 5-20. Valvontarangaistusta suorittavien päärikos, % ...................................................... 46
+Taulukko 5-21. Valvontarangaistusta suorittavien asumistilanne                               ................................................... 47
+Taulukko 5-22. Valvontarangaistusta suorittavien asumistilanne, % ............................................. 47
+Taulukko 5-23. Valvontarangaistusta suorittavien pääasiallinen toiminta ...................................... 48
+Taulukko 5-24. Valvontarangaistusta suorittavien pääasiallinen toiminta, % ................................. 48
+Taulukko 5-25. Valvontarangaistusta suorittavien koulutus ........................................................... 49
+Taulukko 5-26. Valvontarangaistusta suorittavien koulutus, % ...................................................... 49
+Taulukko 5-27. Ehdolliseen vankeuteen tuomittujen nuorten valvottavien ikäjakauma .................. 50
+Taulukko 5-28. Ehdolliseen vankeuteen tuomittujen nuorten valvottavien ikäjakauma, % ............. 50
+## PDF page 5
+                                                                                                                               3
+
+Taulukko 5-29. Ehdolliseen vankeuteen tuomittujen nuorten valvottavien päärikos ....................... 51
+Taulukko 5-30. Ehdolliseen vankeuteen tuomittujen nuorten valvottavien päärikos, % ................. 51
+Taulukko 5-31. Ehdolliseen vankeuteen tuomittujen nuorten valvottavien asumistilanne                              .............. 52
+Taulukko 5-32. Ehdolliseen vankeuteen tuomittujen nuorten valvottavien asumistilanne, %                               ......... 52
+Taulukko 5-33. Ehdolliseen vankeuteen tuomittujen nuorten valvottavien pääasiallinen toiminta .. 53
+Taulukko 5-34.Ehdolliseen vankeuteen tuomittujen nuorten valvottavien pääasiallinen toiminta %53
+Taulukko 5-35. Ehdolliseen vankeuteen tuomittujen nuorten valvottavien koulutus                           ....................... 54
+Taulukko 5-36. Ehdolliseen vankeuteen tuomittujen nuorten valvottavien koulutus, % .................. 54
+Taulukko 5-37. Ehdonalaiseen vapauteen päästettyjen valvottavien ikäjakauma .......................... 55
+Taulukko 5-38. Ehdonalaiseen vapauteen päästettyjen valvottavien ikäjakauma, %                              ..................... 55
+Taulukko 5-39. Ehdonalaiseen vapauteen päästettyjen valvottavien päärikos                           .............................. 56
+Taulukko 5-40. Ehdonalaiseen vapauteen päästettyjen valvottavien päärikos, %                            ......................... 56
+Taulukko 5-41. Ehdonalaiseen vapauteen päästettyjen valvottavien asumistilanne ...................... 57
+Taulukko 5-42. Ehdonalaiseen vapauteen päästettyjen valvottavien asumistilanne, % ................. 57
+Taulukko 5-43. Ehdonalaiseen vapauteen päästettyjen valvottavien pääasiallinen toiminta .......... 58
+Taulukko 5-44. Ehdonalaiseen vapauteen päästettyjen valvottavien pääasiallinen toiminta, % ..... 58
+Taulukko 5-45. Ehdonalaiseen vapauteen päästettyjen valvottavien koulutus ............................... 59
+Taulukko 5-46. Ehdonalaiseen vapauteen päästettyjen valvottavien koulutus, %.......................... 59
+
+## PDF page 6
+                                                                                                          4
+
+Käytetyt lyhenteet
+
+Rikosseuraamusalue
+
+ESRA          Etelä-Suomen rikosseuraamusalue
+IPRA          Itä-Pohjois-Suomen rikosseuraamusalue
+LSRA          Länsi-Suomen rikosseuraamusalue
+
+Vankila
+
+Hev           Helsingin vankila
+Häva          Hämeenlinnan vankila
+Jov           Jokelan vankila
+Jov/A         - avovankilaosasto
+Juv           Juuan vankila
+Jyv           Jyväskylän vankila
+Kesv          Kestilän vankila
+Kerv          Keravan vankila
+Kuv           Kuopion vankila
+Kuvy             - vapauttamisyksikkö
+Kyv           Kylmäkosken vankila
+Käv           Käyrän vankila
+Miv           Mikkelin vankila
+Nav           Naarajärven vankila
+Ouv           Oulun vankila
+Ouvy             - vapauttamisyksikkö
+Pev           Pelson vankila
+Pyv           Pyhäselän vankila
+Riv           Riihimäen vankila
+Sav           Satakunnan vankila
+Sav/Huos         - Huittisten osasto
+Sav/Köos         - Köyliön osasto
+Sulv          Sulkavan vankila
+Suov          Suomenlinnan vankila
+Suv           Sukevan vankila
+Tuv           Turun vankila
+Vanv          Vantaan vankila
+Vav           Vaasan vankila
+Vav/A             - avovankilaosasto
+Vava          Vanajan vankila
+Vava/Ojos        - Ojoisten osasto
+Vava/Vanos    - Vanajan osasto
+Viv           Vilppulan vankila
+## PDF page 7
+                                                                                                               5
+
+Päärikos
+
+Ryös           ryöstö
+Vark           varkausrikokset (RL 28)
+Momr           muu omaisuusrikos
+Henk           henkirikos, murha, tappo tai emt. yritys
+Pahp           muu väkivaltarikos
+Seks           seksuaalirikos
+Huum           huumerikos
+Ljuop          liikennejuopumus
+
+Seuraamuslaji
+
+elink          elinkautisvanki
+ev+tv          elinkautis- ja tutkintavanki
+sv             sakkovanki
+sv+tv          sakko- ja tutkintavanki
+tv             tutkintavanki
+vv             vankeusvanki
+vv+tv          vankeus- ja tutkintavanki
+yr             yhdistelmärangaistusta suorittava
+aev            ehdolliseen vankeuteen tuomitun valvonta, aikuiset
+eav            ehdonalaiseen vapauteen päästetyn valvonta
+ern            ehdolliseen vankeuteen tuomitun valvonta, nuoret
+nr             nuorisorangaistus
+valra          valvontarangaistus
+ykp            yhdyskuntapalvelu
+
+Määritelmät
+
+Tilojen käyttöaste
+
+Kirjoilla oleva vanki voi eri syiden vuoksi olla vankilan ulkopuolella, jolloin hän ei aina vie
+vankilapaikkaa. Ulkopuolella oloaikojen pituudet vaihtelevat samoin kuin vankiloiden käy-
+tännöt siitä, kuinka kauan vankilan ulkopuolella olevalle vangille pidetään paikkaa varat-
+tuna. Tiloja käyttävien vankien määrä on tämän vuoksi laskettu vähentämällä kirjoilla
+olevien vankien määrästä sellaisista syistä ulkopuolella olevien vankien määrä, joille ei
+koskaan pidetä paikkaa varattuna. Näitä ovat valvotussa koevapaudessa olevat, ulkopuoli-
+seen laitokseen sijoitetut, poliisin tiloissa kirjoille otetut, avolaitoksesta luvatta poistuneet
+sekä koevapaudessa olevat, joihin yhteys on katkennut.
+## PDF page 8
+                                                                                                             6
+
+
+1.  Rikosseuraamusasiakkaat 30.4.2022
+
+
+Taulukko 1-1. Rikosseuraamusasiakkaat seuraamuksittain
+
+Alue               VV        SV        TV      YKP    VALRA        AEV       ERN         NR      EAV       YHT.
+ESRA              721         33      311       341         15         6      204          6      400      2037
+IPRA              828         26      170       403         19         8      270          3      267      1994
+LSRA              813         42      176       451         20        13      221          3      351      2090
+Yhteensä         2362       101       657      1195         54        27      695         12     1018      6121
+V. 2021          2215          1      595      1323         33        11      750          5     1140      6073
+
+
+Taulukko 1-2. Rikosseuraamusasiakkaat seuraamuksittain, % alue
+
+Alue               VV        SV        TV      YKP    VALRA        AEV       ERN         NR      EAV       YHT.
+ESRA              35,4       1,6      15,3     16,7        0,7       0,3      10,0       0,3      19,6    100,0
+IPRA              41,5       1,3       8,5     20,2        1,0       0,4      13,5       0,2      13,4    100,0
+LSRA              38,9       2,0       8,4     21,6        1,0       0,6      10,6       0,1      16,8    100,0
+Yhteensä          38,6       1,7      10,7     19,5        0,9       0,4      11,4       0,2      16,6    100,0
+V. 2021           36,5       0,0       9,8     21,8        0,5       0,2      12,3       0,1      18,8    100,0
+
+
+Taulukko 1-3. Rikosseuraamusasiakkaat seuraamuksittain, % seuraamus
+
+Alue               VV        SV        TV      YKP    VALRA        AEV       ERN         NR      EAV       YHT.
+ESRA              30,5      32,7      47,3     28,5       27,8      22,2      29,4      50,0      39,3      33,3
+IPRA              35,1      25,7      25,9     33,7       35,2      29,6      38,8      25,0      26,2      32,6
+LSRA              34,4      41,6      26,8     37,7       37,0      48,1      31,8      25,0      34,5      34,1
+Yhteensä        100,0     100,0     100,0     100,0     100,0     100,0     100,0     100,0     100,0     100,0
+
+## PDF page 9
+                                                                                                                  7
+
+Taulukko 1-4. Rikosseuraamusasiakkaiden asuinmaakunta
+
+Maakunta                         ESRA               IPRA            LSRA       YHTEENSÄ
+Uusimaa                            1691                54              127              1872
+Varsinais-Suomi                       14               13              364               391
+Satakunta                              2                 2             214               218
+Kanta-Häme                            15                 9             162               186
+Pirkanmaa                             12               35              603               650
+Päijät-Häme                           30               86              128               244
+Kymenlaakso                            8              143                 5              156
+Etelä-Karjala                          3               83                 2               88
+Etelä-Savo                             1              114                 9              124
+Pohjois-Savo                          11              270               14               295
+Pohjois-Karjala                        5              207                 6              218
+Keski-Suomi                            9              261               21               291
+Etelä-Pohjanmaa                        4               13              157               174
+Pohjanmaa                              1                 4             121               126
+Keski-Pohjanmaa                        1               51                 4               56
+Pohjois-Pohjanmaa                      6              344                 5              355
+Kainuu                                 3               69                 4               76
+Lappi                                  4              165                 8              177
+Ahvenanmaa                             0                 0              19                19
+Ulkomaat                            168                47               66               281
+Ei tietoa                             49               24               51               124
+Yhteensä                           2037             1994             2090               6121
+
+Taulukko 1-5. Rikosseuraamusasiakkaiden asuinmaakunta, %
+
+Maakunta                         ESRA               IPRA            LSRA       YHTEENSÄ
+Uusimaa                             83,0               2,7              6,1             30,6
+Varsinais-Suomi                      0,7               0,7            17,4                6,4
+Satakunta                            0,1               0,1            10,2                3,6
+Kanta-Häme                           0,7               0,5              7,8               3,0
+Pirkanmaa                            0,6               1,8            28,9              10,6
+Päijät-Häme                          1,5               4,3              6,1               4,0
+Kymenlaakso                          0,4               7,2              0,2               2,5
+Etelä-Karjala                        0,1               4,2              0,1               1,4
+Etelä-Savo                           0,0               5,7              0,4               2,0
+Pohjois-Savo                         0,5             13,5               0,7               4,8
+Pohjois-Karjala                      0,2             10,4               0,3               3,6
+Keski-Suomi                          0,4             13,1               1,0               4,8
+Etelä-Pohjanmaa                      0,2               0,7              7,5               2,8
+Pohjanmaa                            0,0               0,2              5,8               2,1
+Keski-Pohjanmaa                      0,0               2,6              0,2               0,9
+Pohjois-Pohjanmaa                    0,3             17,3               0,2               5,8
+Kainuu                               0,1               3,5              0,2               1,2
+Lappi                                0,2               8,3              0,4               2,9
+Ahvenanmaa                           0,0               0,0              0,9               0,3
+Ulkomaat                             8,2               2,4              3,2               4,6
+Ei tietoa                            2,4               1,2              2,4               2,0
+Yhteensä                          100,0             100,0            100,0             100,0
+## PDF page 10
+                                                                                                                      8
+
+Taulukko 1-6. Rikosseuraamusasiakkaat maakuntien suurimmissa kunnissa
+
+Kaupunki                  VV        SV        TV      YKP     VALRA         AEV       ERN         NR      EAV      YHT.
+Espoo                      77         6        34        48           2         0        25         4        55      251
+Helsinki                 300         21      104       100            5         2        66         3      162       763
+Vantaa                   128          4        46        63           5         0        35         1        82      364
+Hämeenlinna                32         0         3        17           1         0         6         0        18       77
+Joensuu                    39         0        13        24           2         0        17         0        17      112
+Jyväskylä                  85         6        17        28           0         1        27         0        34      198
+Kajaani                    13         0         3        17           3         1         5         0         6       48
+Kokkola                    16         0         4        11           0         0        11         0         2       44
+Kouvola                    42         0        11        21           0         0        11         0        11       96
+Kuopio                     58         4        11        31           0         2        23         0        24      153
+Lahti                      65         0        22        35           1         1        21         0        31      176
+Lappeenranta               22         2         2        10           0         1         5         1         5       48
+Mikkeli                    23         1         2        12           2         0        13         0        10       63
+Oulu                       81         4        19        29           2         1        28         0        46      210
+Pori                       34         2         5        25           1         0        19         0        20      106
+Porvoo                     13         2         2         9           0         0         4         0         4       34
+Rovaniemi                  22         1         6        21           2         0         7         0        15       74
+Seinäjoki                  27         0         4        18           0         1         9         0        14       73
+Tampere                  146         12        26        67           5         4        39         0        66      365
+Turku                      73         7        16        52           2         2        21         2        37      212
+Vaasa                      34         1         4        13           1         0         5         0        26       84
+Yhteensä                1330         73      354       651           34        16      397         11      685     3551
+
+Taulukko 1-7. Rikosseuraamusasiakkaat maakuntien suurimmissa kunnissa, %
+
+Kaupunki                  VV        SV        TV      YKP     VALRA         AEV       ERN         NR      EAV      YHT.
+Espoo                    30,7       2,4     13,5      19,1          0,8       0,0     10,0        1,6     21,9     100,0
+Helsinki                 39,3       2,8     13,6      13,1          0,7       0,3       8,7       0,4     21,2     100,0
+Vantaa                   35,2       1,1     12,6      17,3          1,4       0,0       9,6       0,3     22,5     100,0
+Hämeenlinna              41,6       0,0       3,9     22,1          1,3       0,0       7,8       0,0     23,4     100,0
+Joensuu                  34,8       0,0     11,6      21,4          1,8       0,0     15,2        0,0     15,2     100,0
+Jyväskylä                42,9       3,0       8,6     14,1          0,0       0,5     13,6        0,0     17,2     100,0
+Kajaani                  27,1       0,0       6,3     35,4          6,3       2,1     10,4        0,0     12,5     100,0
+Kokkola                  36,4       0,0       9,1     25,0          0,0       0,0     25,0        0,0       4,5    100,0
+Kouvola                  43,8       0,0     11,5      21,9          0,0       0,0     11,5        0,0     11,5     100,0
+Kuopio                   37,9       2,6       7,2     20,3          0,0       1,3     15,0        0,0     15,7     100,0
+Lahti                    36,9       0,0     12,5      19,9          0,6       0,6     11,9        0,0     17,6     100,0
+Lappeenranta             45,8       4,2       4,2     20,8          0,0       2,1     10,4        2,1     10,4     100,0
+Mikkeli                  36,5       1,6       3,2     19,0          3,2       0,0     20,6        0,0     15,9     100,0
+Oulu                     38,6       1,9       9,0     13,8          1,0       0,5     13,3        0,0     21,9     100,0
+Pori                     32,1       1,9       4,7     23,6          0,9       0,0     17,9        0,0     18,9     100,0
+Porvoo                   38,2       5,9       5,9     26,5          0,0       0,0     11,8        0,0     11,8     100,0
+Rovaniemi                29,7       1,4       8,1     28,4          2,7       0,0       9,5       0,0     20,3     100,0
+Seinäjoki                37,0       0,0       5,5     24,7          0,0       1,4     12,3        0,0     19,2     100,0
+Tampere                  40,0       3,3       7,1     18,4          1,4       1,1     10,7        0,0     18,1     100,0
+Turku                    34,4       3,3       7,5     24,5          0,9       0,9       9,9       0,9     17,5     100,0
+Vaasa                    40,5       1,2       4,8     15,5          1,2       0,0       6,0       0,0     31,0     100,0
+Yhteensä                 37,5       2,1     10,0      18,3          1,0       0,5     11,2        0,3     19,3     100,0
+## PDF page 11
+                                                                                                                  9
+
+2. Vangit rikosseuraamusalueittain 30.4.2022
+
+Taulukko 2-1. Vankeusvankien asuinmaakunta
+Maakunta                         ESRA         IPRA      LSRA           YHT.        2021
+Uusimaa                             565          34          79          678         671
+Varsinais-Suomi                        5           6       134           145         156
+Satakunta                              2           2         62            66         79
+Kanta-Häme                             5           6         63            74         64
+Pirkanmaa                              8         18        232           258         231
+Päijät-Häme                           16         68          21          105          76
+Kymenlaakso                            6         67           2            75         49
+Etelä-Karjala                          2         38           1            41         38
+Etelä-Savo                             1         36           4            41         50
+Pohjois-Savo                           5         96           8          109          87
+Pohjois-Karjala                        0         77           5            82         60
+Keski-Suomi                            7        111          12          130         120
+Etelä-Pohjanmaa                        2           9         71            82         60
+Pohjanmaa                              1           2         44            47         67
+Keski-Pohjanmaa                        1         18           3            22         15
+Pohjois-Pohjanmaa                      1        133           3          137         114
+Kainuu                                 2         15           1            18         18
+Lappi                                  3         51           8            62         58
+Ahvenanmaa                             0           0          4             4           9
+Ulkomaat                              65         29          28          122         150
+Ei tietoa                             24         12          28            64         43
+Yhteensä                            721         828        813          2362       2215
+
+Taulukko 2-2. Vankeusvankien asuinmaakunta, %
+Maakunta                         ESRA         IPRA      LSRA           YHT.        2021
+Uusimaa                            78,4         4,1         9,7         28,7        30,3
+Varsinais-Suomi                      0,7        0,7       16,5            6,1        7,0
+Satakunta                            0,3        0,2         7,6           2,8        3,6
+Kanta-Häme                           0,7        0,7         7,7           3,1        2,9
+Pirkanmaa                            1,1        2,2       28,5          10,9        10,4
+Päijät-Häme                          2,2        8,2         2,6           4,4        3,4
+Kymenlaakso                          0,8        8,1         0,2           3,2        2,2
+Etelä-Karjala                        0,3        4,6         0,1           1,7        1,7
+Etelä-Savo                           0,1        4,3         0,5           1,7        2,3
+Pohjois-Savo                         0,7       11,6         1,0           4,6        3,9
+Pohjois-Karjala                      0,0        9,3         0,6           3,5        2,7
+Keski-Suomi                          1,0       13,4         1,5           5,5        5,4
+Etelä-Pohjanmaa                      0,3        1,1         8,7           3,5        2,7
+Pohjanmaa                            0,1        0,2         5,4           2,0        3,0
+Keski-Pohjanmaa                      0,1        2,2         0,4           0,9        0,7
+Pohjois-Pohjanmaa                    0,1       16,1         0,4           5,8        5,1
+Kainuu                               0,3        1,8         0,1           0,8        0,8
+Lappi                                0,4        6,2         1,0           2,6        2,6
+Ahvenanmaa                           0,0        0,0         0,5           0,2        0,4
+Ulkomaat                             9,0        3,5         3,4           5,2        6,8
+Ei tietoa                            3,3        1,4         3,4           2,7        1,9
+Yhteensä                          100,0      100,0       100,0         100,0      100,0
+## PDF page 12
+                                                                                                                 10
+
+Taulukko 2-3. Vankeusvankien päärikos
+
+Alue             Ryös     Vark     Momr     Henk     Pahp     Seks    Huum      Ljuo     Muu      Yht.
+ESRA                 59      45        41     146       92       61      225       37      15      721
+IPRA                 63      70        32     179      154       63      131     109       27      828
+LSRA                 79      75        69     175      132       54      154       52      23      813
+Yhteensä           201      190      142      500      378     178       510     198       65    2362
+V. 2021            173      179      144      484      344     152       491     190       58    2215
+
+
+Taulukko 2-4. Vankeusvankien päärikos, %
+
+Alue             Ryös     Vark     Momr     Henk     Pahp     Seks    Huum      Ljuo     Muu      Yht.
+ESRA                8,2      6,2      5,7    20,2     12,8      8,5     31,2      5,1      2,1   100,0
+IPRA                7,6      8,5      3,9    21,6     18,6      7,6     15,8     13,2      3,3   100,0
+LSRA                9,7      9,2      8,5    21,5     16,2      6,6     18,9      6,4      2,8   100,0
+Yhteensä            8,5      8,0      6,0    21,2     16,0      7,5     21,6      8,4      2,8   100,0
+V. 2021             7,8      8,1      6,5    21,9     15,5      6,9     22,2      8,6      2,6   100,0
+
+
+Taulukko 2-5. Vankeusvankien kertaisuus
+
+Alue                  1        2        3        4        5       6        7        8       9      10-     Yht.
+ESRA               321       82        75       53      37       22       24      17       14       76     721
+IPRA               302      134        65       57      51       44       29      21       20     105      828
+LSRA               348      108        60       54      29       36       22      21       26     108      812
+Yhteensä           971      324      200      164      117     102        75      59       60     289     2361
+V. 2021            915      309      183      143      108       98       87      60       59     253     2215
+
+
+Taulukko 2-6. Vankeusvankien kertaisuus, %
+
+Alue                  1        2        3        4        5       6        7        8       9      10-     Yht.
+ESRA              44,5     11,4      10,4      7,4      5,1     3,1      3,3      2,4     1,9     10,5   100,0
+IPRA              36,5     16,2       7,9      6,9      6,2     5,3      3,5      2,5     2,4     12,7   100,0
+LSRA              42,9     13,3       7,4      6,7      3,6     4,4      2,7      2,6     3,2     13,3   100,0
+Yhteensä          41,1     13,7       8,5      6,9      5,0     4,3      3,2      2,5     2,5     12,2   100,0
+V. 2021           41,3     14,0       8,3      6,5      4,9     4,4      3,9      2,7     2,7     11,4   100,0
+
+## PDF page 13
+                                                                                                                 11
+
+Taulukko 2-7. Vankeusvankien ennakoidut laitoksessaoloajat
+
+Alue                <3kk     3<6kk    6<12kk       1<2v       2<4v      4<8v          8v-       Yht.
+ESRA                   37        53       110        222       161         60          59        702
+IPRA                   88        97       155        220       118         52          79        809
+LSRA                   54        81       122        244       148         62          72        783
+Yhteensä             179        231       387        686       427       174         210       2294
+V. 2021              157        146       294        581       482       283         210       2153
+Taulukosta puuttuvat vangit, joiden rangaistuksen pituuden laskeminen on kesken tai vanki on lu-
+vattomasti vankilan ulkopuolella.
+
+Taulukko 2-8. Vankeusvankien ennakoidut laitoksessaoloajat, %
+
+Alue                <3kk     3<6kk    6<12kk       1<2v       2<4v      4<8v          8v-       Yht.
+ESRA                  5,3       7,5      15,7       31,6      22,9        8,5         8,4     100,0
+IPRA                10,9       12,0      19,2       27,2      14,6        6,4         9,8     100,0
+LSRA                  6,9      10,3      15,6       31,2      18,9        7,9         9,2     100,0
+Yhteensä              7,8      10,1      16,9       29,9      18,6        7,6         9,2     100,0
+V. 2021               7,3       6,8      13,7       27,0      22,4       13,1         9,8     100,0
+Taulukosta puuttuvat vangit, joiden rangaistuksen pituuden laskeminen on kesken tai vanki on lu-
+vattomasti vankilan ulkopuolella.
+
+Taulukko 2-9. Vankeusvankien ikäjakauma
+
+Alue               15-17     18-20      21-24     25-29     30-39      40-49      50-59          60-       Yht.
+ESRA                    4        19        63       137        243       151          74          30        721
+IPRA                    0        10        75       148        295       179          90          31        828
+LSRA                    0        13        58       150        288       176          77          51        813
+Yhteensä                4        42       196       435        826       506         241        112        2362
+V. 2021                 3        38       194       400        770       460         249        101        2215
+
+Taulukko 2-10. Vankeusvankien ikäjakauma, %
+
+Alue               15-17     18-20      21-24     25-29     30-39      40-49      50-59          60-       Yht.
+ESRA                  0,6       2,6        8,7      19,0      33,7      20,9        10,3         4,2      100,0
+IPRA                  0,0       1,2        9,1      17,9      35,6      21,6        10,9         3,7      100,0
+LSRA                  0,0       1,6        7,1      18,5      35,4      21,6          9,5        6,3      100,0
+Yhteensä              0,2       1,8        8,3      18,4      35,0      21,4        10,2         4,7      100,0
+V. 2021               0,1       1,7        8,8      18,1      34,8      20,8        11,2         4,6      100,0
+
+## PDF page 14
+                                                                                                                   12
+
+Taulukko 2-11. Tutkintavankien asuinmaakunta
+
+Maakunta                          ESRA         IPRA       LSRA           YHT.        2021
+Uusimaa                              202            5         18           225        211
+Varsinais-Suomi                         0           2         26            28          27
+Satakunta                               0           0         11            11          17
+Kanta-Häme                              5           0          5            10          10
+Pirkanmaa                               1           2         40            43          36
+Päijät-Häme                             8         15           6            29          21
+Kymenlaakso                             1         16           1            18          15
+Etelä-Karjala                           0           4          1              5          6
+Etelä-Savo                              0           9          0              9         10
+Pohjois-Savo                            2         16           3            21          19
+Pohjois-Karjala                         0         20           0            20          18
+Keski-Suomi                             0         18           5            23          26
+Etelä-Pohjanmaa                         0           1         14            15          18
+Pohjanmaa                               0           1          7              8         14
+Keski-Pohjanmaa                         0           3          1              4          4
+Pohjois-Pohjanmaa                       1         25           1            27          35
+Kainuu                                  0           4          0              4          4
+Lappi                                   0         10           0            10          20
+Ahvenanmaa                              0           0          1              1          4
+Ulkomaat                              87          17          32           136          67
+Ei tietoa                               4           2          4            10          13
+Yhteensä                             311         170        176            657        595
+
+Taulukko 2-12. Tutkintavankien asuinmaakunta, %
+
+Maakunta                          ESRA         IPRA       LSRA           YHT.        2021
+Uusimaa                             65,0         2,9        10,2          34,2        35,5
+Varsinais-Suomi                       0,0        1,2        14,8           4,3         4,5
+Satakunta                             0,0        0,0         6,3           1,7         2,9
+Kanta-Häme                            1,6        0,0         2,8           1,5         1,7
+Pirkanmaa                             0,3        1,2        22,7           6,5         6,1
+Päijät-Häme                           2,6        8,8         3,4           4,4         3,5
+Kymenlaakso                           0,3        9,4         0,6           2,7         2,5
+Etelä-Karjala                         0,0        2,4         0,6           0,8         1,0
+Etelä-Savo                            0,0        5,3         0,0           1,4         1,7
+Pohjois-Savo                          0,6        9,4         1,7           3,2         3,2
+Pohjois-Karjala                       0,0       11,8         0,0           3,0         3,0
+Keski-Suomi                           0,0       10,6         2,8           3,5         4,4
+Etelä-Pohjanmaa                       0,0        0,6         8,0           2,3         3,0
+Pohjanmaa                             0,0        0,6         4,0           1,2         2,4
+Keski-Pohjanmaa                       0,0        1,8         0,6           0,6         0,7
+Pohjois-Pohjanmaa                     0,3       14,7         0,6           4,1         5,9
+Kainuu                                0,0        2,4         0,0           0,6         0,7
+Lappi                                 0,0        5,9         0,0           1,5         3,4
+Ahvenanmaa                            0,0        0,0         0,6           0,2         0,7
+Ulkomaat                            28,0        10,0        18,2          20,7        11,3
+Ei tietoa                             1,3        1,2         2,3           1,5         2,2
+Yhteensä                           100,0      100,0       100,0         100,0       100,0
+## PDF page 15
+                                                                                                                 13
+
+Taulukko 2-13. Tutkintavankien pääsyyte
+
+Alue              Ryös       Vark    Momr      Henk      Pahp      Seks    Huum        Ljuo      Muu        Yht.
+ESRA                  63        29      162        22         8       10         5         1         9       309
+IPRA                  58        20       40        25         8       14         2         0         3       170
+LSRA                  67        19       61         8         4         6        7         0         4       176
+Yhteensä            188         68      263        55        20       30        14         1       16        655
+V. 2021               83        23       15      181         28       37      204          0       24        595
+
+
+Taulukko 2-14. Tutkintavankien pääsyyte, %
+
+Alue              Ryös       Vark    Momr      Henk      Pahp      Seks    Huum        Ljuo      Muu        Yht.
+ESRA                20,4       9,4     52,4       7,1       2,6      3,2       1,6       0,3      2,9      100,0
+IPRA                34,1     11,8      23,5      14,7       4,7      8,2       1,2       0,0      1,8      100,0
+LSRA                38,1     10,8      34,7       4,5       2,3      3,4       4,0       0,0      2,3      100,0
+Yhteensä            28,7     10,4      40,2       8,4       3,1      4,6       2,1       0,2      2,4      100,0
+V. 2021             13,9       3,9      2,5      30,4       4,7      6,2      34,3       0,0      4,0      100,0
+
+
+Taulukko 2-15. Tutkintavankien ikäjakauma
+
+Alue              15-17     18-20    21-24     25-29     30-39    40-49     50-59        60-     Yht.
+ESRA                   2         9       32        63      102        62        36         5      311
+IPRA                   0        12       19        29        55       38        14         3      170
+LSRA                   0        15       26        32        43       32        20         8      176
+Yhteensä               2        36       77      124       200       132        70        16      657
+V. 2021                9        33       77      136       175       107        46        12      595
+
+
+Taulukko 2-16. Tutkintavankien ikäjakauma, %
+
+Alue              15-17     18-20    21-24     25-29     30-39    40-49     50-59        60-     Yht.
+ESRA                 0,6       2,9     10,3      20,3     32,8      19,9      11,6       1,6   100,0
+IPRA                 0,0       7,1     11,2      17,1     32,4      22,4       8,2       1,8   100,0
+LSRA                 0,0       8,5     14,8      18,2     24,4      18,2      11,4       4,5   100,0
+Yhteensä             0,3       5,5     11,7      18,9     30,4      20,1      10,7       2,4   100,0
+V. 2021              1,5       5,5     12,9      22,9     29,4      18,0       7,7       2,0   100,0
+
+## PDF page 16
+                                                                                                                   14
+
+Taulukko 2-17. Kaikki vangit, vankilaji
+
+                                                                                                       Vankeus-
+                                                                                                      vangeista
+Alue                   vv    vv+tv      elink         yr        tv       sv     sv+tv       Yht.     valvotussa
+                                                                                                      koevapau-
+                                                                                                           dessa
+ESRA                 635         26        54         6      311         33          0    1065                 72
+IPRA                 729         21        70         8      170         25          1    1024                 80
+LSRA                 729         13        65         6      176         36          6    1031               107
+Yhteensä            2093         60      189         20      657         94          7    3120               259
+V. 2021             1967         55      179         14      595           0         1    2811               216
+
+
+Taulukko 2-18. Kaikki vangit, vankilaji, %
+
+                                                                                                       Vankeus-
+                                                                                                      vangeista
+Alue                   vv    vv+tv      elink         yr        tv       sv     sv+tv       Yht.     valvotussa
+                                                                                                      koevapau-
+                                                                                                           dessa
+ESRA                59,6        2,4       5,1       0,6      29,2       3,1       0,0     100,0             10,0
+IPRA                71,2        2,1       6,8       0,8      16,6       2,4       0,1     100,0               9,7
+LSRA                70,7        1,3       6,3       0,6      17,1       3,5       0,6     100,0             13,2
+Yhteensä            67,1        1,9       6,1       0,6      21,1       3,0       0,2     100,0             11,0
+V. 2021             70,0        2,0       6,4       0,5      21,2       0,0       0,0     100,0               9,8
+
+
+Taulukko 2-19. Kaikki vangit osastoittain
+
+                  Suljettu      Avo-        Avo-
+Alue              vankila    vankila    vankila-        Yht.
+                                         osasto
+ESRA                  782        229          54      1065
+IPRA                  627        357          40      1024
+LSRA                  625        391          15      1031
+Yhteensä             2034        977        109       3120
+V. 2021              1777        932        102       2811
+
+
+Taulukko 2-20. Kaikki vangit osastoittain, %
+
+                  Suljettu      Avo-        Avo-
+Alue              vankila    vankila    vankila-        Yht.
+                                         osasto
+ESRA                 73,4        21,5        5,1     100,0
+IPRA                 61,2        34,9        3,9     100,0
+LSRA                 60,6        37,9        1,5     100,0
+Yhteensä             65,2        31,3        3,5     100,0
+V. 2021              63,2        33,2        3,6     100,0
+
+## PDF page 17
+                                                                                                                    15
+
+Taulukko 2-21. Naisvankien vankilaji
+
+                                                                                                     Vankeusvan-
+                                                                                                     geista valvo-
+Alue                   vv    vv+tv      elink         yr        tv        sv    sv+tv       Yht.              tussa
+                                                                                                        koevapau-
+                                                                                                             dessa
+ESRA                    0         0         0          0         0         0         0         0                   0
+IPRA                   37         0         3          1         8         7         0        56                   6
+LSRA                 123          1         9          1       34        21          1      190                  32
+Yhteensä             160          1        12          2       42        28          1      246                  38
+V. 2021              152          1        12          2       44          0         0      211                  23
+
+
+Taulukko 2-22. Naisvankien vankilaji, %
+
+                                                                                                     Vankeusvan-
+                                                                                                     geista valvo-
+Alue                   vv    vv+tv      elink         yr        tv        sv    sv+tv       Yht.              tussa
+                                                                                                        koevapau-
+                                                                                                             dessa
+ESRA                  0,0       0,0       0,0       0,0       0,0        0,0       0,0       0,0                 0,0
+IPRA                66,1        0,0       5,4       1,8      14,3      12,5        0,0    100,0                14,6
+LSRA                64,7        0,5       4,7       0,5      17,9      11,1        0,5    100,0                23,9
+Yhteensä            65,0        0,4       4,9       0,8      17,1      11,4        0,4    100,0                21,7
+V. 2021             72,0        0,5       5,7       0,9      20,9        0,0       0,0    100,0                13,8
+
+
+Taulukko 2-23. Naisvankeusvankien ennakoidut laitoksessaoloajat
+
+Alue                <3kk    3<6kk     6<12kk       1<2v      2<4v      4<8v        8v-      Yht.
+ESRA                    0         0          0         0          0         0         0         0
+IPRA                    5         4          8        14          2         4         4       41
+LSRA                   10        14         22        42        22          9         9      128
+Yhteensä               15        18         30        56        24        13        13       169
+V. 2021                14        11         26        55        22        19        14       161
+Taulukosta puuttuvat vangit, joiden rangaistuksen pituuden laskeminen on kesken tai vanki on lu-
+vattomasti vankilan ulkopuolella.
+
+Taulukko 2-24. Naisvankeusvankien ennakoidut laitoksessaoloajat, %
+
+Alue                <3kk    3<6kk     6<12kk       1<2v      2<4v      4<8v        8v-      Yht.
+ESRA                  0,0       0,0        0,0       0,0       0,0       0,0        0,0       0,0
+IPRA                12,2        9,8      19,5       34,1       4,9       9,8        9,8    100,0
+LSRA                  7,8      10,9      17,2       32,8      17,2       7,0        7,0    100,0
+Yhteensä              8,9      10,7      17,8       33,1      14,2       7,7        7,7    100,0
+V. 2021               8,7       6,8      16,1       34,2      13,7      11,8        8,7    100,0
+Taulukosta puuttuvat vangit, joiden rangaistuksen pituuden laskeminen on kesken tai vanki on lu-
+vattomasti vankilan ulkopuolella.
+
+## PDF page 18
+                                                                                                                 16
+
+Taulukko 2-25. Naisvankeusvankien päärikos
+
+Alue             Ryös      Vark    Momr     Henk     Pahp     Seks    Huum      Ljuo     Muu       Yht.
+ESRA                  0        0        0        0        0        0        0       0        0        0
+IPRA                  1        1        5       11        7        0        7       4        5       41
+LSRA                 11        7       17       35      20         4      29        7        4     134
+Yhteensä             12        8       22       46      27         4      36       11        9     175
+V. 2021              12      15        19       43      28         5      27       12        6     167
+
+
+Taulukko 2-26. Naisvankeusvankien päärikos, %
+
+Alue             Ryös      Vark    Momr     Henk     Pahp     Seks    Huum      Ljuo     Muu       Yht.
+ESRA                0,0      0,0      0,0      0,0      0,0     0,0       0,0     0,0      0,0      0,0
+IPRA                2,4      2,4     12,2    26,8     17,1      0,0     17,1      9,8     12,2   100,0
+LSRA                8,2      5,2     12,7    26,1     14,9      3,0     21,6      5,2      3,0   100,0
+Yhteensä            6,9      4,6     12,6    26,3     15,4      2,3     20,6      6,3      5,1   100,0
+V. 2021             7,2      9,0     11,4    25,7     16,8      3,0     16,2      7,2      3,6   100,0
+
+
+Taulukko 2-27. Naisvankeusvankien ikäjakauma
+
+Alue             15-17    18-20    21-24    25-29    30-39   40-49    50-59       60-    Yht.
+ESRA                  0        0        0        0        0        0       0        0        0
+IPRA                  0        0        0        5      17         9       9        1      41
+LSRA                  0        0        8       20      52       30       18        6     134
+Yhteensä              0        0        8       25      69       39       27        7     175
+V. 2021               0        3        9       26      51       45       23      10      167
+
+
+Taulukko 2-28. Naisvankeusvankien ikäjakauma, %
+
+Alue             15-17    18-20    21-24    25-29    30-39   40-49    50-59       60-    Yht.
+ESRA                0,0      0,0      0,0      0,0      0,0     0,0      0,0      0,0     0,0
+IPRA                0,0      0,0      0,0    12,2     41,5     22,0     22,0      2,4  100,0
+LSRA                0,0      0,0      6,0    14,9     38,8     22,4     13,4      4,5  100,0
+Yhteensä            0,0      0,0      4,6    14,3     39,4     22,3     15,4      4,0  100,0
+V. 2021             0,0      1,8      5,4    15,6     30,5     26,9     13,8      6,0  100,0
+
+## PDF page 19
+                                                                                                                                                                                                         17
+
+3. Vangit vankiloittain 30.4.2022
+Taulukko 3-1. Vankeusvankien asuinmaakunta
+
+ Van-        Uusi-     Varsi-   Sata-   Kanta-     Pir-  Päijät-      Ky-    Etelä-   Etelä-  Pohj.-   Pohj.-    Keski-    Etelä-   Poh-     Keski-    Pohj.-   Kai-           Ahve-    Ulko-    Ei
+ kila         maa       nais-  kunta     Häme     kan-    Häme      men-      Kar-    Savo     Savo      Kar-   Suomi    Pohjan-     jan-  Pohjan-   Pohjan-    nuu   Lappi     nan-    maat    tie-   Yht.
+                      Suomi                       maa              laakso      jala                       jala              maa     maa        maa       maa                    maa             toa
+ Hev          235          0        1        1       1        4         2        0        0        0        0         0        1       0          1         0     0       1        0      17     5    269
+ Häva          20          0        0        1       7        1         1        1        1        3        0         1        1       3          1         1     0       3        1       3     2      51
+ Jov           38          1        0        1       0        2         0        0        0        0        0         0        0       0          0         0     0       0        0       6     6      54
+ Juv             1         0        0        0       1        1         1        2        1        8      21          0        0       0          1         2     3       0        0       2     0      44
+ Jyv             7         1        0        0       5        7         5        1        1        4        2       27         3       1          3         3     1       2        0       0     1      74
+ Kerv          99          1        0        0       2        3         1        0        0        1        0         1        0       0          0         0     0       0        0      15     4    127
+ Kesv            2         1        1        1       0        0         2        0        1        4        0         4        0       1          0         5     0       2        0       3     1      28
+ Kuv             0         0        0        1       0        2         0        1        1      27         6         8        0       0          0         5     1       1        0       1     1      55
+ Kyv             2         1        2        6     51         2         0        0        0        0        1         1        2       1          0         0     0       0        0       0     4      73
+ Käv             4        38        2        1       5        0         0        0        0        0        0         0        2       1          0         0     0       0        1       8     2      64
+ Miv             2         0        0        1       0       15        10        8        5        8        2         1        0       0          0         4     1       2        0       1     0      60
+ Nav             7         1        0        1       5       15         6        3        6      10       12        21         1       0          0         6     0       1        0       9     2    106
+ Ouv             0         0        1        1       0        0         0        0        0        0        0         1        0       0          2       30      2       5        0       2     1      45
+ Pev             3         0        0        0       1        2         5        2        1        5        2       11         0       0          6       25      3     10         0       1     1      78
+ Pyv             2         0        0        0       0        4         5        2        2        3      13          9        1       0          2       14      0       3        0       2     0      62
+ Riv           89          3        1        2       5        5         3        2        1        4        0         6        1       1          0         1     2       2        0      22     6    156
+ Sav             5        25      25        15     53         1         0        0        0        0        0         1       20       7          0         0     1       0        0       3     8    164
+ Sulv            4         0        0        0       3        4        12       10       10        3        2         0        0       0          0         4     0       0        0       3     2      57
+ Suov          94          0        0        0       0        1         0        0        0        0        0         0        0       0          0         0     0       0        0       4     2    101
+ Suv             6         2        0        1       3       17        21        9        7      22       16        27         3       0          3       18      4     10         0       4     2    175
+ Tuv           15         60      22         9     38         1         0        0        1        1        2         1       14       4          1         1     0       0        1       6     5    182
+ Vanv          10          0        0        1       0        1         0        0        0        0        0         0        0       0          0         0     0       0        0       1     1      14
+ Vav             3         0        1        0       6        0         0        0        0        0        0         0       17      17          1         0     0       1        0       1     0      47
+ Vava          23         10        3       26     31        14         0        0        2        4        1         4        5       5          0         1     0       3        0       5     6    143
+ Viv             7         0        7        5     41         2         1        0        0        0        1         4       10       6          0         0     0       1        1       2     1      89
+ Ylv             0         1        0        0       0        1         0        0        1        2        1         2        1       0          1       17      0     15         0       1     1      44
+ Yht.         678       145       66        74    258      105         75       41       41     109       82      130         82      47        22       137     18     62         4    122     64   2362
+ V. 2021      671       156       79        64    231        76        49       38       50      87       60      120         60      67        15       114     18     58         9    150     43   2215
+## PDF page 20
+                                                                                                                                                                                                              18
+
+Taulukko 3-2. Vankeusvankien asuinmaakunta, %
+
+                      Varsi-                      Pir-     Päi-     Ky-    Etelä-                                         Etelä-     Poh-     Keski-    Pohj.-                   Ahve-              Ei
+ Van-        Uusi-     nais-  Sata-   Kanta-     kan-      jät-    men-      Kar-   Etelä-   Pohj.-    Pohj.-  Keski-      Poh-       jan-     Poh-      Poh-      Kai-  Lappi    nan-   Ulko-     tie-     Yht.
+ kila         maa    Suomi    kunta   Häme       maa    Häme     laakso       jala   Savo     Savo   Karjala   Suomi        jan-     maa        jan-      jan-     nuu             maa    maat     toa
+                                                                                                                           maa                  maa       maa
+ Hev         87,4       0,0     0,4      0,4      0,4      1,5      0,7      0,0      0,0      0,0       0,0      0,0       0,4       0,0       0,4       0,0      0,0     0,4     0,0     6,3     1,9   100,0
+ Häva        39,2       0,0     0,0      2,0    13,7       2,0      2,0      2,0      2,0      5,9       0,0      2,0       2,0       5,9       2,0       2,0      0,0     5,9     2,0     5,9     3,9   100,0
+ Jov         70,4       1,9     0,0      1,9      0,0      3,7      0,0      0,0      0,0      0,0       0,0      0,0       0,0       0,0       0,0       0,0      0,0     0,0     0,0   11,1    11,1    100,0
+ Juv           2,3      0,0     0,0      0,0      2,3      2,3      2,3      4,5      2,3     18,2     47,7       0,0       0,0       0,0       2,3       4,5      6,8     0,0     0,0     4,5     0,0   100,0
+ Jyv           9,5      1,4     0,0      0,0      6,8      9,5      6,8      1,4      1,4      5,4       2,7    36,5        4,1       1,4       4,1       4,1      1,4     2,7     0,0     0,0     1,4   100,0
+ Kerv        78,0       0,8     0,0      0,0      1,6      2,4      0,8      0,0      0,0      0,8       0,0      0,8       0,0       0,0       0,0       0,0      0,0     0,0     0,0   11,8      3,1   100,0
+ Kesv          7,1      3,6     3,6      3,6      0,0      0,0      7,1      0,0      3,6     14,3       0,0    14,3        0,0       3,6       0,0      17,9      0,0     7,1     0,0   10,7      3,6   100,0
+ Kuv           0,0      0,0     0,0      1,8      0,0      3,6      0,0      1,8      1,8     49,1     10,9     14,5        0,0       0,0       0,0       9,1      1,8     1,8     0,0     1,8     1,8   100,0
+ Kyv           2,7      1,4     2,7      8,2    69,9       2,7      0,0      0,0      0,0      0,0       1,4      1,4       2,7       1,4       0,0       0,0      0,0     0,0     0,0     0,0     5,5   100,0
+ Käv           6,3    59,4      3,1      1,6      7,8      0,0      0,0      0,0      0,0      0,0       0,0      0,0       3,1       1,6       0,0       0,0      0,0     0,0     1,6   12,5      3,1   100,0
+ Miv           3,3      0,0     0,0      1,7      0,0    25,0     16,7      13,3      8,3     13,3       3,3      1,7       0,0       0,0       0,0       6,7      1,7     3,3     0,0     1,7     0,0   100,0
+ Nav           6,6      0,9     0,0      0,9      4,7    14,2       5,7      2,8      5,7      9,4     11,3     19,8        0,9       0,0       0,0       5,7      0,0     0,9     0,0     8,5     1,9   100,0
+ Ouv           0,0      0,0     2,2      2,2      0,0      0,0      0,0      0,0      0,0      0,0       0,0      2,2       0,0       0,0       4,4      66,7      4,4   11,1      0,0     4,4     2,2   100,0
+ Pev           3,8      0,0     0,0      0,0      1,3      2,6      6,4      2,6      1,3      6,4       2,6    14,1        0,0       0,0       7,7      32,1      3,8   12,8      0,0     1,3     1,3   100,0
+ Pyv           3,2      0,0     0,0      0,0      0,0      6,5      8,1      3,2      3,2      4,8     21,0     14,5        1,6       0,0       3,2      22,6      0,0     4,8     0,0     3,2     0,0   100,0
+ Riv         57,1       1,9     0,6      1,3      3,2      3,2      1,9      1,3      0,6      2,6       0,0      3,8       0,6       0,6       0,0       0,6      1,3     1,3     0,0   14,1      3,8   100,0
+ Sav           3,0    15,2    15,2       9,1    32,3       0,6      0,0      0,0      0,0      0,0       0,0      0,6     12,2        4,3       0,0       0,0      0,6     0,0     0,0     1,8     4,9   100,0
+ Sulv          7,0      0,0     0,0      0,0      5,3      7,0    21,1      17,5     17,5      5,3       3,5      0,0       0,0       0,0       0,0       7,0      0,0     0,0     0,0     5,3     3,5   100,0
+ Suov        93,1       0,0     0,0      0,0      0,0      1,0      0,0      0,0      0,0      0,0       0,0      0,0       0,0       0,0       0,0       0,0      0,0     0,0     0,0     4,0     2,0   100,0
+ Suv           3,4      1,1     0,0      0,6      1,7      9,7    12,0       5,1      4,0     12,6       9,1    15,4        1,7       0,0       1,7      10,3      2,3     5,7     0,0     2,3     1,1   100,0
+ Tuv           8,2    33,0    12,1       4,9    20,9       0,5      0,0      0,0      0,5      0,5       1,1      0,5       7,7       2,2       0,5       0,5      0,0     0,0     0,5     3,3     2,7   100,0
+ Vanv        71,4       0,0     0,0      7,1      0,0      7,1      0,0      0,0      0,0      0,0       0,0      0,0       0,0       0,0       0,0       0,0      0,0     0,0     0,0     7,1     7,1   100,0
+ Vav           6,4      0,0     2,1      0,0    12,8       0,0      0,0      0,0      0,0      0,0       0,0      0,0     36,2      36,2        2,1       0,0      0,0     2,1     0,0     2,1     0,0   100,0
+ Vava        16,1       7,0     2,1    18,2     21,7       9,8      0,0      0,0      1,4      2,8       0,7      2,8       3,5       3,5       0,0       0,7      0,0     2,1     0,0     3,5     4,2   100,0
+ Viv           7,9      0,0     7,9      5,6    46,1       2,2      1,1      0,0      0,0      0,0       1,1      4,5     11,2        6,7       0,0       0,0      0,0     1,1     1,1     2,2     1,1   100,0
+ Ylv           0,0      2,3     0,0      0,0      0,0      2,3      0,0      0,0      2,3      4,5       2,3      4,5       2,3       0,0       2,3      38,6      0,0   34,1      0,0     2,3     2,3   100,0
+ Yht.        28,7       6,1     2,8      3,1    10,9       4,4      3,2      1,7      1,7      4,6       3,5      5,5       3,5       2,0       0,9       5,8      0,8     2,6     0,2     5,2     2,7   100,0
+ V. 2021     30,3       7,0     3,6      2,9    10,4       3,4      2,2      1,7      2,3      3,9       2,7      5,4       2,7       3,0       0,7       5,1      0,8     2,6     0,4     6,8     1,9   100,0
