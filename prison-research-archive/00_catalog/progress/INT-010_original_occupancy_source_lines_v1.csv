@@ -1,0 +1,127 @@
+pdf_page,layout_text_line,original_line
+8,1,                                                                                                             6
+8,4,1.  Rikosseuraamusasiakkaat 30.4.2022
+8,7,Taulukko 1-1. Rikosseuraamusasiakkaat seuraamuksittain
+8,9,Alue               VV        SV        TV      YKP    VALRA        AEV       ERN         NR      EAV       YHT.
+8,10,ESRA              721         33      311       341         15         6      204          6      400      2037
+8,11,IPRA              828         26      170       403         19         8      270          3      267      1994
+8,12,LSRA              813         42      176       451         20        13      221          3      351      2090
+8,13,Yhteensä         2362       101       657      1195         54        27      695         12     1018      6121
+8,14,V. 2021          2215          1      595      1323         33        11      750          5     1140      6073
+8,17,"Taulukko 1-2. Rikosseuraamusasiakkaat seuraamuksittain, % alue"
+8,19,Alue               VV        SV        TV      YKP    VALRA        AEV       ERN         NR      EAV       YHT.
+8,20,"ESRA              35,4       1,6      15,3     16,7        0,7       0,3      10,0       0,3      19,6    100,0"
+8,21,"IPRA              41,5       1,3       8,5     20,2        1,0       0,4      13,5       0,2      13,4    100,0"
+8,22,"LSRA              38,9       2,0       8,4     21,6        1,0       0,6      10,6       0,1      16,8    100,0"
+8,23,"Yhteensä          38,6       1,7      10,7     19,5        0,9       0,4      11,4       0,2      16,6    100,0"
+8,24,"V. 2021           36,5       0,0       9,8     21,8        0,5       0,2      12,3       0,1      18,8    100,0"
+8,27,"Taulukko 1-3. Rikosseuraamusasiakkaat seuraamuksittain, % seuraamus"
+8,29,Alue               VV        SV        TV      YKP    VALRA        AEV       ERN         NR      EAV       YHT.
+8,30,"ESRA              30,5      32,7      47,3     28,5       27,8      22,2      29,4      50,0      39,3      33,3"
+8,31,"IPRA              35,1      25,7      25,9     33,7       35,2      29,6      38,8      25,0      26,2      32,6"
+8,32,"LSRA              34,4      41,6      26,8     37,7       37,0      48,1      31,8      25,0      34,5      34,1"
+8,33,"Yhteensä        100,0     100,0     100,0     100,0     100,0     100,0     100,0     100,0     100,0     100,0"
+33,1,                                                                                                                      31
+33,3,4.  Vankien sijoittelu ja laitosten käyttöaste 30.4.2022
+33,5,Taulukko 4-1. Etelä-Suomen rikosseuraamusalue: vankien asuinalue
+33,7,                 Etelä-   Itä-Poh-     Länsi-       Ulko-     Ei tie-
+33,8,Vankila         Suomi          jois-   Suomi        maat         toa         Yht.
+33,9,                            Suomi
+33,10,Hev                 274           4         10         22           5        315
+33,11,Jov                  52           1           2        30           2          87
+33,12,Jov/A                41           0           4          5          4          54
+33,13,Kerv                100           3           6        15           4        128
+33,14,Riv                 126          21         22         33           6        208
+33,15,Suov                 94           0           1          4          2        101
+33,16,Vanv                109           3           9        46           5        172
+33,17,Yhteensä            796          32         54        155         28        1065
+33,18,V. 2021             755          32         43        124         18         972
+33,21,Taulukko 4-2. Etelä-Suomen rikosseuraamusalue: vankien sijoittelu ja tilojen käyttöaste
+33,23,Vankila           Oma         Oma         Muu        Muu          Yh-       Tiloja      Tiloja     Käyttö-
+33,24,                   alue        alue       alue       alue     teensä                      käy-        aste
+33,25,                    (N)         (%)        (N)        (%)                               tössä          (%)
+33,26,"Hev                 274        87,0         41       13,0         315         309          293        94,8"
+33,27,"Jov                  52        59,8         35       40,2           87          84          87       103,6"
+33,28,"Jov/A                41        75,9         13       24,1           54          40          42       105,0"
+33,29,"Kerv                100        78,1         28       21,9         128         130          101        77,7"
+33,30,"Riv                 126        60,6         82       39,4         208         223          205        91,9"
+33,31,"Suov                 94        93,1           7        6,9        101           80          79        98,8"
+33,32,"Vanv                109        63,4         63       36,6         172         185          172        93,0"
+33,33,"Yhteensä            796        74,7        269       25,3        1065        1051          979        93,1"
+33,34,"V. 2021             755        77,7        217       22,3         972        1048          905        86,4"
+34,1,                                                                                                                         32
+34,3,Taulukko 4-3. Itä-Pohjois-Suomen rikosseuraamusalue: vankien asuinalue
+34,5,                 Etelä-    Itä-Poh-     Länsi-       Ulko-      Ei tie-
+34,6,Vankila         Suomi          jois-    Suomi         maat         toa         Yht.
+34,7,                             Suomi
+34,8,Juv                    1          39           2          2           0          44
+34,9,Jyv                    7          50         17           0           1          75
+34,10,Kesv                   2          18           4          3           1          28
+34,11,Kuv                    1          70           6          5           0          82
+34,12,Kuvy                   0          19           1          0           1          21
+34,13,Miv                    5          73         28           8           1         115
+34,14,Nav                    7          66         23           9           2         107
+34,15,Ouv                    1          65           6          6           0          78
+34,16,Ouvy                   0          17           1          0           1          19
+34,17,Pev                    3          71           3          1           1          79
+34,18,Pyv                    2          81           5          4           1          93
+34,19,Sulv                   4          41           7          3           2          57
+34,20,Suv                    6        141          27           4           2         180
+34,21,Ylv                    0          41           3          1           1          46
+34,22,Yhteensä              39        792         133          46         14        1024
+34,23,V. 2021               26        682          94          34         16          852
+34,26,Taulukko 4-4. Itä-Pohjois-Suomen rikosseuraamuslaue: vankien sijoittelu ja tilojen käyttöaste
+34,28,Vankila            Oma         Oma         Muu        Muu           Yh-       Tiloja       Tiloja    Käyttö-
+34,29,                   alue        alue        alue       alue      teensä                      käy-         aste
+34,30,                     (N)         (%)         (N)        (%)                                tössä          (%)
+34,31,"Juv                   39        88,6           5      11,4           44           40           32        80,0"
+34,32,"Jyv                   50        66,7         25       33,3           75           60           56        93,3"
+34,33,"Kesv                  18        64,3         10       35,7           28           46           22        47,8"
+34,34,"Kuv                   70        85,4         12       14,6           82           76           80       105,3"
+34,35,"Kuvy                  19        90,5           2        9,5          21           20           12        60,0"
+34,36,"Miv                   73        63,5         42       36,5          115          110         115        104,5"
+34,37,"Nav                   66        61,7         41       38,3          107          101           98        97,0"
+34,38,"Ouv                   65        83,3         13       16,7           78           80           76        95,0"
+34,39,"Ouvy                  17        89,5           2      10,5           19           14           10        71,4"
+34,40,"Pev                   71        89,9           8      10,1           79           80           79        98,8"
+34,41,"Pyv                   81        87,1         12       12,9           93           87           91       104,6"
+34,42,"Sulv                  41        71,9         16       28,1           57           48           45        93,8"
+34,43,"Suv                 141         78,3         39       21,7          180          181         180         99,4"
+34,44,"Ylv                   41        89,1           5      10,9           46           40           38        95,0"
+34,45,"Yhteensä            792         77,3        232       22,7        1024           983         934         95,0"
+34,46,"V. 2021             682         80,0        170       20,0          852        1000          781         78,1"
+35,1,                                                                                                                        33
+35,3,Taulukko 4-5. Etelä-Suomen rikosseuraamusalue: vankien asuinalue
+35,5,                    Etelä-    Itä-Poh-      Länsi-      Ulko-      Ei tie-
+35,6,Vankila            Suomi          jois-    Suomi        maat          toa        Yht.
+35,7,                                Suomi
+35,8,Häva                     37          20          28        12           2          99
+35,9,Kyv                       6           5        108           7          5        131
+35,10,Käv                       4           0          51          8          2          65
+35,11,Sav/Huos                  2           1          79          3          6          91
+35,12,Sav/Köos                  3           1          67          0          2          73
+35,13,Tuv                      22          10        202         17           9        260
+35,14,Vav                       2           2          51          6          1          62
+35,15,Vav/A                     1           1          13          0          0          15
+35,16,Vava/Ojos                 6           2          63          1          0          72
+35,17,Vava/ Vanos              17          13          34          4          6          74
+35,18,Viv                       7           7          72          2          1          89
+35,19,Yhteensä               107           62        768         60          34       1031
+35,20,V. 2021                101           52        753         59          22        987
+35,23,Taulukko 4-6. Länsi-Suomen rikosseuraamusalue: vankien sijoittelu ja tilojen käyttöaste
+35,25,Vankila              Oma         Oma         Muu        Muu           Yh-       Tiloja      Tiloja     Käyttö-
+35,26,                      alue        alue       alue       alue      teensä                      käy-         aste
+35,27,                       (N)         (%)         (N)        (%)                                tössä          (%)
+35,28,"Häva                    28        28,3         71        71,7          99         100           94         94,0"
+35,29,"Kyv                    108        82,4         23        17,6         131         113          128       113,3"
+35,30,"Käv                     51        78,5         14        21,5          65           65          51         78,5"
+35,31,"Sav/Huos                79        86,8         12        13,2          91         107           70         65,4"
+35,32,"Sav/Köos                67        91,8           6        8,2          73           73          69         94,5"
+35,33,"Tuv                    202        77,7         58        22,3         260         255          252         98,8"
+35,34,"Vav                     51        82,3         11        17,7          62           59          62       105,1"
+35,35,"Vav/A                   13        86,7           2       13,3          15           12          11         91,7"
+35,36,"Vava/Ojos               63        87,5           9       12,5          72           50          43         86,0"
+35,37,"Vava/ Vanos             34        45,9         40        54,1          74           57          43         75,4"
+35,38,"Viv                     72        80,9         17        19,1          89           73          74       101,4"
+35,39,"Yhteensä               768        74,5        263        25,5       1031          964          897         93,0"
+35,40,"V. 2021                753        76,3        234        23,7         987         972          878         90,3"
