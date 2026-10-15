@@ -1,0 +1,1365 @@
+{
+  "original_path": "space-archive/extra/stp8/2020-gada-statistika.docx",
+  "original_bytes": 1088041,
+  "original_blob_sha1": "5ff8e66877befd63836d89bf68b10721c3514326",
+  "sha256": "941d25ef51b9759400beeeb8e995937bc78900467a210706e57477db32c8a3ce",
+  "charts_total": 20,
+  "chart_cached_point_rows": 181,
+  "charts": [
+    {
+      "part": "word/charts/chart1.xml",
+      "title": "Ieslodzīto skaita izmaiņas",
+      "series_count": 3,
+      "series": [
+        {
+          "index": 1,
+          "label": "Ieslodzītie",
+          "categories": 11,
+          "values": 11,
+          "category_cache": "numCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "2010",
+              "y": "6780"
+            },
+            {
+              "i": 1,
+              "x": "2011",
+              "y": "6561"
+            },
+            {
+              "i": 2,
+              "x": "2012",
+              "y": "6117"
+            },
+            {
+              "i": 3,
+              "x": "2013",
+              "y": "5139"
+            },
+            {
+              "i": 4,
+              "x": "2014",
+              "y": "4745"
+            },
+            {
+              "i": 5,
+              "x": "2015",
+              "y": "4409"
+            },
+            {
+              "i": 6,
+              "x": "2016",
+              "y": "4243"
+            },
+            {
+              "i": 7,
+              "x": "2017",
+              "y": "3765"
+            },
+            {
+              "i": 8,
+              "x": "2018",
+              "y": "3522"
+            },
+            {
+              "i": 9,
+              "x": "2019",
+              "y": "3414"
+            },
+            {
+              "i": 10,
+              "x": "2020",
+              "y": "3104"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "label": "Apcietinātie",
+          "categories": 11,
+          "values": 11,
+          "category_cache": "numCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "2010",
+              "y": "2031"
+            },
+            {
+              "i": 1,
+              "x": "2011",
+              "y": "2035"
+            },
+            {
+              "i": 2,
+              "x": "2012",
+              "y": "1921"
+            },
+            {
+              "i": 3,
+              "x": "2013",
+              "y": "1526"
+            },
+            {
+              "i": 4,
+              "x": "2014",
+              "y": "1469"
+            },
+            {
+              "i": 5,
+              "x": "2015",
+              "y": "1389"
+            },
+            {
+              "i": 6,
+              "x": "2016",
+              "y": "1277"
+            },
+            {
+              "i": 7,
+              "x": "2017",
+              "y": "1051"
+            },
+            {
+              "i": 8,
+              "x": "2018",
+              "y": "981"
+            },
+            {
+              "i": 9,
+              "x": "2019",
+              "y": "949"
+            },
+            {
+              "i": 10,
+              "x": "2020",
+              "y": "810"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "label": "Notiesātie",
+          "categories": 11,
+          "values": 11,
+          "category_cache": "numCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "2010",
+              "y": "4749"
+            },
+            {
+              "i": 1,
+              "x": "2011",
+              "y": "4526"
+            },
+            {
+              "i": 2,
+              "x": "2012",
+              "y": "4196"
+            },
+            {
+              "i": 3,
+              "x": "2013",
+              "y": "3613"
+            },
+            {
+              "i": 4,
+              "x": "2014",
+              "y": "3276"
+            },
+            {
+              "i": 5,
+              "x": "2015",
+              "y": "3020"
+            },
+            {
+              "i": 6,
+              "x": "2016",
+              "y": "2966"
+            },
+            {
+              "i": 7,
+              "x": "2017",
+              "y": "2714"
+            },
+            {
+              "i": 8,
+              "x": "2018",
+              "y": "2541"
+            },
+            {
+              "i": 9,
+              "x": "2019",
+              "y": "2465"
+            },
+            {
+              "i": 10,
+              "x": "2020",
+              "y": "2294"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart2.xml",
+      "title": "Ieslodzīto skaits 2020.gada 31.decembrī",
+      "series_count": 2,
+      "series": [
+        {
+          "index": 1,
+          "label": "Apcietinātie",
+          "categories": 4,
+          "values": 4,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Vīrieši ",
+              "y": "749"
+            },
+            {
+              "i": 1,
+              "x": "Sievietes",
+              "y": "54"
+            },
+            {
+              "i": 2,
+              "x": "Nepilngadīgie jaunieši",
+              "y": "7"
+            },
+            {
+              "i": 3,
+              "x": "Nepilngadīgas jaunietes",
+              "y": "0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "label": "Notiesātie",
+          "categories": 4,
+          "values": 4,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Vīrieši ",
+              "y": "2075"
+            },
+            {
+              "i": 1,
+              "x": "Sievietes",
+              "y": "201"
+            },
+            {
+              "i": 2,
+              "x": "Nepilngadīgie jaunieši",
+              "y": "18"
+            },
+            {
+              "i": 3,
+              "x": "Nepilngadīgas jaunietes",
+              "y": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart3.xml",
+      "title": "Ieslodzīto skaits 2020.gada 31.decembrī pēc dzimuma",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 2,
+          "values": 2,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Vīrieši",
+              "y": "2849"
+            },
+            {
+              "i": 1,
+              "x": "Sievietes",
+              "y": "255"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart4.xml",
+      "title": "Ieslodzīto skaits 2020.gada 31.decembrī pēc  vecuma",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 2,
+          "values": 2,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Pilngadīgie",
+              "y": "3079"
+            },
+            {
+              "i": 1,
+              "x": "Nepilngadīgie",
+              "y": "25"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart5.xml",
+      "title": "Nepilngadīgo ieslodzīto skaita izmaiņas ",
+      "series_count": 3,
+      "series": [
+        {
+          "index": 1,
+          "label": "Ieslodzītie",
+          "categories": 11,
+          "values": 11,
+          "category_cache": "numCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "2010",
+              "y": "88"
+            },
+            {
+              "i": 1,
+              "x": "2011",
+              "y": "68"
+            },
+            {
+              "i": 2,
+              "x": "2012",
+              "y": "55"
+            },
+            {
+              "i": 3,
+              "x": "2013",
+              "y": "46"
+            },
+            {
+              "i": 4,
+              "x": "2014",
+              "y": "38"
+            },
+            {
+              "i": 5,
+              "x": "2015",
+              "y": "42"
+            },
+            {
+              "i": 6,
+              "x": "2016",
+              "y": "43"
+            },
+            {
+              "i": 7,
+              "x": "2017",
+              "y": "41"
+            },
+            {
+              "i": 8,
+              "x": "2018",
+              "y": "35"
+            },
+            {
+              "i": 9,
+              "x": "2019",
+              "y": "36"
+            },
+            {
+              "i": 10,
+              "x": "2020",
+              "y": "25"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "label": "Apcietinātie",
+          "categories": 11,
+          "values": 11,
+          "category_cache": "numCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "2010",
+              "y": "40"
+            },
+            {
+              "i": 1,
+              "x": "2011",
+              "y": "30"
+            },
+            {
+              "i": 2,
+              "x": "2012",
+              "y": "30"
+            },
+            {
+              "i": 3,
+              "x": "2013",
+              "y": "22"
+            },
+            {
+              "i": 4,
+              "x": "2014",
+              "y": "15"
+            },
+            {
+              "i": 5,
+              "x": "2015",
+              "y": "22"
+            },
+            {
+              "i": 6,
+              "x": "2016",
+              "y": "21"
+            },
+            {
+              "i": 7,
+              "x": "2017",
+              "y": "15"
+            },
+            {
+              "i": 8,
+              "x": "2018",
+              "y": "11"
+            },
+            {
+              "i": 9,
+              "x": "2019",
+              "y": "15"
+            },
+            {
+              "i": 10,
+              "x": "2020",
+              "y": "18"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "label": "Notiesātie",
+          "categories": 11,
+          "values": 11,
+          "category_cache": "numCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "2010",
+              "y": "48"
+            },
+            {
+              "i": 1,
+              "x": "2011",
+              "y": "38"
+            },
+            {
+              "i": 2,
+              "x": "2012",
+              "y": "25"
+            },
+            {
+              "i": 3,
+              "x": "2013",
+              "y": "24"
+            },
+            {
+              "i": 4,
+              "x": "2014",
+              "y": "23"
+            },
+            {
+              "i": 5,
+              "x": "2015",
+              "y": "20"
+            },
+            {
+              "i": 6,
+              "x": "2016",
+              "y": "22"
+            },
+            {
+              "i": 7,
+              "x": "2017",
+              "y": "26"
+            },
+            {
+              "i": 8,
+              "x": "2018",
+              "y": "24"
+            },
+            {
+              "i": 9,
+              "x": "2019",
+              "y": "21"
+            },
+            {
+              "i": 10,
+              "x": "2020",
+              "y": "7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart6.xml",
+      "title": "Ieslodzīto skaits 2020.gada 31.decembrī pēc valstiskās piederības",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 2,
+          "values": 2,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Ārzemnieki",
+              "y": "45"
+            },
+            {
+              "i": 1,
+              "x": "Latvijas valstspiederīgie",
+              "y": "3059"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart7.xml",
+      "title": "Ieslodzīto ārzemnieku skaits 2020.gada 31.decembrī",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 6,
+          "values": 6,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Notiesātie vīrieši",
+              "y": "24"
+            },
+            {
+              "i": 1,
+              "x": "Apcietinātie vīrieši",
+              "y": "15"
+            },
+            {
+              "i": 2,
+              "x": "Notiesātās sievietes",
+              "y": "5"
+            },
+            {
+              "i": 3,
+              "x": "Apcietinātās sievietes",
+              "y": "1"
+            },
+            {
+              "i": 4,
+              "x": "Notiesātie jaunieši (no 18 līdz 25 gadiem)",
+              "y": "0"
+            },
+            {
+              "i": 5,
+              "x": "Apcietinātie jaunieši (no 18 līdz 25 gadiem)",
+              "y": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart8.xml",
+      "title": "Ieslodzīto izvietojums 2020.gada 31.decembrī",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 5,
+          "values": 5,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Izmeklēšanas cietumi",
+              "y": "810"
+            },
+            {
+              "i": 1,
+              "x": "Audzināšanas iestāde nepilngadīgajiem",
+              "y": "18"
+            },
+            {
+              "i": 2,
+              "x": "Atklātā cietuma nodaļas",
+              "y": "49"
+            },
+            {
+              "i": 3,
+              "x": "Daļēji slēgtie cietumi",
+              "y": "445"
+            },
+            {
+              "i": 4,
+              "x": "Slēgtie cietumi",
+              "y": "1782"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart9.xml",
+      "title": "Notiesāto skaits atbilstoši soda izciešanas reižu skaitam 2020.gada 31.decembrī",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 4,
+          "values": 4,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Pirmo reizi",
+              "y": "840"
+            },
+            {
+              "i": 1,
+              "x": "Otro  reizi",
+              "y": "386"
+            },
+            {
+              "i": 2,
+              "x": "Trešo reizi",
+              "y": "316"
+            },
+            {
+              "i": 3,
+              "x": "Ceturto reizi un vairāk",
+              "y": "752"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart10.xml",
+      "title": "Notiesāto sadalījums 2020.gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 10,
+          "values": 10,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Līdz 1 mēnesim",
+              "y": "7"
+            },
+            {
+              "i": 1,
+              "x": "No 1 mēneša līdz 3 mēnešiem ieskaitot",
+              "y": "18"
+            },
+            {
+              "i": 2,
+              "x": "Virs 3 mēnešiem līdz 6 mēnešiem ieskaitot",
+              "y": "64"
+            },
+            {
+              "i": 3,
+              "x": "Virs 6 mēnešmi līdz 1 gadam ieskaitot",
+              "y": "147"
+            },
+            {
+              "i": 4,
+              "x": "Virs 1 gada līdz 3 gadiem ieskaitot",
+              "y": "369"
+            },
+            {
+              "i": 5,
+              "x": "Virs 3 gadiem līdz 5 gadiem ieskaitot",
+              "y": "482"
+            },
+            {
+              "i": 6,
+              "x": "Virs 5 gadiem līdz 10 gadiem ieskaitot",
+              "y": "658"
+            },
+            {
+              "i": 7,
+              "x": "Virs 10 gadiem līdz 20 gadiem ieskaitot",
+              "y": "468"
+            },
+            {
+              "i": 8,
+              "x": "Virs 20 gadiem līdz 25 gadiem",
+              "y": "15"
+            },
+            {
+              "i": 9,
+              "x": "Mūža ieslodzījums",
+              "y": "66"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart11.xml",
+      "title": "Notiesāto skaits 2020.gada 31.decembrī pēc vecuma",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 8,
+          "values": 8,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Līdz 18 gadiem",
+              "y": "7"
+            },
+            {
+              "i": 1,
+              "x": "No 18 gadiem līdz 21 gadam",
+              "y": "43"
+            },
+            {
+              "i": 2,
+              "x": "No 21 gada līdz 25 gadiem",
+              "y": "149"
+            },
+            {
+              "i": 3,
+              "x": "No 25 gadiem līdz 30 gadiem",
+              "y": "282"
+            },
+            {
+              "i": 4,
+              "x": "No 30 gadiem līdz 40 gadiem",
+              "y": "824"
+            },
+            {
+              "i": 5,
+              "x": "No 40 gadiem līdz 50 gadiem",
+              "y": "573"
+            },
+            {
+              "i": 6,
+              "x": "No 50 gadiem līdz 60 gadiem",
+              "y": "303"
+            },
+            {
+              "i": 7,
+              "x": "Vecāki par 60 gadiem",
+              "y": "113"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart12.xml",
+      "title": "Notiesāto  skaits 2020.gada 31.decembrī pēc īpašām vajadzībām",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 2,
+          "values": 2,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Notiesātie ar īpašām vajadzībām",
+              "y": "155"
+            },
+            {
+              "i": 1,
+              "x": "Notiesātie bez īpašām vajadzībām",
+              "y": "2139"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart13.xml",
+      "title": "Notiesāto skaits  2020.gada 31.decembrī atbilstoši invaliditātes grupai",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 3,
+          "values": 3,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "I invaliditātes grupa",
+              "y": "1"
+            },
+            {
+              "i": 1,
+              "x": "II invaliditātes grupa",
+              "y": "68"
+            },
+            {
+              "i": 2,
+              "x": "III invaliditātes grupa",
+              "y": "86"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart14.xml",
+      "title": "Faktiskais personāla sadalījums amata  grupās 2020.gadā",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 4,
+          "values": 4,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Virsnieki ",
+              "y": "563"
+            },
+            {
+              "i": 1,
+              "x": "Instruktori",
+              "y": "1202"
+            },
+            {
+              "i": 2,
+              "x": "Darbinieki",
+              "y": "415"
+            },
+            {
+              "i": 3,
+              "x": "Ierēdņi",
+              "y": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart15.xml",
+      "title": "Personāla sadalījums  pēc dzimuma 2020.gadā",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 2,
+          "values": 2,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Sievieties",
+              "y": "839"
+            },
+            {
+              "i": 1,
+              "x": "Vīrieši",
+              "y": "1343"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart16.xml",
+      "title": "Personāla  sadalījums pēc izglītības 2020.gadā",
+      "series_count": 4,
+      "series": [
+        {
+          "index": 1,
+          "label": "Augstākā izglītība",
+          "categories": 4,
+          "values": 4,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Virsnieki ",
+              "y": "563"
+            },
+            {
+              "i": 1,
+              "x": "Instruktori",
+              "y": "211"
+            },
+            {
+              "i": 2,
+              "x": "Darbinieki",
+              "y": "322"
+            },
+            {
+              "i": 3,
+              "x": "Ierēdņi",
+              "y": "2"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "label": "Vidējā profesionālā izglītība",
+          "categories": 4,
+          "values": 4,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Virsnieki ",
+              "y": "0"
+            },
+            {
+              "i": 1,
+              "x": "Instruktori",
+              "y": "408"
+            },
+            {
+              "i": 2,
+              "x": "Darbinieki",
+              "y": "54"
+            },
+            {
+              "i": 3,
+              "x": "Ierēdņi",
+              "y": "0"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "label": "Vidējā vispārējā izglītība",
+          "categories": 4,
+          "values": 4,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Virsnieki ",
+              "y": "0"
+            },
+            {
+              "i": 1,
+              "x": "Instruktori",
+              "y": "583"
+            },
+            {
+              "i": 2,
+              "x": "Darbinieki",
+              "y": "35"
+            },
+            {
+              "i": 3,
+              "x": "Ierēdņi",
+              "y": "0"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "label": "Nepabeigta vidējā izglītība",
+          "categories": 4,
+          "values": 4,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Virsnieki ",
+              "y": "0"
+            },
+            {
+              "i": 1,
+              "x": "Instruktori",
+              "y": "0"
+            },
+            {
+              "i": 2,
+              "x": "Darbinieki",
+              "y": "4"
+            },
+            {
+              "i": 3,
+              "x": "Ierēdņi",
+              "y": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart17.xml",
+      "title": "Personāla sadalījums pēc vecuma 2020.gadā",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 5,
+          "values": 5,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Līdz 30 gadiem",
+              "y": "341"
+            },
+            {
+              "i": 1,
+              "x": "No 31 gada līdz 45 gadiem",
+              "y": "1194"
+            },
+            {
+              "i": 2,
+              "x": "No 46 gadiem līdz 50 gadiem",
+              "y": "344"
+            },
+            {
+              "i": 3,
+              "x": "No 51 gada līdz 55 gadiem",
+              "y": "90"
+            },
+            {
+              "i": 4,
+              "x": "Vecāki par 55 gadiem",
+              "y": "213"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart18.xml",
+      "title": "Personāla  sadalījums pēc vecuma 2020.gadā",
+      "series_count": 4,
+      "series": [
+        {
+          "index": 1,
+          "label": "Virsnieki",
+          "categories": 5,
+          "values": 5,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Līdz 30 gadiem",
+              "y": "58"
+            },
+            {
+              "i": 1,
+              "x": "No 31 gada līdz 45 gadiem",
+              "y": "377"
+            },
+            {
+              "i": 2,
+              "x": "No 46 gadiem līdz 50 gadiem",
+              "y": "107"
+            },
+            {
+              "i": 3,
+              "x": "No 51 gada līdz 55 gadiem",
+              "y": "19"
+            },
+            {
+              "i": 4,
+              "x": "Vecāki par 55 gadiem",
+              "y": "2"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "label": "Instruktori",
+          "categories": 5,
+          "values": 5,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Līdz 30 gadiem",
+              "y": "264"
+            },
+            {
+              "i": 1,
+              "x": "No 31 gada līdz 45 gadiem",
+              "y": "735"
+            },
+            {
+              "i": 2,
+              "x": "No 46 gadiem līdz 50 gadiem",
+              "y": "182"
+            },
+            {
+              "i": 3,
+              "x": "No 51 gada līdz 55 gadiem",
+              "y": "18"
+            },
+            {
+              "i": 4,
+              "x": "Vecāki par 55 gadiem",
+              "y": "3"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "label": "Darbinieki",
+          "categories": 5,
+          "values": 5,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Līdz 30 gadiem",
+              "y": "18"
+            },
+            {
+              "i": 1,
+              "x": "No 31 gada līdz 45 gadiem",
+              "y": "81"
+            },
+            {
+              "i": 2,
+              "x": "No 46 gadiem līdz 50 gadiem",
+              "y": "55"
+            },
+            {
+              "i": 3,
+              "x": "No 51 gada līdz 55 gadiem",
+              "y": "53"
+            },
+            {
+              "i": 4,
+              "x": "Vecāki par 55 gadiem",
+              "y": "208"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "label": "Ierēdņi",
+          "categories": 5,
+          "values": 5,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Līdz 30 gadiem",
+              "y": "1"
+            },
+            {
+              "i": 1,
+              "x": "No 31 gada līdz 45 gadiem",
+              "y": "1"
+            },
+            {
+              "i": 2,
+              "x": "No 46 gadiem līdz 50 gadiem",
+              "y": "0"
+            },
+            {
+              "i": 3,
+              "x": "No 51 gada līdz 55 gadiem",
+              "y": "0"
+            },
+            {
+              "i": 4,
+              "x": "Vecāki par 55 gadiem",
+              "y": "0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart19.xml",
+      "title": "Amatpersonu sadalījums pēc izdienas  stāza 2020.gadā",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 8,
+          "values": 8,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Līdz 2 gadiem",
+              "y": "135"
+            },
+            {
+              "i": 1,
+              "x": "No 2 gadiem līdz 5 gadiem",
+              "y": "255"
+            },
+            {
+              "i": 2,
+              "x": "No 5 gadiem līdz 8 gadiem",
+              "y": "254"
+            },
+            {
+              "i": 3,
+              "x": "No 8 gadiem līdz 12 gadiem",
+              "y": "315"
+            },
+            {
+              "i": 4,
+              "x": "No 12 gadiem līdz 16 gadiem",
+              "y": "250"
+            },
+            {
+              "i": 5,
+              "x": "No 16 gadiem līdz 20 gadiem",
+              "y": "251"
+            },
+            {
+              "i": 6,
+              "x": "No 20 gadiem līdz 25 gadiem",
+              "y": "210"
+            },
+            {
+              "i": 7,
+              "x": "Virs 25 gadiem",
+              "y": "125"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart20.xml",
+      "title": "Darbinieku un ierēdņu sadalījums  pēc darba stāža 2020.gadā",
+      "series_count": 1,
+      "series": [
+        {
+          "index": 1,
+          "label": "series_1",
+          "categories": 8,
+          "values": 8,
+          "category_cache": "strCache",
+          "value_cache": "numCache",
+          "sample": [
+            {
+              "i": 0,
+              "x": "Līdz 2 gadiem",
+              "y": "19"
+            },
+            {
+              "i": 1,
+              "x": "No 2 gadiem līdz 5 gadiem",
+              "y": "38"
+            },
+            {
+              "i": 2,
+              "x": "No 5 gadiem līdz 8 gadiem",
+              "y": "55"
+            },
+            {
+              "i": 3,
+              "x": "No 8 gadiem līdz 12 gadiem",
+              "y": "39"
+            },
+            {
+              "i": 4,
+              "x": "No 12 gadiem līdz 16 gadiem",
+              "y": "50"
+            },
+            {
+              "i": 5,
+              "x": "No 16 gadiem līdz 20 gadiem",
+              "y": "32"
+            },
+            {
+              "i": 6,
+              "x": "No 20 gadiem līdz 25 gadiem",
+              "y": "49"
+            },
+            {
+              "i": 7,
+              "x": "Virs 25 gadiem",
+              "y": "133"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
