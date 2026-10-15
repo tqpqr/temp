@@ -70,12 +70,12 @@ jobs:
             check("tab34_col_"+field,sum(int(x[field]) for x in tab34),expect)
           for x in tab34:
             check("tab34_site_pct_"+x["source_row_order"],round(100*float(x["average_assigned_to_work_persons"])/float(x["average_eligible_for_prison_work_persons"]),2),float(x["assigned_share_of_eligible_pct_source"]),.011)
-          v={x["source_indicator_code"]:float(x["observed_source_number"]) for x in scalar}
+          v={x["source_indicator_code"]:float(x["observed_source_number"]) for x in scalar if x["source_period"] in ("2021","2021-12-31")}
           check("source_actual_current_plus_capital",v["all_2021_current_expenses_all_sources"]+v["all_2021_capital_expenses_all_sources"],v["all_2021_actual_expenses_all_funding_sources"],.0001)
           check("source_current_budget_categories_sum",sum(v[k] for k in ["total_wages_salaries_personal_payments_all_sources","insurance_social_payments_all_sources","goods_services_expenses_all_sources","current_transfers_all_sources"]),v["all_2021_current_expenses_all_sources"],.0001)
           check("source_staff_yearend",v["yearend_uniformed_service_officers"]+v["yearend_civilian_employees"],v["yearend_staff_all_agency"])
           check("source_staff_yearmean",v["year_average_uniformed_service_officers"]+v["year_average_civilian_employees"],v["year_average_staff_all_agency"],1.e-5)
-          check("source_prison_labour_share",float(__import__("decimal").Decimal("64.125").quantize(__import__("decimal").Decimal("0.01"),rounding=__import__("decimal").ROUND_HALF_UP)),v["prisoner_work_placement_percentage_of_eligible"])
+          check("source_prison_labour_share",float((__import__("decimal").Decimal(str(v["average_prisoners_assigned_work"]))/__import__("decimal").Decimal(str(v["average_eligible_for_prison_work"]))*100).quantize(__import__("decimal").Decimal("0.01"),rounding=__import__("decimal").ROUND_HALF_UP)),v["prisoner_work_placement_percentage_of_eligible"])
           check("source_cost_per_day",round(234073567/(10338*365),2),v["current_cost_source111_per_prisoner_per_day"])
           check("capacity_use_mean_fed",round(100*10342.4/11621,2),89)
           # New MB boundaries; do NOT fabricate source corrections or timestamp alignments.
@@ -124,7 +124,7 @@ jobs:
             code=x["source_indicator_code"]
             scope="MB-080" if "expense" in code or "income_" in code or "current_cost" in code or "budget" in code else "MB-085" if "staff_" in code or "officers" in code or "employees" in code or "positions" in code else "MB-086" if "work" in code else "MB-081;MB-082" if "fed" in code or "capacity" in code or "Trencin" in code else "MB-083" if "facility_sum" in code else ""
             add({"record_type":"VERIFIED_ORIGINAL_SOURCE_SCALAR_DISTINCT_CALENDAR_YEAR_OR_DATE",
-             "indicator_code":"SK_ZVJS_"+code,
+             "indicator_code":"SK_ZVJS_"+code+"_"+re.sub("[^0-9A-Za-z]+","_",x["source_period"]),
              "indicator_name_original":code,
              "indicator_unit":x["unit"],"territorial_level":"Slovakia ZVJS full agency or source-scoped unit as field-labelled",
              "temporal_grain":"CALENDAR_YEAR_2021_SOURCE_OR_31_DEC_SNAPSHOT_OR_HISTORIC_2019_2020_AS_LABELLED",
