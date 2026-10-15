@@ -1,0 +1,152 @@
+{
+  "sources": [
+    {
+      "file": "F2-2024.xls",
+      "bytes": 1174016,
+      "git_sha1": "061f154ecc737c69a21e9a3bac3793fef45efcc5",
+      "sha256": "47d940a083bf61b636e8872a92845188ad029acb38ba0ad4d0041b041b90c937",
+      "sheets": 7,
+      "period_months": 12.0,
+      "year": 2024.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "bytes": 1057792,
+      "git_sha1": "f8ba40bf800be6733818f93fab28bb829cb2f5b9",
+      "sha256": "4082333ec4822c6bb3eaff2997a0c3818a1dbf5a9eddb3bc3e0c3697a763bdcc",
+      "sheets": 21,
+      "period_months": 12.0,
+      "year": 2024.0
+    }
+  ],
+  "checks": [
+    {
+      "file": "F2-2024.xls",
+      "check": "person_categories_N_Q",
+      "target": "M10",
+      "reported": 4910415.0,
+      "calculated": 4910415.0,
+      "difference": 0.0
+    },
+    {
+      "file": "F2-2024.xls",
+      "check": "main_punishments_R_Z",
+      "target": "M10",
+      "reported": 4910415.0,
+      "calculated": 4910415.0,
+      "difference": 0.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "D8",
+      "reported": 512845.0,
+      "calculated": 503639.0,
+      "difference": 9206.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "E8",
+      "reported": 56737.0,
+      "calculated": 59612.0,
+      "difference": -2875.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "F8",
+      "reported": 272033.0,
+      "calculated": 269989.0,
+      "difference": 2044.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "G8",
+      "reported": 990.0,
+      "calculated": 990.0,
+      "difference": 0.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "H8",
+      "reported": 1516.0,
+      "calculated": 1611.0,
+      "difference": -95.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "I8",
+      "reported": 2887.0,
+      "calculated": 2887.0,
+      "difference": 0.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "J8",
+      "reported": 651.0,
+      "calculated": 650.0,
+      "difference": 1.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "K8",
+      "reported": 764.0,
+      "calculated": 771.0,
+      "difference": -7.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "L8",
+      "reported": 1128.0,
+      "calculated": 1125.0,
+      "difference": 3.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "M8",
+      "reported": 118775.0,
+      "calculated": 118706.0,
+      "difference": 69.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "N8",
+      "reported": 14703.0,
+      "calculated": 15052.0,
+      "difference": -349.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "O8",
+      "reported": 31077.0,
+      "calculated": 31069.0,
+      "difference": 8.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "P8",
+      "reported": 7516.0,
+      "calculated": 7513.0,
+      "difference": 3.0
+    },
+    {
+      "file": "K3-2024.xls",
+      "check": "visible_section_totals_2_8_12_18_23_NOT_complete_source_formula",
+      "target": "Q8",
+      "reported": 3177.0,
+      "calculated": 3175.0,
+      "difference": 2.0
+    }
+  ]
+}
