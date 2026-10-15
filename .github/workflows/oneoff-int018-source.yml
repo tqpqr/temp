@@ -1,0 +1,73 @@
+name: Oneoff INT018 Slovenia verified original PDF
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int018-source.yml
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Validate Git original and Slovenia ministry issuer, retain full PDF page texts
+        shell: bash
+        env:
+          GH_REPOSITORY: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,json,base64,hashlib,urllib.request,io,sys,subprocess,re
+          from datetime import datetime,timezone
+          repo=os.environ["GH_REPOSITORY"];tok=os.environ["GH_TOKEN"]
+          path="space-archive/extra/stp8/Slovenia_URSIKS_Letno_porocilo_2022.pdf"
+          blob_sha="7314a56154bca5771f965a1fae88a2c9ba9a60a5"
+          original_size=3187810
+          publisher_url="https://www.gov.si/assets/organi-v-sestavi/URSIKS/Dokumenti/Letna-porocila-/Letno-porocilo-2022.pdf"
+          h={"Authorization":"Bearer "+tok,"User-Agent":"ArchiveForensic-INT018"}
+          with urllib.request.urlopen(urllib.request.Request("https://api.github.com/repos/"+repo+"/git/blobs/"+blob_sha,headers=h),timeout=150) as r:
+            obj=json.load(r)
+          original=base64.b64decode(obj["content"])
+          assert len(original)==original_size,("wrong byte size",len(original))
+          git_sha=hashlib.sha1(b"blob "+str(len(original)).encode("ascii")+bytes([0])+original).hexdigest()
+          assert git_sha==blob_sha,("wrong git object hash",git_sha)
+          report={"original_path":path,"original_bytes":len(original),"original_git_blob_sha1":git_sha,"original_sha256":hashlib.sha256(original).hexdigest(),"official_url":publisher_url,"checked_utc":datetime.now(timezone.utc).isoformat(),"publisher_comparison":{}}
+          try:
+            req=urllib.request.Request(publisher_url,headers={"User-Agent":"Mozilla/5.0"})
+            with urllib.request.urlopen(req,timeout=145) as r:
+              data=r.read()
+              report["publisher_comparison"]={"http_status":r.status,"tls_verified":True,"final_url":r.url,"bytes":len(data),"sha256":hashlib.sha256(data).hexdigest(),"byte_identical":data==original}
+          except Exception as e:
+            report["publisher_comparison"]={"error":type(e).__name__+": "+str(e)[:330],"byte_identical":None}
+          subprocess.check_call([sys.executable,"-m","pip","install","-q","--target","/tmp/pypdf-int018","pypdf"])
+          sys.path.insert(0,"/tmp/pypdf-int018")
+          from pypdf import PdfReader
+          reader=PdfReader(io.BytesIO(original))
+          pages=[p.extract_text(extraction_mode="layout") or "" for p in reader.pages]
+          report["physical_page_count"]=len(pages)
+          report["metadata"]={str(k):str(v) for k,v in (reader.metadata or {}).items()}
+          report["page_text_lengths"]=[len(x) for x in pages]
+          report["short_text_pages"]=[i+1 for i,x in enumerate(pages) if len(x)<150]
+          print("PDF ORIGINAL",len(original),"bytes",len(pages),"pages SHA256",report["original_sha256"],"issuer",report["publisher_comparison"],flush=True)
+          prefix="prison-research-archive/00_catalog/progress/"
+          uploads={"INT-018_original_PDF_integrity_v1.json":json.dumps(report,ensure_ascii=False,indent=2).encode()}
+          for k in range(0,len(pages),10):
+            end=min(k+10,len(pages))
+            name="INT-018_original_pdf_page_text_%03d_%03d_v1.md"%(k+1,end)
+            uploads[name]="\n\n".join("## Physical PDF page %d\n\n%s"%(i+1,pages[i]) for i in range(k,end)).encode()
+          # keyword/page index for selected original source evidence
+          keywords=["Povprečno število","Povprečno","kapacitet","zasedenost","oskrbni dan","zaposleni","izdatki","poraba","strošek","proračun","osebja","razpoložljiv","Delovna","PREGLEDNICA","Tabela"]
+          hits=[]
+          for i,p in enumerate(pages):
+            for k in keywords:
+              if k.casefold() in p.casefold():
+                hits.append({"page":i+1,"keyword":k})
+          uploads["INT-018_keyword_page_inventory_v1.json"]=json.dumps(hits,ensure_ascii=False,indent=2).encode()
+          for name,raw in uploads.items():
+            dest=prefix+name
+            body=json.dumps({"message":"INT018 archived original source "+name,"content":base64.b64encode(raw).decode(),"branch":"main"}).encode()
+            request=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/"+dest,data=body,method="PUT",headers={**h,"Content-Type":"application/json"})
+            with urllib.request.urlopen(request,timeout=110) as r:
+              print("SAVED",name,len(raw),r.status,flush=True)
+          print("SUCCESS",len(pages),len(uploads),flush=True)
+          PY
