@@ -1,0 +1,40 @@
+name: One-off INT-008 embedded image visual QA
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int008-image.yml
+permissions:
+  contents: write
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Produce small visual source image preview
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import os,urllib.request,hashlib,zipfile,io,sys,subprocess,json,base64
+          repo=os.environ["GH_REPOSITORY"]
+          raw=urllib.request.urlopen("https://raw.githubusercontent.com/"+repo+"/main/space-archive/extra/stp8/2020-gada-statistika.docx",timeout=60).read()
+          assert hashlib.sha1(b"blob "+str(len(raw)).encode()+bytes([0])+raw).hexdigest()=="5ff8e66877befd63836d89bf68b10721c3514326"
+          z=zipfile.ZipFile(io.BytesIO(raw));data=z.read("word/media/image1.png")
+          try:from PIL import Image
+          except ImportError:
+           subprocess.check_call([sys.executable,"-m","pip","install","-q","Pillow"]);from PIL import Image
+          im=Image.open(io.BytesIO(data));width,height=im.size
+          im=im.convert("RGB");im.thumbnail((1250,1250));b=io.BytesIO();im.save(b,format="JPEG",quality=75,optimize=True)
+          payloads={
+           "INT-008_original_embedded_image1_visual_preview_base64_TMP.txt":base64.b64encode(b.getvalue()),
+           "INT-008_original_embedded_image1_metadata_v1.json":json.dumps({"original_path":"word/media/image1.png","bytes":len(data),"sha256":hashlib.sha256(data).hexdigest(),"dimensions_px":[width,height],"format":"PNG","preview_derivative_format":"JPEG","preview_dimensions_px":list(im.size),"note":"Preview only; original DOCX unchanged; full embedded image still available in original SHA verified DOCX."},indent=2).encode()
+          }
+          for filename,body in payloads.items():
+           path="prison-research-archive/00_catalog/progress/"+filename
+           data1=json.dumps({"message":"forensic: INT-008 original embedded image overview "+filename,"content":base64.b64encode(body).decode(),"branch":"main"}).encode()
+           req=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/"+path,data=data1,method="PUT",headers={"Authorization":"Bearer "+os.environ["GH_TOKEN"],"Content-Type":"application/json","Accept":"application/vnd.github+json"})
+           with urllib.request.urlopen(req,timeout=50) as r:print("Saved",path,len(body),r.status)
+          
+          PY
