@@ -22,7 +22,7 @@ jobs:
           repo=os.environ["GH_REPOSITORY"];tok=os.environ["GH_TOKEN"]
           path="space-archive/extra/stp8/Estonia_CPT-Inf_2024_27.pdf"
           sha="bd9949bfe933fbf00c745a4a8b4fa39562492e4b";size=1058916
-          official="https://rm.coe.int/1680b13704"
+          official="https://www.oiguskantsler.ee/sites/default/files/v%C3%A4%C3%A4rkohtlemine/2024-27-inf-en%20Response.pdf"
           h={"Authorization":"Bearer "+tok,"User-Agent":"INT019-ForensicArchive"}
           def req(url,headers):
             return urllib.request.Request(url,headers=headers)
@@ -45,8 +45,8 @@ jobs:
           obj["pages"]=len(pages);obj["pdf_metadata"]={str(k):str(v) for k,v in (p.metadata or {}).items()}
           obj["page_text_lengths"]=[len(x) for x in pages]
           source_prefix="prison-research-archive/00_catalog/progress/"
-          files={"INT-019_original_PDF_integrity_v1.json":json.dumps(obj,ensure_ascii=False,indent=2).encode("utf-8")}
-          for start in range(0,len(pages),10):
+          files={"INT-019_original_PDF_integrity_mirror_v2.json":json.dumps(obj,ensure_ascii=False,indent=2).encode("utf-8")}
+          for start in range(len(pages),len(pages),10):
             end=min(start+10,len(pages))
             files["INT-019_original_pdf_page_text_%03d_%03d_v1.md"%(start+1,end)]="\n\n".join("## Physical PDF page %d\n\n%s"%(i+1,pages[i]) for i in range(start,end)).encode()
           for name,raw in files.items():
