@@ -1,0 +1,205 @@
+{
+  "source_path": "space-archive/extra/stp8/Moldova_Proiect_OMJ_capacitate_cazare_penitenciare.pdf",
+  "source_bytes": 180794,
+  "sha1_git_blob": "03b800dd292d0ab7d3ed3c1ac40111f00c1c7971",
+  "sha256": "959d0bb93c889e1456315be2116a5c6f9fed241f8c41e041f17739f320b95c68",
+  "page_count": 5,
+  "page_text_lengths": [
+    1927,
+    2765,
+    2742,
+    2683,
+    2495
+  ],
+  "pdf_metadata": {
+    "/Title": "Microsoft Word - Proiect_OMJ_sectoarele de deten˙ie ˇi capacitatea de cazare în institu˙iile penitenciare_final_16.01.2023 (1)",
+    "/Author": "Admin",
+    "/Creator": "Microsoft® Word 2010",
+    "/CreationDate": "D:20230128110548+02'00'",
+    "/ModDate": "D:20230128110548+02'00'",
+    "/Producer": "Microsoft® Word 2010"
+  },
+  "official_publisher": {
+    "url": "https://www.justice.gov.md/sites/default/files/document/attachments/1proiect_omj_sectoarele_de_detentie_si_capacitatea_de_cazare_in_institutii_penitenciare.pdf",
+    "http_status": 200,
+    "official_size": 180794,
+    "official_sha256": "959d0bb93c889e1456315be2116a5c6f9fed241f8c41e041f17739f320b95c68",
+    "byte_identical": true,
+    "tls_certificate_verification": "PYTHON_DEFAULT_VERIFIED"
+  },
+  "parsed_institution_clauses": [
+    {
+      "item": 1,
+      "prison_no": 1,
+      "name_and_type": "Taraclia            – penitenciar      de  tip  închis, pentru    detenția",
+      "number_of_capacity_clauses": 1,
+      "capacity": 355,
+      "original_phrase": "1) Penitenciarul nr. 1 – Taraclia            – penitenciar      de  tip  închis, pentru    detenția",
+      "pdf_page_guess": 1,
+      "section_full": "1) Penitenciarul nr. 1 – Taraclia            – penitenciar      de  tip  închis, pentru    detenția\n condamnaților majori de sex masculin. Suplimentar, în penitenciar se creează:\n       a)  sector izolator de urmărire penală pentru            detenția   persoanelor majore       de sex\n masculin;\n       b) sector de tip semiînchis pentru detenția condamnaților majori de sex masculin.\n       Capacitatea totală a penitenciarului constituie 355 de locuri.\n       "
+    },
+    {
+      "item": 2,
+      "prison_no": 2,
+      "name_and_type": "Lipcani – penitenciar de tip semiînchis, pentru detenția",
+      "number_of_capacity_clauses": 1,
+      "capacity": 363,
+      "original_phrase": "2) Penitenciarul nr. 2 – Lipcani – penitenciar de tip semiînchis, pentru detenția",
+      "pdf_page_guess": 2,
+      "section_full": "2) Penitenciarul nr. 2 – Lipcani – penitenciar de tip semiînchis, pentru detenția\n condamnaților majori de sex masculin. Suplimentar, în penitenciar se creează:\n       a)  sector izolator de urmărire penală pentru            detenția   persoanelor majore        de sex\n masculin;\n       b) sector de tip închis pentru detenția condamnaților majori de sex masculin, care\n în virtutea funcțiilor ocupate anterior pot fi amenințați cu răzbunarea;\n       c) sector de tip semiînchis pentru detenția           condamnaților majori de sex masculin,\n care în virtutea funcțiilor ocupate anterior pot fi amenințați cu răzbunarea;\n       d) sector de tip deschis pentru detenția condamnaților majori de sex masculin.\n       Capacitatea penitenciarului constituie 363 de locuri.\n\n       "
+    },
+    {
+      "item": 3,
+      "prison_no": 3,
+      "name_and_type": "Leova    –  penitenciar      de  tip  închis,   pentru   detenția",
+      "number_of_capacity_clauses": 1,
+      "capacity": 366,
+      "original_phrase": "3)  Penitenciarul       nr.  3  –  Leova    –  penitenciar      de  tip  închis,   pentru   detenția",
+      "pdf_page_guess": null,
+      "section_full": "3)  Penitenciarul       nr.  3  –  Leova    –  penitenciar      de  tip  închis,   pentru   detenția\n condamnaților majori de sex masculin. Suplimentar, în penitenciar se creează:\n       a)  sector izolator de urmărire penală pentru            detenția   persoanelor majore        de sex\n masculin;\n       b) sector de tip semiînchis pentru detenția           condamnaților majori de sex masculin;\n       d) sector de tip deschis pentru detenția condamnaților majori de sex masculin.\n       Capacitatea penitenciarului constituie 366 de locuri.\n\n        "
+    },
+    {
+      "item": 4,
+      "prison_no": 4,
+      "name_and_type": "Cricova     –  penitenciar      de   tip  semiînchis,     pentru",
+      "number_of_capacity_clauses": 1,
+      "capacity": 728,
+      "original_phrase": "4)  Penitenciarul       nr.  4  –  Cricova     –  penitenciar      de   tip  semiînchis,     pentru",
+      "pdf_page_guess": null,
+      "section_full": "4)  Penitenciarul       nr.  4  –  Cricova     –  penitenciar      de   tip  semiînchis,     pentru\n detenția condamnaților majori de sex masculin. Suplimentar, în penitenciar se creează:\n       a) sector izolator de urmărire penală pentru detenția               persoanelor majore de sex\n masculin;\n       b) sector de tip deschis pentru detenția condamnaților majori de sex masculin.\n       Capacitatea penitenciarului constituie 728 de locuri.\n\n       "
+    },
+    {
+      "item": 5,
+      "prison_no": 5,
+      "name_and_type": "Cahul – izolator de urmărire penală. Suplimentar, în",
+      "number_of_capacity_clauses": 1,
+      "capacity": 180,
+      "original_phrase": "5) Penitenciarul nr. 5 – Cahul – izolator de urmărire penală. Suplimentar, în",
+      "pdf_page_guess": 2,
+      "section_full": "5) Penitenciarul nr. 5 – Cahul – izolator de urmărire penală. Suplimentar, în\n penitenciar se creează:\n       a) sector de tip închis pentru detenția condamnaților majori de sex masculin;\n       b) sector de tip semiînchis pentru detenția condamnaților majori de sex masculin;\n       c) sector de tip deschis pentru detenția condamnaților majori de sex masculin;\n       d) sector de tip închis pentru detenția condamnatelor majore de sex feminin;\n       e) sector de tip semiînchis pentru detenția condamnatelor majore de sex feminin;\n       f) sector de tip închis pentru detenția condamnaților majori de sex masculin, care\n în virtutea funcțiilor ocupate anterior pot fi amenințați cu răzbunarea;\n       g) sector de tip semiînchis pentru detenția condamnaților majori de sex masculin,\n care în virtutea funcțiilor ocupate anterior pot fi amenințați cu răzbunarea;\n       h) sector de deservire gospodărească.\n       Capacitatea penitenciarului constituie 180 de locuri.\n       "
+    },
+    {
+      "item": 6,
+      "prison_no": 6,
+      "name_and_type": "Soroca    –  penitenciar      de  tip  închis,   pentru   detenția",
+      "number_of_capacity_clauses": 1,
+      "capacity": 753,
+      "original_phrase": "6)  Penitenciarul      nr.  6  –  Soroca    –  penitenciar      de  tip  închis,   pentru   detenția",
+      "pdf_page_guess": null,
+      "section_full": "6)  Penitenciarul      nr.  6  –  Soroca    –  penitenciar      de  tip  închis,   pentru   detenția\n condamnaților majori de sex masculin. Suplimentar, în penitenciar se creează:\n       a)  sector izolator de urmărire penală pentru            detenția   persoanelor majore        de sex\n masculin;\n       b) sector de tip semiînchis pentru detenția condamnaților majori de sex masculin;\n       c) sector de tip deschis pentru detenția condamnaților majori de sex masculin.\n       Capacitatea penitenciarului constituie 753 de locuri.\n\n       "
+    },
+    {
+      "item": 7,
+      "prison_no": 7,
+      "name_and_type": "Rusca – penitenciar de tip închis pentru femei, pentru",
+      "number_of_capacity_clauses": 1,
+      "capacity": 280,
+      "original_phrase": "7) Penitenciarul nr. 7 – Rusca – penitenciar de tip închis pentru femei, pentru",
+      "pdf_page_guess": 3,
+      "section_full": "7) Penitenciarul nr. 7 – Rusca – penitenciar de tip închis pentru femei, pentru\n detenția condamnatelor majore de sex feminin. Suplimentar, în penitenciar se creează:\n       a)  sector   izolator   de   urmărire    penală    pentru   detenția   persoanelor      majore    sau\n minore de sex feminin;\n       b) sector de tip semiînchis pentru detenția condamnatelor majore de sex feminin;\n       c) sector de tip deschis pentru detenția condamnatelor majore de sex feminin;\n       d) sector pentru minori (centru de detenție pentru minori și tineri), pentru detenția\n condamnatelor minore de sex feminin;\n       e) sector pentru detenția femeilor gravide și mamelor care au copii în vârstă de\n până la 3 ani;\n       f) sector de tip închis pentru detenția condamnatelor majore de sex feminin, care\n în virtutea funcțiilor ocupate anterior pot fi amenințate cu răzbunarea;\n       g) sector de tip semiînchis pentru detenția condamnatelor majore de sex feminin,\n care în virtutea funcțiilor ocupate anterior pot fi amenințate cu răzbunarea.\n       Capacitatea penitenciarului constituie 280 de locuri.\n\n       "
+    },
+    {
+      "item": 8,
+      "prison_no": 8,
+      "name_and_type": "Bender     –  penitenciar     de  tip  închis, pentru detenția",
+      "number_of_capacity_clauses": 1,
+      "capacity": 279,
+      "original_phrase": "8)  Penitenciarul      nr. 8   –  Bender     –  penitenciar     de  tip  închis, pentru detenția",
+      "pdf_page_guess": null,
+      "section_full": "8)  Penitenciarul      nr. 8   –  Bender     –  penitenciar     de  tip  închis, pentru detenția\n condamnaților majori de sex masculin. Suplimentar, în penitenciar se creează:\n       a) sector izolator de urmărire penală pentru detenția persoanelor majore de sex\n masculin;\n       b) sector de tip semiînchis pentru detenția condamnaților majori de sex masculin.\n       Capacitatea penitenciarului constituie 279 de locuri.\n\n       "
+    },
+    {
+      "item": 9,
+      "prison_no": 9,
+      "name_and_type": "Pruncul – penitenciar            de tip închis,     pentru   detenția",
+      "number_of_capacity_clauses": 1,
+      "capacity": 448,
+      "original_phrase": "9) Penitenciarul       nr. 9 – Pruncul – penitenciar            de tip închis,     pentru   detenția",
+      "pdf_page_guess": null,
+      "section_full": "9) Penitenciarul       nr. 9 – Pruncul – penitenciar            de tip închis,     pentru   detenția\n condamnaților majori de sex masculin. Suplimentar, în penitenciar se creează:\n       a)  sector izolator de urmărire penală pentru            detenția   persoanelor majore        de sex\n masculin;\n       b) sector de tip semiînchis pentru detenția condamnaților majori de sex masculin;\n       c) sector de tip deschis pentru detenția condamnaților majori de sex masculin;\n       d)  comunitate     terapeutică    destinată    tratamentului     condamnaților      dependenți     de\n droguri.\n       Capacitatea penitenciarului constituie 448 de locuri.\n      "
+    },
+    {
+      "item": 10,
+      "prison_no": 10,
+      "name_and_type": "Goian – izolator de urmărire penală pentru minori",
+      "number_of_capacity_clauses": 1,
+      "capacity": 164,
+      "original_phrase": "10) Penitenciarul nr. 10 – Goian – izolator de urmărire penală pentru minori",
+      "pdf_page_guess": 4,
+      "section_full": "10) Penitenciarul nr. 10 – Goian – izolator de urmărire penală pentru minori\nși tineri cu vârsta de până la 23 ani, de sex masculin. Suplimentar, în penitenciar se\ncreează:\n      a) sector pentru detenția condamnaților minori și tineri de sex masculin (centru de\ndetenție pentru minori și tineri);\n      b) sector de tip închis pentru detenția condamnaților tineri de sex masculin;\n      c) sector de tip semiînchis pentru detenția condamnaților tineri de sex masculin;\n      d) sector de tip deschis pentru detenția condamnaților tineri de sex masculin;\n      c) sector de deservire gospodărească.\n      Capacitatea penitenciarului constituie 164 de locuri.\n      "
+    },
+    {
+      "item": 11,
+      "prison_no": 11,
+      "name_and_type": "Bălți – izolator de urmărire penală. Suplimentar, în",
+      "number_of_capacity_clauses": 1,
+      "capacity": 258,
+      "original_phrase": "11) Penitenciarul nr. 11 – Bălți – izolator de urmărire penală. Suplimentar, în",
+      "pdf_page_guess": 4,
+      "section_full": "11) Penitenciarul nr. 11 – Bălți – izolator de urmărire penală. Suplimentar, în\npenitenciar se creează:\n      a) sector de tip închis pentru detenția condamnaților majori de sex masculin;\n      b) sector de tip semiînchis pentru detenția condamnaților majori de sex masculin;\n      c) sector de tip închis pentru detenția condamnatelor majore de sex feminin;\n      d) sector de tip semiînchis pentru detenția condamnatelor majore de sex feminin;\n      e) sector de tip închis pentru detenția condamnaților majori de sex masculin, care\nîn virtutea funcțiilor ocupate anterior pot fi amenințați cu răzbunarea;\n      f) sector de tip semiînchis pentru detenția condamnaților majori de sex masculin,\ncare în virtutea funcțiilor ocupate anterior pot fi amenințați cu răzbunarea;\n      g) sector de deservire gospodărească.\n      Capacitatea penitenciarului constituie 258 de locuri.\n      "
+    },
+    {
+      "item": 12,
+      "prison_no": 12,
+      "name_and_type": "Bender – penitenciar de tip închis, pentru detenția",
+      "number_of_capacity_clauses": 1,
+      "capacity": 169,
+      "original_phrase": "12) Penitenciarul nr. 12 – Bender – penitenciar de tip închis, pentru detenția",
+      "pdf_page_guess": 4,
+      "section_full": "12) Penitenciarul nr. 12 – Bender – penitenciar de tip închis, pentru detenția\ncondamnaților majori de sex masculin. Suplimentar, în penitenciar se creează sector\nizolator de urmărire penală pentru detenția persoanelor majore de sex masculin.\n      Capacitatea penitenciarului constituie 169 de locuri.\n      "
+    },
+    {
+      "item": 13,
+      "prison_no": 13,
+      "name_and_type": "Chișinău      –   izolator    de   urmărire      penală.",
+      "number_of_capacity_clauses": 1,
+      "capacity": 570,
+      "original_phrase": "13)   Penitenciarul       nr.   13    –   Chișinău      –   izolator    de   urmărire      penală.",
+      "pdf_page_guess": null,
+      "section_full": "13)   Penitenciarul       nr.   13    –   Chișinău      –   izolator    de   urmărire      penală.\nSuplimentar, în penitenciar se creează:\n      a) sector de tip închis pentru detenția condamnaților majori de sex masculin;\n      b) sector de tip semiînchis pentru detenția condamnaților majori de sex masculin;\n      c) sector de tip semiînchis pentru detenția condamnatelor majore de sex feminin;\n      d) sector de deservire gospodărească.\n      Capacitatea penitenciarului constituie 570 de locuri.\n      "
+    },
+    {
+      "item": 14,
+      "prison_no": 15,
+      "name_and_type": "Cricova – penitenciar de tip închis, pentru detenția",
+      "number_of_capacity_clauses": 1,
+      "capacity": 464,
+      "original_phrase": "14) Penitenciarul nr. 15 – Cricova – penitenciar de tip închis, pentru detenția",
+      "pdf_page_guess": 4,
+      "section_full": "14) Penitenciarul nr. 15 – Cricova – penitenciar de tip închis, pentru detenția\ncondamnaților majori de         sex masculin. Suplimentar, în penitenciar se creează sector\nizolator de urmărire penală pentru detenția persoanelor majore de sex masculin.\n      Capacitatea penitenciarului constituie 464 de locuri.\n       "
+    },
+    {
+      "item": 15,
+      "prison_no": 16,
+      "name_and_type": "Pruncul – spital penitenciar. Suplimentar, în",
+      "number_of_capacity_clauses": 1,
+      "capacity": 256,
+      "original_phrase": "15)   Penitenciarul nr. 16 – Pruncul – spital penitenciar. Suplimentar, în",
+      "pdf_page_guess": 5,
+      "section_full": "15)   Penitenciarul nr. 16 – Pruncul – spital penitenciar. Suplimentar, în\n penitenciar se creează:\n       a) sector de tip semiînchis pentru detenția condamnaților majori de sex masculin,\n angajați la deservirea gospodărească a penitenciarului;\n       b) sector pentru detenția femeilor gravide și mamelor care au copii în vârstă de\n până la 3 ani.\n       Capacitatea penitenciarului constituie 256 de locuri.\n       "
+    },
+    {
+      "item": 16,
+      "prison_no": 17,
+      "name_and_type": "Rezina – penitenciar de tip închis, pentru detenția",
+      "number_of_capacity_clauses": 1,
+      "capacity": 337,
+      "original_phrase": "16) Penitenciarul nr. 17 – Rezina – penitenciar de tip închis, pentru detenția",
+      "pdf_page_guess": 5,
+      "section_full": "16) Penitenciarul nr. 17 – Rezina – penitenciar de tip închis, pentru detenția\n condamnaților majori de sex masculin. Suplimentar, în penitenciar se creează:\n       a)  sector izolator de      urmărire penală pentru detenția persoanelor majore de sex\n masculin;\n       b) sector de tip semiînchis pentru detenția condamnaților majori de sex masculin;\n       c) sector de tip deschis pentru detenția condamnaților majori de sex masculin;\n       d) sector de tip închis pentru detenția persoanelor de sex masculin condamnate la\n detențiune pe viață;\n       e) sector de tip închis pentru detenția persoanelor de sex masculin, condamnate la\n detențiune  pe  viață,  care  în  virtutea  funcțiilor  ocupate  anterior  pot  fi  amenințate  cu\n răzbunarea.\n       Capacitatea penitenciarului constituie 337 de locuri.\n       "
+    },
+    {
+      "item": 17,
+      "prison_no": 18,
+      "name_and_type": "Brănești     –  penitenciar  de  tip  semiînchis,  pentru",
+      "number_of_capacity_clauses": 1,
+      "capacity": 652,
+      "original_phrase": "17)   Penitenciarul  nr.  18       –  Brănești     –  penitenciar  de  tip  semiînchis,  pentru",
+      "pdf_page_guess": null,
+      "section_full": "17)   Penitenciarul  nr.  18       –  Brănești     –  penitenciar  de  tip  semiînchis,  pentru\n detenția condamnaților majori de sex masculin. Suplimentar, în penitenciar se creează\n sector izolator de urmărire penală pentru detenția persoanelor majore de sex masculin.\n       Capacitatea penitenciarului constituie 652 de locuri.\n\n         2. Administrația Națională a Penitenciarelor:\n         1) va aduce actele sale interne în concordanță cu prezentul ordin;\n         2)  va  crea  în  instituțiile  penitenciare  condiții       corespunzătoare  regimurilor  de\n detenție   –  inițial,  comun  și  de  resocializare  sau  înlesnit,  conform  tipului  instituției\n penitenciare și sectoarelor de detenție;\n         3) va aproba capacitatea de cazare pentru fiecare sector de detenție din instituțiile\n penitenciare.\n         3.  Ordinul     ministrului     justiției  nr.   150/2022     privind    stabilirea    tipurilor   de\n penitenciare, sectoarelor de detenție create în cadrul acestora și a capacității de deținere\n pentru fiecare instituție, se abrogă.\n         4. Prezentul ordin se aduce la cunoștința personalului sistemului administrației\n penitenciare.\n\n                  Ministru                                      Sergiu LITVINENCO"
+    }
+  ],
+  "unique_institution_numbers": 17,
+  "document_is_draft": true,
+  "source_text_extraction": "pypdf layout, no OCR"
+}
