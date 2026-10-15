@@ -1,0 +1,24 @@
+{
+  "expected_original_archive_sha256": "d54adff04ba1e7eb8a1437e60c4ea5fe8d0535535e30c65d2fd393fed0d05413",
+  "source": "official CZSW annual statistics page linked PDF 2022",
+  "candidate_checks": [
+    {
+      "original_official_url": "https://sw.gov.pl/assets/58/16/14/76218cbc9fe6ac2dfdd1c4f4f28a48ce8cf0d11d.pdf",
+      "validated_tls": {
+        "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+      },
+      "unverified_TLS_hash_check_ONLY": {
+        "error": "HTTPError: HTTP Error 404: Not Found"
+      }
+    },
+    {
+      "original_official_url": "https://www.sw.gov.pl/assets/58/16/14/fdb5af0ddcb457121b39f7ab111fcbfc7a749cba.pdf",
+      "validated_tls": {
+        "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)>"
+      },
+      "unverified_TLS_hash_check_ONLY": {
+        "error": "HTTPError: HTTP Error 404: Not Found"
+      }
+    }
+  ]
+}
