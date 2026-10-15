@@ -22,7 +22,7 @@ jobs:
           source="space-archive/extra/stp8/2020-gada-statistika.docx"
           url="https://raw.githubusercontent.com/"+repo+"/main/"+source
           data=urllib.request.urlopen(url,timeout=90).read()
-          gitsha=hashlib.sha1(b"blob "+str(len(data)).encode()+b"\\0"+data).hexdigest()
+          gitsha=hashlib.sha1(b"blob "+str(len(data)).encode()+bytes([0])+data).hexdigest()
           assert (len(data),gitsha)==(1088041,"5ff8e66877befd63836d89bf68b10721c3514326"),(len(data),gitsha)
           assert data[:2]==b"PK"
           z=zipfile.ZipFile(io.BytesIO(data))
