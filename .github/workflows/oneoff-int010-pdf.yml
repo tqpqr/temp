@@ -1,0 +1,72 @@
+name: One-off INT-010 official PDF SHA page/table extraction
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int010-pdf.yml
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Verify exact archived PDF, publisher and full pages
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import os,sys,subprocess,urllib.request,hashlib,json,base64,re,csv,io
+          repo=os.environ["GH_REPOSITORY"]
+          src="space-archive/extra/stp8/Rikosseuraamusasiakkaat-30.4.2022.pdf"
+          raw=urllib.request.urlopen("https://raw.githubusercontent.com/"+repo+"/main/"+src,timeout=90).read()
+          sha=hashlib.sha1(b"blob "+str(len(raw)).encode()+bytes([0])+raw).hexdigest()
+          assert (len(raw),sha)==(1714173,"4f2894be67c053d40b32355e322aaef3cef3151f"),(len(raw),sha)
+          assert raw.startswith(b"%PDF")
+          try:
+           import fitz
+          except ImportError:
+           subprocess.check_call([sys.executable,"-m","pip","install","--quiet","pymupdf"])
+           import fitz
+          pdf=fitz.open(stream=raw,filetype="pdf")
+          assert len(pdf)>=30
+          gov="https://www.rikosseuraamus.fi/app/uploads/sites/11/2024/11/Rikosseuraamusasiakkaat-30.4.2022.pdf"
+          oldGov="https://www.rikosseuraamus.fi/material/collections/20220614100448/7a0YIpyOn/Rikosseuraamusasiakkaat_30042022.pdf"
+          orig={"original_path":src,"bytes":len(raw),"git_blob_sha1":sha,"sha256":hashlib.sha256(raw).hexdigest(),"pdf_pages":len(pdf),"pdf_metadata":pdf.metadata,"source_encrypted":pdf.is_encrypted,"filename_does_not_prove_document_date":True,"page_text_quality":[],"public_issuer_comparison":[]}
+          for label,url in [("current_gov",gov),("original_2022_legacy_url",oldGov)]:
+           try:
+            with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0"}),timeout=45) as res:
+             d=res.read()
+             orig["public_issuer_comparison"].append({"label":label,"url":url,"http_status":res.status,"bytes":len(d),"sha256":hashlib.sha256(d).hexdigest(),"binary_identical":d==raw,"mime_type":res.headers.get("Content-Type"),"tls":"DEFAULT_PYTHON_VALIDATED"})
+           except Exception as e:orig["public_issuer_comparison"].append({"label":label,"url":url,"status":"FAILED","error":type(e).__name__+": "+str(e)[:300]})
+          page_data=[];headings=[];words=[["pdf_page_1based","original_word_line_group","word_number","x0","y0","x1","y1","text","block","line"]]
+          for i,page in enumerate(pdf):
+           text=page.get_text("text",sort=True)
+           page_data.append({"page":i+1,"printed_page_text":text})
+           orig["page_text_quality"].append({"pdf_page":i+1,"text_chars":len(text),"text_blocks":len(page.get_text("blocks")),"rect":[page.rect.width,page.rect.height]})
+           for line in text.splitlines():
+            if re.search(r"(?i)(?:Taulukko\s+[1-5]-\d+\.|^(?:[1-5])\.\s+\w)",line.strip()):
+             headings.append([i+1,line.strip()])
+           if i in (6,7,32,33,34):
+            for j,w in enumerate(page.get_text("words",sort=True),1):
+             x0,y0,x1,y1,word,b,l,n=w
+             words.append([i+1,str(b)+"/"+str(l),j,round(x0,2),round(y0,2),round(x1,2),round(y1,2),word,b,l])
+          def csvbytes(rows):
+           f=io.StringIO(newline="");out=csv.writer(f,lineterminator="\n");out.writerows(rows);return f.getvalue().encode("utf-8")
+          outputs={
+           "INT-010_original_PDF_integrity_publisher_v1.json":json.dumps(orig,ensure_ascii=False,indent=2).encode(),
+           "INT-010_original_all_table_and_section_heading_index_v1.csv":csvbytes([["pdf_page_1based","original_heading_text"],*headings]),
+           "INT-010_original_occupancy_and_total_pages_coordinate_words_v1.csv":csvbytes(words),
+          }
+          for start,end in [(0,19),(20,39),(40,len(pdf)-1)]:
+           t="".join("## PDF page "+str(p+1)+" (index "+str(p)+")\n"+page_data[p]["printed_page_text"]+"\n" for p in range(start,end+1))
+           outputs[f"INT-010_original_pdf_page_text_{start+1:02d}_{end+1:02d}_v1.txt"]=t.encode("utf-8")
+          prefix="prison-research-archive/00_catalog/progress/"
+          for filename,body in outputs.items():
+           assert len(body)<800000,(filename,len(body))
+           payload=json.dumps({"message":"forensic: INT-010 verified original RISE PDF "+filename,"content":base64.b64encode(body).decode(),"branch":"main"}).encode()
+           request=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/"+prefix+filename,data=payload,method="PUT",headers={"Authorization":"Bearer "+os.environ["GH_TOKEN"],"Accept":"application/vnd.github+json","Content-Type":"application/json"})
+           with urllib.request.urlopen(request,timeout=90) as res:print("SAVED",filename,len(body),res.status)
+          print("SUCCESS_INT_010",len(pdf),"PAGES",len(headings),"headings",len(words)-1,"coordinate words")
+          PY
