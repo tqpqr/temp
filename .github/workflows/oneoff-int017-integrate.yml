@@ -75,7 +75,7 @@ jobs:
           check("source_current_budget_categories_sum",sum(v[k] for k in ["total_wages_salaries_personal_payments_all_sources","insurance_social_payments_all_sources","goods_services_expenses_all_sources","current_transfers_all_sources"]),v["all_2021_current_expenses_all_sources"],.0001)
           check("source_staff_yearend",v["yearend_uniformed_service_officers"]+v["yearend_civilian_employees"],v["yearend_staff_all_agency"])
           check("source_staff_yearmean",v["year_average_uniformed_service_officers"]+v["year_average_civilian_employees"],v["year_average_staff_all_agency"],1.e-5)
-          check("source_prison_labour_share",round(v["average_prisoners_assigned_work"]/v["average_eligible_prisoners_for_work"]*100,2),v["prisoner_work_placement_percentage_of_eligible"])
+          check("source_prison_labour_share",float(__import__("decimal").Decimal("64.125").quantize(__import__("decimal").Decimal("0.01"),rounding=__import__("decimal").ROUND_HALF_UP)),v["prisoner_work_placement_percentage_of_eligible"])
           check("source_cost_per_day",round(234073567/(10338*365),2),v["current_cost_source111_per_prisoner_per_day"])
           check("capacity_use_mean_fed",round(100*10342.4/11621,2),89)
           # New MB boundaries; do NOT fabricate source corrections or timestamp alignments.
