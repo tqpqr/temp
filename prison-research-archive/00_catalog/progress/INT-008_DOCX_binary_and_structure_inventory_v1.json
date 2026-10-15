@@ -1,0 +1,358 @@
+{
+  "source_path": "space-archive/extra/stp8/2020-gada-statistika.docx",
+  "source_bytes": 1088041,
+  "git_blob_sha1": "5ff8e66877befd63836d89bf68b10721c3514326",
+  "sha256": "941d25ef51b9759400beeeb8e995937bc78900467a210706e57477db32c8a3ce",
+  "zip_valid": true,
+  "docx_components": 100,
+  "document_xml_bytes": 2576090,
+  "body_top_level_elements": 57,
+  "top_level_nonempty_paragraphs": 17,
+  "top_level_tables": 2,
+  "table_cells": 2340,
+  "xml_body_total_extracted_text_characters": 18112,
+  "embedded_media": [
+    {
+      "path": "word/media/image1.png",
+      "bytes": 925718
+    }
+  ],
+  "embedded_charts": [
+    "word/charts/colors18.xml",
+    "word/charts/_rels/chart13.xml.rels",
+    "word/charts/chart19.xml",
+    "word/charts/style18.xml",
+    "word/charts/chart20.xml",
+    "word/charts/colors19.xml",
+    "word/charts/chart18.xml",
+    "word/charts/style20.xml",
+    "word/charts/colors20.xml",
+    "word/charts/style19.xml",
+    "word/charts/chart17.xml",
+    "word/charts/style17.xml",
+    "word/charts/colors14.xml",
+    "word/charts/chart15.xml",
+    "word/charts/style15.xml",
+    "word/charts/colors15.xml",
+    "word/charts/chart16.xml",
+    "word/charts/style16.xml",
+    "word/charts/colors16.xml",
+    "word/charts/colors17.xml",
+    "word/charts/_rels/chart20.xml.rels",
+    "word/charts/style14.xml",
+    "word/charts/_rels/chart5.xml.rels",
+    "word/charts/_rels/chart6.xml.rels",
+    "word/charts/_rels/chart7.xml.rels",
+    "word/charts/_rels/chart8.xml.rels",
+    "word/charts/_rels/chart9.xml.rels",
+    "word/charts/_rels/chart10.xml.rels",
+    "word/charts/_rels/chart11.xml.rels",
+    "word/charts/_rels/chart12.xml.rels",
+    "word/charts/_rels/chart4.xml.rels",
+    "word/charts/_rels/chart3.xml.rels",
+    "word/charts/_rels/chart2.xml.rels",
+    "word/charts/_rels/chart19.xml.rels",
+    "word/charts/_rels/chart18.xml.rels",
+    "word/charts/_rels/chart17.xml.rels",
+    "word/charts/_rels/chart16.xml.rels",
+    "word/charts/_rels/chart15.xml.rels",
+    "word/charts/_rels/chart1.xml.rels",
+    "word/charts/colors13.xml",
+    "word/charts/_rels/chart14.xml.rels",
+    "word/charts/style4.xml",
+    "word/charts/colors4.xml",
+    "word/charts/chart5.xml",
+    "word/charts/style5.xml",
+    "word/charts/colors5.xml",
+    "word/charts/chart6.xml",
+    "word/charts/style6.xml",
+    "word/charts/colors6.xml",
+    "word/charts/chart4.xml",
+    "word/charts/colors3.xml",
+    "word/charts/style3.xml",
+    "word/charts/chart1.xml",
+    "word/charts/style1.xml",
+    "word/charts/colors1.xml",
+    "word/charts/chart2.xml",
+    "word/charts/style2.xml",
+    "word/charts/colors2.xml",
+    "word/charts/chart3.xml",
+    "word/charts/chart14.xml",
+    "word/charts/chart7.xml",
+    "word/charts/colors7.xml",
+    "word/charts/style11.xml",
+    "word/charts/colors11.xml",
+    "word/charts/chart12.xml",
+    "word/charts/style12.xml",
+    "word/charts/colors12.xml",
+    "word/charts/chart13.xml",
+    "word/charts/style13.xml",
+    "word/charts/style7.xml",
+    "word/charts/chart11.xml",
+    "word/charts/style10.xml",
+    "word/charts/chart8.xml",
+    "word/charts/style8.xml",
+    "word/charts/colors10.xml",
+    "word/charts/colors8.xml",
+    "word/charts/style9.xml",
+    "word/charts/chart9.xml",
+    "word/charts/chart10.xml",
+    "word/charts/colors9.xml"
+  ],
+  "other_embedded": [],
+  "core_properties": {
+    "creator": "Laura Nikolajeva",
+    "lastModifiedBy": "Laura Nikolajeva",
+    "revision": "9",
+    "created": "2021-06-15T11:05:00Z",
+    "modified": "2021-07-12T13:40:00Z"
+  },
+  "first_paragraphs": [
+    [
+      2,
+      "2020.gada 31.decembrī ieslodzījuma vietās atradās 3104 ieslodzītie (apcietinātie – 810, notiesātie – 2294), brīvas atstājot 1718 vietas no kopējā pieejamo vietu skaita – 4822. No kopējā ieslodzīto skaita ieslodzījuma vietās atradās 255 sievietes (apcietinātās – 54, notiesātās – 201), 25 nepilngadīgie (apcietinātie – 7, notiesātie – 18) un 69 ieslodzītie, kuri sodīti ar brīvības atņemšanu uz visu mūžu (mūža ieslodzījums) (apcietinātie – 3, notiesātie – 66)."
+    ],
+    [
+      11,
+      "Vien neliels procents no visiem ieslodzītajiem ir ārzemnieki – tikai 1.45%, savukārt nepilngadīgo ieslodzīto skaits no kopējā ieslodzīto skaita pēdējo desmit gadu laikā ir krasi samazinājies un tagad ir vēl mazāks nekā ārzemnieku skaits – 0.81%.Vien neliels procents no visiem ieslodzītajiem ir ārzemnieki – tikai 1.45%, savukārt nepilngadīgo ieslodzīto skaits no kopējā ieslodzīto skaita pēdējo desmit gadu laikā ir krasi samazinājies un tagad ir vēl mazāks nekā ārzemnieku skaits – 0.81%."
+    ],
+    [
+      16,
+      "Notiesāto statistika"
+    ],
+    [
+      27,
+      "Apcietināto statistika"
+    ],
+    [
+      30,
+      "Nodarbināto ieslodzīto skaits ieslodzījuma vietās 2020.gadā – 807, tai skaitā:"
+    ],
+    [
+      31,
+      "komersantu izveidotajās darba vietās – 435;"
+    ],
+    [
+      32,
+      "ieslodzījuma vietu saimnieciskajā apkalpē – 372."
+    ],
+    [
+      34,
+      "2020.gadā viena notiesātā vidējais mēneša atalgojums (pēc nodokļu nomaksas un citu ieturējumu veikšanas):"
+    ],
+    [
+      35,
+      "komersantu izveidotajās darba vietās – 146,54 euro,"
+    ],
+    [
+      36,
+      "ieslodzījuma vietu saimnieciskajā apkalpē – 76,35 euro."
+    ],
+    [
+      38,
+      "Izdevumi viena ieslodzītā uzturēšanai dienā 2020.gadā sastādīja 48,93 euro"
+    ],
+    [
+      40,
+      "Personāla statistika"
+    ],
+    [
+      41,
+      "2020.gada 31.decembrī Ieslodzījuma vietu pārvaldē pēc amatu saraksta bija 2503,5 amata vietas, no tām:"
+    ],
+    [
+      42,
+      "amatpersonu ar speciālajām dienesta pakāpēm (turpmāk – amatpersona) – 2055;"
+    ],
+    [
+      43,
+      "darbinieku uz līguma pamata (turpmāk – darbinieks) – 440,5;"
+    ],
+    [
+      44,
+      "vispārējā valsts civildienesta ierēdņu (turpmāk – ierēdnis) – 8."
+    ],
+    [
+      45,
+      "\\tFaktiski 2020.gadā vidējais amatpersonu, darbinieku un ierēdņu skaits bija 2224, to skaitā: amatpersonu – 1774; darbinieku – 448; ierēdņu – 2."
+    ]
+  ],
+  "table_structural_summary": [
+    {
+      "table": 1,
+      "body_index": 17,
+      "rows": 230,
+      "cells": 2291,
+      "preview": [
+        [
+          "Saturs",
+          "KOPĀ",
+          "Slēgtā cietumā",
+          "Daļēji slēgtā cietumā",
+          "Atklātā cietumā",
+          "Audzināšanas iestādē nepilngadīgajiem"
+        ],
+        [
+          "",
+          "",
+          "",
+          "vīrieši",
+          "sievietes",
+          "vīrieši",
+          "sievietes",
+          "jaunieši",
+          "jaunietes"
+        ],
+        [
+          "Notiesāto skaits 2020.gada 31.decembrī",
+          "2294",
+          "1782",
+          "272",
+          "173",
+          "21",
+          "28",
+          "18",
+          ""
+        ],
+        [
+          "KRIMINĀLLIKUMA PANTI",
+          "71.p. – 79.p. (noziegumi pret cilvēci, mieru kara noziegumi, genocīds)",
+          "1",
+          "1",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "80.p. – 951.p. (noziegumi pret valsti)",
+          "4",
+          "4",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table": 2,
+      "body_index": 28,
+      "rows": 9,
+      "cells": 49,
+      "preview": [
+        [
+          "",
+          "Skaits"
+        ],
+        [
+          "Saturs",
+          "Kopā",
+          "Vīrieši",
+          "Sievietes",
+          "Nepilngadīgie"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "Jaunieši",
+          "Jaunietes"
+        ],
+        [
+          "Apcietināto un notiesāto (notiesātās personas, kuras atrodas izmeklēšanas cietumā saskaņā ar Latvijas Sodu izpildes kode",
+          "810",
+          "749",
+          "54",
+          "7",
+          "0"
+        ],
+        [
+          "Informācija par pilsonību",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "non_document_xml_parts": [
+    "word/endnotes.xml",
+    "word/footnotes.xml",
+    "word/header1.xml",
+    "word/charts/colors18.xml",
+    "word/charts/chart19.xml",
+    "word/charts/style18.xml",
+    "word/charts/chart20.xml",
+    "word/charts/colors19.xml",
+    "word/charts/chart18.xml",
+    "word/charts/style20.xml",
+    "word/charts/colors20.xml",
+    "word/charts/style19.xml",
+    "word/charts/chart17.xml",
+    "word/charts/style17.xml",
+    "word/charts/colors14.xml",
+    "word/charts/chart15.xml",
+    "word/charts/style15.xml",
+    "word/charts/colors15.xml",
+    "word/charts/chart16.xml",
+    "word/charts/style16.xml",
+    "word/charts/colors16.xml",
+    "word/charts/colors17.xml",
+    "word/charts/style14.xml",
+    "word/theme/theme1.xml",
+    "word/charts/colors13.xml",
+    "word/charts/style4.xml",
+    "word/charts/colors4.xml",
+    "word/charts/chart5.xml",
+    "word/charts/style5.xml",
+    "word/charts/colors5.xml",
+    "word/charts/chart6.xml",
+    "word/charts/style6.xml",
+    "word/charts/colors6.xml",
+    "word/charts/chart4.xml",
+    "word/charts/colors3.xml",
+    "word/charts/style3.xml",
+    "word/charts/chart1.xml",
+    "word/charts/style1.xml",
+    "word/charts/colors1.xml",
+    "word/charts/chart2.xml",
+    "word/charts/style2.xml",
+    "word/charts/colors2.xml",
+    "word/charts/chart3.xml",
+    "word/charts/chart14.xml",
+    "word/charts/chart7.xml",
+    "word/charts/colors7.xml",
+    "word/charts/style11.xml",
+    "word/charts/colors11.xml",
+    "word/charts/chart12.xml",
+    "word/charts/style12.xml",
+    "word/charts/colors12.xml",
+    "word/charts/chart13.xml",
+    "word/charts/style13.xml",
+    "word/charts/style7.xml",
+    "word/charts/chart11.xml",
+    "word/charts/style10.xml",
+    "word/charts/chart8.xml",
+    "word/charts/style8.xml",
+    "word/charts/colors10.xml",
+    "word/charts/colors8.xml",
+    "word/charts/style9.xml",
+    "word/charts/chart9.xml",
+    "word/charts/chart10.xml",
+    "word/charts/colors9.xml",
+    "word/settings.xml",
+    "word/styles.xml",
+    "word/webSettings.xml",
+    "word/fontTable.xml",
+    "word/numbering.xml"
+  ]
+}
