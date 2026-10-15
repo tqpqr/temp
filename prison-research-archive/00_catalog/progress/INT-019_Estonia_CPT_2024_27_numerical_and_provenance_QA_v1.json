@@ -1,0 +1,61 @@
+{
+  "task": "INT-019",
+  "verified_archived_bytes": 1058916,
+  "source_git_sha1": "bd9949bfe933fbf00c745a4a8b4fa39562492e4b",
+  "source_sha256": "37a96647b2abddf0128e0046409bd80254aa7ffc793d1a034f6f25299d7d0ef9",
+  "mirror_bytes": 1059391,
+  "mirror_sha256": "a89791a1dbd8feebdac5496e722d128065d318f303a2490b8d9b3fdf7481b864",
+  "mirror_byte_identical": false,
+  "pages_text_compared": 47,
+  "pages_text_exact_matched": 47,
+  "all_extracted_page_text_identical": true,
+  "original_doc_type": "Estonian Government response CPT/Inf (2024) 27 not CPT original field report CPT/Inf (2024) 26",
+  "visit_start": "2023-05-29",
+  "visit_end": "2023-06-08",
+  "publication": "2024-09-26",
+  "staged_primary_values": 33,
+  "numeric_identity_tests": [
+    {
+      "id": "Apr18_2024_officer_fte_sum",
+      "calc": 709,
+      "expected": 709
+    },
+    {
+      "id": "Apr18_2024_officer_posts_sum",
+      "calc": 821,
+      "expected": 821
+    },
+    {
+      "id": "Apr18_2024_open_positions",
+      "calc": 112,
+      "expected": 112
+    },
+    {
+      "id": "2023_visit_health_FTE_sum",
+      "calc": 75.30000000000001,
+      "expected": 75.3
+    },
+    {
+      "id": "2023_visit_health_posts_sum",
+      "calc": 108.8,
+      "expected": 108.8
+    },
+    {
+      "id": "2023_violence_broad_events_sum",
+      "calc": 482,
+      "expected": 482
+    },
+    {
+      "id": "cpt_vs_gov_closed_capacity_delta",
+      "calc": 120,
+      "expected": 120
+    },
+    {
+      "id": "open_prison_free_places_approx",
+      "calc": 49.76999999999999,
+      "expected": 49.77
+    }
+  ],
+  "tests_passed": 8,
+  "caution": "all arithmetic expected identities are derived cross-source subtotals, no assumption visits and response data contemporaneous"
+}
