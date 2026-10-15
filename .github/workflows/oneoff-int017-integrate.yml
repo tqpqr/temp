@@ -160,7 +160,7 @@ jobs:
             ("Table32",tab32,22,3,"PDF physical p74 source Table32 22 accommodation subunits at Dec31, 2021 mean fed, 2021 utilization; includes Trenčín 130.06pct","MB-081;MB-082;MB-084"),
             ("Table34",tab34,18,5,"PDF physical p78 source Table34 18 parent organizations average prisoners, eligible, assigned, ratio, remuneration","MB-084;MB-086"),
           ]
-          for label,data,ncols,anchor,links in matrix:
+          for label,data,row_count,ncols,anchor,links in matrix:
             add({"record_type":"COMPLETE_PRIMARY_SOURCE_SITE_MATRIX_NOT_NEW_NATIONAL_TOTAL",
               "indicator_code":"SK_ZVJS_2021_"+label+"_raw_org_rows_"+str(len(data)),
               "indicator_name_original":label+" full original organization-level statistical table",
