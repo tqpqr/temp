@@ -1,0 +1,52 @@
+name: One-off INT-011 primary Moldova note PDF exact source inspection
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int011-moldova.yml
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Verify exact blob and compare official primary-source PDF
+        shell: bash
+        env:
+          GH_REPOSITORY: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,urllib.request,json,base64,hashlib,sys,subprocess,io
+          repo=os.environ["GH_REPOSITORY"]
+          sha="378ebe8841196f247b4de0cbbeb2ba8dc17c5fe4"
+          src="space-archive/extra/stp8/Moldova_Nota_informativa_OMJ_capacitate_cazare.pdf"
+          headers={"Authorization":"Bearer "+os.environ["GH_TOKEN"],"User-Agent":"ArchiveResearchAudit"}
+          req=urllib.request.Request("https://api.github.com/repos/"+repo+"/git/blobs/"+sha,headers=headers)
+          with urllib.request.urlopen(req,timeout=90) as f:
+           payload=json.load(f)
+          raw=base64.b64decode(payload["content"])
+          hash_git=hashlib.sha1(b"blob "+str(len(raw)).encode()+bytes([0])+raw).hexdigest()
+          assert len(raw)==217069 and hash_git==sha and raw.startswith(b"%PDF")
+          target="/tmp/isolated_int011"
+          subprocess.run([sys.executable,"-m","pip","install","--quiet","--target",target,"pypdf"],check=True,timeout=90)
+          sys.path.insert(0,target)
+          from pypdf import PdfReader
+          reader=PdfReader(io.BytesIO(raw))
+          pages=[p.extract_text(extraction_mode="layout") or "" for p in reader.pages]
+          official="https://www.justice.gov.md/sites/default/files/document/attachments/2ni_omj_sectoarele_de_detentie_si_capacitatea_de_cazare_in_institutii_penitenciare.pdf"
+          issuer={}
+          try:
+           request=urllib.request.Request(official,headers={"User-Agent":"Mozilla/5.0"})
+           with urllib.request.urlopen(request,timeout=45) as f:
+            up=f.read()
+            issuer={"url":official,"http_status":f.status,"bytes":len(up),"sha256":hashlib.sha256(up).hexdigest(),"byte_identical":up==raw,"tls":"PYTHON_DEFAULT_VERIFIED"}
+          except Exception as e:issuer={"url":official,"status":"NOT_VERIFIED","error":repr(e)[:300]}
+          info={"original_path":src,"original_bytes":len(raw),"git_blob_sha1":hash_git,"sha256":hashlib.sha256(raw).hexdigest(),"page_count":len(reader.pages),"page_text_chars":[len(p) for p in pages],"pdf_metadata":{str(k):str(v) for k,v in (reader.metadata or {}).items()},"issuer_comparison":issuer,"source_text_extraction_engine":"pypdf layout; NO OCR"}
+          data={"prison-research-archive/00_catalog/progress/INT-011_original_PDF_integrity_and_issuer_v1.json":json.dumps(info,ensure_ascii=False,indent=2).encode(),
+          "prison-research-archive/00_catalog/progress/INT-011_original_PDF_page_text_v1.md":("\n\n".join("## Original PDF physical page "+str(i+1)+"\n\n"+p for i,p in enumerate(pages))).encode()}
+          for path,body in data.items():
+           request=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/"+path,method="PUT",headers={**headers,"Content-Type":"application/json"},data=json.dumps({"message":"forensic: INT-011 source PDF SHA/issuer exact page extraction "+path.split("/")[-1],"content":base64.b64encode(body).decode(),"branch":"main"}).encode())
+           with urllib.request.urlopen(request,timeout=80) as result:print("WRITTEN",path,len(body),result.status)
+          print("EXTRACTION_COMPLETE",len(pages),"pages",sum(map(len,pages)),"characters",issuer)
+          PY
