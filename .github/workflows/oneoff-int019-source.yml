@@ -44,8 +44,16 @@ jobs:
           pages=[v.extract_text(extraction_mode="layout") or "" for v in p.pages]
           obj["pages"]=len(pages);obj["pdf_metadata"]={str(k):str(v) for k,v in (p.metadata or {}).items()}
           obj["page_text_lengths"]=[len(x) for x in pages]
+          if "other" in locals():
+            mirror=PdfReader(io.BytesIO(other))
+            mirror_pages=[v.extract_text(extraction_mode="layout") or "" for v in mirror.pages]
+            obj["publisher_comparison"]["mirror_pdf_pages"]=len(mirror_pages)
+            obj["publisher_comparison"]["page_text_exact_matches"]=[pages[i]==mirror_pages[i] for i in range(min(len(pages),len(mirror_pages)))]
+            obj["publisher_comparison"]["all_page_text_identical"]=(len(pages)==len(mirror_pages) and pages==mirror_pages)
+            obj["publisher_comparison"]["page_text_sha256_of_joined_original"]=hashlib.sha256("\\n".join(pages).encode()).hexdigest()
+            obj["publisher_comparison"]["page_text_sha256_of_joined_mirror"]=hashlib.sha256("\\n".join(mirror_pages).encode()).hexdigest()
           source_prefix="prison-research-archive/00_catalog/progress/"
-          files={"INT-019_original_PDF_integrity_mirror_v2.json":json.dumps(obj,ensure_ascii=False,indent=2).encode("utf-8")}
+          files={"INT-019_original_PDF_integrity_mirror_text_v3.json":json.dumps(obj,ensure_ascii=False,indent=2).encode("utf-8")}
           for start in range(len(pages),len(pages),10):
             end=min(start+10,len(pages))
             files["INT-019_original_pdf_page_text_%03d_%03d_v1.md"%(start+1,end)]="\n\n".join("## Physical PDF page %d\n\n%s"%(i+1,pages[i]) for i in range(start,end)).encode()
