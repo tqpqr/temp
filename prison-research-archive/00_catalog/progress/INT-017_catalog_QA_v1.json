@@ -1,0 +1,589 @@
+{
+  "task": "INT-017",
+  "publisher_original_exact_binary": true,
+  "original_sha256": "8e45a3b5a627e26734b93b7d532619a8c3cb7406c0cf623897c51c6fb69749a3",
+  "91_source_pages_text_preserved": true,
+  "original_50_numbered_tables_indexed": true,
+  "previous_registry_count": 1472,
+  "new_registry_count": 1519,
+  "appended_source_objects": 47,
+  "scalar_source_input_rows": 42,
+  "scalars_promoted": 36,
+  "historic_national_series": 6,
+  "complete_facility_raw_tables": {
+    "Table15": 24,
+    "Table31": 19,
+    "Table32": 22,
+    "Table34": 18
+  },
+  "nonadditive_structure_index": 1,
+  "previous_break_count": 79,
+  "new_break_count": 87,
+  "method_breaks_added": [
+    "MB-080",
+    "MB-081",
+    "MB-082",
+    "MB-083",
+    "MB-084",
+    "MB-085",
+    "MB-086",
+    "MB-087"
+  ],
+  "table15_reported_site_sum": 10339,
+  "national_annual_mean_Table2": 10338,
+  "table32_annual_fed_sum_raw": 10342.4,
+  "table32_capacity_end2021": 11621,
+  "table31_source111_budget_2021": 234073567,
+  "table31_HQ_source111_2021": 16681254,
+  "Trencin_reported_ratio_pct": 130.06,
+  "tests_total": 91,
+  "tests_passed": 91,
+  "tests": [
+    {
+      "test": "tab2_31dec_remand_plus_sentenced_2018",
+      "value": 10294,
+      "expected": 10294,
+      "passed": true
+    },
+    {
+      "test": "tab2_mean_remand_plus_sentenced_2018",
+      "value": 10347,
+      "expected": 10347,
+      "passed": true
+    },
+    {
+      "test": "tab2_31dec_remand_plus_sentenced_2019",
+      "value": 10555,
+      "expected": 10555,
+      "passed": true
+    },
+    {
+      "test": "tab2_mean_remand_plus_sentenced_2019",
+      "value": 10558,
+      "expected": 10558,
+      "passed": true
+    },
+    {
+      "test": "tab2_31dec_remand_plus_sentenced_2020",
+      "value": 10519,
+      "expected": 10519,
+      "passed": true
+    },
+    {
+      "test": "tab2_mean_remand_plus_sentenced_2020",
+      "value": 10604,
+      "expected": 10604,
+      "passed": true
+    },
+    {
+      "test": "tab2_31dec_remand_plus_sentenced_2021",
+      "value": 10104,
+      "expected": 10104,
+      "passed": true
+    },
+    {
+      "test": "tab2_mean_remand_plus_sentenced_2021",
+      "value": 10338,
+      "expected": 10338,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_1",
+      "value": 340,
+      "expected": 340,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_2",
+      "value": 710,
+      "expected": 710,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_3",
+      "value": 18,
+      "expected": 18,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_4",
+      "value": 509,
+      "expected": 509,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_5",
+      "value": 113,
+      "expected": 113,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_6",
+      "value": 668,
+      "expected": 668,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_7",
+      "value": 1231,
+      "expected": 1231,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_8",
+      "value": 797,
+      "expected": 797,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_9",
+      "value": 676,
+      "expected": 676,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_10",
+      "value": 732,
+      "expected": 732,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_11",
+      "value": 1201,
+      "expected": 1201,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_12",
+      "value": 99,
+      "expected": 99,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_13",
+      "value": 368,
+      "expected": 368,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_14",
+      "value": 323,
+      "expected": 323,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_15",
+      "value": 534,
+      "expected": 534,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_16",
+      "value": 62,
+      "expected": 62,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_17",
+      "value": 361,
+      "expected": 361,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_18",
+      "value": 429,
+      "expected": 429,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_19",
+      "value": 169,
+      "expected": 169,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_20",
+      "value": 47,
+      "expected": 47,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_21",
+      "value": 7,
+      "expected": 7,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_22",
+      "value": 663,
+      "expected": 663,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_23",
+      "value": 34,
+      "expected": 34,
+      "passed": true
+    },
+    {
+      "test": "tab15_site_status_sum_24",
+      "value": 248,
+      "expected": 248,
+      "passed": true
+    },
+    {
+      "test": "tab15_column_2021_avg_pretrial_remand_persons_rounded",
+      "value": 1528,
+      "expected": 1528,
+      "passed": true
+    },
+    {
+      "test": "tab15_column_2021_avg_sentenced_persons_rounded",
+      "value": 8811,
+      "expected": 8811,
+      "passed": true
+    },
+    {
+      "test": "tab15_column_2021_avg_all_persons_rounded",
+      "value": 10339,
+      "expected": 10339,
+      "passed": true
+    },
+    {
+      "test": "tab31_col_current_budget_expense_source111_2019_eur",
+      "value": 194074839,
+      "expected": 194074839,
+      "passed": true
+    },
+    {
+      "test": "tab31_col_current_budget_expense_source111_2020_eur",
+      "value": 219077355,
+      "expected": 219077355,
+      "passed": true
+    },
+    {
+      "test": "tab31_col_current_budget_expense_source111_2021_eur",
+      "value": 234073567,
+      "expected": 234073567,
+      "passed": true
+    },
+    {
+      "test": "tab31_col_average_prisoner_2021_for_budget_denominator_rounded_persons",
+      "value": 10338,
+      "expected": 10338,
+      "passed": true
+    },
+    {
+      "test": "tab32_col_accommodation_capacity_as_at_2021_12_31_places",
+      "value": 11621.0,
+      "expected": 11621,
+      "passed": true
+    },
+    {
+      "test": "tab32_col_average_daily_persons_fed_2021",
+      "value": 10342.4,
+      "expected": 10342.4,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_1",
+      "value": 83.84,
+      "expected": 83.84,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_2",
+      "value": 94.17,
+      "expected": 94.17,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_3",
+      "value": 91.05,
+      "expected": 91.05,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_4",
+      "value": 85.35,
+      "expected": 85.35,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_5",
+      "value": 94.77,
+      "expected": 94.77,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_6",
+      "value": 85.88,
+      "expected": 85.88,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_7",
+      "value": 92.83,
+      "expected": 92.83,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_8",
+      "value": 86.87,
+      "expected": 86.87,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_9",
+      "value": 91.06,
+      "expected": 91.06,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_10",
+      "value": 84.95,
+      "expected": 84.95,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_11",
+      "value": 88.75,
+      "expected": 88.75,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_12",
+      "value": 88.82,
+      "expected": 88.82,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_13",
+      "value": 91.36,
+      "expected": 91.36,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_14",
+      "value": 68.82,
+      "expected": 68.82,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_15",
+      "value": 96.45,
+      "expected": 96.45,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_16",
+      "value": 96.29,
+      "expected": 96.29,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_17",
+      "value": 83.0,
+      "expected": 83.0,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_18",
+      "value": 130.06,
+      "expected": 130.06,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_19",
+      "value": 92.86,
+      "expected": 92.86,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_20",
+      "value": 94.52,
+      "expected": 94.52,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_21",
+      "value": 51.54,
+      "expected": 51.54,
+      "passed": true
+    },
+    {
+      "test": "tab32_site_pct_22",
+      "value": 87.02,
+      "expected": 87.02,
+      "passed": true
+    },
+    {
+      "test": "tab34_col_year_2021_average_all_in_custody_persons",
+      "value": 10338,
+      "expected": 10338,
+      "passed": true
+    },
+    {
+      "test": "tab34_col_average_eligible_for_prison_work_persons",
+      "value": 6400,
+      "expected": 6400,
+      "passed": true
+    },
+    {
+      "test": "tab34_col_average_assigned_to_work_persons",
+      "value": 4104,
+      "expected": 4104,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_1",
+      "value": 94.39,
+      "expected": 94.39,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_2",
+      "value": 55.07,
+      "expected": 55.07,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_3",
+      "value": 62.75,
+      "expected": 62.75,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_4",
+      "value": 61.59,
+      "expected": 61.59,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_5",
+      "value": 58.37,
+      "expected": 58.37,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_6",
+      "value": 81.72,
+      "expected": 81.72,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_7",
+      "value": 64.41,
+      "expected": 64.41,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_8",
+      "value": 37.82,
+      "expected": 37.82,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_9",
+      "value": 64.46,
+      "expected": 64.46,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_10",
+      "value": 65.17,
+      "expected": 65.17,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_11",
+      "value": 80.37,
+      "expected": 80.37,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_12",
+      "value": 100.0,
+      "expected": 100.0,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_13",
+      "value": 60.84,
+      "expected": 60.84,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_14",
+      "value": 62.58,
+      "expected": 62.58,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_15",
+      "value": 75.34,
+      "expected": 75.34,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_16",
+      "value": 100.0,
+      "expected": 100.0,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_17",
+      "value": 61.95,
+      "expected": 61.95,
+      "passed": true
+    },
+    {
+      "test": "tab34_site_pct_18",
+      "value": 97.3,
+      "expected": 97.3,
+      "passed": true
+    },
+    {
+      "test": "source_actual_current_plus_capital",
+      "value": 246583012.52,
+      "expected": 246583012.52,
+      "passed": true
+    },
+    {
+      "test": "source_current_budget_categories_sum",
+      "value": 237071400.75,
+      "expected": 237071400.75,
+      "passed": true
+    },
+    {
+      "test": "source_staff_yearend",
+      "value": 5576.0,
+      "expected": 5576.0,
+      "passed": true
+    },
+    {
+      "test": "source_staff_yearmean",
+      "value": 5512.5199999999995,
+      "expected": 5512.52,
+      "passed": true
+    },
+    {
+      "test": "source_prison_labour_share",
+      "value": 64.13,
+      "expected": 64.13,
+      "passed": true
+    },
+    {
+      "test": "source_cost_per_day",
+      "value": 62.03,
+      "expected": 62.03,
+      "passed": true
+    },
+    {
+      "test": "capacity_use_mean_fed",
+      "value": 89.0,
+      "expected": 89,
+      "passed": true
+    }
+  ]
+}
