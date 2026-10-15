@@ -1,0 +1,124 @@
+{
+  "task": "INT-016",
+  "issuer_binary_match": true,
+  "original_sha256": "d5cead44be22abe077baaca03795265688dfcea2374f110291a067803997626c",
+  "original_physical_pages": 128,
+  "previous_indicators": 1429,
+  "new_indicator_rows": 1472,
+  "added_indicator_objects": 43,
+  "paired_fy_metric_source_rows": 44,
+  "paired_series_promoted": 41,
+  "skipped_duplicate_pairs": [
+    [
+      "Note22_segments",
+      "total_noncurrent_assets"
+    ],
+    [
+      "Note22_segments",
+      "total_segment_net_expenditure"
+    ],
+    [
+      "People_prison",
+      "annual_average_all_prisoners"
+    ]
+  ],
+  "added_earlier_national_year_only": 7505,
+  "app3_matrix_objects": 1,
+  "app3_rows": 20,
+  "app3_numeric_source_cells": 186,
+  "app3_dash_or_blank_cells": 54,
+  "app3_site_mean_sum_FY2022_23": 7437,
+  "app3_reported_country_mean_FY2022_23": 7426,
+  "app3_site_mean_sum_FY2021_22": 7504,
+  "app3_reported_country_mean_FY2021_22": 7505,
+  "verified_site_partial_periods": [
+    "Bella since2022-08-02",
+    "Lilias since2022-10-26",
+    "Cornton through2023-03-02"
+  ],
+  "earlier_method_breaks": 73,
+  "new_breaks": 79,
+  "MB_added": [
+    "MB-074",
+    "MB-075",
+    "MB-076",
+    "MB-077",
+    "MB-078",
+    "MB-079"
+  ],
+  "MB069_updated_with_source_period_footnotes": true,
+  "independent_source_arithmetic_checks": [
+    {
+      "id": "fy22_23_legal_population",
+      "computed": 7426,
+      "expected": 7426,
+      "pass": true
+    },
+    {
+      "id": "fy21_22_legal_population",
+      "computed": 7505,
+      "expected": 7505,
+      "pass": true
+    },
+    {
+      "id": "fy22_23_wte",
+      "computed": 4264,
+      "expected": 4264,
+      "pass": true
+    },
+    {
+      "id": "fy21_22_wte",
+      "computed": 4290,
+      "expected": 4290,
+      "pass": true
+    },
+    {
+      "id": "fy22_23_gender_staff",
+      "computed": 4562,
+      "expected": 4562,
+      "pass": true
+    },
+    {
+      "id": "fy21_22_gender_staff",
+      "computed": 4589,
+      "expected": 4589,
+      "pass": true
+    },
+    {
+      "id": "fy22_23_operating_gross",
+      "computed": 429130,
+      "expected": 429130,
+      "pass": true
+    },
+    {
+      "id": "fy22_23_net_operating",
+      "computed": 422575,
+      "expected": 422575,
+      "pass": true
+    },
+    {
+      "id": "fy22_23_net_spend",
+      "computed": 428101,
+      "expected": 428101,
+      "pass": true
+    },
+    {
+      "id": "fy22_23_segment_gross",
+      "computed": 434656,
+      "expected": 434656,
+      "pass": true
+    },
+    {
+      "id": "fy22_23_segment_net",
+      "computed": 428101,
+      "expected": 428101,
+      "pass": true
+    },
+    {
+      "id": "fy22_23_segment_assets",
+      "computed": 1323507,
+      "expected": 1323507,
+      "pass": true
+    }
+  ]
+}
