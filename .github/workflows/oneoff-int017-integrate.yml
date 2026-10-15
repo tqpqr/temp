@@ -1,0 +1,218 @@
+name: Oneoff INT017 integrate Slovak verified source
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int017-integrate.yml
+permissions:
+  contents: write
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - name: Cross-check source tables and append catalogs
+        shell: bash
+        env:
+          GH_REPOSITORY: ${{ github.repository }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,urllib.request,base64,json,csv,io,re,hashlib,collections
+          repo=os.environ["GH_REPOSITORY"];token=os.environ["GH_TOKEN"]
+          h={"Authorization":"Bearer "+token,"User-Agent":"Verified-INT017-Archive"}
+          root="prison-research-archive/00_catalog/"
+          pp=root+"progress/"
+          source="space-archive/extra/stp8/Slovakia_II_Cinnost_ZVJS_2021.pdf"
+          blob="1d6cfcddd12bba2aa17577343781a1e7276904ec"
+          sha256="8e45a3b5a627e26734b93b7d532619a8c3cb7406c0cf623897c51c6fb69749a3"
+          upstream="https://www.justice.gov.sk/dokumenty/2025/03/II.-Cinnost-Zboru-vazenskej-a-justicnej-straze-2021.pdf"
+          def get(url):
+            with urllib.request.urlopen(urllib.request.Request(url,headers=h),timeout=150) as r:return json.load(r)
+          def blobtxt(sha):return base64.b64decode(get("https://api.github.com/repos/"+repo+"/git/blobs/"+sha)["content"]).decode("utf-8-sig")
+          def filetxt(path):return base64.b64decode(get("https://api.github.com/repos/"+repo+"/contents/"+path)["content"]).decode("utf-8-sig")
+          def parse(s):return list(csv.DictReader(io.StringIO(s)))
+          integ=json.loads(filetxt(pp+"INT-017_original_PDF_integrity_v1.json"))
+          assert integ["sha256"]==sha256 and integ["git_sha1"]==blob and integ["bytes"]==2013675 and integ["physical_pages"]==91
+          assert integ["publisher"]["byte_identical"]==True and integ["publisher"]["tls_verified"]==True
+          reg=parse(blobtxt("8711559a55c14fefc13be5593f6fe36c23cbb867"))
+          mb=parse(blobtxt("142aadef6e6b869ac20707d6180703b0c50692ab"))
+          assert len(reg)==1472 and reg[-1]["record_id"]=="R01472" and len(mb)==79 and mb[-1]["break_id"]=="MB-079"
+          tab2=parse(filetxt(pp+"INT-017_Table2_2018_2021_custody_annual_avg_Dec31_v1.csv"))
+          tab15=parse(filetxt(pp+"INT-017_Table15_24_unit_2021_annual_avg_remand_sentenced_v1.csv"))
+          tab31=parse(filetxt(pp+"INT-017_Table31_19_org_units_budget_cost_2019_2021_v1.csv"))
+          tab32=parse(filetxt(pp+"INT-017_Table32_22_prison_and_subunit_capacity_feeding_2021_v1.csv"))
+          tab34=parse(filetxt(pp+"INT-017_Table34_prisoner_employment_18_units_2021_v1.csv"))
+          scalar=parse(filetxt(pp+"INT-017_national_finance_personnel_population_source_values_2019_2021_v1.csv"))
+          index=parse(filetxt(pp+"INT-017_50_tables_page_heading_index_visual_corrected_v2.csv"))
+          assert [len(x) for x in (tab2,tab15,tab31,tab32,tab34,scalar,index)]==[4,24,19,22,18,42,50]
+          assert [int(x["table_number"]) for x in index]==list(range(1,51))
+          assert next(x for x in index if x["table_number"]=="17")["pdf_physical_page"]=="64"
+          qa=[]
+          def check(label,actual,expected,tol=1.e-7):
+            passed=abs(float(actual)-float(expected))<=tol
+            qa.append({"test":label,"value":actual,"expected":expected,"passed":passed})
+            if not passed:raise ValueError(("QA_FAIL",label,actual,expected))
+          for x in tab2:
+            y=x["calendar_year"]
+            check("tab2_31dec_remand_plus_sentenced_"+y,int(x["remand_31_dec"])+int(x["sentenced_31_dec"]),int(x["all_custody_31_dec"]))
+            check("tab2_mean_remand_plus_sentenced_"+y,int(x["remand_annual_average"])+int(x["sentenced_annual_average"]),int(x["all_custody_annual_average"]))
+          for x in tab15:
+            check("tab15_site_status_sum_"+x["source_row_order"],int(x["2021_avg_pretrial_remand_persons_rounded"])+int(x["2021_avg_sentenced_persons_rounded"]),int(x["2021_avg_all_persons_rounded"]))
+          for field,expect in [("2021_avg_pretrial_remand_persons_rounded",1528),("2021_avg_sentenced_persons_rounded",8811),("2021_avg_all_persons_rounded",10339)]:
+            check("tab15_column_"+field,sum(int(x[field]) for x in tab15),expect)
+          for field,expect in [("current_budget_expense_source111_2019_eur",194074839),("current_budget_expense_source111_2020_eur",219077355),("current_budget_expense_source111_2021_eur",234073567),("average_prisoner_2021_for_budget_denominator_rounded_persons",10338)]:
+            check("tab31_col_"+field,sum(int(x[field]) for x in tab31),expect)
+          for field,expect in [("accommodation_capacity_as_at_2021_12_31_places",11621),("average_daily_persons_fed_2021",10342.4)]:
+            check("tab32_col_"+field,sum(float(x[field]) for x in tab32),expect,1.e-5)
+          for x in tab32:
+            check("tab32_site_pct_"+x["source_row_order"],round(100*float(x["average_daily_persons_fed_2021"])/float(x["accommodation_capacity_as_at_2021_12_31_places"]),2),float(x["source_reported_capacity_usage_pct"]),.011)
+          for field,expect in [("year_2021_average_all_in_custody_persons",10338),("average_eligible_for_prison_work_persons",6400),("average_assigned_to_work_persons",4104)]:
+            check("tab34_col_"+field,sum(int(x[field]) for x in tab34),expect)
+          for x in tab34:
+            check("tab34_site_pct_"+x["source_row_order"],round(100*float(x["average_assigned_to_work_persons"])/float(x["average_eligible_for_prison_work_persons"]),2),float(x["assigned_share_of_eligible_pct_source"]),.011)
+          v={x["source_indicator_code"]:float(x["observed_source_number"]) for x in scalar}
+          check("source_actual_current_plus_capital",v["all_2021_current_expenses_all_sources"]+v["all_2021_capital_expenses_all_sources"],v["all_2021_actual_expenses_all_funding_sources"],.0001)
+          check("source_current_budget_categories_sum",sum(v[k] for k in ["total_wages_salaries_personal_payments_all_sources","insurance_social_payments_all_sources","goods_services_expenses_all_sources","current_transfers_all_sources"]),v["all_2021_current_expenses_all_sources"],.0001)
+          check("source_staff_yearend",v["yearend_uniformed_service_officers"]+v["yearend_civilian_employees"],v["yearend_staff_all_agency"])
+          check("source_staff_yearmean",v["year_average_uniformed_service_officers"]+v["year_average_civilian_employees"],v["year_average_staff_all_agency"],1.e-5)
+          check("source_prison_labour_share",round(v["average_prisoners_assigned_work"]/v["average_eligible_prisoners_for_work"]*100,2),v["prisoner_work_placement_percentage_of_eligible"])
+          check("source_cost_per_day",round(234073567/(10338*365),2),v["current_cost_source111_per_prisoner_per_day"])
+          check("capacity_use_mean_fed",round(100*10342.4/11621,2),89)
+          # New MB boundaries; do NOT fabricate source corrections or timestamp alignments.
+          existing_docs="progress/INT-017_Slovakia_ZVJS_2021_verified_original_source_audit_v1.md;progress/INT-017_original_PDF_integrity_v1.json"
+          issues=[
+          ("MB-080","SK ZVJS source 111 budget vs all funding sources and HQ","ANNUAL_CURRENT_SOURCE111_WITH_HQ_VS_ALL_FUNDING_CURRENT_CAPITAL_EXPENDITURE","2019–2021 Table31","2021 all-source annual report budget","PDF p73 Table31 source111 current 2021 EUR234073567 including HQ EUR16681254","PDF p23-24 all-source 2021 current EUR237071400.75 plus cap EUR9511611.77 =EUR246583012.52","Budget source111 for Table31 includes nonzero HQ costs attributed to zero prisoners, while all-source cost includes other source current and capital; comparing directly as equivalent cost per person or place invalid.","DEFINITION_AND_NATIONAL_ACCOUNTING_PERIMETER_VERIFIED","KEEP_DISTINCT_FINANCIAL_PERIMETERS","Do not treat cost per prisoner 62.03 as full all-source operating+capital per person; HQ expenditures are not zero when HQ prison stock zero.","Preserve 111 vs all-source annual cost and avoid HQ denominator division."),
+          ("MB-081","SK ZVJS capacity and mean-fed ratio","YEAR_END_ACCOMMODATION_CAPACITY_VS_CALENDAR_AVERAGE_PERSONS_FED","2021-12-31 source places","2021 mean fed prisoners","PDF p74 Table32 capacity11621 (date Dec31)","PDF p74 Table32 fed mean10342 ratio89.00 and Trenčín 212/163=130.06","Reported utilization uses mixed grain yearend places and yearly average fed population; single establishment Trenčín p74 exceeds100 because source ratio is a valid arithmetic division not contemporaneous bed occupancy proof.","SOURCE_RATIO_ARITHMETIC_CONFIRMED_OPERATIONAL_SCOPE_UNVERIFIED","DO_NOT_READ_RATIO_AS_SAME_DAY_PHYSICAL_OCCUPANCY","Never assume Trenčín 130.06 implies actual same-day inmates per 163 housing beds. Hospital and feeding scopes may matter; exact cause unknown.","Need aligned site/day occupancy and prison-place concepts."),
+          ("MB-082","SK ZVJS 2021 average feeding vs custody populations","FED_PRISONER_MEAN_NOT_EQUAL_TO_AVERAGE_CUSTODY_STOCK","2021 Table2 annual mean prisoners","2021 Table32 annual mean fed persons","PDF p50 Table2 yearly custody mean10338","PDF p74 Table32 feed mean10342.4 rounded10342","Separate feeding activity count 10342/10342.4 from published mean custody stock 10338, differential about+4; underlying daily feeding/person rules not determined; 3,775,007 full-day rations also count services not individuals.","SOURCE_LITERALS_CONFIRMED_UNEXPLAINED_EXACT_CAUSE","DISTINGUISH_FOOD_SERVICE_FROM_CUSTODY_STOCK","Do not substitute fed average as annual prisoner denominator or call difference 4 statistical correction.","Cross-check daily food and establishment occupancy series before reconciling."),
+          ("MB-083","SK ZVJS Table15 site rounded averages vs Table2 nation","SUM_OF_24_ROUNDED_SITE_STATUS_MEANS_DOES_NOT_EQUAL_NATIONAL_AVERAGES","2021 Table15 24 rows","2021 Table2 national custody means","PDF p63 Table15:1528 remand+8811 sentenced=10339","PDF p50 Table2:1530 remand+8808 sentenced=10338","SUM site averaged rounded columns differs from nation (remand -2, sentenced +3,total +1). Rounding and site partition time weighting plausible but exact decomposition unproven.","ARITHMETIC_DIFFERENCE_CONFIRMED_EXPLANATION_UNPROVEN","RETAIN_EXACT_SOURCE_SITE_AND_NATIONAL_VALUES","Do not force 2021 national denominator to10339 or adjust institution cells.","Need exact unrounded site daily means if numeric reconciliation required."),
+          ("MB-084","SK ZVJS statistical institutional universes","PARENT_BRANCH_HQ_AND_SERVICE_SITE_ROWS_NOT_SAME_ENTITY_UNIVERSE","2021 Table15 24 named source rows","2021 Table31 19 Table32 22 and Table34 18 rows","PDF p63 Table15 24 source branch/parent rows","PDF p73-78 Tables31/32/34 facility 19/22/18 rows","Parent prisons and OO branch/hospital/accommodation rows aggregate differently; Table31 contains General Directorate; Tables15/32 expose organizational subunits; Table34 excludes HQ. No 1:1 join by raw row count.","HIERARCHY_SCOPE_VERIFIED_CROSS_TABLE_MAPPING_NOT_FULLY_RECONCILED","NOT_INDEPENDENT_24_PRISONS","Don't infer 24 independent prisons, blindly join/aggregate disjoint institution costs and child facility capacity.","Build explicit parent/child crosswalk, preserve original labels/IDs."),
+          ("MB-085","SK ZVJS all-service agency staffing","SYSTEMIZED_VS_YEAR_END_VS_ANNUAL_STAFF_AND_PRISON_VS_JUSTICE_GUARDS","2021 formal posts5831","2021 yrend5576 annual mean5512.52","PDF p85 Table45 posts5831 and project admin65","PDF p85 Table45 2021-12-31 actual5576 officers4872 civilian704, annual mean5512.52 officers4799.57 civilian712.95","Authorized posts, observed year-end people, and annual average staff counts are not interchangeable; ZVJS uniformed personnel also provide judicial/court guard service beyond custody.","SOURCE_YEAR_TIME_AND_ROLE_SCOPE_CONFIRMED","NO_PRISON_GUARD_OFFICER_COUNT_FROM_AGENCY_TOTAL","Do not attribute all officers to prison housing or use approved posts as working 2021 staff.","Obtain facility/role staff breakdown if future research requires it."),
+          ("MB-086","SK ZVJS inmate employment rate","ELIGIBLE_FOR_WORK_DENOMINATOR_NOT_ALL_CUSTODY","2021 Table34 average all custody10338","2021 work eligible6400 assigned4104","PDF p78 Table34 eligible6400 assigned4104 pct64.13","PDF p78 Table34 all custody avg10338","Employed share64.13% calculated4104/6400 eligible subset, not 4104/10338 all custody; remuneration EUR1.37/h among workers and cannot represent all prisoners.","ARITHMETIC_AND_ELIGIBILITY_SOURCE_VERIFIED","DISTINGUISH_DENOMINATORS","Do not call 64.13% share of all custody population or impute work ineligible groups.","Use exact employment and eligibility universe."),
+          ("MB-087","SK ZVJS prior period facility rates","PRIOR_YEAR_CURRENT_EUR_PER_PRISONER_DAY_HAS_ONLY_ROUNDED_RATE_NO_EXACT_SITE_MEANS","2019–2020 Table31","2021 Table31","PDF p73 Table31 2019/20 facilities expenditures and EUR/person/day rates","PDF p73 Table31 2021 facilities expenses/yearly mean inmates and EUR/person/day rates","Source site averages absent as raw data for 2019/2020; reversing expenses/daily rates would produce approximate implied denominators due rounded rates and unknown year-specific leap-day or accrual assumptions.","SOURCE_TABULAR_MEASUREMENT_RESTRICTION_CONFIRMED","DO_NOT_MAKE_EXACT_2019_2020_SITE_POP_FROM_RATE","Do not populate 2019/2020 site prisoner stocks or facility elasticities with inferred exact values.","Find earlier original annual yearbooks for precise site avg rates.")
+          ]
+          mbfields=list(mb[0])
+          for id,geo,typ,earlier,later,cell_a,cell_b,explanation,cause,status,avoid,next_check in issues:
+            row=dict.fromkeys(mbfields,"")
+            row.update({"break_id":id,"geography_and_scope":geo,"issue_type":typ,"earlier_period":earlier,"later_period":later,
+            "original_source_a":source,"git_sha_a":blob,"original_cell_a":cell_a,"original_source_b":source,"git_sha_b":blob,"original_cell_b":cell_b,
+            "exact_observation":explanation,"existing_evidence_artifact":existing_docs,"causal_explanation_status":cause,
+            "triage_status":status,"must_not_do":avoid,"resumption_or_next_check":next_check})
+            mb.append(row)
+          assert len(mb)==87 and len({r["break_id"] for r in mb})==87
+          # Append high-precision complete raw evidence with no duplicate pseudo-national observations.
+          fields=list(reg[0])
+          refbase="00_catalog/progress/INT-017_Slovakia_ZVJS_2021_verified_original_source_audit_v1.md;00_catalog/progress/INT-017_original_PDF_integrity_v1.json"
+          base={"source_domain":"SK_ZVJS_STAT_ROCENKA_2021","source_reference":refbase,
+            "original_source_path":source,"original_git_blob_sha1":blob,
+            "coverage_evidence":"EXACT_ARCHIVED_BLOB_SHA1_SHA256_91_PAGES_OFFICIAL_MOJ_BYTE_IDENTICAL_50_TABLE_INDEX",
+            "publication_vintage":"SK_ZVJS_2021_YEARBOOK_COVER_APR_2022;ARCHIVAL_PDF_CREATED_2022_09_02;CURRENT_OFFICIAL_URL_IN_2025_03_NOT_OBSERVED_YEAR",
+            "official_upstream_url":upstream,
+            "external_binary_identity":"EXACT_TLS_VALIDATED_OFFICIAL_BYTE_IDENTICAL_SHA256_"+sha256,
+            "field_coverage_status":"ORIGINAL_EXACT_SOURCE_WITH_DATES_AND_SCOPE_ANCHORED",
+            "semantic_code_definition_status":"ORIGINAL_SOURCE_MEASUREMENT_GRAIN_AND_PERIMETER_SPECIFIED"}
+          def add(values):
+            rec=dict.fromkeys(fields,"")
+            rec.update(base);rec.update(values)
+            rec["record_id"]="R%05d"%(1473+len(reg)-1472)
+            reg.append(rec)
+          excluded={
+           "annual_average_remand","annual_average_sentenced","annual_average_all_in_custody",
+           "end_year_remand","end_year_sentenced","end_year_all_in_custody"
+          }
+          for x in scalar:
+            if x["source_indicator_code"] in excluded:continue
+            code=x["source_indicator_code"]
+            scope="MB-080" if "expense" in code or "income_" in code or "current_cost" in code or "budget" in code else "MB-085" if "staff_" in code or "officers" in code or "employees" in code or "positions" in code else "MB-086" if "work" in code else "MB-081;MB-082" if "fed" in code or "capacity" in code or "Trencin" in code else "MB-083" if "facility_sum" in code else ""
+            add({"record_type":"VERIFIED_ORIGINAL_SOURCE_SCALAR_DISTINCT_CALENDAR_YEAR_OR_DATE",
+             "indicator_code":"SK_ZVJS_"+code,
+             "indicator_name_original":code,
+             "indicator_unit":x["unit"],"territorial_level":"Slovakia ZVJS full agency or source-scoped unit as field-labelled",
+             "temporal_grain":"CALENDAR_YEAR_2021_SOURCE_OR_31_DEC_SNAPSHOT_OR_HISTORIC_2019_2020_AS_LABELLED",
+             "first_period_recorded":x["source_period"],"last_period_recorded":x["source_period"],
+             "listed_periods_exact":x["source_period"],"distinct_nominal_years":"1",
+             "reporting_window_type":"EXACT_SOURCE_PERIOD_FROM_FIELD",
+             "numeric_evidence":x["observed_source_number"],
+             "source_reference":refbase+";00_catalog/progress/INT-017_national_finance_personnel_population_source_values_2019_2021_v1.csv",
+             "source_cell_anchor":x["original_source_page_anchor"],
+             "important_limitations":x["boundary_and_method_note"],
+             "observed_value_raw":x["observed_source_number"],
+             "measurement_status":"ARCHIVED_SOURCE_OFFICIAL_BINARY_VERIFIED_EXACT_SCALAR","linked_break_ids":scope,"number_of_source_records":"1"})
+          assert len(reg)-1472==36,(len(reg)-1472)
+          popfields=["remand_31_dec","remand_annual_average","sentenced_31_dec","sentenced_annual_average","all_custody_31_dec","all_custody_annual_average"]
+          for col in popfields:
+            pairs=";".join(x["calendar_year"]+"="+x[col] for x in tab2)
+            add({"record_type":"VERIFIED_ORIGINAL_4_CALENDAR_YEAR_SOURCE_POPULATION_SERIES",
+              "indicator_code":"SK_ZVJS_Table2_2018_2021_"+col,
+              "indicator_name_original":col,"indicator_unit":"persons",
+              "territorial_level":"Slovakia national prisons",
+              "temporal_grain":"31_DEC_STOCK" if "31_dec" in col else "CALENDAR_YEAR_MEAN",
+              "first_period_recorded":"2018-12-31" if "31_dec" in col else "2018",
+              "last_period_recorded":"2021-12-31" if "31_dec" in col else "2021",
+              "listed_periods_exact":("2018-12-31;2019-12-31;2020-12-31;2021-12-31" if "31_dec" in col else "2018;2019;2020;2021"),
+              "distinct_nominal_years":"4","reporting_window_type":"ORIGINAL_SOURCE_4_YEAR_SERIES",
+              "numeric_evidence":pairs,"source_reference":refbase+";00_catalog/progress/INT-017_Table2_2018_2021_custody_annual_avg_Dec31_v1.csv",
+              "source_cell_anchor":"PDF physical p50 Table2 four rows and six columns",
+              "important_limitations":"Do not mix mean and Dec31; national 2021 only in this source series (not again as independent count)",
+              "measurement_status":"VERIFIED_FULL_SOURCE_4YR_SERIES","linked_break_ids":"MB-083","number_of_source_records":"4"})
+          matrix=[
+            ("Table15",tab15,24,3,"PDF physical p63 source Table15; 24 parent/OO rows remand/sentenced/total 2021 averages; source rounded total10339 versus Table2 10338","MB-083;MB-084"),
+            ("Table31",tab31,19,8,"PDF physical p73 source Table31 19 org rows 2019-2021 111 expenditures, day rates and 2021 avg people; headquarters positive costs without prisoners","MB-080;MB-084;MB-087"),
+            ("Table32",tab32,22,3,"PDF physical p74 source Table32 22 accommodation subunits at Dec31, 2021 mean fed, 2021 utilization; includes Trenčín 130.06pct","MB-081;MB-082;MB-084"),
+            ("Table34",tab34,18,5,"PDF physical p78 source Table34 18 parent organizations average prisoners, eligible, assigned, ratio, remuneration","MB-084;MB-086"),
+          ]
+          for label,data,ncols,anchor,links in matrix:
+            add({"record_type":"COMPLETE_PRIMARY_SOURCE_SITE_MATRIX_NOT_NEW_NATIONAL_TOTAL",
+              "indicator_code":"SK_ZVJS_2021_"+label+"_raw_org_rows_"+str(len(data)),
+              "indicator_name_original":label+" full original organization-level statistical table",
+              "indicator_unit":"mixed_source_table_units_see_exact_csv",
+              "territorial_level":"Slovakia ZVJS organizational/prison/subunit source rows",
+              "temporal_grain":"SOURCE_SPECIFIC_CALENDAR_2019_2021_OR_31_DEC_MEAN_2021",
+              "first_period_recorded":"2019" if label=="Table31" else "2021",
+              "last_period_recorded":"2021-12-31" if label=="Table32" else "2021",
+              "listed_periods_exact":"2019;2020;2021" if label=="Table31" else "2021",
+              "distinct_nominal_years":"3" if label=="Table31" else "1",
+              "reporting_window_type":"MULTIVARIABLE_SOURCE_MATRIX_WITH_PARENT_CHILD_SCOPE",
+              "numeric_evidence":"COMPLETE_VERIFIED_"+str(len(data))+"_ROWS_AND_"+str(ncols)+"_PRIMARY_MEASURES;SEE_SOURCE_CSV",
+              "source_reference":refbase+";00_catalog/progress/INT-017_"+label+"_"+("24_unit_2021_annual_avg_remand_sentenced_v1.csv" if label=="Table15" else "19_org_units_budget_cost_2019_2021_v1.csv" if label=="Table31" else "22_prison_and_subunit_capacity_feeding_2021_v1.csv" if label=="Table32" else "prisoner_employment_18_units_2021_v1.csv"),
+              "source_cell_anchor":anchor,
+              "important_limitations":"Original parent-subunit hierarchy and year/dated denominator concepts must be conserved; don't independently sum site peaks or feed averages as live occupancy.",
+              "measurement_status":"ORIGINAL_SOURCE_FULL_MATRIX_OBJECT_NOT_NEW_TOTAL","linked_break_ids":links,
+              "source_facility_rows":str(len(data)), "number_of_numeric_facility_cells":str(len(data)*ncols),
+              "number_of_source_records":str(len(data))})
+          add({"record_type":"SOURCE_ORIGINAL_50_TABLES_DOCUMENT_STRUCTURE_INDEX",
+            "indicator_code":"SK_ZVJS_2021_50_tables_full_index",
+            "indicator_name_original":"Full source report 50 numbered original tables 1 to 50",
+            "indicator_unit":"table_metadata_not_additive",
+            "territorial_level":"Slovak national justice and prison service original report",
+            "temporal_grain":"source_structural_descriptor",
+            "first_period_recorded":"2021","last_period_recorded":"2021","listed_periods_exact":"2021",
+            "distinct_nominal_years":"1","reporting_window_type":"SOURCE_PROVENANCE_50_TABLES_91_PAGES",
+            "numeric_evidence":"50_SOURCE_TABLE_NUMBERED_1_TO_50;SEE_INDEX",
+            "source_reference":refbase+";00_catalog/progress/INT-017_50_tables_page_heading_index_visual_corrected_v2.csv",
+            "source_cell_anchor":"PDF physical pp50-91 Part B; Table17 source text fragmented manually reconciled p64",
+            "important_limitations":"Table-page structural index, NOT 50 independently normalized source data tables",
+            "measurement_status":"NONADDITIVE_ORIGINAL_SOURCE_TABLE_INDEX","number_of_source_records":"50"})
+          assert len(reg)==1519 and reg[-1]["record_id"]=="R01519"
+          assert len({r["record_id"] for r in reg})==len(reg)
+          def dump(data):
+            out=io.StringIO(newline="")
+            writer=csv.DictWriter(out,fieldnames=list(data[0]),quoting=csv.QUOTE_ALL,lineterminator="\n",extrasaction="raise")
+            writer.writeheader();writer.writerows(data);return out.getvalue().encode()
+          qa_doc={"task":"INT-017","publisher_original_exact_binary":True,"original_sha256":sha256,"91_source_pages_text_preserved":True,
+          "original_50_numbered_tables_indexed":True,"previous_registry_count":1472,"new_registry_count":len(reg),"appended_source_objects":47,
+          "scalar_source_input_rows":len(scalar),"scalars_promoted":len(scalar)-len(excluded),"historic_national_series":6,
+          "complete_facility_raw_tables":{x[0]:x[2] for x in matrix},"nonadditive_structure_index":1,
+          "previous_break_count":79,"new_break_count":len(mb),"method_breaks_added":[r[0] for r in issues],
+          "table15_reported_site_sum":10339,"national_annual_mean_Table2":10338,"table32_annual_fed_sum_raw":10342.4,
+          "table32_capacity_end2021":11621,"table31_source111_budget_2021":234073567,
+          "table31_HQ_source111_2021":16681254,
+          "Trencin_reported_ratio_pct":130.06,"tests_total":len(qa),"tests_passed":sum(x["passed"] for x in qa),"tests":qa}
+          files={root+"INDICATOR_PERIOD_COVERAGE_REGISTRY_v30.csv":dump(reg),
+           root+"METHODOLOGICAL_BREAKS_AND_ANOMALIES_v32.csv":dump(mb),
+           pp+"INT-017_catalog_QA_v1.json":json.dumps(qa_doc,ensure_ascii=False,indent=2).encode()}
+          for path,data in files.items():
+            body=json.dumps({"message":"INT017 catalog source QA "+path.rsplit("/",1)[-1],"branch":"main","content":base64.b64encode(data).decode()}).encode()
+            req=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/"+path,data=body,method="PUT",headers={**h,"Content-Type":"application/json"})
+            with urllib.request.urlopen(req,timeout=150) as response:print("SAVED",path,len(data),response.status,flush=True)
+          print("SUCCESS",json.dumps({"registry":len(reg),"MB":len(mb),"QA_checks":len(qa)}),flush=True)
+          PY
