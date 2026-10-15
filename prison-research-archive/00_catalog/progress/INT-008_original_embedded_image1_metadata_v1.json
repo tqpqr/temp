@@ -1,0 +1,16 @@
+{
+  "original_path": "word/media/image1.png",
+  "bytes": 925718,
+  "sha256": "1cea5b8459a62bc910973c6213a020c8443357dec8dbef5a49f053d565174afb",
+  "dimensions_px": [
+    2000,
+    2011
+  ],
+  "format": "PNG",
+  "preview_derivative_format": "ORIGINAL_PNG_BYTE_IDENTICAL",
+  "preview_dimensions_px": [
+    2000,
+    2011
+  ],
+  "note": "Preview only; original DOCX unchanged; full embedded image still available in original SHA verified DOCX."
+}
