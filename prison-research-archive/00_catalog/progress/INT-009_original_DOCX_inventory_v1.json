@@ -1,0 +1,1248 @@
+{
+  "source_path": "space-archive/extra/stp8/2021-gada-statistka-09.docx",
+  "original_size": 1250699,
+  "git_blob_sha1": "829fae30d27ce3c5a7e7f1a04a7fe13def538d11",
+  "sha256": "a9161cbd09dbdfca790d416e2a00cb51f26ec575c329ea10bf1b3552416cfff0",
+  "zip_members": 128,
+  "document_xml_size": 1759334,
+  "core_properties": {
+    "creator": "Elīna Savčenko",
+    "lastModifiedBy": "Ksenija Vītola",
+    "revision": "2",
+    "created": "2022-09-20T09:53:00Z",
+    "modified": "2022-09-20T09:53:00Z"
+  },
+  "paragraphs": 16,
+  "tables": [
+    {
+      "table": 1,
+      "body_index": 112,
+      "rows": 226,
+      "cells": 2906,
+      "first_rows": [
+        [
+          "Saturs",
+          "KOPĀ",
+          "Slēgtā cietumā",
+          "Daļēji slēgtā cietumā",
+          "Atklātā cietumā",
+          "Audzināšanas iestādē nepilngadīgajiem",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          "vīrieši",
+          "sievietes",
+          "vīrieši",
+          "sievietes",
+          "jaunieši",
+          "jaunietes",
+          ""
+        ],
+        [
+          "Notiesāto skaits",
+          "2375",
+          "1760",
+          "369",
+          "175",
+          "15",
+          "39",
+          "16",
+          "1",
+          ""
+        ],
+        [
+          "KRIMINĀLLIKUMA PANTI",
+          "71.p. – 79.p. (noziegumi pret cilvēci, mieru kara noziegumi, genocīds)",
+          "1",
+          "1",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "",
+          "80.p. – 951.p. (noziegumi pret valsti)",
+          "1",
+          "1",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "table": 2,
+      "body_index": 165,
+      "rows": 9,
+      "cells": 49,
+      "first_rows": [
+        [
+          "",
+          "Skaits"
+        ],
+        [
+          "Saturs",
+          "Kopā",
+          "Vīrieši",
+          "Sievietes",
+          "Nepilngadīgie"
+        ],
+        [
+          "",
+          "",
+          "",
+          "",
+          "Jaunieši",
+          "Jaunietes"
+        ],
+        [
+          "Apcietināto un notiesāto (notiesātās personas, kuras atrodas izmeklēšanas cietumā saskaņā ar Latvijas Sodu izpildes kodeksa 16.pan",
+          "834",
+          "765",
+          "57",
+          "12",
+          ""
+        ],
+        [
+          "Informācija par pilsonību",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      ]
+    }
+  ],
+  "all_table_cells": 2955,
+  "charts": [
+    {
+      "part": "word/charts/chart1.xml",
+      "title_original": "Ieslodzīto skaita izmaiņu dinamika",
+      "series_count": 3,
+      "series": [
+        {
+          "series": 1,
+          "name": "Ieslodzītie",
+          "points": 14,
+          "category_count": 14,
+          "value_count": 14,
+          "sample": [
+            [
+              0,
+              "2008",
+              "6873"
+            ],
+            [
+              1,
+              "2009",
+              "7055"
+            ],
+            [
+              2,
+              "2010",
+              "6780"
+            ],
+            [
+              3,
+              "2011",
+              "6561"
+            ],
+            [
+              4,
+              "2012",
+              "6117"
+            ]
+          ]
+        },
+        {
+          "series": 2,
+          "name": "Apcietinātie",
+          "points": 14,
+          "category_count": 14,
+          "value_count": 14,
+          "sample": [
+            [
+              0,
+              "2008",
+              "1892"
+            ],
+            [
+              1,
+              "2009",
+              "2000"
+            ],
+            [
+              2,
+              "2010",
+              "2031"
+            ],
+            [
+              3,
+              "2011",
+              "2035"
+            ],
+            [
+              4,
+              "2012",
+              "1921"
+            ]
+          ]
+        },
+        {
+          "series": 3,
+          "name": "Notiesātie",
+          "points": 14,
+          "category_count": 14,
+          "value_count": 14,
+          "sample": [
+            [
+              0,
+              "2008",
+              "4981"
+            ],
+            [
+              1,
+              "2009",
+              "5055"
+            ],
+            [
+              2,
+              "2010",
+              "4749"
+            ],
+            [
+              3,
+              "2011",
+              "4526"
+            ],
+            [
+              4,
+              "2012",
+              "4196"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart2.xml",
+      "title_original": "Ieslodzīto skaits 2021. gada 31.decembrī",
+      "series_count": 4,
+      "series": [
+        {
+          "series": 1,
+          "name": "Vīrieši ",
+          "points": 2,
+          "category_count": 2,
+          "value_count": 2,
+          "sample": [
+            [
+              0,
+              "Apcietinātie",
+              "745"
+            ],
+            [
+              1,
+              "Notiesātie",
+              "2144"
+            ]
+          ]
+        },
+        {
+          "series": 2,
+          "name": "Sievietes",
+          "points": 2,
+          "category_count": 2,
+          "value_count": 2,
+          "sample": [
+            [
+              0,
+              "Apcietinātie",
+              "53"
+            ],
+            [
+              1,
+              "Notiesātie",
+              "214"
+            ]
+          ]
+        },
+        {
+          "series": 3,
+          "name": "Nepilngadīgie jaunieši",
+          "points": 2,
+          "category_count": 2,
+          "value_count": 2,
+          "sample": [
+            [
+              0,
+              "Apcietinātie",
+              "10"
+            ],
+            [
+              1,
+              "Notiesātie",
+              "16"
+            ]
+          ]
+        },
+        {
+          "series": 4,
+          "name": "Nepilngadīgas jaunietes",
+          "points": 2,
+          "category_count": 2,
+          "value_count": 2,
+          "sample": [
+            [
+              0,
+              "Apcietinātie",
+              "0"
+            ],
+            [
+              1,
+              "Notiesātie",
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart3.xml",
+      "title_original": "Ieslodzīto īpatsvars 2021.gada 31.decembrī pēc dzimuma",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "Ieslodzīto īpatsvars (%) 2020.gada 31.decembrī pēc dzimuma",
+          "points": 2,
+          "category_count": 2,
+          "value_count": 2,
+          "sample": [
+            [
+              0,
+              "Vīrieši ",
+              "2915"
+            ],
+            [
+              1,
+              "Sievietes",
+              "268"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart4.xml",
+      "title_original": "Ieslodzīto īpatsvars 2021.gada 31.decembrī pēc vecuma",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "Ieslodzīto īpatsvars (%) 2020.gada 31.decembrī pēc dzimuma",
+          "points": 2,
+          "category_count": 2,
+          "value_count": 2,
+          "sample": [
+            [
+              0,
+              "Pilngadīgie",
+              "3156"
+            ],
+            [
+              1,
+              "Nepilngadīgie",
+              "27"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart5.xml",
+      "title_original": "Ieslodzīto īpatsvars 2021. gada 31. decembrī pēc valstiskās piederības",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "Tirdzniecība",
+          "points": 2,
+          "category_count": 2,
+          "value_count": 2,
+          "sample": [
+            [
+              0,
+              "Ārzemnieki",
+              "58"
+            ],
+            [
+              1,
+              "Latvijas valstspiederīgie",
+              "3125"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart6.xml",
+      "title_original": "Nepilngadīgo ieslodzīto kopskaita izmaiņas",
+      "series_count": 3,
+      "series": [
+        {
+          "series": 1,
+          "name": "Ieslodzītie",
+          "points": 14,
+          "category_count": 14,
+          "value_count": 14,
+          "sample": [
+            [
+              0,
+              "2008",
+              "189"
+            ],
+            [
+              1,
+              "2009",
+              "149"
+            ],
+            [
+              2,
+              "2010",
+              "88"
+            ],
+            [
+              3,
+              "2011",
+              "68"
+            ],
+            [
+              4,
+              "2012",
+              "55"
+            ]
+          ]
+        },
+        {
+          "series": 2,
+          "name": "Apcietinātie",
+          "points": 14,
+          "category_count": 14,
+          "value_count": 14,
+          "sample": [
+            [
+              0,
+              "2008",
+              "80"
+            ],
+            [
+              1,
+              "2009",
+              "53"
+            ],
+            [
+              2,
+              "2010",
+              "40"
+            ],
+            [
+              3,
+              "2011",
+              "30"
+            ],
+            [
+              4,
+              "2012",
+              "30"
+            ]
+          ]
+        },
+        {
+          "series": 3,
+          "name": "Notiesātie",
+          "points": 14,
+          "category_count": 14,
+          "value_count": 14,
+          "sample": [
+            [
+              0,
+              "2008",
+              "109"
+            ],
+            [
+              1,
+              "2009",
+              "96"
+            ],
+            [
+              2,
+              "2010",
+              "48"
+            ],
+            [
+              3,
+              "2011",
+              "38"
+            ],
+            [
+              4,
+              "2012",
+              "25"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart7.xml",
+      "title_original": "Ieslodzīto ārzemnieku skaits 2021. gada 31.decembrī",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "series_1",
+          "points": 6,
+          "category_count": 6,
+          "value_count": 6,
+          "sample": [
+            [
+              0,
+              "Notiesātie vīrieši",
+              "24"
+            ],
+            [
+              1,
+              "Apcietinātie vīrieši",
+              "27"
+            ],
+            [
+              2,
+              "Notiesātās sievietes",
+              "4"
+            ],
+            [
+              3,
+              "Apcietinātās sievietes",
+              "3"
+            ],
+            [
+              4,
+              "Notiesātie jaunieši (no 18 līdz 25 gadiem)",
+              "0"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart8.xml",
+      "title_original": "",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "Ieslodzīto izvietojums 2021. gada 31.decembrī",
+          "points": 5,
+          "category_count": 5,
+          "value_count": 5,
+          "sample": [
+            [
+              0,
+              "Izmeklēšanas cietumi",
+              "808"
+            ],
+            [
+              1,
+              "Audzināšanas iestāde nepilngadīgajiem",
+              "17"
+            ],
+            [
+              2,
+              "Atklātā cietuma nodaļas",
+              "54"
+            ],
+            [
+              3,
+              "Daļēji slēgtie cietumi",
+              "544"
+            ],
+            [
+              4,
+              "Slēgtie cietumi",
+              "1760"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart9.xml",
+      "title_original": "Notiesāto īpatsvars atbilstoši soda izciešanas reižu skaitam",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "Notiesāto sadalījums atbilstoši soda izciešanas reižu skaitam",
+          "points": 4,
+          "category_count": 4,
+          "value_count": 4,
+          "sample": [
+            [
+              0,
+              "Pirmo reizi",
+              "0.3836"
+            ],
+            [
+              1,
+              "Otro  reizi",
+              "0.17180000000000001"
+            ],
+            [
+              2,
+              "Trešo reizi",
+              "0.1318"
+            ],
+            [
+              3,
+              "Ceturto reizi un vairāk",
+              "0.31280000000000002"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart10.xml",
+      "title_original": "",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "Notiesāto sadalījums 2021. gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam",
+          "points": 10,
+          "category_count": 10,
+          "value_count": 10,
+          "sample": [
+            [
+              0,
+              "Līdz 1 mēnesim",
+              "6.3157894736842104E-3"
+            ],
+            [
+              1,
+              "No 1 mēneša līdz 3 mēnešiem ieskaitot",
+              "4.2105263157894736E-2"
+            ],
+            [
+              2,
+              "Virs 3 mēnešiem līdz 6 mēnešiem ieskaitot",
+              "3.3263157894736842E-2"
+            ],
+            [
+              3,
+              "Virs 6 mēnešmi līdz 1 gadam ieskaitot",
+              "5.8526315789473676E-2"
+            ],
+            [
+              4,
+              "Virs 1 gada līdz 3 gadiem ieskaitot",
+              "0.16378947368421051"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart11.xml",
+      "title_original": "",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "Notiesāto sadalījums 2021. gada 31.decembrī pēc vecuma",
+          "points": 8,
+          "category_count": 8,
+          "value_count": 8,
+          "sample": [
+            [
+              0,
+              "Līdz 18 gadiem",
+              "3.8E-3"
+            ],
+            [
+              1,
+              "No 18 gadiem līdz 21 gadam",
+              "1.7299999999999999E-2"
+            ],
+            [
+              2,
+              "No 21 gada līdz 25 gadiem",
+              "6.9099999999999995E-2"
+            ],
+            [
+              3,
+              "No 25 gadiem līdz 30 gadiem",
+              "0.1217"
+            ],
+            [
+              4,
+              "No 30 gadiem līdz 40 gadiem",
+              "0.33389999999999997"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart12.xml",
+      "title_original": "Notiesāto skaits 2021. gada 31.decembrī pēc īpašajām vajadzībām",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "series_1",
+          "points": 2,
+          "category_count": 2,
+          "value_count": 2,
+          "sample": [
+            [
+              0,
+              "Notiesātie ar īpašām vajadzībām",
+              "178"
+            ],
+            [
+              1,
+              "Notiesātie bez īpašām vajadzībām",
+              "2197"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart13.xml",
+      "title_original": "Notiesāto skaits 2021. gada 31.decembrī pēc īpašajām vajadzībām",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "series_1",
+          "points": 3,
+          "category_count": 3,
+          "value_count": 3,
+          "sample": [
+            [
+              0,
+              "I invaliditātes grupa",
+              "1"
+            ],
+            [
+              1,
+              "II invaliditātes grupa",
+              "71"
+            ],
+            [
+              2,
+              "III invaliditātes grupa",
+              "106"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart14.xml",
+      "title_original": "Personāla sadalījums pēc izglītības",
+      "series_count": 4,
+      "series": [
+        {
+          "series": 1,
+          "name": "Augstākā izglītība",
+          "points": 4,
+          "category_count": 4,
+          "value_count": 4,
+          "sample": [
+            [
+              0,
+              "Ierēdņi",
+              "6"
+            ],
+            [
+              1,
+              "Darbinieki",
+              "282"
+            ],
+            [
+              2,
+              "Virsnieki",
+              "536"
+            ],
+            [
+              3,
+              "Instruktori",
+              "253"
+            ]
+          ]
+        },
+        {
+          "series": 2,
+          "name": "Vidējā profesionālā izglītība",
+          "points": 4,
+          "category_count": 4,
+          "value_count": 4,
+          "sample": [
+            [
+              0,
+              "Ierēdņi",
+              "0"
+            ],
+            [
+              1,
+              "Darbinieki",
+              "48"
+            ],
+            [
+              2,
+              "Virsnieki",
+              "0"
+            ],
+            [
+              3,
+              "Instruktori",
+              "339"
+            ]
+          ]
+        },
+        {
+          "series": 3,
+          "name": "Vidējā vispārējā izglītība",
+          "points": 4,
+          "category_count": 4,
+          "value_count": 4,
+          "sample": [
+            [
+              0,
+              "Ierēdņi",
+              "0"
+            ],
+            [
+              1,
+              "Darbinieki",
+              "28"
+            ],
+            [
+              2,
+              "Virsnieki",
+              "0"
+            ],
+            [
+              3,
+              "Instruktori",
+              "576"
+            ]
+          ]
+        },
+        {
+          "series": 4,
+          "name": "Nepabeigta vidējā izglītība",
+          "points": 4,
+          "category_count": 4,
+          "value_count": 4,
+          "sample": [
+            [
+              0,
+              "Ierēdņi",
+              "0"
+            ],
+            [
+              1,
+              "Darbinieki",
+              "3"
+            ],
+            [
+              2,
+              "Virsnieki",
+              "0"
+            ],
+            [
+              3,
+              "Instruktori",
+              "0"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart15.xml",
+      "title_original": "Personāla sadalījums pēc dzimuma 2021. gadā",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "series_1",
+          "points": 2,
+          "category_count": 2,
+          "value_count": 2,
+          "sample": [
+            [
+              0,
+              "Sievietes",
+              "724"
+            ],
+            [
+              1,
+              "Vīrieši",
+              "1347"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart16.xml",
+      "title_original": "Faktiskais personāla sadalījums amata grupās  2021. gadā",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "Faktiski",
+          "points": 4,
+          "category_count": 4,
+          "value_count": 4,
+          "sample": [
+            [
+              0,
+              "Ierēdņi",
+              "6"
+            ],
+            [
+              1,
+              "Darbinieki",
+              "361"
+            ],
+            [
+              2,
+              "Virsnieki",
+              "536"
+            ],
+            [
+              3,
+              "Instruktori",
+              "1169"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart17.xml",
+      "title_original": "Personāla sadalījums pēc vecuma 2021. gadā",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "series_1",
+          "points": 5,
+          "category_count": 5,
+          "value_count": 5,
+          "sample": [
+            [
+              0,
+              "Līdz 30 gadiem",
+              "300"
+            ],
+            [
+              1,
+              "No 31 gada līdz 45 gadiem",
+              "1170"
+            ],
+            [
+              2,
+              "No 46 gadiem līdz 50 gadiem",
+              "342"
+            ],
+            [
+              3,
+              "No 51 gada līdz 55 gadiem",
+              "94"
+            ],
+            [
+              4,
+              "Vecāki par 55 gadiem",
+              "165"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart18.xml",
+      "title_original": "Personu sadalījums pēc vecuma 2021. gadā",
+      "series_count": 5,
+      "series": [
+        {
+          "series": 1,
+          "name": "Līdz 30 gadiem",
+          "points": 4,
+          "category_count": 4,
+          "value_count": 4,
+          "sample": [
+            [
+              0,
+              "Ierēdņi",
+              "1"
+            ],
+            [
+              1,
+              "Darbinieki",
+              "12"
+            ],
+            [
+              2,
+              "Virsnieki",
+              "44"
+            ],
+            [
+              3,
+              "Instruktori",
+              "243"
+            ]
+          ]
+        },
+        {
+          "series": 2,
+          "name": "No 31 gada līdz 45 gadiem",
+          "points": 4,
+          "category_count": 4,
+          "value_count": 4,
+          "sample": [
+            [
+              0,
+              "Ierēdņi",
+              "5"
+            ],
+            [
+              1,
+              "Darbinieki",
+              "75"
+            ],
+            [
+              2,
+              "Virsnieki",
+              "357"
+            ],
+            [
+              3,
+              "Instruktori",
+              "733"
+            ]
+          ]
+        },
+        {
+          "series": 3,
+          "name": "No 46 gadiem līdz 50 gadiem",
+          "points": 4,
+          "category_count": 4,
+          "value_count": 4,
+          "sample": [
+            [
+              0,
+              "Ierēdņi",
+              "0"
+            ],
+            [
+              1,
+              "Darbinieki",
+              "56"
+            ],
+            [
+              2,
+              "Virsnieki",
+              "114"
+            ],
+            [
+              3,
+              "Instruktori",
+              "172"
+            ]
+          ]
+        },
+        {
+          "series": 4,
+          "name": "No 51 gada līdz 55 gadiem",
+          "points": 4,
+          "category_count": 4,
+          "value_count": 4,
+          "sample": [
+            [
+              0,
+              "Ierēdņi",
+              "0"
+            ],
+            [
+              1,
+              "Darbinieki",
+              "57"
+            ],
+            [
+              2,
+              "Virsnieki",
+              "18"
+            ],
+            [
+              3,
+              "Instruktori",
+              "19"
+            ]
+          ]
+        },
+        {
+          "series": 5,
+          "name": "Vecāki par 55 gadiem",
+          "points": 4,
+          "category_count": 4,
+          "value_count": 4,
+          "sample": [
+            [
+              0,
+              "Ierēdņi",
+              "0"
+            ],
+            [
+              1,
+              "Darbinieki",
+              "161"
+            ],
+            [
+              2,
+              "Virsnieki",
+              "3"
+            ],
+            [
+              3,
+              "Instruktori",
+              "1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart19.xml",
+      "title_original": "Darbinieku un ierēdņu sadalījums pēc darba stāža 2021. gadā",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "Darbinieku un ierēdņu sadalījums pēc izdienas stāža",
+          "points": 8,
+          "category_count": 8,
+          "value_count": 8,
+          "sample": [
+            [
+              0,
+              "Līdz 2 gadiem",
+              "33"
+            ],
+            [
+              1,
+              "No 2 gadiem līdz 5 gadiem",
+              "57"
+            ],
+            [
+              2,
+              "No 5 gadiem līdz 8 gadiem",
+              "68"
+            ],
+            [
+              3,
+              "No 8 gadiem līdz 12 gadiem",
+              "53"
+            ],
+            [
+              4,
+              "No 12 gadiem līdz 16 gadiem",
+              "39"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "part": "word/charts/chart20.xml",
+      "title_original": "Amatpersonu sadalījums pēc izdienas stāža 2021. gadā",
+      "series_count": 1,
+      "series": [
+        {
+          "series": 1,
+          "name": "Amatpersonu sadalījums pēc izdienas stāža",
+          "points": 8,
+          "category_count": 8,
+          "value_count": 8,
+          "sample": [
+            [
+              0,
+              "Līdz 2 gadiem",
+              "195"
+            ],
+            [
+              1,
+              "No 2 gadiem līdz 5 gadiem",
+              "136"
+            ],
+            [
+              2,
+              "No 5 gadiem līdz 8 gadiem",
+              "182"
+            ],
+            [
+              3,
+              "No 8 gadiem līdz 12 gadiem",
+              "199"
+            ],
+            [
+              4,
+              "No 12 gadiem līdz 16 gadiem",
+              "149"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "cached_chart_rows": 199,
+  "media": [
+    {
+      "file": "word/media/image1.png",
+      "size": 925718
+    }
+  ],
+  "embedded": [
+    "word/embeddings/Microsoft_Excel_Worksheet9.xlsx",
+    "word/embeddings/Microsoft_Excel_Worksheet10.xlsx",
+    "word/embeddings/Microsoft_Excel_Worksheet8.xlsx",
+    "word/embeddings/Microsoft_Excel_Worksheet11.xlsx",
+    "word/embeddings/Microsoft_Excel_Worksheet1.xlsx",
+    "word/embeddings/Microsoft_Excel_Worksheet2.xlsx",
+    "word/embeddings/Microsoft_Excel_Worksheet.xlsx",
+    "word/embeddings/Microsoft_Excel_Worksheet3.xlsx",
+    "word/embeddings/Microsoft_Excel_Worksheet6.xlsx",
+    "word/embeddings/Microsoft_Excel_Worksheet7.xlsx",
+    "word/embeddings/Microsoft_Excel_Worksheet4.xlsx",
+    "word/embeddings/Microsoft_Excel_Worksheet5.xlsx"
+  ]
+}
