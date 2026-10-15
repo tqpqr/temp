@@ -1,0 +1,67 @@
+{
+  "task": "INT-019",
+  "source_original_git_sha1": "bd9949bfe933fbf00c745a4a8b4fa39562492e4b",
+  "source_sha256": "37a96647b2abddf0128e0046409bd80254aa7ffc793d1a034f6f25299d7d0ef9",
+  "original_pages": 47,
+  "verified_mirror_byte_equality": false,
+  "verified_mirror_text_page_matches": 47,
+  "numeric_source_observations": 32,
+  "other_source_institutional_event": 1,
+  "old_registry": 1540,
+  "new_registry": 1574,
+  "added_registry_objects": 34,
+  "old_methodology_issues": 91,
+  "new_methodology_issues": 97,
+  "added_breaks": [
+    "MB-092",
+    "MB-093",
+    "MB-094",
+    "MB-095",
+    "MB-096",
+    "MB-097"
+  ],
+  "cross_cell_arithmetic_checks": [
+    {
+      "name": "2024_officer_FTE_3site",
+      "computed": 709.0,
+      "expected": 709,
+      "pass": true
+    },
+    {
+      "name": "2024_officer_positions_3site",
+      "computed": 821.0,
+      "expected": 821,
+      "pass": true
+    },
+    {
+      "name": "2024_officer_posts_minus_FTE",
+      "computed": 112.0,
+      "expected": 112,
+      "pass": true
+    },
+    {
+      "name": "visit_health_FTE",
+      "computed": 75.3,
+      "expected": 75.3,
+      "pass": true
+    },
+    {
+      "name": "visit_health_posts",
+      "computed": 108.8,
+      "expected": 108.8,
+      "pass": true
+    },
+    {
+      "name": "2023_broad_attack_threat_events",
+      "computed": 482.0,
+      "expected": 482,
+      "pass": true
+    },
+    {
+      "name": "CPT_vs_govt_closed_places",
+      "computed": 120.0,
+      "expected": 120,
+      "pass": true
+    }
+  ]
+}
