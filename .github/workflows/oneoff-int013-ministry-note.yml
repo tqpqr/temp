@@ -1,0 +1,38 @@
+name: Oneoff INT-013 ministry explanatory note evidence
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int013-ministry-note.yml
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Official signed TLS PDF note metadata and page exact extraction
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import os,sys,subprocess,urllib.request,hashlib,json,base64,io
+          repo=os.environ["GH_REPOSITORY"];url="https://www.justice.gov.md/sites/default/files/document/attachments/nf_proiect_omj_modif_omj_41_2023.pdf"
+          request=urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0 research"})
+          with urllib.request.urlopen(request,timeout=75) as r:raw=r.read();status=r.status
+          assert raw.startswith(b"%PDF")
+          subprocess.run([sys.executable,"-m","pip","install","--quiet","--target","/tmp/int013_note_pypdf","pypdf"],check=True,timeout=85)
+          sys.path.insert(0,"/tmp/int013_note_pypdf")
+          from pypdf import PdfReader
+          pdf=PdfReader(io.BytesIO(raw));pages=[p.extract_text(extraction_mode="layout") or "" for p in pdf.pages]
+          assert len(pages)==7,len(pages)
+          metadata={"url":url,"http_status":status,"bytes":len(raw),"sha256":hashlib.sha256(raw).hexdigest(),"pages":len(pages),"text_chars_by_page":[len(x) for x in pages],"pdf_metadata":{str(k):str(v) for k,v in (pdf.metadata or {}).items()},"default_tls_verification":"ON","document_type":"Official supplementary explanatory note linked from consultation registration 1042, NOT user-original INT013 PDF"}
+          outputs={"INT-013_official_explanatory_note_issuer_binary_metadata_v1.json":json.dumps(metadata,ensure_ascii=False,indent=2).encode(),
+          "INT-013_official_explanatory_note_original_page_text_v1.md":("\n\n".join("## Supplementary ministry note PDF physical page "+str(i+1)+"\n\n"+p for i,p in enumerate(pages))).encode()}
+          for n,body in outputs.items():
+           payload=json.dumps({"message":"source: INT013 publisher linked official 2025 explanatory note provenance "+n,"content":base64.b64encode(body).decode(),"branch":"main"}).encode()
+           req=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/prison-research-archive/00_catalog/progress/"+n,method="PUT",headers={"Authorization":"Bearer "+os.environ["GH_TOKEN"],"Content-Type":"application/json","User-Agent":"Forensic"},data=payload)
+           with urllib.request.urlopen(req,timeout=65) as r:print("SAVED",n,len(body),r.status)
+          print("SAVED_INT013_NOTE",len(pages),metadata["sha256"])
+          PY
