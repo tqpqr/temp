@@ -20,7 +20,23 @@ jobs:
           import os,sys,subprocess,urllib.request,hashlib,json,base64,re,csv,io,tempfile
           repo=os.environ["GH_REPOSITORY"]
           src="space-archive/extra/stp8/Rikosseuraamusasiakkaat-30.4.2022.pdf"
-          raw=urllib.request.urlopen("https://raw.githubusercontent.com/"+repo+"/main/"+src,timeout=60).read()
+          import time
+          raw=None
+          errors=[]
+          urls=["https://api.github.com/repos/"+repo+"/git/blobs/4f2894be67c053d40b32355e322aaef3cef3151f",
+                "https://raw.githubusercontent.com/"+repo+"/main/"+src]
+          for url in urls:
+           for retry in range(4):
+            try:
+             h={"User-Agent":"Mozilla/5.0 source archive verified","Authorization":"Bearer "+os.environ["GH_TOKEN"]} if "api.github.com" in url else {"User-Agent":"Mozilla/5.0"}
+             with urllib.request.urlopen(urllib.request.Request(url,headers=h),timeout=90) as r:b=r.read()
+             raw=base64.b64decode(json.loads(b)["content"]) if "/git/blobs/" in url else b
+             if len(raw)==1714173:break
+             errors.append("Size unexpected "+str(len(raw)))
+             raw=None
+            except Exception as exc:errors.append(type(exc).__name__+":"+str(exc)[:80]);time.sleep(1+retry)
+           if raw is not None:break
+          if raw is None:raise RuntimeError("Could not fetch source after retried public and authorized API paths: "+repr(errors))
           sha=hashlib.sha1(b"blob "+str(len(raw)).encode()+bytes([0])+raw).hexdigest()
           assert(len(raw),sha)==(1714173,"4f2894be67c053d40b32355e322aaef3cef3151f")
           current="https://www.rikosseuraamus.fi/app/uploads/sites/11/2024/11/Rikosseuraamusasiakkaat-30.4.2022.pdf"
