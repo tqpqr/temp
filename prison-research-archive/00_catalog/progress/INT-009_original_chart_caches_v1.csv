@@ -1,0 +1,200 @@
+chart_part,chart_title,series_index,series_name,point_index,category_original,value_original,category_data_kind,value_data_kind,category_formula,value_formula
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,0,2008,6873,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,1,2009,7055,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,2,2010,6780,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,3,2011,6561,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,4,2012,6117,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,5,2013,5139,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,6,2014,4745,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,7,2015,4409,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,8,2016,4243,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,9,2017,3765,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,10,2018,3522,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,11,2019,3414,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,12,2020,3104,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,1,Ieslodzītie,13,2021,3183,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,0,2008,1892,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,1,2009,2000,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,2,2010,2031,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,3,2011,2035,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,4,2012,1921,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,5,2013,1526,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,6,2014,1469,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,7,2015,1389,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,8,2016,1277,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,9,2017,1051,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,10,2018,981,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,11,2019,949,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,12,2020,810,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,2,Apcietinātie,13,2021,808,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,0,2008,4981,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,1,2009,5055,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,2,2010,4749,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,3,2011,4526,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,4,2012,4196,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,5,2013,3613,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,6,2014,3276,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,7,2015,3020,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,8,2016,2966,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,9,2017,2714,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,10,2018,2541,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,11,2019,2465,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,12,2020,2294,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart1.xml,Ieslodzīto skaita izmaiņu dinamika,3,Notiesātie,13,2021,2375,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart2.xml,Ieslodzīto skaits 2021. gada 31.decembrī,1,Vīrieši ,0,Apcietinātie,745,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$B$2:$B$3
+word/charts/chart2.xml,Ieslodzīto skaits 2021. gada 31.decembrī,1,Vīrieši ,1,Notiesātie,2144,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$B$2:$B$3
+word/charts/chart2.xml,Ieslodzīto skaits 2021. gada 31.decembrī,2,Sievietes,0,Apcietinātie,53,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$C$2:$C$3
+word/charts/chart2.xml,Ieslodzīto skaits 2021. gada 31.decembrī,2,Sievietes,1,Notiesātie,214,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$C$2:$C$3
+word/charts/chart2.xml,Ieslodzīto skaits 2021. gada 31.decembrī,3,Nepilngadīgie jaunieši,0,Apcietinātie,10,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$D$2:$D$3
+word/charts/chart2.xml,Ieslodzīto skaits 2021. gada 31.decembrī,3,Nepilngadīgie jaunieši,1,Notiesātie,16,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$D$2:$D$3
+word/charts/chart2.xml,Ieslodzīto skaits 2021. gada 31.decembrī,4,Nepilngadīgas jaunietes,0,Apcietinātie,0,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$E$2:$E$3
+word/charts/chart2.xml,Ieslodzīto skaits 2021. gada 31.decembrī,4,Nepilngadīgas jaunietes,1,Notiesātie,1,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$E$2:$E$3
+word/charts/chart3.xml,Ieslodzīto īpatsvars 2021.gada 31.decembrī pēc dzimuma,1,Ieslodzīto īpatsvars (%) 2020.gada 31.decembrī pēc dzimuma,0,Vīrieši ,2915,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$B$2:$B$3
+word/charts/chart3.xml,Ieslodzīto īpatsvars 2021.gada 31.decembrī pēc dzimuma,1,Ieslodzīto īpatsvars (%) 2020.gada 31.decembrī pēc dzimuma,1,Sievietes,268,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$B$2:$B$3
+word/charts/chart4.xml,Ieslodzīto īpatsvars 2021.gada 31.decembrī pēc vecuma,1,Ieslodzīto īpatsvars (%) 2020.gada 31.decembrī pēc dzimuma,0,Pilngadīgie,3156,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$B$2:$B$3
+word/charts/chart4.xml,Ieslodzīto īpatsvars 2021.gada 31.decembrī pēc vecuma,1,Ieslodzīto īpatsvars (%) 2020.gada 31.decembrī pēc dzimuma,1,Nepilngadīgie,27,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$B$2:$B$3
+word/charts/chart5.xml,Ieslodzīto īpatsvars 2021. gada 31. decembrī pēc valstiskās piederības,1,Tirdzniecība,0,Ārzemnieki,58,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$B$2:$B$3
+word/charts/chart5.xml,Ieslodzīto īpatsvars 2021. gada 31. decembrī pēc valstiskās piederības,1,Tirdzniecība,1,Latvijas valstspiederīgie,3125,strCache,numCache,Lapa1!$A$2:$A$3,Lapa1!$B$2:$B$3
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,0,2008,189,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,1,2009,149,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,2,2010,88,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,3,2011,68,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,4,2012,55,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,5,2013,46,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,6,2014,38,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,7,2015,42,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,8,2016,43,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,9,2017,41,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,10,2018,35,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,11,2019,36,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,12,2020,25,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,1,Ieslodzītie,13,2021,27,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$B$2:$B$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,0,2008,80,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,1,2009,53,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,2,2010,40,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,3,2011,30,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,4,2012,30,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,5,2013,22,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,6,2014,15,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,7,2015,22,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,8,2016,21,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,9,2017,15,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,10,2018,11,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,11,2019,15,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,12,2020,18,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,2,Apcietinātie,13,2021,10,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$C$2:$C$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,0,2008,109,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,1,2009,96,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,2,2010,48,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,3,2011,38,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,4,2012,25,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,5,2013,24,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,6,2014,23,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,7,2015,20,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,8,2016,22,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,9,2017,26,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,10,2018,24,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,11,2019,21,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,12,2020,7,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart6.xml,Nepilngadīgo ieslodzīto kopskaita izmaiņas,3,Notiesātie,13,2021,17,numCache,numCache,Lapa1!$A$2:$A$15,Lapa1!$D$2:$D$15
+word/charts/chart7.xml,Ieslodzīto ārzemnieku skaits 2021. gada 31.decembrī,1,series_1,0,Notiesātie vīrieši,24,strCache,numCache,Lapa1!$D$322:$D$327,Lapa1!$E$322:$E$327
+word/charts/chart7.xml,Ieslodzīto ārzemnieku skaits 2021. gada 31.decembrī,1,series_1,1,Apcietinātie vīrieši,27,strCache,numCache,Lapa1!$D$322:$D$327,Lapa1!$E$322:$E$327
+word/charts/chart7.xml,Ieslodzīto ārzemnieku skaits 2021. gada 31.decembrī,1,series_1,2,Notiesātās sievietes,4,strCache,numCache,Lapa1!$D$322:$D$327,Lapa1!$E$322:$E$327
+word/charts/chart7.xml,Ieslodzīto ārzemnieku skaits 2021. gada 31.decembrī,1,series_1,3,Apcietinātās sievietes,3,strCache,numCache,Lapa1!$D$322:$D$327,Lapa1!$E$322:$E$327
+word/charts/chart7.xml,Ieslodzīto ārzemnieku skaits 2021. gada 31.decembrī,1,series_1,4,Notiesātie jaunieši (no 18 līdz 25 gadiem),0,strCache,numCache,Lapa1!$D$322:$D$327,Lapa1!$E$322:$E$327
+word/charts/chart7.xml,Ieslodzīto ārzemnieku skaits 2021. gada 31.decembrī,1,series_1,5,Apcietinātie jaunieši (no 18 līdz 25 gadiem),0,strCache,numCache,Lapa1!$D$322:$D$327,Lapa1!$E$322:$E$327
+word/charts/chart8.xml,,1,Ieslodzīto izvietojums 2021. gada 31.decembrī,0,Izmeklēšanas cietumi,808,strCache,numCache,Lapa1!$A$2:$A$6,Lapa1!$B$2:$B$6
+word/charts/chart8.xml,,1,Ieslodzīto izvietojums 2021. gada 31.decembrī,1,Audzināšanas iestāde nepilngadīgajiem,17,strCache,numCache,Lapa1!$A$2:$A$6,Lapa1!$B$2:$B$6
+word/charts/chart8.xml,,1,Ieslodzīto izvietojums 2021. gada 31.decembrī,2,Atklātā cietuma nodaļas,54,strCache,numCache,Lapa1!$A$2:$A$6,Lapa1!$B$2:$B$6
+word/charts/chart8.xml,,1,Ieslodzīto izvietojums 2021. gada 31.decembrī,3,Daļēji slēgtie cietumi,544,strCache,numCache,Lapa1!$A$2:$A$6,Lapa1!$B$2:$B$6
+word/charts/chart8.xml,,1,Ieslodzīto izvietojums 2021. gada 31.decembrī,4,Slēgtie cietumi,1760,strCache,numCache,Lapa1!$A$2:$A$6,Lapa1!$B$2:$B$6
+word/charts/chart9.xml,Notiesāto īpatsvars atbilstoši soda izciešanas reižu skaitam,1,Notiesāto sadalījums atbilstoši soda izciešanas reižu skaitam,0,Pirmo reizi,0.3836,strCache,numCache,Lapa1!$A$2:$A$5,Lapa1!$B$2:$B$5
+word/charts/chart9.xml,Notiesāto īpatsvars atbilstoši soda izciešanas reižu skaitam,1,Notiesāto sadalījums atbilstoši soda izciešanas reižu skaitam,1,Otro  reizi,0.17180000000000001,strCache,numCache,Lapa1!$A$2:$A$5,Lapa1!$B$2:$B$5
+word/charts/chart9.xml,Notiesāto īpatsvars atbilstoši soda izciešanas reižu skaitam,1,Notiesāto sadalījums atbilstoši soda izciešanas reižu skaitam,2,Trešo reizi,0.1318,strCache,numCache,Lapa1!$A$2:$A$5,Lapa1!$B$2:$B$5
+word/charts/chart9.xml,Notiesāto īpatsvars atbilstoši soda izciešanas reižu skaitam,1,Notiesāto sadalījums atbilstoši soda izciešanas reižu skaitam,3,Ceturto reizi un vairāk,0.31280000000000002,strCache,numCache,Lapa1!$A$2:$A$5,Lapa1!$B$2:$B$5
+word/charts/chart10.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam,0,Līdz 1 mēnesim,6.3157894736842104E-3,strCache,numCache,Lapa1!$A$2:$A$11,Lapa1!$B$2:$B$11
+word/charts/chart10.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam,1,No 1 mēneša līdz 3 mēnešiem ieskaitot,4.2105263157894736E-2,strCache,numCache,Lapa1!$A$2:$A$11,Lapa1!$B$2:$B$11
+word/charts/chart10.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam,2,Virs 3 mēnešiem līdz 6 mēnešiem ieskaitot,3.3263157894736842E-2,strCache,numCache,Lapa1!$A$2:$A$11,Lapa1!$B$2:$B$11
+word/charts/chart10.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam,3,Virs 6 mēnešmi līdz 1 gadam ieskaitot,5.8526315789473676E-2,strCache,numCache,Lapa1!$A$2:$A$11,Lapa1!$B$2:$B$11
+word/charts/chart10.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam,4,Virs 1 gada līdz 3 gadiem ieskaitot,0.16378947368421051,strCache,numCache,Lapa1!$A$2:$A$11,Lapa1!$B$2:$B$11
+word/charts/chart10.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam,5,Virs 3 gadiem līdz 5 gadiem ieskaitot,0.18905263157894736,strCache,numCache,Lapa1!$A$2:$A$11,Lapa1!$B$2:$B$11
+word/charts/chart10.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam,6,Virs 5 gadiem līdz 10 gadiem ieskaitot,0.27873684210526317,strCache,numCache,Lapa1!$A$2:$A$11,Lapa1!$B$2:$B$11
+word/charts/chart10.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam,7,Virs 10 gadiem līdz 20 gadiem ieskaitot,0.19410526315789473,strCache,numCache,Lapa1!$A$2:$A$11,Lapa1!$B$2:$B$11
+word/charts/chart10.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam,8,Virs 20 gadiem līdz 25 gadiem,5.8947368421052634E-3,strCache,numCache,Lapa1!$A$2:$A$11,Lapa1!$B$2:$B$11
+word/charts/chart10.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī atbilstoši piespriestā brīvības atņemšanas soda termiņa ilgumam,9,Mūža ieslodzījums,2.8210526315789474E-2,strCache,numCache,Lapa1!$A$2:$A$11,Lapa1!$B$2:$B$11
+word/charts/chart11.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī pēc vecuma,0,Līdz 18 gadiem,3.8E-3,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart11.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī pēc vecuma,1,No 18 gadiem līdz 21 gadam,1.7299999999999999E-2,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart11.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī pēc vecuma,2,No 21 gada līdz 25 gadiem,6.9099999999999995E-2,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart11.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī pēc vecuma,3,No 25 gadiem līdz 30 gadiem,0.1217,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart11.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī pēc vecuma,4,No 30 gadiem līdz 40 gadiem,0.33389999999999997,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart11.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī pēc vecuma,5,No 40 gadiem līdz 50 gadiem,0.25940000000000002,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart11.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī pēc vecuma,6,No 50 gadiem līdz 60 gadiem,0.13519999999999999,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart11.xml,,1,Notiesāto sadalījums 2021. gada 31.decembrī pēc vecuma,7,Vecāki par 60 gadiem,5.9799999999999999E-2,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart12.xml,Notiesāto skaits 2021. gada 31.decembrī pēc īpašajām vajadzībām,1,series_1,0,Notiesātie ar īpašām vajadzībām,178,strCache,numCache,Lapa1!$D$316:$D$317,Lapa1!$E$316:$E$317
+word/charts/chart12.xml,Notiesāto skaits 2021. gada 31.decembrī pēc īpašajām vajadzībām,1,series_1,1,Notiesātie bez īpašām vajadzībām,2197,strCache,numCache,Lapa1!$D$316:$D$317,Lapa1!$E$316:$E$317
+word/charts/chart13.xml,Notiesāto skaits 2021. gada 31.decembrī pēc īpašajām vajadzībām,1,series_1,0,I invaliditātes grupa,1,strCache,numCache,Lapa1!$D$308:$D$310,Lapa1!$E$308:$E$310
+word/charts/chart13.xml,Notiesāto skaits 2021. gada 31.decembrī pēc īpašajām vajadzībām,1,series_1,1,II invaliditātes grupa,71,strCache,numCache,Lapa1!$D$308:$D$310,Lapa1!$E$308:$E$310
+word/charts/chart13.xml,Notiesāto skaits 2021. gada 31.decembrī pēc īpašajām vajadzībām,1,series_1,2,III invaliditātes grupa,106,strCache,numCache,Lapa1!$D$308:$D$310,Lapa1!$E$308:$E$310
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,1,Augstākā izglītība,0,Ierēdņi,6,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$C$13:$C$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,1,Augstākā izglītība,1,Darbinieki,282,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$C$13:$C$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,1,Augstākā izglītība,2,Virsnieki,536,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$C$13:$C$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,1,Augstākā izglītība,3,Instruktori,253,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$C$13:$C$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,2,Vidējā profesionālā izglītība,0,Ierēdņi,0,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$D$13:$D$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,2,Vidējā profesionālā izglītība,1,Darbinieki,48,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$D$13:$D$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,2,Vidējā profesionālā izglītība,2,Virsnieki,0,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$D$13:$D$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,2,Vidējā profesionālā izglītība,3,Instruktori,339,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$D$13:$D$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,3,Vidējā vispārējā izglītība,0,Ierēdņi,0,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$E$13:$E$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,3,Vidējā vispārējā izglītība,1,Darbinieki,28,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$E$13:$E$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,3,Vidējā vispārējā izglītība,2,Virsnieki,0,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$E$13:$E$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,3,Vidējā vispārējā izglītība,3,Instruktori,576,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$E$13:$E$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,4,Nepabeigta vidējā izglītība,0,Ierēdņi,0,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$F$13:$F$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,4,Nepabeigta vidējā izglītība,1,Darbinieki,3,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$F$13:$F$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,4,Nepabeigta vidējā izglītība,2,Virsnieki,0,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$F$13:$F$16
+word/charts/chart14.xml,Personāla sadalījums pēc izglītības,4,Nepabeigta vidējā izglītība,3,Instruktori,0,strCache,numCache,Lapa1!$B$13:$B$16,Lapa1!$F$13:$F$16
+word/charts/chart15.xml,Personāla sadalījums pēc dzimuma 2021. gadā,1,series_1,0,Sievietes,724,strCache,numCache,Lapa1!$C$30:$D$30,Lapa1!$C$31:$D$31
+word/charts/chart15.xml,Personāla sadalījums pēc dzimuma 2021. gadā,1,series_1,1,Vīrieši,1347,strCache,numCache,Lapa1!$C$30:$D$30,Lapa1!$C$31:$D$31
+word/charts/chart16.xml,Faktiskais personāla sadalījums amata grupās  2021. gadā,1,Faktiski,0,Ierēdņi,6,strCache,numCache,Lapa1!$B$4:$B$7,Lapa1!$D$4:$D$7
+word/charts/chart16.xml,Faktiskais personāla sadalījums amata grupās  2021. gadā,1,Faktiski,1,Darbinieki,361,strCache,numCache,Lapa1!$B$4:$B$7,Lapa1!$D$4:$D$7
+word/charts/chart16.xml,Faktiskais personāla sadalījums amata grupās  2021. gadā,1,Faktiski,2,Virsnieki,536,strCache,numCache,Lapa1!$B$4:$B$7,Lapa1!$D$4:$D$7
+word/charts/chart16.xml,Faktiskais personāla sadalījums amata grupās  2021. gadā,1,Faktiski,3,Instruktori,1169,strCache,numCache,Lapa1!$B$4:$B$7,Lapa1!$D$4:$D$7
+word/charts/chart17.xml,Personāla sadalījums pēc vecuma 2021. gadā,1,series_1,0,Līdz 30 gadiem,300,strCache,numCache,Lapa1!$G$29:$K$30,Lapa1!$G$31:$K$31
+word/charts/chart17.xml,Personāla sadalījums pēc vecuma 2021. gadā,1,series_1,1,No 31 gada līdz 45 gadiem,1170,strCache,numCache,Lapa1!$G$29:$K$30,Lapa1!$G$31:$K$31
+word/charts/chart17.xml,Personāla sadalījums pēc vecuma 2021. gadā,1,series_1,2,No 46 gadiem līdz 50 gadiem,342,strCache,numCache,Lapa1!$G$29:$K$30,Lapa1!$G$31:$K$31
+word/charts/chart17.xml,Personāla sadalījums pēc vecuma 2021. gadā,1,series_1,3,No 51 gada līdz 55 gadiem,94,strCache,numCache,Lapa1!$G$29:$K$30,Lapa1!$G$31:$K$31
+word/charts/chart17.xml,Personāla sadalījums pēc vecuma 2021. gadā,1,series_1,4,Vecāki par 55 gadiem,165,strCache,numCache,Lapa1!$G$29:$K$30,Lapa1!$G$31:$K$31
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,1,Līdz 30 gadiem,0,Ierēdņi,1,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$C$23:$C$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,1,Līdz 30 gadiem,1,Darbinieki,12,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$C$23:$C$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,1,Līdz 30 gadiem,2,Virsnieki,44,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$C$23:$C$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,1,Līdz 30 gadiem,3,Instruktori,243,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$C$23:$C$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,2,No 31 gada līdz 45 gadiem,0,Ierēdņi,5,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$D$23:$D$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,2,No 31 gada līdz 45 gadiem,1,Darbinieki,75,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$D$23:$D$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,2,No 31 gada līdz 45 gadiem,2,Virsnieki,357,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$D$23:$D$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,2,No 31 gada līdz 45 gadiem,3,Instruktori,733,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$D$23:$D$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,3,No 46 gadiem līdz 50 gadiem,0,Ierēdņi,0,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$E$23:$E$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,3,No 46 gadiem līdz 50 gadiem,1,Darbinieki,56,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$E$23:$E$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,3,No 46 gadiem līdz 50 gadiem,2,Virsnieki,114,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$E$23:$E$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,3,No 46 gadiem līdz 50 gadiem,3,Instruktori,172,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$E$23:$E$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,4,No 51 gada līdz 55 gadiem,0,Ierēdņi,0,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$F$23:$F$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,4,No 51 gada līdz 55 gadiem,1,Darbinieki,57,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$F$23:$F$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,4,No 51 gada līdz 55 gadiem,2,Virsnieki,18,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$F$23:$F$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,4,No 51 gada līdz 55 gadiem,3,Instruktori,19,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$F$23:$F$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,5,Vecāki par 55 gadiem,0,Ierēdņi,0,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$G$23:$G$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,5,Vecāki par 55 gadiem,1,Darbinieki,161,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$G$23:$G$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,5,Vecāki par 55 gadiem,2,Virsnieki,3,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$G$23:$G$26
+word/charts/chart18.xml,Personu sadalījums pēc vecuma 2021. gadā,5,Vecāki par 55 gadiem,3,Instruktori,1,strCache,numCache,Lapa1!$B$23:$B$26,Lapa1!$G$23:$G$26
+word/charts/chart19.xml,Darbinieku un ierēdņu sadalījums pēc darba stāža 2021. gadā,1,Darbinieku un ierēdņu sadalījums pēc izdienas stāža,0,Līdz 2 gadiem,33,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart19.xml,Darbinieku un ierēdņu sadalījums pēc darba stāža 2021. gadā,1,Darbinieku un ierēdņu sadalījums pēc izdienas stāža,1,No 2 gadiem līdz 5 gadiem,57,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart19.xml,Darbinieku un ierēdņu sadalījums pēc darba stāža 2021. gadā,1,Darbinieku un ierēdņu sadalījums pēc izdienas stāža,2,No 5 gadiem līdz 8 gadiem,68,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart19.xml,Darbinieku un ierēdņu sadalījums pēc darba stāža 2021. gadā,1,Darbinieku un ierēdņu sadalījums pēc izdienas stāža,3,No 8 gadiem līdz 12 gadiem,53,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart19.xml,Darbinieku un ierēdņu sadalījums pēc darba stāža 2021. gadā,1,Darbinieku un ierēdņu sadalījums pēc izdienas stāža,4,No 12 gadiem līdz 16 gadiem,39,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart19.xml,Darbinieku un ierēdņu sadalījums pēc darba stāža 2021. gadā,1,Darbinieku un ierēdņu sadalījums pēc izdienas stāža,5,No 16 gadiem līdz 20 gadiem,25,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart19.xml,Darbinieku un ierēdņu sadalījums pēc darba stāža 2021. gadā,1,Darbinieku un ierēdņu sadalījums pēc izdienas stāža,6,No 20 gadiem līdz 25 gadiem,39,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart19.xml,Darbinieku un ierēdņu sadalījums pēc darba stāža 2021. gadā,1,Darbinieku un ierēdņu sadalījums pēc izdienas stāža,7,Virs 25 gadiem,47,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart20.xml,Amatpersonu sadalījums pēc izdienas stāža 2021. gadā,1,Amatpersonu sadalījums pēc izdienas stāža,0,Līdz 2 gadiem,195,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart20.xml,Amatpersonu sadalījums pēc izdienas stāža 2021. gadā,1,Amatpersonu sadalījums pēc izdienas stāža,1,No 2 gadiem līdz 5 gadiem,136,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart20.xml,Amatpersonu sadalījums pēc izdienas stāža 2021. gadā,1,Amatpersonu sadalījums pēc izdienas stāža,2,No 5 gadiem līdz 8 gadiem,182,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart20.xml,Amatpersonu sadalījums pēc izdienas stāža 2021. gadā,1,Amatpersonu sadalījums pēc izdienas stāža,3,No 8 gadiem līdz 12 gadiem,199,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart20.xml,Amatpersonu sadalījums pēc izdienas stāža 2021. gadā,1,Amatpersonu sadalījums pēc izdienas stāža,4,No 12 gadiem līdz 16 gadiem,149,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart20.xml,Amatpersonu sadalījums pēc izdienas stāža 2021. gadā,1,Amatpersonu sadalījums pēc izdienas stāža,5,No 16 gadiem līdz 20 gadiem,170,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart20.xml,Amatpersonu sadalījums pēc izdienas stāža 2021. gadā,1,Amatpersonu sadalījums pēc izdienas stāža,6,No 20 gadiem līdz 25 gadiem,101,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
+word/charts/chart20.xml,Amatpersonu sadalījums pēc izdienas stāža 2021. gadā,1,Amatpersonu sadalījums pēc izdienas stāža,7,Virs 25 gadiem,36,strCache,numCache,Lapa1!$A$2:$A$9,Lapa1!$B$2:$B$9
