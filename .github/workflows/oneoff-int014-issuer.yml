@@ -1,0 +1,51 @@
+name: Oneoff INT014 official CZSW 2022 issuer matching
+on:
+  push:
+    paths:
+      - .github/workflows/oneoff-int014-issuer.yml
+permissions:
+  contents: write
+jobs:
+  issuer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Inspect official 2022 annual PDF asset link and hashes
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPOSITORY: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import os,urllib.request,json,hashlib,base64,html.parser,urllib.parse
+          repo=os.environ["GH_REPOSITORY"]
+          class A(html.parser.HTMLParser):
+           def __init__(self):super().__init__();self.href=None;self.label="";self.data=[]
+           def handle_starttag(self,tag,attrs):
+            if tag=="a":self.href=dict(attrs).get("href","");self.label=""
+           def handle_data(self,text):
+            if self.href is not None:self.label+=text
+           def handle_endtag(self,tag):
+            if tag=="a":
+             if self.href:self.data.append((self.href,self.label.strip()))
+             self.href=None;self.label=""
+          url="https://sw.gov.pl/strona/statystyka-roczna";out={"url":url,"official_page_checked":True,"candidates":[]}
+          try:
+           with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"Mozilla/5.0"}),timeout=55) as response:html=response.read().decode("utf8","replace");out["page_status"]=response.status;out["html_length"]=len(html)
+           parser=A();parser.feed(html)
+           choices=[(urllib.parse.urljoin(url,h),label) for h,label in parser.data if "2022" in (label+h).lower() and ("rok" in label.lower() or "2022" in label.lower())]
+           out["candidates"]=[{"href":h,"label":l} for h,l in choices[:15]]
+           for h,label in choices[:7]:
+            try:
+             with urllib.request.urlopen(urllib.request.Request(h,headers={"User-Agent":"Mozilla/5.0"}),timeout=65) as r:
+              data=r.read()
+              out.setdefault("download_tests",[]).append({"label":label,"url":r.url,"size":len(data),"sha256":hashlib.sha256(data).hexdigest(),"pdf":data.startswith(b"%PDF"),"status":r.status})
+            except Exception as e:out.setdefault("download_tests",[]).append({"label":label,"url":h,"error":repr(e)[:220]})
+          except Exception as e:out["error"]=repr(e)[:300]
+          data=json.dumps(out,ensure_ascii=False,indent=2).encode()
+          p="prison-research-archive/00_catalog/progress/INT-014_official_annual_page_asset_2022_comparison_v1.json"
+          payload=json.dumps({"message":"INT014 official CZSW 2022 annual PDF provenance candidate check","content":base64.b64encode(data).decode(),"branch":"main"}).encode()
+          req=urllib.request.Request("https://api.github.com/repos/"+repo+"/contents/"+p,method="PUT",headers={"Authorization":"Bearer "+os.environ["GH_TOKEN"],"Content-Type":"application/json","User-Agent":"Archive"},data=payload)
+          with urllib.request.urlopen(req,timeout=55) as r:print("SAVED",len(data),r.status)
+          print("SUMMARY",out,flush=True)
+          PY
