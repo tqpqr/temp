@@ -1,0 +1,29 @@
+{
+  "original_path": "space-archive/extra/stp8/Moldova_Nota_informativa_OMJ_capacitate_cazare.pdf",
+  "original_bytes": 217069,
+  "git_blob_sha1": "378ebe8841196f247b4de0cbbeb2ba8dc17c5fe4",
+  "sha256": "556cdac75fd5c53ca77d65d2e457d5a3b7d2e600c79a289e089225912a2e233a",
+  "page_count": 3,
+  "page_text_chars": [
+    3341,
+    3489,
+    2784
+  ],
+  "pdf_metadata": {
+    "/Title": "Microsoft Word - Proiect_OMJ_sectoarele de deten˙ie ˇi capacitatea de cazare în institu˙iile penitenciare_final_16.01.2023 (1)",
+    "/Author": "Admin",
+    "/Creator": "Microsoft® Word 2010",
+    "/CreationDate": "D:20230128110603+02'00'",
+    "/ModDate": "D:20230128110603+02'00'",
+    "/Producer": "Microsoft® Word 2010"
+  },
+  "issuer_comparison": {
+    "url": "https://www.justice.gov.md/sites/default/files/document/attachments/2ni_omj_sectoarele_de_detentie_si_capacitatea_de_cazare_in_institutii_penitenciare.pdf",
+    "http_status": 200,
+    "bytes": 217069,
+    "sha256": "556cdac75fd5c53ca77d65d2e457d5a3b7d2e600c79a289e089225912a2e233a",
+    "byte_identical": true,
+    "tls": "PYTHON_DEFAULT_VERIFIED"
+  },
+  "source_text_extraction_engine": "pypdf layout; NO OCR"
+}
