@@ -1,0 +1,22 @@
+{
+  "url": "https://www.justice.gov.md/sites/default/files/document/attachments/nf_proiect_omj_modif_omj_41_2023.pdf",
+  "http_status": 200,
+  "bytes": 297283,
+  "sha256": "eb60960e0f78025a3dd2118e5924d64fa86ac2d52284fd2826d804cce1420f61",
+  "pages": 7,
+  "text_chars_by_page": [
+    4109,
+    4394,
+    4455,
+    4330,
+    4193,
+    3622,
+    907
+  ],
+  "pdf_metadata": {
+    "/Producer": "iLovePDF",
+    "/ModDate": "D:20251216133420Z"
+  },
+  "default_tls_verification": "ON",
+  "document_type": "Official supplementary explanatory note linked from consultation registration 1042, NOT user-original INT013 PDF"
+}
