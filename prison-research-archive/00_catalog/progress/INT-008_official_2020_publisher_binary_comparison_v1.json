@@ -1,0 +1,13 @@
+{
+  "official_index_page": "https://www.ievp.gov.lv/lv/oficialas-statistikas-parskati",
+  "source_url": "https://www.ievp.gov.lv/lv/media/4909/download?attachment=",
+  "archived_sha256": "941d25ef51b9759400beeeb8e995937bc78900467a210706e57477db32c8a3ce",
+  "attempted": true,
+  "http_status": 200,
+  "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+  "byte_count": 1088041,
+  "sha256": "941d25ef51b9759400beeeb8e995937bc78900467a210706e57477db32c8a3ce",
+  "byte_identical": true,
+  "same_zip_magic": true,
+  "tls_certificate_check": "PYTHON_DEFAULT_VERIFICATION"
+}
