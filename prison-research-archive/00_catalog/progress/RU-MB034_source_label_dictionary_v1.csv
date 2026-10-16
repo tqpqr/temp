@@ -1,0 +1,10 @@
+label,rows,meaning,evidence,status
+short,1565,Краткая характеристика УИС РФ,description_fsin_info_103_v20240626.pdf p4,DEFINED
+od,979,Файлы CSV из раздела Открытые данные,description_fsin_info_103_v20240626.pdf p4,DEFINED
+"od,stat",426,Файлы CSV из раздела Открытые данные + Файлы XLSX из раздела Статистические данные,description_fsin_info_103_v20240626.pdf p4,COMPOSITE_COMPONENTS_KNOWN_NO_ROW_AUTHORITY
+stat,1734,Файлы XLSX из раздела Статистические данные,description_fsin_info_103_v20240626.pdf p4,DEFINED
+fsin_report,560,Доклад ФСИН Информация о достигнутых результатах,description_fsin_info_103_v20240626.pdf p4,DEFINED
+fsin_report2,11,UNDEFINED,description_fsin_info_103_v20240626.pdf p4,UNDEFINED_IN_DESCRIPTION
+"fsin_report,short",12,Доклад ФСИН Информация о достигнутых результатах + Краткая характеристика УИС РФ,description_fsin_info_103_v20240626.pdf p4,COMPOSITE_COMPONENTS_KNOWN_NO_ROW_AUTHORITY
+concept-2020,2,Концепция развития УИС РФ до2020 года,description_fsin_info_103_v20240626.pdf p4,DEFINED
+rosstat,1938,Сборники Социальное положение и уровень жизни населения России,description_fsin_info_103_v20240626.pdf p4,DEFINED

@@ -1,0 +1,51 @@
+{
+  "archives_and_members": [
+    {
+      "file": "od.rar",
+      "bytes": 212808,
+      "sha256": "9898ad50c0db6370e4b86d6ead5f63a9981edd501a6aab50d7aa92026d407157",
+      "url": "https://drive.google.com/file/d/16Q5j2wj3qyv2yaKslnxSh9xxr3BCxE5l/view",
+      "provenance": "Archive linked from dataset description PDF p7; compiler-hosted copy, not independently authenticated FSIN-hosted bytes"
+    },
+    {
+      "file": "stat.rar",
+      "bytes": 131210,
+      "sha256": "f974e5c4d120aa950e820525256633a70bb9ba5872b0a7e477a4e7134d47df5a",
+      "url": "https://drive.google.com/file/d/1FKLCHKKKchJvhKqyiXgLxYSmU3wtG66s/view",
+      "provenance": "Archive linked from dataset description PDF p7; compiler-hosted copy, not independently authenticated FSIN-hosted bytes"
+    },
+    {
+      "file": "selected_od_csv/data-20200717T0843-structure-20200717T0843.csv",
+      "archive_member": "05_statistics/data-20200717T0843-structure-20200717T0843.csv",
+      "sha256": "780fd64c345cea75cdaca0b55c4485cafac8c72b177ebb2a9bac83fe57bc10de"
+    },
+    {
+      "file": "selected_od_csv/data-20200717T0859-structure-20200717T0859.csv",
+      "archive_member": "05_statistics/data-20200717T0859-structure-20200717T0859.csv",
+      "sha256": "4e59b3a9a5b490ed178a95e98051957d2f3b3018f9a321bd68b8d13fc17e2baa"
+    },
+    {
+      "file": "selected_od_csv/data-20200717T1052-structure-20200717T1052.csv",
+      "archive_member": "05_statistics/data-20200717T1052-structure-20200717T1052.csv",
+      "sha256": "d3d15582e2d513febee84e5ba18d467ba4f52c0d5b2a9f32ce1c92c597fed7a3"
+    },
+    {
+      "file": "selected_od_csv/data-20200717T1108-structure-20200717T1108.csv",
+      "archive_member": "05_statistics/data-20200717T1108-structure-20200717T1108.csv",
+      "sha256": "103cfa41e5b85533febed59cad014c872c8122ba5b163f12f66f9f440ab363dd"
+    },
+    {
+      "file": "selected_od_csv/data-20200717T1157-structure-20200717T1157.csv",
+      "archive_member": "05_statistics/data-20200717T1157-structure-20200717T1157.csv",
+      "sha256": "d28b81ed628ce68f2e017e4d9f66823aaeb3d08d72aaca0b61c0fdf212d32deb"
+    },
+    {
+      "file": "selected_od_csv/data-20200717T1212-structure-20200717T1212.csv",
+      "archive_member": "05_statistics/data-20200717T1212-structure-20200717T1212.csv",
+      "sha256": "285677841a97f0ba120020d71ea7fd29bd53b133648c2490a8a8db641b3d343b"
+    }
+  ],
+  "od_conflict_groups": 14,
+  "source_rows_matched": 63,
+  "candidate_links": 84
+}
