@@ -1,0 +1,53 @@
+{
+  "commit": "1a4631463db5d141eeb468311c116d4dc92d5c4f",
+  "files": [
+    {
+      "path": "prison-research-archive/00_catalog/MICROTASK_QUEUE_WAVE1_v35.csv",
+      "bytes": 40475,
+      "sha256": "bf2003f3e8bad2ad0d0336c799ea8e0d81391958ab03119b73a55b1cb595188e",
+      "verified": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/METHODOLOGICAL_BREAKS_AND_ANOMALIES_v38.csv",
+      "bytes": 152657,
+      "sha256": "7d843916d9bfdfc9fde9182da895668bbe3b5d5086f38544e314c68e3e1c60eb",
+      "verified": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/INDICATOR_PERIOD_COVERAGE_REGISTRY_v35.csv",
+      "bytes": 1896116,
+      "sha256": "20b30ff8938521ce4eab4388b9c10dd595f677fb5e7b494da00a7e24d76a6d0c",
+      "verified": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/SESSION_CHECKPOINT_20261016_v56.md",
+      "bytes": 512,
+      "sha256": "f6410007e610be3757242806c1b90de71746ea4ae844d71754d13f337ffc324f",
+      "verified": true
+    },
+    {
+      "path": "prison-research-archive/02_uk/additional_official_sources/FY2015_16_restated/costs_2015_16_restated.xlsx",
+      "bytes": 94217,
+      "sha256": "d6917220c8f78beb69c5a612719cb868808aef9317894bbc095a703f5d37b415",
+      "verified": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/progress/GB-003_2015_16_establishment_vintage_diff_v1.csv",
+      "bytes": 17552,
+      "sha256": "69b7c5030943c8a326d222a4e11cbd37575f71049512266c78d09f730af0e10e",
+      "verified": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/progress/GB-002_GB-003_recovered_source_and_comparison_v1.md",
+      "bytes": 4533,
+      "sha256": "085f4d497f3bde3d983f56e500cf7a8cf8655a8dec79b22bb0b9726ce98a2f8b",
+      "verified": true
+    },
+    {
+      "path": "prison-research-archive/00_catalog/progress/GB-003_checks.json",
+      "bytes": 1469,
+      "sha256": "b3ce4be79356b675184ff561f613cd7339c29e38307b22b251572a98460961e3",
+      "verified": true
+    }
+  ]
+}
