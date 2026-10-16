@@ -1,0 +1,344 @@
+[
+  {
+    "source": "GB/costs-per-prison-place-and-prisoner-by-individual-prison-2021-2022.ods",
+    "git_sha": "f7d847c3477e3fcc3e4e563b723cfa00cda3e310",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 20,
+    "cells_A_to_J": [
+      "Male category C Trainer and Resettlement (45 establishments)",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "source": "GB/costs-per-prison-place-and-prisoner-by-individual-prison-2021-2022.ods",
+    "git_sha": "f7d847c3477e3fcc3e4e563b723cfa00cda3e310",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 69,
+    "cells_A_to_J": [
+      "Totals",
+      "35,969",
+      "35,292",
+      "£902,912,715",
+      "£25,103",
+      "£25,584",
+      "",
+      "£1,425,494,595",
+      "£39,632",
+      "£40,391"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prison-place-and-prisoner-by-individual-prison-2021-2022.ods",
+    "git_sha": "f7d847c3477e3fcc3e4e563b723cfa00cda3e310",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 121,
+    "cells_A_to_J": [
+      "Male closed YOI (ages 18-20) (4 establishments)",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "source": "GB/costs-per-prison-place-and-prisoner-by-individual-prison-2021-2022.ods",
+    "git_sha": "f7d847c3477e3fcc3e4e563b723cfa00cda3e310",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 125,
+    "cells_A_to_J": [
+      "Aylesbury",
+      "402",
+      "279",
+      "£15,153,812",
+      "£37,688",
+      "£54,412",
+      "",
+      "£23,066,100",
+      "£57,366",
+      "£82,823"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prison-place-and-prisoner-by-individual-prison-2021-2022.ods",
+    "git_sha": "f7d847c3477e3fcc3e4e563b723cfa00cda3e310",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 126,
+    "cells_A_to_J": [
+      "Brinsford",
+      "539",
+      "452",
+      "£16,530,131",
+      "£30,668",
+      "£36,612",
+      "",
+      "£25,450,773",
+      "£47,219",
+      "£56,369"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prison-place-and-prisoner-by-individual-prison-2021-2022.ods",
+    "git_sha": "f7d847c3477e3fcc3e4e563b723cfa00cda3e310",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 127,
+    "cells_A_to_J": [
+      "Deerbolt",
+      "513",
+      "269",
+      "£12,820,528",
+      "£24,991",
+      "£47,586",
+      "",
+      "£19,389,186",
+      "£37,796",
+      "£71,967"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prison-place-and-prisoner-by-individual-prison-2021-2022.ods",
+    "git_sha": "f7d847c3477e3fcc3e4e563b723cfa00cda3e310",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 128,
+    "cells_A_to_J": [
+      "Feltham",
+      "768",
+      "244",
+      "£35,032,736",
+      "£45,616",
+      "£143,822",
+      "",
+      "£59,439,099",
+      "£77,395",
+      "£244,020"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prison-place-and-prisoner-by-individual-prison-2021-2022.ods",
+    "git_sha": "f7d847c3477e3fcc3e4e563b723cfa00cda3e310",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 129,
+    "cells_A_to_J": [
+      "Totals",
+      "2,222",
+      "1,243",
+      "£79,537,207",
+      "£35,794",
+      "£63,988",
+      "",
+      "£127,345,156",
+      "£57,309",
+      "£102,450"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prisoner-individual-prison-2022-2023.ods",
+    "git_sha": "5634ad084c85b8168eff2bf5a952e42012c383bc",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 20,
+    "cells_A_to_J": [
+      "Male category C & YOI Trainer and Resettlement (49 establishments)",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "source": "GB/costs-per-prisoner-individual-prison-2022-2023.ods",
+    "git_sha": "5634ad084c85b8168eff2bf5a952e42012c383bc",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 25,
+    "cells_A_to_J": [
+      "Aylesbury",
+      "402",
+      "375",
+      "£16,785,909",
+      "£41,756",
+      "£44,723",
+      "",
+      "£26,260,135",
+      "£65,324",
+      "£69,965"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prisoner-individual-prison-2022-2023.ods",
+    "git_sha": "5634ad084c85b8168eff2bf5a952e42012c383bc",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 27,
+    "cells_A_to_J": [
+      "Brinsford",
+      "539",
+      "466",
+      "£18,279,367",
+      "£33,913",
+      "£39,219",
+      "",
+      "£28,711,390",
+      "£53,268",
+      "£61,601"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prisoner-individual-prison-2022-2023.ods",
+    "git_sha": "5634ad084c85b8168eff2bf5a952e42012c383bc",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 34,
+    "cells_A_to_J": [
+      "Deerbolt",
+      "528",
+      "298",
+      "£14,580,643",
+      "£27,632",
+      "£48,915",
+      "",
+      "£21,918,442",
+      "£41,538",
+      "£73,531"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prisoner-individual-prison-2022-2023.ods",
+    "git_sha": "5634ad084c85b8168eff2bf5a952e42012c383bc",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 37,
+    "cells_A_to_J": [
+      "Feltham",
+      "768",
+      "350",
+      "£40,248,044",
+      "£52,406",
+      "£114,940",
+      "",
+      "£70,411,985",
+      "£91,682",
+      "£201,081"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prisoner-individual-prison-2022-2023.ods",
+    "git_sha": "5634ad084c85b8168eff2bf5a952e42012c383bc",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 73,
+    "cells_A_to_J": [
+      "Totals",
+      "38,804",
+      "38,237",
+      "£1,093,306,153",
+      "£28,175",
+      "£28,593",
+      "",
+      "£1,746,574,589",
+      "£45,011",
+      "£45,678"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prisoner-individual-prison-2022-2023.ods",
+    "git_sha": "5634ad084c85b8168eff2bf5a952e42012c383bc",
+    "sheet": "Notes_to_T3",
+    "physical_row": 6,
+    "cells_A_to_J": [
+      "2. The categorisation of YOI Trainer (age 18-20 group) is now included among the Male Category C and Resettlement function, with four prisons (Aylesbury, Brinsford, Deerbolt and Feltham)",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "source": "GB/costs-per-prisoner-individual-prison-2022-2023.ods",
+    "git_sha": "5634ad084c85b8168eff2bf5a952e42012c383bc",
+    "sheet": "Notes_to_T3",
+    "physical_row": 7,
+    "cells_A_to_J": [
+      "being moved to that expanded function.",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "source": "GB/costs-per-prison-place-cost-per-prisoner-by-individual-prison-2017-2018-tables.ods",
+    "git_sha": "2261d528d67e9daa57cb54888945d1160718d02c",
+    "sheet": "T3_Cost_by_Establishment",
+    "physical_row": 203,
+    "cells_A_to_J": [
+      "Glen Parva",
+      "222",
+      "122",
+      "£3,931,216",
+      "£0",
+      "£0",
+      "",
+      "£3,931,216",
+      "£0",
+      "£0"
+    ]
+  },
+  {
+    "source": "GB/costs-per-prison-place-cost-per-prisoner-by-individual-prison-2017-2018-tables.ods",
+    "git_sha": "2261d528d67e9daa57cb54888945d1160718d02c",
+    "sheet": "Notes_to_T3",
+    "physical_row": 6,
+    "cells_A_to_J": [
+      "2. For certain prisons the data is not typical because of changes that were taking place to the prison during the year, e.g. as Glen Parva became non-operational in June 2017, the prison",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "source": "GB/costs-per-prison-place-cost-per-prisoner-by-individual-prison-2017-2018-tables.ods",
+    "git_sha": "2261d528d67e9daa57cb54888945d1160718d02c",
+    "sheet": "Notes_to_T3",
+    "physical_row": 7,
+    "cells_A_to_J": [
+      "has been excluded from the unit cost calculations, although the population, CNA (places) and expenditure figures have been included to ensure inclusion in the aggregate data.",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
+]
