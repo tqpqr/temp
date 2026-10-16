@@ -1,0 +1,3 @@
+# Continuation checkpoint
+
+Previous [v58](SESSION_CHECKPOINT_20261016_v58.md), retained. British MB-025/007 published at88767003ecdbf0d21083432b014c165ef1067d9f; all6 files re-fetched byte-for-byte. Accounting MB-001–003 exact mapping remains open after source checks. Russian stage1 complete:7227 rows preserved,300 codes,302 code/name registry entries upgraded,16 residual conflicting groups. Current indicator registry v36 (1642 records), methodology v40 (108 entries), follow-up queue v2. Original wave1 queue v36 unchanged. Next Russian stage2: description/source/date semantics and primary-source checks. No original modified or deleted; no correspondence.

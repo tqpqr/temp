@@ -1,0 +1,17 @@
+indicator_code,year,data_date_t,data_source,data_source_2,rounded,values,source_rows
+Y808000001,2020,2020_07_17,od,,0,499406 | 501476 | 511030 | 517028 | 518391 | 519618,data_clear!A80:K80 | data_clear!A81:K81 | data_clear!A82:K82 | data_clear!A83:K83 | data_clear!A84:K84 | data_clear!A85:K85
+Y808000002,2020,2020_07_17,od,,0,472856 | 486019,data_clear!A158:K158 | data_clear!A159:K159
+Y808000003,2020,2020_07_17,od,,0,392725 | 400432 | 409862 | 414987 | 418434 | 420584,data_clear!A245:K245 | data_clear!A246:K246 | data_clear!A247:K247 | data_clear!A248:K248 | data_clear!A249:K249 | data_clear!A250:K250
+Y808000004,2020,2020_07_17,od,,0,1993 | 1995 | 1996 | 1998 | 1999 | 2011,data_clear!A323:K323 | data_clear!A324:K324 | data_clear!A325:K325 | data_clear!A326:K326 | data_clear!A327:K327 | data_clear!A328:K328
+Y808000005,2020,2020_07_17,od,,0,28866 | 29512 | 31195 | 32286 | 32798 | 32928,data_clear!A399:K399 | data_clear!A400:K400 | data_clear!A401:K401 | data_clear!A402:K402 | data_clear!A403:K403 | data_clear!A404:K404
+Y808000044,2020,2020_07_17,od,,0,96727 | 97676 | 98804 | 98871 | 99765 | 104507,data_clear!A1092:K1092 | data_clear!A1093:K1093 | data_clear!A1094:K1094 | data_clear!A1095:K1095 | data_clear!A1096:K1096 | data_clear!A1097:K1097
+Y808000045,2020,2020_07_17,od,,0,1170 | 1172 | 1173 | 1174 | 1176 | 1179,data_clear!A1168:K1168 | data_clear!A1169:K1169 | data_clear!A1170:K1170 | data_clear!A1171:K1171 | data_clear!A1172:K1172 | data_clear!A1173:K1173
+Y808000050,2020,2020_07_17,od,,0,1002 | 1061 | 1100 | 1107 | 1127 | 1134,data_clear!A1320:K1320 | data_clear!A1321:K1321 | data_clear!A1322:K1322 | data_clear!A1323:K1323 | data_clear!A1324:K1324 | data_clear!A1325:K1325
+Y808000076,2020,2020_07_17,od,,0,40178 | 40319 | 41376 | 41685 | 41734 | 42004,data_clear!A1776:K1776 | data_clear!A1777:K1777 | data_clear!A1778:K1778 | data_clear!A1779:K1779 | data_clear!A1780:K1780 | data_clear!A1781:K1781
+Y808000090,2020,2020_07_17,od,,0,6709 | 6912,data_clear!A2085:K2085 | data_clear!A2086:K2086
+Y808000122,2020,2020_07_17,od,,0,684 | 693 | 700,data_clear!A2519:K2519 | data_clear!A2520:K2520 | data_clear!A2521:K2521
+Y808000128,2020,2020_07_17,od,,0,111 | 117 | 121,data_clear!A2739:K2739 | data_clear!A2740:K2740 | data_clear!A2741:K2741
+Y808000131,2020,2020_07_17,od,,0,92 | 93 | 96,data_clear!A2899:K2899 | data_clear!A2900:K2900 | data_clear!A2901:K2901
+Y808000135,2020,2020_07_17,od,,0,22 | 23,data_clear!A3090:K3090 | data_clear!A3091:K3091
+Y808000050,2012,2012_12_31,rosstat,,0,2293 | 2289,data_clear!A6457:K6457 | data_clear!A7084:K7084
+Y808000074,2012,2012_12_31,rosstat,,0,2180 | 2176,data_clear!A6501:K6501 | data_clear!A7085:K7085

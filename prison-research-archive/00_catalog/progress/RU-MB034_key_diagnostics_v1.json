@@ -1,0 +1,56 @@
+{
+  "source_git_blob_sha1": "ebc0c08de7a7e4279e6035637dea6df0ff519c4c",
+  "source_sha256": "9692d3e29d3c1bf79987df19ce08d4ecd2f04f1da460a50ea4e3971b110d0d7f",
+  "row_count": 7227,
+  "code_count": 300,
+  "csv_sha256": "6f41672e7664bd294c331d14eeb7be0dd430f5c94c433fb07951f26b4d9a899c",
+  "key_diagnostics": [
+    {
+      "key": [
+        "indicator_code",
+        "year"
+      ],
+      "distinct_groups": 5149,
+      "repeated_groups": 1079,
+      "groups_with_different_values": 619
+    },
+    {
+      "key": [
+        "indicator_code",
+        "year",
+        "data_date_t"
+      ],
+      "distinct_groups": 6286,
+      "repeated_groups": 857,
+      "groups_with_different_values": 472
+    },
+    {
+      "key": [
+        "indicator_code",
+        "year",
+        "data_date_t",
+        "data_source",
+        "data_source_2"
+      ],
+      "distinct_groups": 7117,
+      "repeated_groups": 74,
+      "groups_with_different_values": 74
+    },
+    {
+      "key": [
+        "indicator_code",
+        "year",
+        "data_date_t",
+        "data_source",
+        "data_source_2",
+        "rounded"
+      ],
+      "distinct_groups": 7176,
+      "repeated_groups": 16,
+      "groups_with_different_values": 16
+    }
+  ],
+  "independent_reader_all_fields_compared": 79497,
+  "comparison": "numeric values compared as numbers; original XML literals retained in CSV",
+  "distinct_code_name_pairs": 302
+}

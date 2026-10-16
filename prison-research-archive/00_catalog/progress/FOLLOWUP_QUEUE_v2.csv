@@ -1,0 +1,6 @@
+task,status,evidence_or_next_step
+MB-025,DONE,MB-025_MB-007_resolution_v1.md
+MB-007,DONE,MB-025_MB-007_resolution_v1.md
+MB-001_003,OPEN_EXACT_MAPPING,MB-001_003_accounting_bridge_followup_v1.md
+MB-034_STAGE1,DONE,RU-MB034_source_separation_stage1_v1.md
+MB-034_STAGE2,NEXT,Source label and date semantics then16 residual groups
