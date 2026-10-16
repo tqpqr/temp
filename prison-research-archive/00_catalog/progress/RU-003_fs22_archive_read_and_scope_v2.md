@@ -1,0 +1,13 @@
+# RU-003 — original archive readable; scope corrected
+
+Checked 2026-10-16. Supersedes the technical blocker in [v1](RU-003_fs22_expense_7z_BINARY_BLOCKED_v1.md); that historical file remains unchanged.
+
+Original: `fs-22/2025 ПрФЗ.Прил_2_Расходы.7z`, 11653826 bytes. Downloaded bytes reproduce Git blob SHA1 `7bb55f5a448c3498ff946f55e538a82ec051d26c` exactly. libarchive enumerated one member and read its entire decompressed byte stream without error: `0000. ПрФЗ.Прил_2_Расходы.pdf`, 55252507 bytes. No password required. [Manifest and nested PDF SHA256](RU-003_fs22_expense_7z_manifest_v1.json).
+
+PDF: 1200 physical pages. Title physically p1 / printed2347: appendix2 to a federal law on execution of the federal budget for2025; expenditures by departmental structure; column «Кассовое исполнение»; thousand RUB. PDF creation/modification metadata: 2026-06-09 13:32:14 +03:00. Metadata supports chronology but is not independent proof of publisher or release date. FSIN heading is physically p963 / printed3309. No full table transcription or full arithmetic audit performed.
+
+The title page was visually checked. External contextual check: [bill1260086-8](https://base.garant.ru/411682954/) was introduced15June2026 and has annex2 of the same title. [Article1](https://base.garant.ru/411682954/1cafb24d049dcd1e7707a22d98e9858f/) separately lists public annex2 and classified annexes3/4. [Interfax13October2026](https://www.interfax-russia.ru/index.php/moscow/news/gosduma-utverdila-ispolnenie-byudzheta-rf-za-2025-g-s-deficitom-5-63-trln-rubley) reports Duma passage. This does not establish Presidential signature, entry into force, or byte identity of the archived PDF to the enacted edition. The official Duma card could not be retrieved through the web tool; contextual identification is not an independently verified exact-source match.
+
+Correct classification: source-reported 2025 cash execution in a draft-law attachment; precise external binary and final-edition equivalence unverified. The filename ПрФЗ does not prove planned expenditure. The public-annex total is not the full federal expenditure total. The FSIN departmental total is not automatically prison-only operating expenditure.
+
+Acceptance scope for RU-003 was listing and classifying the nested archive, now met technically. REGISTRY_UNCHANGED_v34: no new numerical economic observations appended in this bounded identification task. BREAKS_REGISTER_UPDATED_v37: MB-107. Queue v33 remains pending publication verification until committed contents are re-fetched. Any future numeric extraction should address only selected FSIN pages and their budget-code hierarchy. No full1200-page model-context ingestion needed.
