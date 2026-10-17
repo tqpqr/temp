@@ -1,0 +1,34 @@
+[
+  {
+    "request": "https://archive.org/wayback/available?url=http%3A%2F%2Ffsin.su%2Fstructure%2Finspector%2Fiao%2Fstatistika%2FXar-ka%2520v%2520VK%2F&timestamp=20160821",
+    "response": {
+      "url": "http://fsin.su/structure/inspector/iao/statistika/Xar-ka%20v%20VK/",
+      "archived_snapshots": {},
+      "timestamp": "20160821"
+    }
+  },
+  {
+    "request": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.fsin.su%2Fstructure%2Finspector%2Fiao%2Fstatistika%2FXar-ka%2520v%2520VK%2F&timestamp=20160821",
+    "response": {
+      "url": "http://www.fsin.su/structure/inspector/iao/statistika/Xar-ka%20v%20VK/",
+      "archived_snapshots": {},
+      "timestamp": "20160821"
+    }
+  },
+  {
+    "request": "https://archive.org/wayback/available?url=http%3A%2F%2Fxn--h1akkl.xn--p1ai%2Fstructure%2Finspector%2Fiao%2Fstatistika%2FXar-ka%2520v%2520VK%2F&timestamp=20160821",
+    "response": {
+      "url": "http://xn--h1akkl.xn--p1ai/structure/inspector/iao/statistika/Xar-ka%20v%20VK/",
+      "archived_snapshots": {},
+      "timestamp": "20160821"
+    }
+  },
+  {
+    "request": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.xn--h1akkl.xn--p1ai%2Fstructure%2Finspector%2Fiao%2Fstatistika%2FXar-ka%2520v%2520VK%2F&timestamp=20160821",
+    "response": {
+      "url": "http://www.xn--h1akkl.xn--p1ai/structure/inspector/iao/statistika/Xar-ka%20v%20VK/",
+      "archived_snapshots": {},
+      "timestamp": "20160821"
+    }
+  }
+]
