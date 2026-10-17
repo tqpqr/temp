@@ -1,0 +1,13 @@
+task,status,evidence_or_next_step
+MB-025,DONE,MB-025_MB-007_resolution_v1.md
+MB-007,DONE,MB-025_MB-007_resolution_v1.md
+MB-001_003,OPEN_EXACT_MAPPING,MB-001_003_accounting_bridge_followup_v1.md
+MB-034_STAGE1,DONE,RU-MB034_source_separation_stage1_v1.md
+MB-034_STAGE2,COMPLETED_WITH_OPEN_SOURCE_DATES,RU-MB034_source_dates_stage2_v1.md
+MB-034_STAGE3,COMPLETED_WITH_QUALIFIED_DATES,RU-MB034_monthly_dates_stage3_v1.md
+MB-034_PRIMARY_CAPTURE,OPEN_REQUIRED_FOR_CONFIRMED_SERIES,Six compiler-copy records retained provisionally; authenticate original official dates and figures
+MB-034_ROSSTAT2012,ALTERNATIVE_SECONDARY_ATTESTATION_OFFICIAL_ORIGIN_OPEN,PRI2016 p124 reproduces pair; obtain original FSIN VK page2015/2016; differences extend to2011/2013
+MB-034_STAGE4,DONE_SOURCE_GATE_PRIMARY_GAPS_OPEN,RU-MB034_scientific_source_gate_v1.md
+MB-034_STAGE5,SEARCH_COMPLETED_VERIFICATION_BLOCKED,RU-MB034_rosstat2017_retrieval_check_v1.md; REGISTRY_UNCHANGED v38; NO_NEW_BREAK v43
+MB-034_STAGE6,DONE_PAGE_VALUES_AND_COMPARISON,18 publication cells; paired exact compiler rows compared; preserve both2012 versions
+MB-034_STAGE7,DONE_TRACE_PRIMARY_ORIGIN_OPEN,RU-MB034_alternative_pair_trace_v1.md

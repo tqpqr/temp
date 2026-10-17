@@ -1,0 +1,36 @@
+{
+  "download_url": "https://cdn.penalreform.org/wp-content/uploads/2017/02/Combined-report.pdf",
+  "publication": "Положение уязвимых групп в местах принудительного содержания в Российской Федерации",
+  "publisher": "Penal Reform International",
+  "publication_year": 2016,
+  "source_class": "NON_GOVERNMENT_REPORT_SECONDARY_REPRODUCTION_ONLY",
+  "pdf_sha256": "211c2f0d9a24e9a3283f4f16d1950379748c8c5784205e9bc0c3db022dee9163",
+  "pdf_bytes": 2381467,
+  "pdf_pages": 237,
+  "preserved_excerpt_pages_1based": [
+    1,
+    2,
+    123,
+    124
+  ],
+  "table_anchor": "p124 table1 column2012",
+  "values": {
+    "total": 2293,
+    "women": 113,
+    "men": 2180
+  },
+  "limitations": [
+    "Not an official statistical publication; not admitted as official source",
+    "Footnote117 p123 links adult IK path, not VK path; attribution is imprecise",
+    "2014 sex rows fail sum:95+1684=1779, total1776; rendering checked",
+    "Publication year2016 printed on title; URL2017/02 is hosting path, not publication year"
+  ],
+  "compiler_workbook": {
+    "sha256": "86aa84466683ec98d537c69e4c13e5eac56da72d902e0baf2308585b6b40063e",
+    "meta_sheet": "empty",
+    "hyperlinks": "none",
+    "created": "2021-02-02T14:42:05",
+    "modified": "2023-09-25T17:40:09",
+    "warning": "Metadata are not source publication dates"
+  }
+}
