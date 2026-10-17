@@ -1,0 +1,14 @@
+{
+  "archive": "stat.rar",
+  "member": "03_fsin_stat_pc_minor.xlsx",
+  "sha256": "86aa84466683ec98d537c69e4c13e5eac56da72d902e0baf2308585b6b40063e",
+  "sheet": "original",
+  "cells": {
+    "M2": 2012,
+    "A7": "Списочная численность осужденных в ВК на конец отчетного периода",
+    "M7": 2293,
+    "D9": "мужского пола",
+    "M9": 2180
+  },
+  "provenance": "compiler-provided workbook; sheet named original does not establish byte-identical FSIN download"
+}

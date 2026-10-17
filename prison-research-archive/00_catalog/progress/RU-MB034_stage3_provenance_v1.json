@@ -1,0 +1,19 @@
+{
+  "reference_url": "https://docs.google.com/document/d/1wPqAUcO3_DWCh3kMn_mI1QrqqZJhoyOsQvXckXZQNPI/edit",
+  "download_url": "https://docs.google.com/document/d/1wPqAUcO3_DWCh3kMn_mI1QrqqZJhoyOsQvXckXZQNPI/export?format=txt",
+  "download_sha256": "db1b8fd8bbadc54e58335728059def635bc081b03ca90ecede320a547edbea19",
+  "bytes": 856408,
+  "scope": "Compiler transcription of historical FSIN summaries; author introduction says WebArchive and semi-official sites. No per-section archive links.",
+  "checks": {
+    "files": 6,
+    "csv_fields_checked_for_presence": 102,
+    "candidate_links_retained": 84
+  },
+  "unavailable_urls": [
+    "https://fsin.gov.ru/opendata/7706562710.5.1/",
+    "https://rosstat.gov.ru/free_doc/doc_2015/soc-pol.pdf",
+    "https://rosstat.gov.ru/bgd/regl/b15_44/Main.htm",
+    "https://opac.nsuem.ru/mm/2016/000224959.pdf",
+    "https://www.rosstat.gov.ru/storage/mediabank/soc-pol.pdf"
+  ]
+}
